@@ -1,0 +1,12 @@
+{
+  "seed": 7,
+  "goal": [
+    0.55,
+    0.55
+  ],
+  "steps": 90,
+  "success": true,
+  "termination": "success",
+  "final_error": 0.0009651169866416266,
+  "clipped_fraction": 0.2222222222222222
+}
