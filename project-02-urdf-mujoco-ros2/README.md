@@ -62,38 +62,39 @@ URDF 的质量、惯量、阻尼和电机力矩上限采用教学取值；本实
 
 ## B. Ubuntu + ROS 2 Jazzy：接通消息与 TF
 
-当前电脑已经完成 Windows MuJoCo 阶段。ROS 2 阶段需要 Ubuntu 环境；Windows 11 可通过 WSL 2 安装 Ubuntu 24.04。管理员 PowerShell 使用 `wsl --list --online` 查询发行版名称，再执行 `wsl --install -d Ubuntu-24.04`，按照提示完成发行版初始化与可能的重启。安装方式见[微软 WSL 官方说明](https://learn.microsoft.com/windows/wsl/install)。
+本机已通过 WSL 2 安装 Ubuntu 24.04，默认登录账户是 `ubuntu`。其他 Windows 11 电脑可在管理员 PowerShell 中使用 `wsl --list --online` 查询发行版名称，再执行 `wsl --install -d Ubuntu-24.04`，按照提示完成初始化和重启。安装方式见[微软 WSL 官方说明](https://learn.microsoft.com/windows/wsl/install)。
 
-在 Ubuntu 24.04 中，按 [ROS 2 Jazzy 官方安装说明](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html)配置仓库并安装 `ros-jazzy-desktop`。之后将本仓库克隆到 Ubuntu 用户目录，在 Ubuntu 终端执行：
+本机已按 [ROS 2 Jazzy 官方安装说明](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html)安装 `ros-jazzy-desktop`、`robot_state_publisher`、`rosbag2` 和 `tf2_ros`。在 PowerShell 输入 `wsl -d Ubuntu-24.04` 打开 Ubuntu 终端，然后执行：
 
 ```bash
 source /opt/ros/jazzy/setup.bash
-git clone https://github.com/ChenglangRong/embodied-robotics-learning-lab.git ~/embodied-robotics-learning-lab
 cd ~/embodied-robotics-learning-lab/project-02-urdf-mujoco-ros2
-python3 -m venv --system-site-packages .venv
 source .venv/bin/activate
-python -m pip install -r requirements.txt
-python -c 'import mujoco, rclpy; print(mujoco.__version__)'
+python -c 'import mujoco, rclpy; print(mujoco.__version__)'  # 应显示 3.2.5
 python scripts/start_ros.py
 ```
 
-`--system-site-packages` 让虚拟环境读到 Ubuntu 已安装的 `rclpy` 与 `launch_ros`。`start_ros.py` 启动 `robot_state_publisher` 和 MuJoCo bridge。前者读取同一份 URDF，后者按 `0.02 s` 周期发布 `/joint_states`、末端点、目标点、误差、力矩命令、模拟时间与状态。ROS 消息时间戳采用 ROS 节点时钟；`/robot_lab/sim_time_s` 单独记录仿真时间。
+其他电脑首次运行时，先执行 `git clone https://github.com/ChenglangRong/embodied-robotics-learning-lab.git ~/embodied-robotics-learning-lab`；再进入项目目录，用 `python3 -m venv --system-site-packages .venv` 创建环境并执行 `source .venv/bin/activate && python -m pip install -r requirements.txt`。`--system-site-packages` 让虚拟环境读到 Ubuntu 已安装的 `rclpy` 与 `launch_ros`。本机仓库已有克隆和环境，更新代码时在仓库根目录执行 `git pull`。
 
-新开 Ubuntu 终端，先执行 `source /opt/ros/jazzy/setup.bash`，再观察：
+`start_ros.py` 启动 `robot_state_publisher` 和 MuJoCo bridge。前者读取同一份 URDF，后者按 `0.02 s` 周期发布 `/joint_states`、末端点、目标点、误差、力矩命令、模拟时间与状态。ROS 消息时间戳采用 ROS 节点时钟；`/robot_lab/sim_time_s` 单独记录仿真时间。
+
+新开 Ubuntu 终端，先执行 `source /opt/ros/jazzy/setup.bash`，再观察并运行自动验收：
 
 ```bash
 ros2 topic list
-ros2 topic echo /joint_states --once
-ros2 topic echo /robot_lab/status --once
-ros2 run tf2_ros tf2_echo base_link tool_link
+ros2 topic echo /joint_states sensor_msgs/msg/JointState --once
+ros2 topic echo /robot_lab/status std_msgs/msg/String --once
+cd ~/embodied-robotics-learning-lab/project-02-urdf-mujoco-ros2
+source .venv/bin/activate
+python scripts/verify_bridge.py
 ```
 
-`tf2_echo` 的平移应与 `/robot_lab/tool_point` 的坐标一致。RViz 中选择 `Fixed Frame=base_link`，添加 `RobotModel` 和 `TF` 显示，便于核对 link 与关节轴。
+验收脚本会检查终态、目标误差、TF 与 MuJoCo 末端点的差、两连杆正运动学的差，并以退出码 0 表示通过。本机 seed 7 的结果为 `success`、目标误差 `0.000927351 m`、TF 差 `1.11e-16 m`。再执行 `ros2 run tf2_ros tf2_echo base_link tool_link` 可持续观察 TF 平移；核对后用 `Ctrl+C` 结束。输入 `rviz2` 可打开本机 WSL 图形窗口；在 RViz 中选择 `Fixed Frame=base_link`，添加 `RobotModel`（Description Topic 选 `/robot_description`）和 `TF` 显示，便于核对 link 与关节轴。本机已验证 RViz 启动和 OpenGL 4.5；显示配置需要在窗口里完成。
 
 记录一次完整运行时，先开始 rosbag，再调用重置服务：
 
 ```bash
-ros2 bag record -o ~/robot_lab_demo /joint_states /tf /tf_static /robot_lab/tool_point /robot_lab/goal_point /robot_lab/error_m /robot_lab/ctrl_nm /robot_lab/sim_time_s /robot_lab/status
+ros2 bag record -o ~/robot_lab_demo --topics /joint_states /tf /tf_static /robot_lab/tool_point /robot_lab/goal_point /robot_lab/error_m /robot_lab/ctrl_nm /robot_lab/sim_time_s /robot_lab/status
 ```
 
 另一个终端调用：
@@ -102,9 +103,9 @@ ros2 bag record -o ~/robot_lab_demo /joint_states /tf /tf_static /robot_lab/tool
 ros2 service call /robot_lab/reset std_srvs/srv/Trigger '{}'
 ```
 
-观察状态到 `success` 后，用 `Ctrl+C` 结束录制；`ros2 bag info ~/robot_lab_demo` 检查消息数，再用 `ros2 bag play ~/robot_lab_demo` 回放。`robot_state_publisher` 根据 `/joint_states` 发布活动关节的 `/tf`，固定关节发布到 `/tf_static`；接口语义见[上游 README](https://github.com/ros/robot_state_publisher)。
+观察状态到 `success` 后，在录制终端用 `Ctrl+C` 正常结束；确认 `metadata.yaml` 已生成，再用 `ros2 bag info ~/robot_lab_demo` 检查消息数，并在停止桥接后用 `ros2 bag play ~/robot_lab_demo` 回放。`robot_state_publisher` 根据 `/joint_states` 发布活动关节的 `/tf`，固定关节发布到 `/tf_static`；接口语义见[上游 README](https://github.com/ros/robot_state_publisher)。
 
-ROS 2 的运行验收等待 Ubuntu 环境就绪；目前已完成代码编译检查与 Windows MuJoCo 实测。验收时应记录 `ros2 topic hz /joint_states`、TF 末端位置与仿真日志误差、bag 消息数和一段 RViz 演示。
+仓库已保存一份可回放的[本机录包](outputs/ros-validation-2026-10-12/bag/metadata.yaml)。在项目目录运行 `python scripts/inspect_bag.py outputs/ros-validation-2026-10-12/bag`，应看到 6,735 条消息、99 条 `running`、783 条 `success` 和一次重置。桥接、TF、录制与回放已实测；RViz 的图形窗口已启动，手动配置后的机器人显示仍需亲手完成。Ubuntu 账户 `ubuntu` 目前尚未设置个人密码；在本机 PowerShell 输入 `wsl -d Ubuntu-24.04 -u root -- passwd ubuntu`，按终端提示私下设置，以便日后使用 `sudo`。
 
 ## 项目验收
 
