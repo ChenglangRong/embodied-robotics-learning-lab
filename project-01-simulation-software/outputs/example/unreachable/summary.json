@@ -1,0 +1,19 @@
+{
+  "seed": 7,
+  "initial_q": [
+    0.12509546660466697,
+    0.3972138009695755
+  ],
+  "initial_error": 0.2949101104784061,
+  "goal": [
+    1.05,
+    0.0
+  ],
+  "steps": 300,
+  "success": false,
+  "termination": "max_steps",
+  "final_error": 0.050000000000000044,
+  "clipped_fraction": 0.0,
+  "geometric_reachable": false,
+  "geometric_error_lower_bound": 0.050000000000000044
+}

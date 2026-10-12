@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<robot name="two_link_lab">
+  <!-- Metres, kilograms, radians. All hinge axes point along +Z. -->
+  <link name="base_link">
+    <visual name="base_visual"><geometry><box size="0.08 0.08 0.05"/></geometry><material name="base_color"><color rgba="0.25 0.25 0.3 1"/></material></visual>
+  </link>
+  <joint name="shoulder" type="revolute">
+    <parent link="base_link"/><child link="link1"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-3.14159" upper="3.14159" effort="3" velocity="2"/>
+    <dynamics damping="0.12" friction="0"/>
+  </joint>
+  <link name="link1">
+    <inertial>
+      <origin xyz="0.3 0 0" rpy="0 0 0"/>
+      <mass value="0.6"/>
+      <inertia ixx="0.002" ixy="0" ixz="0" iyy="0.02" iyz="0" izz="0.02"/>
+    </inertial>
+    <visual name="link1_visual"><origin xyz="0.3 0 0" rpy="0 1.57079632679 0"/><geometry><cylinder length="0.6" radius="0.025"/></geometry><material name="link1_color"><color rgba="0.1 0.4 0.8 1"/></material></visual>
+    <collision name="link1_collision"><origin xyz="0.3 0 0" rpy="0 1.57079632679 0"/><geometry><cylinder length="0.6" radius="0.025"/></geometry></collision>
+  </link>
+  <joint name="elbow" type="revolute">
+    <parent link="link1"/><child link="link2"/>
+    <origin xyz="0.6 0 0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-3.14159" upper="3.14159" effort="3" velocity="2"/>
+    <dynamics damping="0.08" friction="0"/>
+  </joint>
+  <link name="link2">
+    <inertial>
+      <origin xyz="0.2 0 0" rpy="0 0 0"/>
+      <mass value="0.4"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.006" iyz="0" izz="0.006"/>
+    </inertial>
+    <visual name="link2_visual"><origin xyz="0.2 0 0" rpy="0 1.57079632679 0"/><geometry><cylinder length="0.4" radius="0.02"/></geometry><material name="link2_color"><color rgba="0.9 0.45 0.1 1"/></material></visual>
+    <collision name="link2_collision"><origin xyz="0.2 0 0" rpy="0 1.57079632679 0"/><geometry><cylinder length="0.4" radius="0.02"/></geometry></collision>
+  </link>
+  <joint name="tool_fixed" type="fixed">
+    <parent link="link2"/><child link="tool_link"/>
+    <origin xyz="0.4 0 0" rpy="0 0 0"/>
+  </joint>
+  <link name="tool_link">
+    <visual name="tool_visual"><geometry><sphere radius="0.035"/></geometry><material name="tool_color"><color rgba="0.2 0.7 0.2 1"/></material></visual>
+  </link>
+</robot>

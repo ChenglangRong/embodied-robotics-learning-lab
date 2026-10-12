@@ -2,6 +2,10 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 .venv/
+.idea/
+**/outputs/audit-*/
+**/outputs/verified-*/
+**/outputs/ros-run/
 dist/
 build/
 *.egg-info/

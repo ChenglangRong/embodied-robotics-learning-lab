@@ -5,7 +5,6 @@ import json
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
-import matplotlib.pyplot as plt
 import numpy as np
 
 
@@ -56,6 +55,8 @@ class TwoLinkReachEnv:
 
     def step(self, action: np.ndarray) -> tuple[dict, float, bool, dict]:
         action = np.asarray(action, dtype=float)
+        if action.shape != (2,) or not np.all(np.isfinite(action)):
+            raise ValueError("action must contain two finite joint velocities in rad/s")
         clipped = np.clip(action, -self.cfg.velocity_limit, self.cfg.velocity_limit)
         self.q = self.q + self.cfg.dt * clipped
         self.step_count += 1
@@ -67,6 +68,7 @@ class TwoLinkReachEnv:
             "success": success,
             "timeout": timeout,
             "action_clipped": bool(np.any(action != clipped)),
+            "applied_action": clipped.copy(),
         }
         return self.observe(), -error, bool(success or timeout), info
 
@@ -82,6 +84,8 @@ def dls_action(env: TwoLinkReachEnv) -> np.ndarray:
 def run_episode(seed: int, goal: tuple[float, float], cfg: Config) -> tuple[list[dict], dict]:
     env = TwoLinkReachEnv(cfg)
     env.reset(seed=seed, goal=goal)
+    initial_q = env.q.copy()
+    initial_error = float(np.linalg.norm(env.goal - env.position()))
     rows: list[dict] = []
     termination = "max_steps"
     for _ in range(cfg.max_steps):
@@ -91,11 +95,14 @@ def run_episode(seed: int, goal: tuple[float, float], cfg: Config) -> tuple[list
         after = env.position().copy()
         rows.append({
             "step": env.step_count,
+            "time_s": env.step_count * cfg.dt,
             "q1": env.q[0], "q2": env.q[1],
             "x": after[0], "y": after[1],
             "goal_x": env.goal[0], "goal_y": env.goal[1],
             "error": info["error"],
             "raw_action_norm": float(np.linalg.norm(raw)),
+            "applied_qdot1": info["applied_action"][0],
+            "applied_qdot2": info["applied_action"][1],
             "action_clipped": info["action_clipped"],
             "delta_position": float(np.linalg.norm(after - before)),
         })
@@ -106,6 +113,8 @@ def run_episode(seed: int, goal: tuple[float, float], cfg: Config) -> tuple[list
             break
     summary = {
         "seed": seed,
+        "initial_q": initial_q.tolist(),
+        "initial_error": initial_error,
         "goal": list(goal),
         "steps": len(rows),
         "success": termination == "success",
@@ -113,10 +122,16 @@ def run_episode(seed: int, goal: tuple[float, float], cfg: Config) -> tuple[list
         "final_error": rows[-1]["error"],
         "clipped_fraction": float(np.mean([r["action_clipped"] for r in rows])),
     }
+    radius = float(np.linalg.norm(env.goal))
+    inner, outer = abs(cfg.link_lengths[0] - cfg.link_lengths[1]), sum(cfg.link_lengths)
+    summary["geometric_reachable"] = bool(inner <= radius <= outer)
+    summary["geometric_error_lower_bound"] = float(max(inner - radius, radius - outer, 0.0))
     return rows, summary
 
 
 def save_run(rows: list[dict], summary: dict, cfg: Config, output: Path) -> None:
+    import matplotlib.pyplot as plt
+
     output.mkdir(parents=True, exist_ok=True)
     with (output / "trajectory.csv").open("w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=list(rows[0]))

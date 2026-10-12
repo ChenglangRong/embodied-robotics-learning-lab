@@ -5,7 +5,7 @@ from pathlib import Path
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
-from robot_lab.planar_arm import Config, TwoLinkReachEnv
+from robot_lab.planar_arm import Config, TwoLinkReachEnv, run_episode
 
 
 class TestPlanarArm(unittest.TestCase):
@@ -34,6 +34,19 @@ class TestPlanarArm(unittest.TestCase):
         env.reset(seed=0)
         _, _, _, info = env.step(np.array([1.0, -1.0]))
         self.assertTrue(info["action_clipped"])
+        np.testing.assert_allclose(info["applied_action"], [0.1, -0.1])
+
+    def test_unreachable_goal_has_geometric_lower_bound(self):
+        _, summary = run_episode(7, (1.05, 0.0), Config(max_steps=20))
+        self.assertFalse(summary["geometric_reachable"])
+        self.assertAlmostEqual(summary["geometric_error_lower_bound"], 0.05)
+        self.assertFalse(summary["success"])
+
+    def test_bad_action_is_rejected(self):
+        env = TwoLinkReachEnv()
+        env.reset(seed=0)
+        with self.assertRaises(ValueError):
+            env.step(np.array([np.nan, 0.0]))
 
 
 if __name__ == "__main__":
