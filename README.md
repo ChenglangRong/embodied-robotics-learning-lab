@@ -8,5 +8,6 @@
 - 机器人学基础讲解：[01-机器人学基础-讲解与自测.md](01-机器人学基础-讲解与自测.md)
 - 项目 01 手把手操作：[project-01-simulation-software/从零动手.md](project-01-simulation-software/从零动手.md)
 - 项目 02 URDF + MuJoCo + ROS 2：[project-02-urdf-mujoco-ros2](project-02-urdf-mujoco-ros2/)
+- 项目 03 四类机器人进阶实验：[project-03-robot-platforms](project-03-robot-platforms/)
 
 所有实验记录代码、配置、测试、运行命令和结论边界。每个项目先通过可复现验收，再进入下一项。

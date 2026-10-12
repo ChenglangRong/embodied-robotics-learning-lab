@@ -1,0 +1,34 @@
+{
+  "task": "panda",
+  "duration_s": 14,
+  "dt_s": 0.002,
+  "controller_dt_s": 0.01,
+  "options": {
+    "close_ctrl": 255
+  },
+  "model_xml_sha256": "e03069ee76d62b7082ebade369edcce1abad548fa15661bfd5b284a162028b90",
+  "source_sha256": "6beb4216eb05239588be59aa6c3ba7b02e0b536541358a0eff03e5da5510adb7",
+  "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+  "seed": 0,
+  "upstream_model_xml_sha256": "c5a92e6ff47e7282ea303ffe13530ffe150248a22bb4b349a9369881e52facf0",
+  "joint_names": [
+    "joint1",
+    "joint2",
+    "joint3",
+    "joint4",
+    "joint5",
+    "joint6",
+    "joint7",
+    "finger_joint1 (tendon)"
+  ],
+  "actuator_names": [
+    "actuator1",
+    "actuator2",
+    "actuator3",
+    "actuator4",
+    "actuator5",
+    "actuator6",
+    "actuator7",
+    "actuator8"
+  ]
+}

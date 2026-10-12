@@ -9,3 +9,9 @@ __pycache__/
 dist/
 build/
 *.egg-info/
+project-03-robot-platforms/outputs/probe*/
+project-03-robot-platforms/outputs/check-*/
+project-03-robot-platforms/outputs/user-runs/
+project-03-robot-platforms/outputs/tuning/
+project-03-robot-platforms/probe.py
+project-03-robot-platforms/tune_hand.py

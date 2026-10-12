@@ -1,0 +1,19 @@
+{
+  "task": "go2",
+  "passed": false,
+  "metrics": {
+    "max_height_m": 0.29996077544627586,
+    "final_height_m": 0.24964253719079757,
+    "max_tilt_deg": 3.737306483259578,
+    "contact_samples": 597,
+    "forward_displacement_m": -0.44492818118893057,
+    "min_base_height_m": 0.2266775442498462,
+    "max_foot_clearance_m": 0.010337763381371039,
+    "swing_samples": 0
+  },
+  "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+  "mujoco_version": "3.2.5",
+  "scope": "deterministic physical baseline; no learned policy; no real robot claim",
+  "completed_duration_s": 12.000000000000677,
+  "termination": "task criteria failed"
+}

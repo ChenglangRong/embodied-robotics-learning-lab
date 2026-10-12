@@ -1,0 +1,225 @@
+{
+  "model_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+  "checks": [
+    "panda: controller modifies controls; physical qpos/qvel preserved",
+    "go2: controller modifies controls; physical qpos/qvel preserved",
+    "h1: controller modifies controls; physical qpos/qvel preserved",
+    "allegro: controller modifies controls; physical qpos/qvel preserved",
+    "4 robots x 5 checks = 20 checks passed"
+  ],
+  "baselines": {
+    "panda": {
+      "passed": true,
+      "byte_identical_repeat": true,
+      "trajectory_sha256": "9e9e0795431f5753755cf8bb80dc7960f1f70aa013d6386b747aea836b64130a",
+      "result": {
+        "task": "panda",
+        "passed": true,
+        "metrics": {
+          "max_height_m": 0.4675365353964753,
+          "final_height_m": 0.2749127610401858,
+          "max_tilt_deg": 0.0,
+          "contact_samples": 347,
+          "placement_error_m": 0.0037928164626608992,
+          "lift_m": 0.19153653539647525
+        },
+        "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+        "mujoco_version": "3.2.5",
+        "scope": "deterministic physical baseline; no learned policy; no real robot claim",
+        "completed_duration_s": 14.000000000001345,
+        "termination": "completed"
+      }
+    },
+    "go2": {
+      "passed": true,
+      "byte_identical_repeat": true,
+      "trajectory_sha256": "437431d89170cab1cd3fde7fe823e8c6a0210833b7f758c4cd73655943c53a80",
+      "result": {
+        "task": "go2",
+        "passed": true,
+        "metrics": {
+          "max_height_m": 0.29996078808413795,
+          "final_height_m": 0.26353022845976454,
+          "max_tilt_deg": 5.119856288122644,
+          "contact_samples": 597,
+          "forward_displacement_m": 1.1693953738272391,
+          "min_base_height_m": 0.24206245693813386,
+          "max_foot_clearance_m": 0.03943597157047115,
+          "swing_samples": 148
+        },
+        "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+        "mujoco_version": "3.2.5",
+        "scope": "deterministic physical baseline; no learned policy; no real robot claim",
+        "completed_duration_s": 12.000000000000677,
+        "termination": "completed"
+      }
+    },
+    "h1": {
+      "passed": true,
+      "byte_identical_repeat": true,
+      "trajectory_sha256": "8e84b814ca3a4aa144ca8d9f5f69a024718fc980b3d5a71cca233f829e277f39",
+      "result": {
+        "task": "h1",
+        "passed": true,
+        "metrics": {
+          "max_height_m": 0.9799678007672838,
+          "final_height_m": 0.9282306890880654,
+          "max_tilt_deg": 5.569836478284266,
+          "contact_samples": 500,
+          "squat_depth_m": 0.08727009576587896,
+          "min_pelvis_height_m": 0.8599237408109652
+        },
+        "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+        "mujoco_version": "3.2.5",
+        "scope": "deterministic physical baseline; no learned policy; no real robot claim",
+        "completed_duration_s": 10.000000000000009,
+        "termination": "completed"
+      }
+    },
+    "allegro": {
+      "passed": true,
+      "byte_identical_repeat": true,
+      "trajectory_sha256": "0b9612d1336c902040d7fd2211844d4f52ea139aa53529e0906391bcc05932c3",
+      "result": {
+        "task": "allegro",
+        "passed": true,
+        "metrics": {
+          "max_height_m": 0.3582147114505496,
+          "final_height_m": 0.3580601787714322,
+          "max_tilt_deg": 0.0,
+          "contact_samples": 417,
+          "held_fraction_after_lift": 1.0,
+          "max_contacting_fingers": 2,
+          "support": "palm-assisted caging with prescribed wrist fixture"
+        },
+        "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+        "mujoco_version": "3.2.5",
+        "scope": "deterministic physical baseline; no learned policy; no real robot claim",
+        "completed_duration_s": 11.000000000000343,
+        "termination": "completed"
+      }
+    }
+  },
+  "failure_controls": {
+    "panda": {
+      "options": {
+        "close_ctrl": 255
+      },
+      "result": {
+        "task": "panda",
+        "passed": false,
+        "metrics": {
+          "max_height_m": 0.276,
+          "final_height_m": 0.2749127610401858,
+          "max_tilt_deg": 0.0,
+          "contact_samples": 0,
+          "placement_error_m": 0.3100000000000001,
+          "lift_m": 0.0
+        },
+        "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+        "mujoco_version": "3.2.5",
+        "scope": "deterministic physical baseline; no learned policy; no real robot claim",
+        "completed_duration_s": 14.000000000001345,
+        "termination": "task criteria failed"
+      }
+    },
+    "go2": {
+      "options": {
+        "kp": 55
+      },
+      "result": {
+        "task": "go2",
+        "passed": false,
+        "metrics": {
+          "max_height_m": 0.29996077544627586,
+          "final_height_m": 0.24964253719079757,
+          "max_tilt_deg": 3.737306483259578,
+          "contact_samples": 597,
+          "forward_displacement_m": -0.44492818118893057,
+          "min_base_height_m": 0.2266775442498462,
+          "max_foot_clearance_m": 0.010337763381371039,
+          "swing_samples": 0
+        },
+        "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+        "mujoco_version": "3.2.5",
+        "scope": "deterministic physical baseline; no learned policy; no real robot claim",
+        "completed_duration_s": 12.000000000000677,
+        "termination": "task criteria failed"
+      }
+    },
+    "h1": {
+      "options": {
+        "com_gain": 1.5
+      },
+      "result": {
+        "task": "h1",
+        "passed": false,
+        "metrics": {
+          "max_height_m": 0.9799667855285704,
+          "final_height_m": 0.09529187996995139,
+          "max_tilt_deg": 96.39867461183175,
+          "contact_samples": 499,
+          "squat_depth_m": 0.8423543099656543,
+          "min_pelvis_height_m": 0.08500351519169373
+        },
+        "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+        "mujoco_version": "3.2.5",
+        "scope": "deterministic physical baseline; no learned policy; no real robot claim",
+        "completed_duration_s": 10.000000000000009,
+        "termination": "task criteria failed"
+      }
+    },
+    "allegro": {
+      "options": {
+        "wrist_quat": "1 0 0 0",
+        "object_pos": [
+          0.045,
+          0,
+          0.175
+        ],
+        "radius": 0.035,
+        "closed": [
+          0,
+          1.15,
+          1.35,
+          0.8,
+          0,
+          1.15,
+          1.35,
+          0.8,
+          0,
+          1.15,
+          1.35,
+          0.8,
+          1.1,
+          0.6,
+          0.9,
+          0.7
+        ]
+      },
+      "result": {
+        "task": "allegro",
+        "passed": false,
+        "metrics": {
+          "max_height_m": 0.175,
+          "final_height_m": 0.03463281815753988,
+          "max_tilt_deg": 0.0,
+          "contact_samples": 265,
+          "held_fraction_after_lift": 0.0,
+          "max_contacting_fingers": 0,
+          "support": "palm-assisted caging with prescribed wrist fixture"
+        },
+        "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+        "mujoco_version": "3.2.5",
+        "scope": "deterministic physical baseline; no learned policy; no real robot claim",
+        "completed_duration_s": 11.000000000000343,
+        "termination": "task criteria failed"
+      }
+    }
+  },
+  "python_version": "3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:03:56) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.22621-SP0",
+  "numpy_version": "1.26.4",
+  "validation_date": "2026-10-12T16:38:36.608912+08:00",
+  "lab_source_sha256": "6beb4216eb05239588be59aa6c3ba7b02e0b536541358a0eff03e5da5510adb7"
+}

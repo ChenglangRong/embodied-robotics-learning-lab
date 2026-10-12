@@ -1,0 +1,46 @@
+[
+  {
+    "robot": "panda",
+    "published_per_topic": 50,
+    "received": {
+      "joint_states": 50,
+      "tracked_point": 50
+    },
+    "joint_count": 9,
+    "passed": true,
+    "scope": "recorded-state telemetry replay; reception check; no TF/model or command bridge"
+  },
+  {
+    "robot": "go2",
+    "published_per_topic": 50,
+    "received": {
+      "joint_states": 50,
+      "tracked_point": 50
+    },
+    "joint_count": 12,
+    "passed": true,
+    "scope": "recorded-state telemetry replay; reception check; no TF/model or command bridge"
+  },
+  {
+    "robot": "h1",
+    "published_per_topic": 50,
+    "received": {
+      "joint_states": 50,
+      "tracked_point": 50
+    },
+    "joint_count": 19,
+    "passed": true,
+    "scope": "recorded-state telemetry replay; reception check; no TF/model or command bridge"
+  },
+  {
+    "robot": "allegro",
+    "published_per_topic": 50,
+    "received": {
+      "joint_states": 50,
+      "tracked_point": 50
+    },
+    "joint_count": 16,
+    "passed": true,
+    "scope": "recorded-state telemetry replay; reception check; no TF/model or command bridge"
+  }
+]
