@@ -1,0 +1,4424 @@
+{
+  "status": "completed",
+  "mode": "quick",
+  "training_seeds": [
+    0
+  ],
+  "updates": 1800,
+  "platforms": {
+    "panda": {
+      "scope": "Joint-reference BC with a separate gripper command; position servos retained; simulator object pose and task clock observed.",
+      "observation_dim": 65,
+      "action_dim": 8,
+      "dataset_rows": {
+        "train": 4200,
+        "validation": 1400,
+        "test": 1400,
+        "ood": 1400
+      },
+      "dataset_sha256": {
+        "train": "19fec7489e69904047641f83fa16ebeb0facee0ea6aca06779057ec58a27a83c",
+        "validation": "80754b468b334f777117ec9bbb869562d8673965d3cc0817b6eab5292d42fb82",
+        "test": "5b759d03f14505beeedb89c8707c137c005c36ce06948d3491a825857877715a",
+        "ood": "c225066cc2e45f48f4d2d774ba4c3cde10ae45e7bc8430fbaf9c224acd5e6b97"
+      },
+      "baselines": {
+        "expert": {
+          "test": [
+            {
+              "passed": true,
+              "criteria": {
+                "original_project03": true,
+                "two_finger_transport": true,
+                "release": true,
+                "relative_object_retention": true
+              },
+              "metrics": {
+                "max_height_m": 0.4675391096031249,
+                "final_height_m": 0.2749127610401858,
+                "max_tilt_deg": 0.0,
+                "contact_samples": 346,
+                "placement_error_m": 0.0037805547469834007,
+                "lift_m": 0.1921277096031248,
+                "relative_object_drift_m": 0.0034758474194736895,
+                "late_finger_world_fz_N": 0.5823785272035099,
+                "late_palm_world_fz_N": 0.0
+              },
+              "spec": {
+                "id": "panda-test-000",
+                "split": "test",
+                "seed": 333000,
+                "q_noise": 0.002,
+                "options": {
+                  "close_ctrl": 0
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.0,
+                "object_xy": [
+                  0.5067040292482843,
+                  0.12530411530813715
+                ],
+                "goal_xy": [
+                  0.5008761742353638,
+                  -0.18509887097407393
+                ]
+              },
+              "policy": "expert",
+              "completed": true,
+              "expert_calls": 1400,
+              "control_steps": 1400,
+              "base_model_xml_sha256": "e03069ee76d62b7082ebade369edcce1abad548fa15661bfd5b284a162028b90",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC with a separate gripper command; position servos retained; simulator object pose and task clock observed.",
+              "termination": "completed"
+            },
+            {
+              "passed": true,
+              "criteria": {
+                "original_project03": true,
+                "two_finger_transport": true,
+                "release": true,
+                "relative_object_retention": true
+              },
+              "metrics": {
+                "max_height_m": 0.46754000963353887,
+                "final_height_m": 0.2749127610401858,
+                "max_tilt_deg": 0.0,
+                "contact_samples": 346,
+                "placement_error_m": 0.0037551766490643546,
+                "lift_m": 0.19212860963353878,
+                "relative_object_drift_m": 0.003464723029885076,
+                "late_finger_world_fz_N": 0.5811577522236524,
+                "late_palm_world_fz_N": 0.0
+              },
+              "spec": {
+                "id": "panda-test-001",
+                "split": "test",
+                "seed": 333001,
+                "q_noise": 0.002,
+                "options": {
+                  "close_ctrl": 0
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.0,
+                "object_xy": [
+                  0.5075389698968925,
+                  0.12190921958179105
+                ],
+                "goal_xy": [
+                  0.5045839824679595,
+                  -0.1886990219701485
+                ]
+              },
+              "policy": "expert",
+              "completed": true,
+              "expert_calls": 1400,
+              "control_steps": 1400,
+              "base_model_xml_sha256": "e03069ee76d62b7082ebade369edcce1abad548fa15661bfd5b284a162028b90",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC with a separate gripper command; position servos retained; simulator object pose and task clock observed.",
+              "termination": "completed"
+            }
+          ],
+          "ood": [
+            {
+              "passed": true,
+              "criteria": {
+                "original_project03": true,
+                "two_finger_transport": true,
+                "release": true,
+                "relative_object_retention": true
+              },
+              "metrics": {
+                "max_height_m": 0.46645878265999885,
+                "final_height_m": 0.2749127610401858,
+                "max_tilt_deg": 0.0,
+                "contact_samples": 345,
+                "placement_error_m": 0.0037032389920190543,
+                "lift_m": 0.19104738265999877,
+                "relative_object_drift_m": 0.004324575258205224,
+                "late_finger_world_fz_N": 0.8714304184983086,
+                "late_palm_world_fz_N": 0.0
+              },
+              "spec": {
+                "id": "panda-ood-000",
+                "split": "ood",
+                "seed": 444000,
+                "q_noise": 0.002,
+                "options": {
+                  "close_ctrl": 0
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.5,
+                "object_xy": [
+                  0.5051880655016301,
+                  0.11382142480674756
+                ],
+                "goal_xy": [
+                  0.5032790526010608,
+                  -0.18460656339599923
+                ]
+              },
+              "policy": "expert",
+              "completed": true,
+              "expert_calls": 1400,
+              "control_steps": 1400,
+              "base_model_xml_sha256": "e03069ee76d62b7082ebade369edcce1abad548fa15661bfd5b284a162028b90",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC with a separate gripper command; position servos retained; simulator object pose and task clock observed.",
+              "termination": "completed"
+            },
+            {
+              "passed": true,
+              "criteria": {
+                "original_project03": true,
+                "two_finger_transport": true,
+                "release": true,
+                "relative_object_retention": true
+              },
+              "metrics": {
+                "max_height_m": 0.46638364608131583,
+                "final_height_m": 0.2749127610401858,
+                "max_tilt_deg": 0.0,
+                "contact_samples": 346,
+                "placement_error_m": 0.0038919393508714175,
+                "lift_m": 0.19097224608131574,
+                "relative_object_drift_m": 0.004507571116429384,
+                "late_finger_world_fz_N": 0.8679799348378647,
+                "late_palm_world_fz_N": 0.0
+              },
+              "spec": {
+                "id": "panda-ood-001",
+                "split": "ood",
+                "seed": 444001,
+                "q_noise": 0.002,
+                "options": {
+                  "close_ctrl": 0
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.5,
+                "object_xy": [
+                  0.4994118458333473,
+                  0.1209027491994698
+                ],
+                "goal_xy": [
+                  0.49225419424578637,
+                  -0.19184980650585814
+                ]
+              },
+              "policy": "expert",
+              "completed": true,
+              "expert_calls": 1400,
+              "control_steps": 1400,
+              "base_model_xml_sha256": "e03069ee76d62b7082ebade369edcce1abad548fa15661bfd5b284a162028b90",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC with a separate gripper command; position servos retained; simulator object pose and task clock observed.",
+              "termination": "completed"
+            }
+          ]
+        },
+        "hold": {
+          "test": [
+            {
+              "passed": false,
+              "criteria": {
+                "original_project03": false,
+                "two_finger_transport": false,
+                "release": true,
+                "relative_object_retention": true
+              },
+              "metrics": {
+                "max_height_m": 0.2754114000000001,
+                "final_height_m": 0.2749127610401858,
+                "max_tilt_deg": 0.0,
+                "contact_samples": 0,
+                "placement_error_m": 0.3104576908162627,
+                "lift_m": 0.0,
+                "relative_object_drift_m": 0.0,
+                "late_finger_world_fz_N": 0.0,
+                "late_palm_world_fz_N": 0.0
+              },
+              "spec": {
+                "id": "panda-test-000",
+                "split": "test",
+                "seed": 333000,
+                "q_noise": 0.002,
+                "options": {
+                  "close_ctrl": 0
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.0,
+                "object_xy": [
+                  0.5067040292482843,
+                  0.12530411530813715
+                ],
+                "goal_xy": [
+                  0.5008761742353638,
+                  -0.18509887097407393
+                ]
+              },
+              "policy": "hold",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1400,
+              "base_model_xml_sha256": "e03069ee76d62b7082ebade369edcce1abad548fa15661bfd5b284a162028b90",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC with a separate gripper command; position servos retained; simulator object pose and task clock observed.",
+              "termination": "completed"
+            },
+            {
+              "passed": false,
+              "criteria": {
+                "original_project03": false,
+                "two_finger_transport": false,
+                "release": true,
+                "relative_object_retention": true
+              },
+              "metrics": {
+                "max_height_m": 0.2754114000000001,
+                "final_height_m": 0.2749127610401858,
+                "max_tilt_deg": 0.0,
+                "contact_samples": 0,
+                "placement_error_m": 0.3106222974460997,
+                "lift_m": 0.0,
+                "relative_object_drift_m": 0.0,
+                "late_finger_world_fz_N": 0.0,
+                "late_palm_world_fz_N": 0.0
+              },
+              "spec": {
+                "id": "panda-test-001",
+                "split": "test",
+                "seed": 333001,
+                "q_noise": 0.002,
+                "options": {
+                  "close_ctrl": 0
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.0,
+                "object_xy": [
+                  0.5075389698968925,
+                  0.12190921958179105
+                ],
+                "goal_xy": [
+                  0.5045839824679595,
+                  -0.1886990219701485
+                ]
+              },
+              "policy": "hold",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1400,
+              "base_model_xml_sha256": "e03069ee76d62b7082ebade369edcce1abad548fa15661bfd5b284a162028b90",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC with a separate gripper command; position servos retained; simulator object pose and task clock observed.",
+              "termination": "completed"
+            }
+          ],
+          "ood": [
+            {
+              "passed": false,
+              "criteria": {
+                "original_project03": false,
+                "two_finger_transport": false,
+                "release": true,
+                "relative_object_retention": true
+              },
+              "metrics": {
+                "max_height_m": 0.2754114000000001,
+                "final_height_m": 0.2749127610401858,
+                "max_tilt_deg": 0.0,
+                "contact_samples": 0,
+                "placement_error_m": 0.2984340940190872,
+                "lift_m": 0.0,
+                "relative_object_drift_m": 0.0,
+                "late_finger_world_fz_N": 0.0,
+                "late_palm_world_fz_N": 0.0
+              },
+              "spec": {
+                "id": "panda-ood-000",
+                "split": "ood",
+                "seed": 444000,
+                "q_noise": 0.002,
+                "options": {
+                  "close_ctrl": 0
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.5,
+                "object_xy": [
+                  0.5051880655016301,
+                  0.11382142480674756
+                ],
+                "goal_xy": [
+                  0.5032790526010608,
+                  -0.18460656339599923
+                ]
+              },
+              "policy": "hold",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1400,
+              "base_model_xml_sha256": "e03069ee76d62b7082ebade369edcce1abad548fa15661bfd5b284a162028b90",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC with a separate gripper command; position servos retained; simulator object pose and task clock observed.",
+              "termination": "completed"
+            },
+            {
+              "passed": false,
+              "criteria": {
+                "original_project03": false,
+                "two_finger_transport": false,
+                "release": true,
+                "relative_object_retention": true
+              },
+              "metrics": {
+                "max_height_m": 0.2754114000000001,
+                "final_height_m": 0.2749127610401858,
+                "max_tilt_deg": 0.0,
+                "contact_samples": 0,
+                "placement_error_m": 0.3128344499515089,
+                "lift_m": 0.0,
+                "relative_object_drift_m": 1.3877787807814457e-17,
+                "late_finger_world_fz_N": 0.0,
+                "late_palm_world_fz_N": 0.0
+              },
+              "spec": {
+                "id": "panda-ood-001",
+                "split": "ood",
+                "seed": 444001,
+                "q_noise": 0.002,
+                "options": {
+                  "close_ctrl": 0
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.5,
+                "object_xy": [
+                  0.4994118458333473,
+                  0.1209027491994698
+                ],
+                "goal_xy": [
+                  0.49225419424578637,
+                  -0.19184980650585814
+                ]
+              },
+              "policy": "hold",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1400,
+              "base_model_xml_sha256": "e03069ee76d62b7082ebade369edcce1abad548fa15661bfd5b284a162028b90",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC with a separate gripper command; position servos retained; simulator object pose and task clock observed.",
+              "termination": "completed"
+            }
+          ]
+        },
+        "phase_bc": {
+          "test": [
+            {
+              "passed": true,
+              "criteria": {
+                "original_project03": true,
+                "two_finger_transport": true,
+                "release": true,
+                "relative_object_retention": true
+              },
+              "metrics": {
+                "max_height_m": 0.4670442570420809,
+                "final_height_m": 0.2749127610401858,
+                "max_tilt_deg": 0.0,
+                "contact_samples": 347,
+                "placement_error_m": 0.012629639569640734,
+                "lift_m": 0.19163285704208083,
+                "relative_object_drift_m": 0.0036646831910442834,
+                "late_finger_world_fz_N": 0.5795820367496805,
+                "late_palm_world_fz_N": 0.0
+              },
+              "spec": {
+                "id": "panda-test-000",
+                "split": "test",
+                "seed": 333000,
+                "q_noise": 0.002,
+                "options": {
+                  "close_ctrl": 0
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.0,
+                "object_xy": [
+                  0.5067040292482843,
+                  0.12530411530813715
+                ],
+                "goal_xy": [
+                  0.5008761742353638,
+                  -0.18509887097407393
+                ]
+              },
+              "policy": "phase_bc",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1400,
+              "base_model_xml_sha256": "e03069ee76d62b7082ebade369edcce1abad548fa15661bfd5b284a162028b90",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC with a separate gripper command; position servos retained; simulator object pose and task clock observed.",
+              "termination": "completed",
+              "policy_scope": "Clock-only training-reference average and interpolation; no state feedback or gait-parameter adaptation"
+            },
+            {
+              "passed": true,
+              "criteria": {
+                "original_project03": true,
+                "two_finger_transport": true,
+                "release": true,
+                "relative_object_retention": true
+              },
+              "metrics": {
+                "max_height_m": 0.46700769732973907,
+                "final_height_m": 0.2749127610401858,
+                "max_tilt_deg": 0.0,
+                "contact_samples": 347,
+                "placement_error_m": 0.009461972222300942,
+                "lift_m": 0.19159629732973898,
+                "relative_object_drift_m": 0.0036962576773999197,
+                "late_finger_world_fz_N": 0.5795876484066751,
+                "late_palm_world_fz_N": 0.0
+              },
+              "spec": {
+                "id": "panda-test-001",
+                "split": "test",
+                "seed": 333001,
+                "q_noise": 0.002,
+                "options": {
+                  "close_ctrl": 0
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.0,
+                "object_xy": [
+                  0.5075389698968925,
+                  0.12190921958179105
+                ],
+                "goal_xy": [
+                  0.5045839824679595,
+                  -0.1886990219701485
+                ]
+              },
+              "policy": "phase_bc",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1400,
+              "base_model_xml_sha256": "e03069ee76d62b7082ebade369edcce1abad548fa15661bfd5b284a162028b90",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC with a separate gripper command; position servos retained; simulator object pose and task clock observed.",
+              "termination": "completed",
+              "policy_scope": "Clock-only training-reference average and interpolation; no state feedback or gait-parameter adaptation"
+            }
+          ],
+          "ood": [
+            {
+              "passed": true,
+              "criteria": {
+                "original_project03": true,
+                "two_finger_transport": true,
+                "release": true,
+                "relative_object_retention": true
+              },
+              "metrics": {
+                "max_height_m": 0.46615192514221937,
+                "final_height_m": 0.2749127610401858,
+                "max_tilt_deg": 0.0,
+                "contact_samples": 345,
+                "placement_error_m": 0.007890394443522453,
+                "lift_m": 0.19074052514221929,
+                "relative_object_drift_m": 0.004663595113198303,
+                "late_finger_world_fz_N": 0.8696570088129216,
+                "late_palm_world_fz_N": 0.0
+              },
+              "spec": {
+                "id": "panda-ood-000",
+                "split": "ood",
+                "seed": 444000,
+                "q_noise": 0.002,
+                "options": {
+                  "close_ctrl": 0
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.5,
+                "object_xy": [
+                  0.5051880655016301,
+                  0.11382142480674756
+                ],
+                "goal_xy": [
+                  0.5032790526010608,
+                  -0.18460656339599923
+                ]
+              },
+              "policy": "phase_bc",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1400,
+              "base_model_xml_sha256": "e03069ee76d62b7082ebade369edcce1abad548fa15661bfd5b284a162028b90",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC with a separate gripper command; position servos retained; simulator object pose and task clock observed.",
+              "termination": "completed",
+              "policy_scope": "Clock-only training-reference average and interpolation; no state feedback or gait-parameter adaptation"
+            },
+            {
+              "passed": true,
+              "criteria": {
+                "original_project03": true,
+                "two_finger_transport": true,
+                "release": true,
+                "relative_object_retention": true
+              },
+              "metrics": {
+                "max_height_m": 0.46642456358339723,
+                "final_height_m": 0.2749127610401858,
+                "max_tilt_deg": 0.0,
+                "contact_samples": 346,
+                "placement_error_m": 0.014923582924848093,
+                "lift_m": 0.19101316358339715,
+                "relative_object_drift_m": 0.0043987493428516294,
+                "late_finger_world_fz_N": 0.8694900323374,
+                "late_palm_world_fz_N": 0.0
+              },
+              "spec": {
+                "id": "panda-ood-001",
+                "split": "ood",
+                "seed": 444001,
+                "q_noise": 0.002,
+                "options": {
+                  "close_ctrl": 0
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.5,
+                "object_xy": [
+                  0.4994118458333473,
+                  0.1209027491994698
+                ],
+                "goal_xy": [
+                  0.49225419424578637,
+                  -0.19184980650585814
+                ]
+              },
+              "policy": "phase_bc",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1400,
+              "base_model_xml_sha256": "e03069ee76d62b7082ebade369edcce1abad548fa15661bfd5b284a162028b90",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC with a separate gripper command; position servos retained; simulator object pose and task clock observed.",
+              "termination": "completed",
+              "policy_scope": "Clock-only training-reference average and interpolation; no state feedback or gait-parameter adaptation"
+            }
+          ]
+        }
+      },
+      "results": {
+        "0": {
+          "training_seconds": 1.3027029000004404,
+          "selected_update": 1800,
+          "normalized_test_action_mse": 0.15770928456844396,
+          "policies": {
+            "bc": {
+              "test": [
+                {
+                  "passed": false,
+                  "criteria": {
+                    "original_project03": false,
+                    "two_finger_transport": false,
+                    "release": true,
+                    "relative_object_retention": false
+                  },
+                  "metrics": {
+                    "max_height_m": 0.29049153171716713,
+                    "final_height_m": 0.2749127610401866,
+                    "max_tilt_deg": 0.0,
+                    "contact_samples": 6,
+                    "placement_error_m": 0.3127676567996943,
+                    "lift_m": 0.015080131717167045,
+                    "relative_object_drift_m": 0.1782412130782869,
+                    "late_finger_world_fz_N": 0.0,
+                    "late_palm_world_fz_N": 0.0
+                  },
+                  "spec": {
+                    "id": "panda-test-000",
+                    "split": "test",
+                    "seed": 333000,
+                    "q_noise": 0.002,
+                    "options": {
+                      "close_ctrl": 0
+                    },
+                    "push_N": 0.0,
+                    "mass_scale": 1.0,
+                    "object_xy": [
+                      0.5067040292482843,
+                      0.12530411530813715
+                    ],
+                    "goal_xy": [
+                      0.5008761742353638,
+                      -0.18509887097407393
+                    ]
+                  },
+                  "policy": "bc",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1400,
+                  "base_model_xml_sha256": "e03069ee76d62b7082ebade369edcce1abad548fa15661bfd5b284a162028b90",
+                  "action_clipped_fraction": 0.605,
+                  "scope": "Joint-reference BC with a separate gripper command; position servos retained; simulator object pose and task clock observed.",
+                  "termination": "completed"
+                },
+                {
+                  "passed": false,
+                  "criteria": {
+                    "original_project03": false,
+                    "two_finger_transport": false,
+                    "release": true,
+                    "relative_object_retention": false
+                  },
+                  "metrics": {
+                    "max_height_m": 0.2857480949120402,
+                    "final_height_m": 0.2749127610401866,
+                    "max_tilt_deg": 0.0,
+                    "contact_samples": 1,
+                    "placement_error_m": 0.371246885380506,
+                    "lift_m": 0.01033669491204009,
+                    "relative_object_drift_m": 0.1337170925683275,
+                    "late_finger_world_fz_N": 0.0,
+                    "late_palm_world_fz_N": 0.0
+                  },
+                  "spec": {
+                    "id": "panda-test-001",
+                    "split": "test",
+                    "seed": 333001,
+                    "q_noise": 0.002,
+                    "options": {
+                      "close_ctrl": 0
+                    },
+                    "push_N": 0.0,
+                    "mass_scale": 1.0,
+                    "object_xy": [
+                      0.5075389698968925,
+                      0.12190921958179105
+                    ],
+                    "goal_xy": [
+                      0.5045839824679595,
+                      -0.1886990219701485
+                    ]
+                  },
+                  "policy": "bc",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1400,
+                  "base_model_xml_sha256": "e03069ee76d62b7082ebade369edcce1abad548fa15661bfd5b284a162028b90",
+                  "action_clipped_fraction": 0.545,
+                  "scope": "Joint-reference BC with a separate gripper command; position servos retained; simulator object pose and task clock observed.",
+                  "termination": "completed"
+                }
+              ],
+              "ood": [
+                {
+                  "passed": false,
+                  "criteria": {
+                    "original_project03": false,
+                    "two_finger_transport": false,
+                    "release": true,
+                    "relative_object_retention": false
+                  },
+                  "metrics": {
+                    "max_height_m": 0.28640991651501146,
+                    "final_height_m": 0.2749127610401861,
+                    "max_tilt_deg": 0.0,
+                    "contact_samples": 8,
+                    "placement_error_m": 0.37386194356489155,
+                    "lift_m": 0.01099851651501138,
+                    "relative_object_drift_m": 0.07790421662612569,
+                    "late_finger_world_fz_N": 0.0,
+                    "late_palm_world_fz_N": 0.0
+                  },
+                  "spec": {
+                    "id": "panda-ood-000",
+                    "split": "ood",
+                    "seed": 444000,
+                    "q_noise": 0.002,
+                    "options": {
+                      "close_ctrl": 0
+                    },
+                    "push_N": 0.0,
+                    "mass_scale": 1.5,
+                    "object_xy": [
+                      0.5051880655016301,
+                      0.11382142480674756
+                    ],
+                    "goal_xy": [
+                      0.5032790526010608,
+                      -0.18460656339599923
+                    ]
+                  },
+                  "policy": "bc",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1400,
+                  "base_model_xml_sha256": "e03069ee76d62b7082ebade369edcce1abad548fa15661bfd5b284a162028b90",
+                  "action_clipped_fraction": 0.4635714285714286,
+                  "scope": "Joint-reference BC with a separate gripper command; position servos retained; simulator object pose and task clock observed.",
+                  "termination": "completed"
+                },
+                {
+                  "passed": false,
+                  "criteria": {
+                    "original_project03": false,
+                    "two_finger_transport": false,
+                    "release": true,
+                    "relative_object_retention": false
+                  },
+                  "metrics": {
+                    "max_height_m": 0.28222818896493723,
+                    "final_height_m": 0.27491276104018675,
+                    "max_tilt_deg": 0.0,
+                    "contact_samples": 8,
+                    "placement_error_m": 0.3117684894425364,
+                    "lift_m": 0.006816788964937148,
+                    "relative_object_drift_m": 0.152499223837156,
+                    "late_finger_world_fz_N": 0.0,
+                    "late_palm_world_fz_N": 0.0
+                  },
+                  "spec": {
+                    "id": "panda-ood-001",
+                    "split": "ood",
+                    "seed": 444001,
+                    "q_noise": 0.002,
+                    "options": {
+                      "close_ctrl": 0
+                    },
+                    "push_N": 0.0,
+                    "mass_scale": 1.5,
+                    "object_xy": [
+                      0.4994118458333473,
+                      0.1209027491994698
+                    ],
+                    "goal_xy": [
+                      0.49225419424578637,
+                      -0.19184980650585814
+                    ]
+                  },
+                  "policy": "bc",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1400,
+                  "base_model_xml_sha256": "e03069ee76d62b7082ebade369edcce1abad548fa15661bfd5b284a162028b90",
+                  "action_clipped_fraction": 0.5578571428571428,
+                  "scope": "Joint-reference BC with a separate gripper command; position servos retained; simulator object pose and task clock observed.",
+                  "termination": "completed"
+                }
+              ]
+            },
+            "frozen_state": {
+              "test": [
+                {
+                  "passed": false,
+                  "criteria": {
+                    "original_project03": false,
+                    "two_finger_transport": false,
+                    "release": true,
+                    "relative_object_retention": false
+                  },
+                  "metrics": {
+                    "max_height_m": 0.2754114000000001,
+                    "final_height_m": 0.2749127610401858,
+                    "max_tilt_deg": 0.0,
+                    "contact_samples": 0,
+                    "placement_error_m": 0.3104576908162627,
+                    "lift_m": 0.0,
+                    "relative_object_drift_m": 0.10850054090103686,
+                    "late_finger_world_fz_N": 0.0,
+                    "late_palm_world_fz_N": 0.0
+                  },
+                  "spec": {
+                    "id": "panda-test-000",
+                    "split": "test",
+                    "seed": 333000,
+                    "q_noise": 0.002,
+                    "options": {
+                      "close_ctrl": 0
+                    },
+                    "push_N": 0.0,
+                    "mass_scale": 1.0,
+                    "object_xy": [
+                      0.5067040292482843,
+                      0.12530411530813715
+                    ],
+                    "goal_xy": [
+                      0.5008761742353638,
+                      -0.18509887097407393
+                    ]
+                  },
+                  "policy": "frozen_state",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1400,
+                  "base_model_xml_sha256": "e03069ee76d62b7082ebade369edcce1abad548fa15661bfd5b284a162028b90",
+                  "action_clipped_fraction": 0.10571428571428572,
+                  "scope": "Joint-reference BC with a separate gripper command; position servos retained; simulator object pose and task clock observed.",
+                  "termination": "completed"
+                },
+                {
+                  "passed": false,
+                  "criteria": {
+                    "original_project03": false,
+                    "two_finger_transport": false,
+                    "release": true,
+                    "relative_object_retention": false
+                  },
+                  "metrics": {
+                    "max_height_m": 0.2754114000000001,
+                    "final_height_m": 0.2749127610401858,
+                    "max_tilt_deg": 0.0,
+                    "contact_samples": 0,
+                    "placement_error_m": 0.3106222974460997,
+                    "lift_m": 0.0,
+                    "relative_object_drift_m": 0.0915222149379056,
+                    "late_finger_world_fz_N": 0.0,
+                    "late_palm_world_fz_N": 0.0
+                  },
+                  "spec": {
+                    "id": "panda-test-001",
+                    "split": "test",
+                    "seed": 333001,
+                    "q_noise": 0.002,
+                    "options": {
+                      "close_ctrl": 0
+                    },
+                    "push_N": 0.0,
+                    "mass_scale": 1.0,
+                    "object_xy": [
+                      0.5075389698968925,
+                      0.12190921958179105
+                    ],
+                    "goal_xy": [
+                      0.5045839824679595,
+                      -0.1886990219701485
+                    ]
+                  },
+                  "policy": "frozen_state",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1400,
+                  "base_model_xml_sha256": "e03069ee76d62b7082ebade369edcce1abad548fa15661bfd5b284a162028b90",
+                  "action_clipped_fraction": 0.11571428571428571,
+                  "scope": "Joint-reference BC with a separate gripper command; position servos retained; simulator object pose and task clock observed.",
+                  "termination": "completed"
+                }
+              ],
+              "ood": [
+                {
+                  "passed": false,
+                  "criteria": {
+                    "original_project03": false,
+                    "two_finger_transport": false,
+                    "release": true,
+                    "relative_object_retention": false
+                  },
+                  "metrics": {
+                    "max_height_m": 0.2754114000000001,
+                    "final_height_m": 0.2749127610401858,
+                    "max_tilt_deg": 0.0,
+                    "contact_samples": 0,
+                    "placement_error_m": 0.2984340940190872,
+                    "lift_m": 0.0,
+                    "relative_object_drift_m": 0.1274633143017092,
+                    "late_finger_world_fz_N": 0.0,
+                    "late_palm_world_fz_N": 0.0
+                  },
+                  "spec": {
+                    "id": "panda-ood-000",
+                    "split": "ood",
+                    "seed": 444000,
+                    "q_noise": 0.002,
+                    "options": {
+                      "close_ctrl": 0
+                    },
+                    "push_N": 0.0,
+                    "mass_scale": 1.5,
+                    "object_xy": [
+                      0.5051880655016301,
+                      0.11382142480674756
+                    ],
+                    "goal_xy": [
+                      0.5032790526010608,
+                      -0.18460656339599923
+                    ]
+                  },
+                  "policy": "frozen_state",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1400,
+                  "base_model_xml_sha256": "e03069ee76d62b7082ebade369edcce1abad548fa15661bfd5b284a162028b90",
+                  "action_clipped_fraction": 0.13214285714285715,
+                  "scope": "Joint-reference BC with a separate gripper command; position servos retained; simulator object pose and task clock observed.",
+                  "termination": "completed"
+                },
+                {
+                  "passed": false,
+                  "criteria": {
+                    "original_project03": false,
+                    "two_finger_transport": false,
+                    "release": true,
+                    "relative_object_retention": false
+                  },
+                  "metrics": {
+                    "max_height_m": 0.2754114000000001,
+                    "final_height_m": 0.2749127610401858,
+                    "max_tilt_deg": 0.0,
+                    "contact_samples": 0,
+                    "placement_error_m": 0.3128344499515089,
+                    "lift_m": 0.0,
+                    "relative_object_drift_m": 0.09844806660289517,
+                    "late_finger_world_fz_N": 0.0,
+                    "late_palm_world_fz_N": 0.0
+                  },
+                  "spec": {
+                    "id": "panda-ood-001",
+                    "split": "ood",
+                    "seed": 444001,
+                    "q_noise": 0.002,
+                    "options": {
+                      "close_ctrl": 0
+                    },
+                    "push_N": 0.0,
+                    "mass_scale": 1.5,
+                    "object_xy": [
+                      0.4994118458333473,
+                      0.1209027491994698
+                    ],
+                    "goal_xy": [
+                      0.49225419424578637,
+                      -0.19184980650585814
+                    ]
+                  },
+                  "policy": "frozen_state",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1400,
+                  "base_model_xml_sha256": "e03069ee76d62b7082ebade369edcce1abad548fa15661bfd5b284a162028b90",
+                  "action_clipped_fraction": 0.24928571428571428,
+                  "scope": "Joint-reference BC with a separate gripper command; position servos retained; simulator object pose and task clock observed.",
+                  "termination": "completed"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "expert": {
+          "test": {
+            "per_seed_success_rate": [
+              1.0
+            ],
+            "mean_success_rate": 1.0,
+            "sample_std": null
+          },
+          "ood": {
+            "per_seed_success_rate": [
+              1.0
+            ],
+            "mean_success_rate": 1.0,
+            "sample_std": null
+          }
+        },
+        "hold": {
+          "test": {
+            "per_seed_success_rate": [
+              0.0
+            ],
+            "mean_success_rate": 0.0,
+            "sample_std": null
+          },
+          "ood": {
+            "per_seed_success_rate": [
+              0.0
+            ],
+            "mean_success_rate": 0.0,
+            "sample_std": null
+          }
+        },
+        "bc": {
+          "test": {
+            "per_seed_success_rate": [
+              0.0
+            ],
+            "mean_success_rate": 0.0,
+            "sample_std": null
+          },
+          "ood": {
+            "per_seed_success_rate": [
+              0.0
+            ],
+            "mean_success_rate": 0.0,
+            "sample_std": null
+          }
+        },
+        "frozen_state": {
+          "test": {
+            "per_seed_success_rate": [
+              0.0
+            ],
+            "mean_success_rate": 0.0,
+            "sample_std": null
+          },
+          "ood": {
+            "per_seed_success_rate": [
+              0.0
+            ],
+            "mean_success_rate": 0.0,
+            "sample_std": null
+          }
+        },
+        "phase_bc": {
+          "test": {
+            "per_seed_success_rate": [
+              1.0
+            ],
+            "mean_success_rate": 1.0,
+            "sample_std": null
+          },
+          "ood": {
+            "per_seed_success_rate": [
+              1.0
+            ],
+            "mean_success_rate": 1.0,
+            "sample_std": null
+          }
+        }
+      },
+      "reused_dataset_directory": "D:\\RCL\\深圳理工大学-具身智能\\project-04-imitation-learning\\outputs\\platform-baseline-20261012\\panda"
+    },
+    "go2": {
+      "scope": "Joint-reference BC; torque PD retained; flat terrain; phase and commanded gait parameters observed.",
+      "observation_dim": 74,
+      "action_dim": 12,
+      "dataset_rows": {
+        "train": 3600,
+        "validation": 1200,
+        "test": 1200,
+        "ood": 1200
+      },
+      "dataset_sha256": {
+        "train": "3bdd9fddb1f1c2de3a7ffd724f5865380cc8b8d24c84ac0921e4f17a792a8371",
+        "validation": "73afdefe153dddd45807f8f7567404eae3cca01f30c77d14139b11aa8b693268",
+        "test": "f147d8a670c8bef401e1dd7a21b45afd56e396c2926167b90d1511b272cd2fa6",
+        "ood": "e23d8f565ea7fe741027794fac8eebbcdf59eede847cd46cb796ab58993fd48c"
+      },
+      "baselines": {
+        "expert": {
+          "test": [
+            {
+              "passed": true,
+              "criteria": {
+                "original_project03": true
+              },
+              "metrics": {
+                "max_height_m": 0.2994114147939683,
+                "final_height_m": 0.2631996987466165,
+                "max_tilt_deg": 4.874003169389678,
+                "contact_samples": 598,
+                "forward_displacement_m": 1.3579741578762885,
+                "min_base_height_m": 0.2418168422590779,
+                "max_foot_clearance_m": 0.04046230208208199,
+                "swing_samples": 147,
+                "mean_contact_tangent_speed_m_s": 0.1560273917980147,
+                "mean_saturated_actuator_fraction": 0.0
+              },
+              "spec": {
+                "id": "go2-test-000",
+                "split": "test",
+                "seed": 333000,
+                "q_noise": 0.002,
+                "options": {
+                  "amp": 0.059190018280177704,
+                  "lift": 0.07054760889710236,
+                  "freq": 1.8663014413517143,
+                  "kp": 100,
+                  "kd": 3.5
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.0
+              },
+              "policy": "expert",
+              "completed": true,
+              "expert_calls": 1200,
+              "control_steps": 1200,
+              "base_model_xml_sha256": "08db8c886d72fe639fc9f1366280cd5c53029328f0b45164175531199698896f",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC; torque PD retained; flat terrain; phase and commanded gait parameters observed.",
+              "termination": "completed"
+            },
+            {
+              "passed": true,
+              "criteria": {
+                "original_project03": true
+              },
+              "metrics": {
+                "max_height_m": 0.2994113718616888,
+                "final_height_m": 0.2635776415450379,
+                "max_tilt_deg": 4.689983369795828,
+                "contact_samples": 598,
+                "forward_displacement_m": 1.2947612795536154,
+                "min_base_height_m": 0.24262189563973624,
+                "max_foot_clearance_m": 0.04011198832868083,
+                "swing_samples": 151,
+                "mean_contact_tangent_speed_m_s": 0.1460864793499559,
+                "mean_saturated_actuator_fraction": 0.0
+              },
+              "spec": {
+                "id": "go2-test-001",
+                "split": "test",
+                "seed": 333001,
+                "q_noise": 0.002,
+                "options": {
+                  "amp": 0.058063205641203805,
+                  "lift": 0.07119326223861941,
+                  "freq": 1.8942371237111562,
+                  "kp": 100,
+                  "kd": 3.5
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.0
+              },
+              "policy": "expert",
+              "completed": true,
+              "expert_calls": 1200,
+              "control_steps": 1200,
+              "base_model_xml_sha256": "08db8c886d72fe639fc9f1366280cd5c53029328f0b45164175531199698896f",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC; torque PD retained; flat terrain; phase and commanded gait parameters observed.",
+              "termination": "completed"
+            }
+          ],
+          "ood": [
+            {
+              "passed": true,
+              "criteria": {
+                "original_project03": true
+              },
+              "metrics": {
+                "max_height_m": 0.29941216872419407,
+                "final_height_m": 0.26341712461523115,
+                "max_tilt_deg": 6.324515837634091,
+                "contact_samples": 598,
+                "forward_displacement_m": 1.3600968901684456,
+                "min_base_height_m": 0.24125928763807786,
+                "max_foot_clearance_m": 0.04483474685254132,
+                "swing_samples": 157,
+                "mean_contact_tangent_speed_m_s": 0.1601004923969609,
+                "mean_saturated_actuator_fraction": 0.0
+              },
+              "spec": {
+                "id": "go2-ood-000",
+                "split": "ood",
+                "seed": 444000,
+                "q_noise": 0.002,
+                "options": {
+                  "amp": 0.058242540938518786,
+                  "lift": 0.07204940787566301,
+                  "freq": 1.7227678100843444,
+                  "kp": 100,
+                  "kd": 3.5
+                },
+                "push_N": 8.0,
+                "mass_scale": 1.0
+              },
+              "policy": "expert",
+              "completed": true,
+              "expert_calls": 1200,
+              "control_steps": 1200,
+              "base_model_xml_sha256": "08db8c886d72fe639fc9f1366280cd5c53029328f0b45164175531199698896f",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC; torque PD retained; flat terrain; phase and commanded gait parameters observed.",
+              "termination": "completed"
+            },
+            {
+              "passed": true,
+              "criteria": {
+                "original_project03": true
+              },
+              "metrics": {
+                "max_height_m": 0.29941297647283605,
+                "final_height_m": 0.26337840709643306,
+                "max_tilt_deg": 6.593270769305167,
+                "contact_samples": 598,
+                "forward_displacement_m": 1.3318967825516985,
+                "min_base_height_m": 0.24068051395309253,
+                "max_foot_clearance_m": 0.04465442256164693,
+                "swing_samples": 150,
+                "mean_contact_tangent_speed_m_s": 0.15922713495046095,
+                "mean_saturated_actuator_fraction": 0.0
+              },
+              "spec": {
+                "id": "go2-ood-001",
+                "split": "ood",
+                "seed": 444001,
+                "q_noise": 0.002,
+                "options": {
+                  "amp": 0.05837089787750048,
+                  "lift": 0.07056421824966863,
+                  "freq": 1.7926480729168415,
+                  "kp": 100,
+                  "kd": 3.5
+                },
+                "push_N": 8.0,
+                "mass_scale": 1.0
+              },
+              "policy": "expert",
+              "completed": true,
+              "expert_calls": 1200,
+              "control_steps": 1200,
+              "base_model_xml_sha256": "08db8c886d72fe639fc9f1366280cd5c53029328f0b45164175531199698896f",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC; torque PD retained; flat terrain; phase and commanded gait parameters observed.",
+              "termination": "completed"
+            }
+          ]
+        },
+        "hold": {
+          "test": [
+            {
+              "passed": false,
+              "criteria": {
+                "original_project03": false
+              },
+              "metrics": {
+                "max_height_m": 0.29941140000000005,
+                "final_height_m": 0.2630244437909417,
+                "max_tilt_deg": 0.8400757103635846,
+                "contact_samples": 598,
+                "forward_displacement_m": -0.012183566904540102,
+                "min_base_height_m": 0.26298201445378194,
+                "max_foot_clearance_m": -0.012629376877352473,
+                "swing_samples": 0,
+                "mean_contact_tangent_speed_m_s": 0.0003840939388937585,
+                "mean_saturated_actuator_fraction": 0.0
+              },
+              "spec": {
+                "id": "go2-test-000",
+                "split": "test",
+                "seed": 333000,
+                "q_noise": 0.002,
+                "options": {
+                  "amp": 0.059190018280177704,
+                  "lift": 0.07054760889710236,
+                  "freq": 1.8663014413517143,
+                  "kp": 100,
+                  "kd": 3.5
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.0
+              },
+              "policy": "hold",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1200,
+              "base_model_xml_sha256": "08db8c886d72fe639fc9f1366280cd5c53029328f0b45164175531199698896f",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC; torque PD retained; flat terrain; phase and commanded gait parameters observed.",
+              "termination": "completed"
+            },
+            {
+              "passed": false,
+              "criteria": {
+                "original_project03": false
+              },
+              "metrics": {
+                "max_height_m": 0.29941140000000005,
+                "final_height_m": 0.2634926981394059,
+                "max_tilt_deg": 0.8775095169408351,
+                "contact_samples": 598,
+                "forward_displacement_m": -0.011874176081543158,
+                "min_base_height_m": 0.26345080920978364,
+                "max_foot_clearance_m": -0.0126237898193187,
+                "swing_samples": 0,
+                "mean_contact_tangent_speed_m_s": 0.0003817728967515318,
+                "mean_saturated_actuator_fraction": 0.0
+              },
+              "spec": {
+                "id": "go2-test-001",
+                "split": "test",
+                "seed": 333001,
+                "q_noise": 0.002,
+                "options": {
+                  "amp": 0.058063205641203805,
+                  "lift": 0.07119326223861941,
+                  "freq": 1.8942371237111562,
+                  "kp": 100,
+                  "kd": 3.5
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.0
+              },
+              "policy": "hold",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1200,
+              "base_model_xml_sha256": "08db8c886d72fe639fc9f1366280cd5c53029328f0b45164175531199698896f",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC; torque PD retained; flat terrain; phase and commanded gait parameters observed.",
+              "termination": "completed"
+            }
+          ],
+          "ood": [
+            {
+              "passed": false,
+              "criteria": {
+                "original_project03": false
+              },
+              "metrics": {
+                "max_height_m": 0.29941140000000005,
+                "final_height_m": 0.2633679322443605,
+                "max_tilt_deg": 0.7541946572946839,
+                "contact_samples": 598,
+                "forward_displacement_m": -0.012623783480566182,
+                "min_base_height_m": 0.26332591485612944,
+                "max_foot_clearance_m": -0.012645156689435645,
+                "swing_samples": 0,
+                "mean_contact_tangent_speed_m_s": 0.000382647395696734,
+                "mean_saturated_actuator_fraction": 0.0
+              },
+              "spec": {
+                "id": "go2-ood-000",
+                "split": "ood",
+                "seed": 444000,
+                "q_noise": 0.002,
+                "options": {
+                  "amp": 0.058242540938518786,
+                  "lift": 0.07204940787566301,
+                  "freq": 1.7227678100843444,
+                  "kp": 100,
+                  "kd": 3.5
+                },
+                "push_N": 8.0,
+                "mass_scale": 1.0
+              },
+              "policy": "hold",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1200,
+              "base_model_xml_sha256": "08db8c886d72fe639fc9f1366280cd5c53029328f0b45164175531199698896f",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC; torque PD retained; flat terrain; phase and commanded gait parameters observed.",
+              "termination": "completed"
+            },
+            {
+              "passed": false,
+              "criteria": {
+                "original_project03": false
+              },
+              "metrics": {
+                "max_height_m": 0.29941140000000005,
+                "final_height_m": 0.26290100816206435,
+                "max_tilt_deg": 0.8283434034314577,
+                "contact_samples": 598,
+                "forward_displacement_m": -0.012254377873162704,
+                "min_base_height_m": 0.2628587991646833,
+                "max_foot_clearance_m": -0.012643558002731918,
+                "swing_samples": 0,
+                "mean_contact_tangent_speed_m_s": 0.0003835062848227731,
+                "mean_saturated_actuator_fraction": 0.0
+              },
+              "spec": {
+                "id": "go2-ood-001",
+                "split": "ood",
+                "seed": 444001,
+                "q_noise": 0.002,
+                "options": {
+                  "amp": 0.05837089787750048,
+                  "lift": 0.07056421824966863,
+                  "freq": 1.7926480729168415,
+                  "kp": 100,
+                  "kd": 3.5
+                },
+                "push_N": 8.0,
+                "mass_scale": 1.0
+              },
+              "policy": "hold",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1200,
+              "base_model_xml_sha256": "08db8c886d72fe639fc9f1366280cd5c53029328f0b45164175531199698896f",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC; torque PD retained; flat terrain; phase and commanded gait parameters observed.",
+              "termination": "completed"
+            }
+          ]
+        },
+        "phase_bc": {
+          "test": [
+            {
+              "passed": false,
+              "criteria": {
+                "original_project03": false
+              },
+              "metrics": {
+                "max_height_m": 0.29941293484967796,
+                "final_height_m": 0.26288672387166523,
+                "max_tilt_deg": 3.4357702862528887,
+                "contact_samples": 598,
+                "forward_displacement_m": -0.05808039627764185,
+                "min_base_height_m": 0.23529044478769726,
+                "max_foot_clearance_m": 0.014283637340274304,
+                "swing_samples": 0,
+                "mean_contact_tangent_speed_m_s": 0.08227010635523596,
+                "mean_saturated_actuator_fraction": 0.0
+              },
+              "spec": {
+                "id": "go2-test-000",
+                "split": "test",
+                "seed": 333000,
+                "q_noise": 0.002,
+                "options": {
+                  "amp": 0.059190018280177704,
+                  "lift": 0.07054760889710236,
+                  "freq": 1.8663014413517143,
+                  "kp": 100,
+                  "kd": 3.5
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.0
+              },
+              "policy": "phase_bc",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1200,
+              "base_model_xml_sha256": "08db8c886d72fe639fc9f1366280cd5c53029328f0b45164175531199698896f",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC; torque PD retained; flat terrain; phase and commanded gait parameters observed.",
+              "termination": "completed",
+              "policy_scope": "Clock-only training-reference average and interpolation; no state feedback or gait-parameter adaptation"
+            },
+            {
+              "passed": false,
+              "criteria": {
+                "original_project03": false
+              },
+              "metrics": {
+                "max_height_m": 0.2994106660539863,
+                "final_height_m": 0.2628867238731393,
+                "max_tilt_deg": 3.4261866774367222,
+                "contact_samples": 598,
+                "forward_displacement_m": -0.058509484329281394,
+                "min_base_height_m": 0.23529039154938725,
+                "max_foot_clearance_m": 0.014234957680396475,
+                "swing_samples": 0,
+                "mean_contact_tangent_speed_m_s": 0.08236242937912197,
+                "mean_saturated_actuator_fraction": 0.0
+              },
+              "spec": {
+                "id": "go2-test-001",
+                "split": "test",
+                "seed": 333001,
+                "q_noise": 0.002,
+                "options": {
+                  "amp": 0.058063205641203805,
+                  "lift": 0.07119326223861941,
+                  "freq": 1.8942371237111562,
+                  "kp": 100,
+                  "kd": 3.5
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.0
+              },
+              "policy": "phase_bc",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1200,
+              "base_model_xml_sha256": "08db8c886d72fe639fc9f1366280cd5c53029328f0b45164175531199698896f",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC; torque PD retained; flat terrain; phase and commanded gait parameters observed.",
+              "termination": "completed",
+              "policy_scope": "Clock-only training-reference average and interpolation; no state feedback or gait-parameter adaptation"
+            }
+          ],
+          "ood": [
+            {
+              "passed": false,
+              "criteria": {
+                "original_project03": false
+              },
+              "metrics": {
+                "max_height_m": 0.2994102395406142,
+                "final_height_m": 0.26288672411426317,
+                "max_tilt_deg": 3.445018842494247,
+                "contact_samples": 598,
+                "forward_displacement_m": -0.05041124899511626,
+                "min_base_height_m": 0.23528499709664102,
+                "max_foot_clearance_m": 0.014335987889479825,
+                "swing_samples": 0,
+                "mean_contact_tangent_speed_m_s": 0.08360680835044534,
+                "mean_saturated_actuator_fraction": 0.0
+              },
+              "spec": {
+                "id": "go2-ood-000",
+                "split": "ood",
+                "seed": 444000,
+                "q_noise": 0.002,
+                "options": {
+                  "amp": 0.058242540938518786,
+                  "lift": 0.07204940787566301,
+                  "freq": 1.7227678100843444,
+                  "kp": 100,
+                  "kd": 3.5
+                },
+                "push_N": 8.0,
+                "mass_scale": 1.0
+              },
+              "policy": "phase_bc",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1200,
+              "base_model_xml_sha256": "08db8c886d72fe639fc9f1366280cd5c53029328f0b45164175531199698896f",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC; torque PD retained; flat terrain; phase and commanded gait parameters observed.",
+              "termination": "completed",
+              "policy_scope": "Clock-only training-reference average and interpolation; no state feedback or gait-parameter adaptation"
+            },
+            {
+              "passed": false,
+              "criteria": {
+                "original_project03": false
+              },
+              "metrics": {
+                "max_height_m": 0.29941261003446473,
+                "final_height_m": 0.2628867241107759,
+                "max_tilt_deg": 3.459874677617724,
+                "contact_samples": 598,
+                "forward_displacement_m": -0.05024090135703675,
+                "min_base_height_m": 0.23528498625042804,
+                "max_foot_clearance_m": 0.014410251037933856,
+                "swing_samples": 0,
+                "mean_contact_tangent_speed_m_s": 0.0835953418328575,
+                "mean_saturated_actuator_fraction": 0.0
+              },
+              "spec": {
+                "id": "go2-ood-001",
+                "split": "ood",
+                "seed": 444001,
+                "q_noise": 0.002,
+                "options": {
+                  "amp": 0.05837089787750048,
+                  "lift": 0.07056421824966863,
+                  "freq": 1.7926480729168415,
+                  "kp": 100,
+                  "kd": 3.5
+                },
+                "push_N": 8.0,
+                "mass_scale": 1.0
+              },
+              "policy": "phase_bc",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1200,
+              "base_model_xml_sha256": "08db8c886d72fe639fc9f1366280cd5c53029328f0b45164175531199698896f",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC; torque PD retained; flat terrain; phase and commanded gait parameters observed.",
+              "termination": "completed",
+              "policy_scope": "Clock-only training-reference average and interpolation; no state feedback or gait-parameter adaptation"
+            }
+          ]
+        }
+      },
+      "results": {
+        "0": {
+          "training_seconds": 1.4245985000015935,
+          "selected_update": 200,
+          "normalized_test_action_mse": 0.8999782895442829,
+          "policies": {
+            "bc": {
+              "test": [
+                {
+                  "passed": false,
+                  "criteria": {
+                    "original_project03": false
+                  },
+                  "metrics": {
+                    "max_height_m": 0.299499139507137,
+                    "final_height_m": 0.25037259559900876,
+                    "max_tilt_deg": 8.564711423138696,
+                    "contact_samples": 598,
+                    "forward_displacement_m": 0.06915554984212494,
+                    "min_base_height_m": 0.23348123378781055,
+                    "max_foot_clearance_m": 0.034555648821213196,
+                    "swing_samples": 12,
+                    "mean_contact_tangent_speed_m_s": 0.23565298092264375,
+                    "mean_saturated_actuator_fraction": 0.1536111111111111
+                  },
+                  "spec": {
+                    "id": "go2-test-000",
+                    "split": "test",
+                    "seed": 333000,
+                    "q_noise": 0.002,
+                    "options": {
+                      "amp": 0.059190018280177704,
+                      "lift": 0.07054760889710236,
+                      "freq": 1.8663014413517143,
+                      "kp": 100,
+                      "kd": 3.5
+                    },
+                    "push_N": 0.0,
+                    "mass_scale": 1.0
+                  },
+                  "policy": "bc",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1200,
+                  "base_model_xml_sha256": "08db8c886d72fe639fc9f1366280cd5c53029328f0b45164175531199698896f",
+                  "action_clipped_fraction": 0.0,
+                  "scope": "Joint-reference BC; torque PD retained; flat terrain; phase and commanded gait parameters observed.",
+                  "termination": "completed"
+                },
+                {
+                  "passed": false,
+                  "criteria": {
+                    "original_project03": false
+                  },
+                  "metrics": {
+                    "max_height_m": 0.2993579589747963,
+                    "final_height_m": 0.2509441876135111,
+                    "max_tilt_deg": 5.084548956930031,
+                    "contact_samples": 598,
+                    "forward_displacement_m": 0.5089944806101013,
+                    "min_base_height_m": 0.23271607537199293,
+                    "max_foot_clearance_m": 0.020767812223655778,
+                    "swing_samples": 3,
+                    "mean_contact_tangent_speed_m_s": 0.3948692970814992,
+                    "mean_saturated_actuator_fraction": 0.21361111111111108
+                  },
+                  "spec": {
+                    "id": "go2-test-001",
+                    "split": "test",
+                    "seed": 333001,
+                    "q_noise": 0.002,
+                    "options": {
+                      "amp": 0.058063205641203805,
+                      "lift": 0.07119326223861941,
+                      "freq": 1.8942371237111562,
+                      "kp": 100,
+                      "kd": 3.5
+                    },
+                    "push_N": 0.0,
+                    "mass_scale": 1.0
+                  },
+                  "policy": "bc",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1200,
+                  "base_model_xml_sha256": "08db8c886d72fe639fc9f1366280cd5c53029328f0b45164175531199698896f",
+                  "action_clipped_fraction": 0.0,
+                  "scope": "Joint-reference BC; torque PD retained; flat terrain; phase and commanded gait parameters observed.",
+                  "termination": "completed"
+                }
+              ],
+              "ood": [
+                {
+                  "passed": false,
+                  "criteria": {
+                    "original_project03": false
+                  },
+                  "metrics": {
+                    "max_height_m": 0.29938665393594704,
+                    "final_height_m": 0.24692744373700873,
+                    "max_tilt_deg": 8.798595770184441,
+                    "contact_samples": 598,
+                    "forward_displacement_m": -0.4178676916460194,
+                    "min_base_height_m": 0.22994699679755096,
+                    "max_foot_clearance_m": 0.02952647572781513,
+                    "swing_samples": 33,
+                    "mean_contact_tangent_speed_m_s": 0.2958041529333848,
+                    "mean_saturated_actuator_fraction": 0.21055555555555558
+                  },
+                  "spec": {
+                    "id": "go2-ood-000",
+                    "split": "ood",
+                    "seed": 444000,
+                    "q_noise": 0.002,
+                    "options": {
+                      "amp": 0.058242540938518786,
+                      "lift": 0.07204940787566301,
+                      "freq": 1.7227678100843444,
+                      "kp": 100,
+                      "kd": 3.5
+                    },
+                    "push_N": 8.0,
+                    "mass_scale": 1.0
+                  },
+                  "policy": "bc",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1200,
+                  "base_model_xml_sha256": "08db8c886d72fe639fc9f1366280cd5c53029328f0b45164175531199698896f",
+                  "action_clipped_fraction": 0.0,
+                  "scope": "Joint-reference BC; torque PD retained; flat terrain; phase and commanded gait parameters observed.",
+                  "termination": "completed"
+                },
+                {
+                  "passed": true,
+                  "criteria": {
+                    "original_project03": true
+                  },
+                  "metrics": {
+                    "max_height_m": 0.29944267560366356,
+                    "final_height_m": 0.24751629698147226,
+                    "max_tilt_deg": 8.236766470876198,
+                    "contact_samples": 598,
+                    "forward_displacement_m": 0.5119772517434416,
+                    "min_base_height_m": 0.23128158268586804,
+                    "max_foot_clearance_m": 0.0389370520249288,
+                    "swing_samples": 21,
+                    "mean_contact_tangent_speed_m_s": 0.3149283502407943,
+                    "mean_saturated_actuator_fraction": 0.18277777777777776
+                  },
+                  "spec": {
+                    "id": "go2-ood-001",
+                    "split": "ood",
+                    "seed": 444001,
+                    "q_noise": 0.002,
+                    "options": {
+                      "amp": 0.05837089787750048,
+                      "lift": 0.07056421824966863,
+                      "freq": 1.7926480729168415,
+                      "kp": 100,
+                      "kd": 3.5
+                    },
+                    "push_N": 8.0,
+                    "mass_scale": 1.0
+                  },
+                  "policy": "bc",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1200,
+                  "base_model_xml_sha256": "08db8c886d72fe639fc9f1366280cd5c53029328f0b45164175531199698896f",
+                  "action_clipped_fraction": 0.0,
+                  "scope": "Joint-reference BC; torque PD retained; flat terrain; phase and commanded gait parameters observed.",
+                  "termination": "completed"
+                }
+              ]
+            },
+            "frozen_state": {
+              "test": [
+                {
+                  "passed": false,
+                  "criteria": {
+                    "original_project03": false
+                  },
+                  "metrics": {
+                    "max_height_m": 0.299499139507137,
+                    "final_height_m": 0.2537595029822557,
+                    "max_tilt_deg": 2.8008259171775656,
+                    "contact_samples": 599,
+                    "forward_displacement_m": -0.047432252673352084,
+                    "min_base_height_m": 0.24259572335885565,
+                    "max_foot_clearance_m": -0.008269458037461284,
+                    "swing_samples": 0,
+                    "mean_contact_tangent_speed_m_s": 0.0040284581829513,
+                    "mean_saturated_actuator_fraction": 0.0
+                  },
+                  "spec": {
+                    "id": "go2-test-000",
+                    "split": "test",
+                    "seed": 333000,
+                    "q_noise": 0.002,
+                    "options": {
+                      "amp": 0.059190018280177704,
+                      "lift": 0.07054760889710236,
+                      "freq": 1.8663014413517143,
+                      "kp": 100,
+                      "kd": 3.5
+                    },
+                    "push_N": 0.0,
+                    "mass_scale": 1.0
+                  },
+                  "policy": "frozen_state",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1200,
+                  "base_model_xml_sha256": "08db8c886d72fe639fc9f1366280cd5c53029328f0b45164175531199698896f",
+                  "action_clipped_fraction": 0.0,
+                  "scope": "Joint-reference BC; torque PD retained; flat terrain; phase and commanded gait parameters observed.",
+                  "termination": "completed"
+                },
+                {
+                  "passed": false,
+                  "criteria": {
+                    "original_project03": false
+                  },
+                  "metrics": {
+                    "max_height_m": 0.2993579589747963,
+                    "final_height_m": 0.2606112403599997,
+                    "max_tilt_deg": 3.6470951168311885,
+                    "contact_samples": 599,
+                    "forward_displacement_m": -0.010805651226071298,
+                    "min_base_height_m": 0.25488722597382246,
+                    "max_foot_clearance_m": 0.011652327634240366,
+                    "swing_samples": 0,
+                    "mean_contact_tangent_speed_m_s": 0.005620402277569736,
+                    "mean_saturated_actuator_fraction": 0.0
+                  },
+                  "spec": {
+                    "id": "go2-test-001",
+                    "split": "test",
+                    "seed": 333001,
+                    "q_noise": 0.002,
+                    "options": {
+                      "amp": 0.058063205641203805,
+                      "lift": 0.07119326223861941,
+                      "freq": 1.8942371237111562,
+                      "kp": 100,
+                      "kd": 3.5
+                    },
+                    "push_N": 0.0,
+                    "mass_scale": 1.0
+                  },
+                  "policy": "frozen_state",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1200,
+                  "base_model_xml_sha256": "08db8c886d72fe639fc9f1366280cd5c53029328f0b45164175531199698896f",
+                  "action_clipped_fraction": 0.0,
+                  "scope": "Joint-reference BC; torque PD retained; flat terrain; phase and commanded gait parameters observed.",
+                  "termination": "completed"
+                }
+              ],
+              "ood": [
+                {
+                  "passed": false,
+                  "criteria": {
+                    "original_project03": false
+                  },
+                  "metrics": {
+                    "max_height_m": 0.29938665393594704,
+                    "final_height_m": 0.2515409062825804,
+                    "max_tilt_deg": 3.82236850145518,
+                    "contact_samples": 598,
+                    "forward_displacement_m": -0.0416607992458314,
+                    "min_base_height_m": 0.24039110710660586,
+                    "max_foot_clearance_m": -0.009578802578096297,
+                    "swing_samples": 0,
+                    "mean_contact_tangent_speed_m_s": 0.003911001341476009,
+                    "mean_saturated_actuator_fraction": 0.0
+                  },
+                  "spec": {
+                    "id": "go2-ood-000",
+                    "split": "ood",
+                    "seed": 444000,
+                    "q_noise": 0.002,
+                    "options": {
+                      "amp": 0.058242540938518786,
+                      "lift": 0.07204940787566301,
+                      "freq": 1.7227678100843444,
+                      "kp": 100,
+                      "kd": 3.5
+                    },
+                    "push_N": 8.0,
+                    "mass_scale": 1.0
+                  },
+                  "policy": "frozen_state",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1200,
+                  "base_model_xml_sha256": "08db8c886d72fe639fc9f1366280cd5c53029328f0b45164175531199698896f",
+                  "action_clipped_fraction": 0.0,
+                  "scope": "Joint-reference BC; torque PD retained; flat terrain; phase and commanded gait parameters observed.",
+                  "termination": "completed"
+                },
+                {
+                  "passed": false,
+                  "criteria": {
+                    "original_project03": false
+                  },
+                  "metrics": {
+                    "max_height_m": 0.29944267560366356,
+                    "final_height_m": 0.25711832606460905,
+                    "max_tilt_deg": 3.670027244145108,
+                    "contact_samples": 598,
+                    "forward_displacement_m": -0.029298213748952598,
+                    "min_base_height_m": 0.24416445725734492,
+                    "max_foot_clearance_m": -0.010245803633891333,
+                    "swing_samples": 0,
+                    "mean_contact_tangent_speed_m_s": 0.0021519829961050676,
+                    "mean_saturated_actuator_fraction": 0.0
+                  },
+                  "spec": {
+                    "id": "go2-ood-001",
+                    "split": "ood",
+                    "seed": 444001,
+                    "q_noise": 0.002,
+                    "options": {
+                      "amp": 0.05837089787750048,
+                      "lift": 0.07056421824966863,
+                      "freq": 1.7926480729168415,
+                      "kp": 100,
+                      "kd": 3.5
+                    },
+                    "push_N": 8.0,
+                    "mass_scale": 1.0
+                  },
+                  "policy": "frozen_state",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1200,
+                  "base_model_xml_sha256": "08db8c886d72fe639fc9f1366280cd5c53029328f0b45164175531199698896f",
+                  "action_clipped_fraction": 0.0,
+                  "scope": "Joint-reference BC; torque PD retained; flat terrain; phase and commanded gait parameters observed.",
+                  "termination": "completed"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "expert": {
+          "test": {
+            "per_seed_success_rate": [
+              1.0
+            ],
+            "mean_success_rate": 1.0,
+            "sample_std": null
+          },
+          "ood": {
+            "per_seed_success_rate": [
+              1.0
+            ],
+            "mean_success_rate": 1.0,
+            "sample_std": null
+          }
+        },
+        "hold": {
+          "test": {
+            "per_seed_success_rate": [
+              0.0
+            ],
+            "mean_success_rate": 0.0,
+            "sample_std": null
+          },
+          "ood": {
+            "per_seed_success_rate": [
+              0.0
+            ],
+            "mean_success_rate": 0.0,
+            "sample_std": null
+          }
+        },
+        "bc": {
+          "test": {
+            "per_seed_success_rate": [
+              0.0
+            ],
+            "mean_success_rate": 0.0,
+            "sample_std": null
+          },
+          "ood": {
+            "per_seed_success_rate": [
+              0.5
+            ],
+            "mean_success_rate": 0.5,
+            "sample_std": null
+          }
+        },
+        "frozen_state": {
+          "test": {
+            "per_seed_success_rate": [
+              0.0
+            ],
+            "mean_success_rate": 0.0,
+            "sample_std": null
+          },
+          "ood": {
+            "per_seed_success_rate": [
+              0.0
+            ],
+            "mean_success_rate": 0.0,
+            "sample_std": null
+          }
+        },
+        "phase_bc": {
+          "test": {
+            "per_seed_success_rate": [
+              0.0
+            ],
+            "mean_success_rate": 0.0,
+            "sample_std": null
+          },
+          "ood": {
+            "per_seed_success_rate": [
+              0.0
+            ],
+            "mean_success_rate": 0.0,
+            "sample_std": null
+          }
+        }
+      },
+      "reused_dataset_directory": "D:\\RCL\\深圳理工大学-具身智能\\project-04-imitation-learning\\outputs\\platform-baseline-20261012\\go2"
+    },
+    "h1": {
+      "scope": "Joint-reference BC including expert balance corrections; torque PD and bias compensation retained; double support, squat and arm motion.",
+      "observation_dim": 96,
+      "action_dim": 19,
+      "dataset_rows": {
+        "train": 3000,
+        "validation": 1000,
+        "test": 1000,
+        "ood": 1000
+      },
+      "dataset_sha256": {
+        "train": "dbf75342805a6d039da3c9fc0e8a045f798589949a458f8827bb4b718dfd4dcf",
+        "validation": "adf378da5a77c36052e6406fe4d9e977108302f6742582d189929c33e8933b4b",
+        "test": "a698edcc475675415749639bf3ab0bf6d040f3204b832b6f0d4359a3654300cb",
+        "ood": "eb5e13ee95864be5092e584ef5229b4c1f55670f71c1525739d1a201b51f6817"
+      },
+      "baselines": {
+        "expert": {
+          "test": [
+            {
+              "passed": true,
+              "criteria": {
+                "original_project03": true,
+                "recover_height": true
+              },
+              "metrics": {
+                "max_height_m": 0.979522935101526,
+                "final_height_m": 0.9287245318747455,
+                "max_tilt_deg": 5.595045251793074,
+                "contact_samples": 500,
+                "squat_depth_m": 0.0921940412174842,
+                "min_pelvis_height_m": 0.8554127092813627,
+                "recovery_height_error_m": 0.01827938939202156,
+                "mean_saturated_actuator_fraction": 0.0
+              },
+              "spec": {
+                "id": "h1-test-000",
+                "split": "test",
+                "seed": 333000,
+                "q_noise": 0.001,
+                "options": {
+                  "com_gain": 5.0,
+                  "velocity_gain": 0.8,
+                  "foot_offset": 0.03,
+                  "balance": 0.0,
+                  "bend": 0.1583800365603554
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.0
+              },
+              "policy": "expert",
+              "completed": true,
+              "expert_calls": 1000,
+              "control_steps": 1000,
+              "base_model_xml_sha256": "6cce250a869d152a9a413b5c89822fcc0ed4217ba93498b82334f93746774a0a",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC including expert balance corrections; torque PD and bias compensation retained; double support, squat and arm motion.",
+              "termination": "completed"
+            },
+            {
+              "passed": true,
+              "criteria": {
+                "original_project03": true,
+                "recover_height": true
+              },
+              "metrics": {
+                "max_height_m": 0.979514909990136,
+                "final_height_m": 0.9279083234374432,
+                "max_tilt_deg": 5.647307470237626,
+                "contact_samples": 500,
+                "squat_depth_m": 0.09142359544173662,
+                "min_pelvis_height_m": 0.8557427425024833,
+                "recovery_height_error_m": 0.018675313414289185,
+                "mean_saturated_actuator_fraction": 0.0
+              },
+              "spec": {
+                "id": "h1-test-001",
+                "split": "test",
+                "seed": 333001,
+                "q_noise": 0.001,
+                "options": {
+                  "com_gain": 5.0,
+                  "velocity_gain": 0.8,
+                  "foot_offset": 0.03,
+                  "balance": 0.0,
+                  "bend": 0.15663014413517146
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.0
+              },
+              "policy": "expert",
+              "completed": true,
+              "expert_calls": 1000,
+              "control_steps": 1000,
+              "base_model_xml_sha256": "6cce250a869d152a9a413b5c89822fcc0ed4217ba93498b82334f93746774a0a",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC including expert balance corrections; torque PD and bias compensation retained; double support, squat and arm motion.",
+              "termination": "completed"
+            }
+          ],
+          "ood": [
+            {
+              "passed": true,
+              "criteria": {
+                "original_project03": true,
+                "recover_height": true
+              },
+              "metrics": {
+                "max_height_m": 0.9795172178270687,
+                "final_height_m": 0.9281377661650878,
+                "max_tilt_deg": 5.635622569487217,
+                "contact_samples": 500,
+                "squat_depth_m": 0.08690506304051027,
+                "min_pelvis_height_m": 0.8601144457211137,
+                "recovery_height_error_m": 0.01834080482889111,
+                "mean_saturated_actuator_fraction": 0.0
+              },
+              "spec": {
+                "id": "h1-ood-000",
+                "split": "ood",
+                "seed": 444000,
+                "q_noise": 0.001,
+                "options": {
+                  "com_gain": 5.0,
+                  "velocity_gain": 0.8,
+                  "foot_offset": 0.03,
+                  "balance": 0.0,
+                  "bend": 0.15648508187703758
+                },
+                "push_N": 12.0,
+                "mass_scale": 1.0
+              },
+              "policy": "expert",
+              "completed": true,
+              "expert_calls": 1000,
+              "control_steps": 1000,
+              "base_model_xml_sha256": "6cce250a869d152a9a413b5c89822fcc0ed4217ba93498b82334f93746774a0a",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC including expert balance corrections; torque PD and bias compensation retained; double support, squat and arm motion.",
+              "termination": "completed"
+            },
+            {
+              "passed": true,
+              "criteria": {
+                "original_project03": true,
+                "recover_height": true
+              },
+              "metrics": {
+                "max_height_m": 0.9795171524356818,
+                "final_height_m": 0.9285004492653991,
+                "max_tilt_deg": 5.36858480244796,
+                "contact_samples": 500,
+                "squat_depth_m": 0.07846982254351509,
+                "min_pelvis_height_m": 0.8686582653006235,
+                "recovery_height_error_m": 0.018053322447238007,
+                "mean_saturated_actuator_fraction": 0.0
+              },
+              "spec": {
+                "id": "h1-ood-001",
+                "split": "ood",
+                "seed": 444001,
+                "q_noise": 0.001,
+                "options": {
+                  "com_gain": 5.0,
+                  "velocity_gain": 0.8,
+                  "foot_offset": 0.03,
+                  "balance": 0.0,
+                  "bend": 0.14227678100843447
+                },
+                "push_N": 12.0,
+                "mass_scale": 1.0
+              },
+              "policy": "expert",
+              "completed": true,
+              "expert_calls": 1000,
+              "control_steps": 1000,
+              "base_model_xml_sha256": "6cce250a869d152a9a413b5c89822fcc0ed4217ba93498b82334f93746774a0a",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC including expert balance corrections; torque PD and bias compensation retained; double support, squat and arm motion.",
+              "termination": "completed"
+            }
+          ]
+        },
+        "hold": {
+          "test": [
+            {
+              "passed": false,
+              "criteria": {
+                "original_project03": false,
+                "recover_height": false
+              },
+              "metrics": {
+                "max_height_m": 0.9795377424409967,
+                "final_height_m": 0.09529177874341005,
+                "max_tilt_deg": 95.86272615198999,
+                "contact_samples": 499,
+                "squat_depth_m": 0.7691995144767757,
+                "min_pelvis_height_m": 0.08448768583496516,
+                "recovery_height_error_m": 0.24612821742468927,
+                "mean_saturated_actuator_fraction": 0.00031578947368421053
+              },
+              "spec": {
+                "id": "h1-test-000",
+                "split": "test",
+                "seed": 333000,
+                "q_noise": 0.001,
+                "options": {
+                  "com_gain": 5.0,
+                  "velocity_gain": 0.8,
+                  "foot_offset": 0.03,
+                  "balance": 0.0,
+                  "bend": 0.1583800365603554
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.0
+              },
+              "policy": "hold",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1000,
+              "base_model_xml_sha256": "6cce250a869d152a9a413b5c89822fcc0ed4217ba93498b82334f93746774a0a",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC including expert balance corrections; torque PD and bias compensation retained; double support, squat and arm motion.",
+              "termination": "completed"
+            },
+            {
+              "passed": false,
+              "criteria": {
+                "original_project03": false,
+                "recover_height": false
+              },
+              "metrics": {
+                "max_height_m": 0.9795341030978729,
+                "final_height_m": 0.09529179963526674,
+                "max_tilt_deg": 96.24860920286498,
+                "contact_samples": 498,
+                "squat_depth_m": 0.7660360884421618,
+                "min_pelvis_height_m": 0.0849075946685801,
+                "recovery_height_error_m": 0.24046550729441102,
+                "mean_saturated_actuator_fraction": 0.00021052631578947367
+              },
+              "spec": {
+                "id": "h1-test-001",
+                "split": "test",
+                "seed": 333001,
+                "q_noise": 0.001,
+                "options": {
+                  "com_gain": 5.0,
+                  "velocity_gain": 0.8,
+                  "foot_offset": 0.03,
+                  "balance": 0.0,
+                  "bend": 0.15663014413517146
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.0
+              },
+              "policy": "hold",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1000,
+              "base_model_xml_sha256": "6cce250a869d152a9a413b5c89822fcc0ed4217ba93498b82334f93746774a0a",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC including expert balance corrections; torque PD and bias compensation retained; double support, squat and arm motion.",
+              "termination": "completed"
+            }
+          ],
+          "ood": [
+            {
+              "passed": false,
+              "criteria": {
+                "original_project03": false,
+                "recover_height": false
+              },
+              "metrics": {
+                "max_height_m": 0.9795383101526451,
+                "final_height_m": 0.09529170289734898,
+                "max_tilt_deg": 96.43381092328929,
+                "contact_samples": 499,
+                "squat_depth_m": 0.7684112349661127,
+                "min_pelvis_height_m": 0.08380203165141242,
+                "recovery_height_error_m": 0.2450987003544627,
+                "mean_saturated_actuator_fraction": 0.00042105263157894734
+              },
+              "spec": {
+                "id": "h1-ood-000",
+                "split": "ood",
+                "seed": 444000,
+                "q_noise": 0.001,
+                "options": {
+                  "com_gain": 5.0,
+                  "velocity_gain": 0.8,
+                  "foot_offset": 0.03,
+                  "balance": 0.0,
+                  "bend": 0.15648508187703758
+                },
+                "push_N": 12.0,
+                "mass_scale": 1.0
+              },
+              "policy": "hold",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1000,
+              "base_model_xml_sha256": "6cce250a869d152a9a413b5c89822fcc0ed4217ba93498b82334f93746774a0a",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC including expert balance corrections; torque PD and bias compensation retained; double support, squat and arm motion.",
+              "termination": "completed"
+            },
+            {
+              "passed": false,
+              "criteria": {
+                "original_project03": false,
+                "recover_height": false
+              },
+              "metrics": {
+                "max_height_m": 0.9795339974457209,
+                "final_height_m": 0.09529178947180171,
+                "max_tilt_deg": 96.4176885588764,
+                "contact_samples": 497,
+                "squat_depth_m": 0.7674660303564494,
+                "min_pelvis_height_m": 0.08394451459776148,
+                "recovery_height_error_m": 0.24331291139818778,
+                "mean_saturated_actuator_fraction": 0.00042105263157894734
+              },
+              "spec": {
+                "id": "h1-ood-001",
+                "split": "ood",
+                "seed": 444001,
+                "q_noise": 0.001,
+                "options": {
+                  "com_gain": 5.0,
+                  "velocity_gain": 0.8,
+                  "foot_offset": 0.03,
+                  "balance": 0.0,
+                  "bend": 0.14227678100843447
+                },
+                "push_N": 12.0,
+                "mass_scale": 1.0
+              },
+              "policy": "hold",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1000,
+              "base_model_xml_sha256": "6cce250a869d152a9a413b5c89822fcc0ed4217ba93498b82334f93746774a0a",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC including expert balance corrections; torque PD and bias compensation retained; double support, squat and arm motion.",
+              "termination": "completed"
+            }
+          ]
+        },
+        "phase_bc": {
+          "test": [
+            {
+              "passed": false,
+              "criteria": {
+                "original_project03": false,
+                "recover_height": false
+              },
+              "metrics": {
+                "max_height_m": 0.9795205996659512,
+                "final_height_m": 0.09529177525576032,
+                "max_tilt_deg": 95.9870346504116,
+                "contact_samples": 499,
+                "squat_depth_m": 0.8516123571249713,
+                "min_pelvis_height_m": 0.08561839911304572,
+                "recovery_height_error_m": 0.8506518980753135,
+                "mean_saturated_actuator_fraction": 0.00021052631578947367
+              },
+              "spec": {
+                "id": "h1-test-000",
+                "split": "test",
+                "seed": 333000,
+                "q_noise": 0.001,
+                "options": {
+                  "com_gain": 5.0,
+                  "velocity_gain": 0.8,
+                  "foot_offset": 0.03,
+                  "balance": 0.0,
+                  "bend": 0.1583800365603554
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.0
+              },
+              "policy": "phase_bc",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1000,
+              "base_model_xml_sha256": "6cce250a869d152a9a413b5c89822fcc0ed4217ba93498b82334f93746774a0a",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC including expert balance corrections; torque PD and bias compensation retained; double support, squat and arm motion.",
+              "termination": "completed",
+              "policy_scope": "Clock-only training-reference average and interpolation; no state feedback or gait-parameter adaptation"
+            },
+            {
+              "passed": false,
+              "criteria": {
+                "original_project03": false,
+                "recover_height": false
+              },
+              "metrics": {
+                "max_height_m": 0.979514936983524,
+                "final_height_m": 0.09529177525626115,
+                "max_tilt_deg": 95.55985395396306,
+                "contact_samples": 498,
+                "squat_depth_m": 0.8513890231659762,
+                "min_pelvis_height_m": 0.0850470861618838,
+                "recovery_height_error_m": 0.8501634592127025,
+                "mean_saturated_actuator_fraction": 0.00021052631578947367
+              },
+              "spec": {
+                "id": "h1-test-001",
+                "split": "test",
+                "seed": 333001,
+                "q_noise": 0.001,
+                "options": {
+                  "com_gain": 5.0,
+                  "velocity_gain": 0.8,
+                  "foot_offset": 0.03,
+                  "balance": 0.0,
+                  "bend": 0.15663014413517146
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.0
+              },
+              "policy": "phase_bc",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1000,
+              "base_model_xml_sha256": "6cce250a869d152a9a413b5c89822fcc0ed4217ba93498b82334f93746774a0a",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC including expert balance corrections; torque PD and bias compensation retained; double support, squat and arm motion.",
+              "termination": "completed",
+              "policy_scope": "Clock-only training-reference average and interpolation; no state feedback or gait-parameter adaptation"
+            }
+          ],
+          "ood": [
+            {
+              "passed": false,
+              "criteria": {
+                "original_project03": false,
+                "recover_height": false
+              },
+              "metrics": {
+                "max_height_m": 0.979515176774034,
+                "final_height_m": 0.15176707091840963,
+                "max_tilt_deg": 95.81418523644517,
+                "contact_samples": 499,
+                "squat_depth_m": 0.7716074042424504,
+                "min_pelvis_height_m": 0.12440765557191125,
+                "recovery_height_error_m": 0.7955593016337283,
+                "mean_saturated_actuator_fraction": 0.0016842105263157893
+              },
+              "spec": {
+                "id": "h1-ood-000",
+                "split": "ood",
+                "seed": 444000,
+                "q_noise": 0.001,
+                "options": {
+                  "com_gain": 5.0,
+                  "velocity_gain": 0.8,
+                  "foot_offset": 0.03,
+                  "balance": 0.0,
+                  "bend": 0.15648508187703758
+                },
+                "push_N": 12.0,
+                "mass_scale": 1.0
+              },
+              "policy": "phase_bc",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1000,
+              "base_model_xml_sha256": "6cce250a869d152a9a413b5c89822fcc0ed4217ba93498b82334f93746774a0a",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC including expert balance corrections; torque PD and bias compensation retained; double support, squat and arm motion.",
+              "termination": "completed",
+              "policy_scope": "Clock-only training-reference average and interpolation; no state feedback or gait-parameter adaptation"
+            },
+            {
+              "passed": false,
+              "criteria": {
+                "original_project03": false,
+                "recover_height": false
+              },
+              "metrics": {
+                "max_height_m": 0.9795197356538785,
+                "final_height_m": 0.09529177525343023,
+                "max_tilt_deg": 95.88377925479314,
+                "contact_samples": 498,
+                "squat_depth_m": 0.8605573307376562,
+                "min_pelvis_height_m": 0.08652615898225506,
+                "recovery_height_error_m": 0.8510632023259918,
+                "mean_saturated_actuator_fraction": 0.00021052631578947367
+              },
+              "spec": {
+                "id": "h1-ood-001",
+                "split": "ood",
+                "seed": 444001,
+                "q_noise": 0.001,
+                "options": {
+                  "com_gain": 5.0,
+                  "velocity_gain": 0.8,
+                  "foot_offset": 0.03,
+                  "balance": 0.0,
+                  "bend": 0.14227678100843447
+                },
+                "push_N": 12.0,
+                "mass_scale": 1.0
+              },
+              "policy": "phase_bc",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1000,
+              "base_model_xml_sha256": "6cce250a869d152a9a413b5c89822fcc0ed4217ba93498b82334f93746774a0a",
+              "action_clipped_fraction": 0.0,
+              "scope": "Joint-reference BC including expert balance corrections; torque PD and bias compensation retained; double support, squat and arm motion.",
+              "termination": "completed",
+              "policy_scope": "Clock-only training-reference average and interpolation; no state feedback or gait-parameter adaptation"
+            }
+          ]
+        }
+      },
+      "results": {
+        "0": {
+          "training_seconds": 1.6269506999997247,
+          "selected_update": 1800,
+          "normalized_test_action_mse": 0.5151224385689869,
+          "policies": {
+            "bc": {
+              "test": [
+                {
+                  "passed": false,
+                  "criteria": {
+                    "original_project03": false,
+                    "recover_height": false
+                  },
+                  "metrics": {
+                    "max_height_m": 0.9794979169672101,
+                    "final_height_m": 0.09529302558764836,
+                    "max_tilt_deg": 96.07859558444457,
+                    "contact_samples": 498,
+                    "squat_depth_m": 0.8200792120919441,
+                    "min_pelvis_height_m": 0.08605245293030542,
+                    "recovery_height_error_m": 0.7951804647216243,
+                    "mean_saturated_actuator_fraction": 0.00021052631578947367
+                  },
+                  "spec": {
+                    "id": "h1-test-000",
+                    "split": "test",
+                    "seed": 333000,
+                    "q_noise": 0.001,
+                    "options": {
+                      "com_gain": 5.0,
+                      "velocity_gain": 0.8,
+                      "foot_offset": 0.03,
+                      "balance": 0.0,
+                      "bend": 0.1583800365603554
+                    },
+                    "push_N": 0.0,
+                    "mass_scale": 1.0
+                  },
+                  "policy": "bc",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1000,
+                  "base_model_xml_sha256": "6cce250a869d152a9a413b5c89822fcc0ed4217ba93498b82334f93746774a0a",
+                  "action_clipped_fraction": 0.0,
+                  "scope": "Joint-reference BC including expert balance corrections; torque PD and bias compensation retained; double support, squat and arm motion.",
+                  "termination": "completed"
+                },
+                {
+                  "passed": false,
+                  "criteria": {
+                    "original_project03": false,
+                    "recover_height": false
+                  },
+                  "metrics": {
+                    "max_height_m": 0.9796048389167832,
+                    "final_height_m": 0.1661329736114985,
+                    "max_tilt_deg": 95.96274119552436,
+                    "contact_samples": 497,
+                    "squat_depth_m": 0.7801347417119351,
+                    "min_pelvis_height_m": 0.13716517618167276,
+                    "recovery_height_error_m": 0.6244406003539623,
+                    "mean_saturated_actuator_fraction": 0.0033684210526315787
+                  },
+                  "spec": {
+                    "id": "h1-test-001",
+                    "split": "test",
+                    "seed": 333001,
+                    "q_noise": 0.001,
+                    "options": {
+                      "com_gain": 5.0,
+                      "velocity_gain": 0.8,
+                      "foot_offset": 0.03,
+                      "balance": 0.0,
+                      "bend": 0.15663014413517146
+                    },
+                    "push_N": 0.0,
+                    "mass_scale": 1.0
+                  },
+                  "policy": "bc",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1000,
+                  "base_model_xml_sha256": "6cce250a869d152a9a413b5c89822fcc0ed4217ba93498b82334f93746774a0a",
+                  "action_clipped_fraction": 0.0,
+                  "scope": "Joint-reference BC including expert balance corrections; torque PD and bias compensation retained; double support, squat and arm motion.",
+                  "termination": "completed"
+                }
+              ],
+              "ood": [
+                {
+                  "passed": false,
+                  "criteria": {
+                    "original_project03": false,
+                    "recover_height": false
+                  },
+                  "metrics": {
+                    "max_height_m": 0.9795768987635696,
+                    "final_height_m": 0.1652470375577549,
+                    "max_tilt_deg": 94.70987125275543,
+                    "contact_samples": 499,
+                    "squat_depth_m": 0.7940261982515522,
+                    "min_pelvis_height_m": 0.11290317943447752,
+                    "recovery_height_error_m": 0.7610566288481435,
+                    "mean_saturated_actuator_fraction": 0.0025263157894736842
+                  },
+                  "spec": {
+                    "id": "h1-ood-000",
+                    "split": "ood",
+                    "seed": 444000,
+                    "q_noise": 0.001,
+                    "options": {
+                      "com_gain": 5.0,
+                      "velocity_gain": 0.8,
+                      "foot_offset": 0.03,
+                      "balance": 0.0,
+                      "bend": 0.15648508187703758
+                    },
+                    "push_N": 12.0,
+                    "mass_scale": 1.0
+                  },
+                  "policy": "bc",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1000,
+                  "base_model_xml_sha256": "6cce250a869d152a9a413b5c89822fcc0ed4217ba93498b82334f93746774a0a",
+                  "action_clipped_fraction": 0.0,
+                  "scope": "Joint-reference BC including expert balance corrections; torque PD and bias compensation retained; double support, squat and arm motion.",
+                  "termination": "completed"
+                },
+                {
+                  "passed": false,
+                  "criteria": {
+                    "original_project03": false,
+                    "recover_height": false
+                  },
+                  "metrics": {
+                    "max_height_m": 0.9796659257281268,
+                    "final_height_m": 0.095293020608511,
+                    "max_tilt_deg": 95.65419037512939,
+                    "contact_samples": 498,
+                    "squat_depth_m": 0.8228268316267374,
+                    "min_pelvis_height_m": 0.08659102862858072,
+                    "recovery_height_error_m": 0.7869557615296418,
+                    "mean_saturated_actuator_fraction": 0.00031578947368421053
+                  },
+                  "spec": {
+                    "id": "h1-ood-001",
+                    "split": "ood",
+                    "seed": 444001,
+                    "q_noise": 0.001,
+                    "options": {
+                      "com_gain": 5.0,
+                      "velocity_gain": 0.8,
+                      "foot_offset": 0.03,
+                      "balance": 0.0,
+                      "bend": 0.14227678100843447
+                    },
+                    "push_N": 12.0,
+                    "mass_scale": 1.0
+                  },
+                  "policy": "bc",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1000,
+                  "base_model_xml_sha256": "6cce250a869d152a9a413b5c89822fcc0ed4217ba93498b82334f93746774a0a",
+                  "action_clipped_fraction": 0.0,
+                  "scope": "Joint-reference BC including expert balance corrections; torque PD and bias compensation retained; double support, squat and arm motion.",
+                  "termination": "completed"
+                }
+              ]
+            },
+            "frozen_state": {
+              "test": [
+                {
+                  "passed": false,
+                  "criteria": {
+                    "original_project03": false,
+                    "recover_height": false
+                  },
+                  "metrics": {
+                    "max_height_m": 0.9794979169672101,
+                    "final_height_m": 0.15143656731329114,
+                    "max_tilt_deg": 94.94943279480107,
+                    "contact_samples": 500,
+                    "squat_depth_m": 0.7821496173606,
+                    "min_pelvis_height_m": 0.1037145522034454,
+                    "recovery_height_error_m": 0.5664542126060851,
+                    "mean_saturated_actuator_fraction": 0.001894736842105263
+                  },
+                  "spec": {
+                    "id": "h1-test-000",
+                    "split": "test",
+                    "seed": 333000,
+                    "q_noise": 0.001,
+                    "options": {
+                      "com_gain": 5.0,
+                      "velocity_gain": 0.8,
+                      "foot_offset": 0.03,
+                      "balance": 0.0,
+                      "bend": 0.1583800365603554
+                    },
+                    "push_N": 0.0,
+                    "mass_scale": 1.0
+                  },
+                  "policy": "frozen_state",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1000,
+                  "base_model_xml_sha256": "6cce250a869d152a9a413b5c89822fcc0ed4217ba93498b82334f93746774a0a",
+                  "action_clipped_fraction": 0.0,
+                  "scope": "Joint-reference BC including expert balance corrections; torque PD and bias compensation retained; double support, squat and arm motion.",
+                  "termination": "completed"
+                },
+                {
+                  "passed": false,
+                  "criteria": {
+                    "original_project03": false,
+                    "recover_height": false
+                  },
+                  "metrics": {
+                    "max_height_m": 0.9796048389167832,
+                    "final_height_m": 0.14604609919348574,
+                    "max_tilt_deg": 93.97104965782545,
+                    "contact_samples": 500,
+                    "squat_depth_m": 0.7821021257384275,
+                    "min_pelvis_height_m": 0.0959847796281706,
+                    "recovery_height_error_m": 0.5969277116540705,
+                    "mean_saturated_actuator_fraction": 0.002105263157894737
+                  },
+                  "spec": {
+                    "id": "h1-test-001",
+                    "split": "test",
+                    "seed": 333001,
+                    "q_noise": 0.001,
+                    "options": {
+                      "com_gain": 5.0,
+                      "velocity_gain": 0.8,
+                      "foot_offset": 0.03,
+                      "balance": 0.0,
+                      "bend": 0.15663014413517146
+                    },
+                    "push_N": 0.0,
+                    "mass_scale": 1.0
+                  },
+                  "policy": "frozen_state",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1000,
+                  "base_model_xml_sha256": "6cce250a869d152a9a413b5c89822fcc0ed4217ba93498b82334f93746774a0a",
+                  "action_clipped_fraction": 0.0,
+                  "scope": "Joint-reference BC including expert balance corrections; torque PD and bias compensation retained; double support, squat and arm motion.",
+                  "termination": "completed"
+                }
+              ],
+              "ood": [
+                {
+                  "passed": false,
+                  "criteria": {
+                    "original_project03": false,
+                    "recover_height": false
+                  },
+                  "metrics": {
+                    "max_height_m": 0.9795768987635696,
+                    "final_height_m": 0.1501199854837182,
+                    "max_tilt_deg": 94.82096728390457,
+                    "contact_samples": 499,
+                    "squat_depth_m": 0.7825224887747817,
+                    "min_pelvis_height_m": 0.09911929247078857,
+                    "recovery_height_error_m": 0.571507247734111,
+                    "mean_saturated_actuator_fraction": 0.002105263157894737
+                  },
+                  "spec": {
+                    "id": "h1-ood-000",
+                    "split": "ood",
+                    "seed": 444000,
+                    "q_noise": 0.001,
+                    "options": {
+                      "com_gain": 5.0,
+                      "velocity_gain": 0.8,
+                      "foot_offset": 0.03,
+                      "balance": 0.0,
+                      "bend": 0.15648508187703758
+                    },
+                    "push_N": 12.0,
+                    "mass_scale": 1.0
+                  },
+                  "policy": "frozen_state",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1000,
+                  "base_model_xml_sha256": "6cce250a869d152a9a413b5c89822fcc0ed4217ba93498b82334f93746774a0a",
+                  "action_clipped_fraction": 0.0,
+                  "scope": "Joint-reference BC including expert balance corrections; torque PD and bias compensation retained; double support, squat and arm motion.",
+                  "termination": "completed"
+                },
+                {
+                  "passed": false,
+                  "criteria": {
+                    "original_project03": false,
+                    "recover_height": false
+                  },
+                  "metrics": {
+                    "max_height_m": 0.9796659257281268,
+                    "final_height_m": 0.14786148184584255,
+                    "max_tilt_deg": 93.88048180756286,
+                    "contact_samples": 498,
+                    "squat_depth_m": 0.7996331636085375,
+                    "min_pelvis_height_m": 0.09809706798146953,
+                    "recovery_height_error_m": 0.6062802196715842,
+                    "mean_saturated_actuator_fraction": 0.001894736842105263
+                  },
+                  "spec": {
+                    "id": "h1-ood-001",
+                    "split": "ood",
+                    "seed": 444001,
+                    "q_noise": 0.001,
+                    "options": {
+                      "com_gain": 5.0,
+                      "velocity_gain": 0.8,
+                      "foot_offset": 0.03,
+                      "balance": 0.0,
+                      "bend": 0.14227678100843447
+                    },
+                    "push_N": 12.0,
+                    "mass_scale": 1.0
+                  },
+                  "policy": "frozen_state",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1000,
+                  "base_model_xml_sha256": "6cce250a869d152a9a413b5c89822fcc0ed4217ba93498b82334f93746774a0a",
+                  "action_clipped_fraction": 0.0,
+                  "scope": "Joint-reference BC including expert balance corrections; torque PD and bias compensation retained; double support, squat and arm motion.",
+                  "termination": "completed"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "expert": {
+          "test": {
+            "per_seed_success_rate": [
+              1.0
+            ],
+            "mean_success_rate": 1.0,
+            "sample_std": null
+          },
+          "ood": {
+            "per_seed_success_rate": [
+              1.0
+            ],
+            "mean_success_rate": 1.0,
+            "sample_std": null
+          }
+        },
+        "hold": {
+          "test": {
+            "per_seed_success_rate": [
+              0.0
+            ],
+            "mean_success_rate": 0.0,
+            "sample_std": null
+          },
+          "ood": {
+            "per_seed_success_rate": [
+              0.0
+            ],
+            "mean_success_rate": 0.0,
+            "sample_std": null
+          }
+        },
+        "bc": {
+          "test": {
+            "per_seed_success_rate": [
+              0.0
+            ],
+            "mean_success_rate": 0.0,
+            "sample_std": null
+          },
+          "ood": {
+            "per_seed_success_rate": [
+              0.0
+            ],
+            "mean_success_rate": 0.0,
+            "sample_std": null
+          }
+        },
+        "frozen_state": {
+          "test": {
+            "per_seed_success_rate": [
+              0.0
+            ],
+            "mean_success_rate": 0.0,
+            "sample_std": null
+          },
+          "ood": {
+            "per_seed_success_rate": [
+              0.0
+            ],
+            "mean_success_rate": 0.0,
+            "sample_std": null
+          }
+        },
+        "phase_bc": {
+          "test": {
+            "per_seed_success_rate": [
+              0.0
+            ],
+            "mean_success_rate": 0.0,
+            "sample_std": null
+          },
+          "ood": {
+            "per_seed_success_rate": [
+              0.0
+            ],
+            "mean_success_rate": 0.0,
+            "sample_std": null
+          }
+        }
+      },
+      "reused_dataset_directory": "D:\\RCL\\深圳理工大学-具身智能\\project-04-imitation-learning\\outputs\\platform-baseline-20261012\\h1"
+    },
+    "allegro": {
+      "scope": "Finger-reference BC; palm-assisted caging; prescribed mocap wrist and withdrawing tray are external fixtures.",
+      "observation_dim": 86,
+      "action_dim": 16,
+      "dataset_rows": {
+        "train": 3300,
+        "validation": 1100,
+        "test": 1100,
+        "ood": 1100
+      },
+      "dataset_sha256": {
+        "train": "c2958ae40c15a79ebf387f925bf3a19b4b02817fe8af9cd04eca2cdfdb438dba",
+        "validation": "f2eec92fec7626a5cf5df2f215027da24bbbd271e4962579204d9de7b1d8e43a",
+        "test": "6b0040f16c227d019e6ac34413377aae785bb7adaca56c29ab9c4516d40af286",
+        "ood": "c0637f5242feff16c847b73c0c5148891cc289d955436ca652af9e39c64fb4ee"
+      },
+      "baselines": {
+        "expert": {
+          "test": [
+            {
+              "passed": true,
+              "criteria": {
+                "original_project03": true,
+                "relative_object_retention": true
+              },
+              "metrics": {
+                "max_height_m": 0.3587877685185117,
+                "final_height_m": 0.35859140033084785,
+                "max_tilt_deg": 0.0,
+                "contact_samples": 418,
+                "held_fraction_after_lift": 1.0,
+                "max_contacting_fingers": 3,
+                "support": "palm-assisted caging with prescribed wrist fixture",
+                "relative_object_drift_m": 0.006809035816167046,
+                "late_finger_world_fz_N": -7.2641287338681115,
+                "late_palm_world_fz_N": 7.656515638722676
+              },
+              "spec": {
+                "id": "allegro-test-000",
+                "split": "test",
+                "seed": 333000,
+                "q_noise": 0.002,
+                "options": {
+                  "wrist_quat": "0 1 0 1",
+                  "object_pos": [
+                    0.030663014413517143,
+                    0.00010952177942047197,
+                    0.215
+                  ],
+                  "radius": 0.04083800365603554,
+                  "wrist_tilt": 0.0,
+                  "closed": [
+                    -0.2,
+                    0.6,
+                    0.6,
+                    0.6,
+                    0,
+                    0.6,
+                    0.6,
+                    0.6,
+                    0.2,
+                    0.6,
+                    0.6,
+                    0.6,
+                    1.1,
+                    0.6,
+                    0.9,
+                    0.7
+                  ]
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.0
+              },
+              "policy": "expert",
+              "completed": true,
+              "expert_calls": 1100,
+              "control_steps": 1100,
+              "base_model_xml_sha256": "49746d59e597d76bb26a1fd7ea7c653a7c8b4a076b2b8d577ab85943ab40a806",
+              "action_clipped_fraction": 0.0,
+              "scope": "Finger-reference BC; palm-assisted caging; prescribed mocap wrist and withdrawing tray are external fixtures.",
+              "termination": "completed"
+            },
+            {
+              "passed": true,
+              "criteria": {
+                "original_project03": true,
+                "relative_object_retention": true
+              },
+              "metrics": {
+                "max_height_m": 0.35861167347798045,
+                "final_height_m": 0.35842342588564285,
+                "max_tilt_deg": 0.0,
+                "contact_samples": 418,
+                "held_fraction_after_lift": 1.0,
+                "max_contacting_fingers": 3,
+                "support": "palm-assisted caging with prescribed wrist fixture",
+                "relative_object_drift_m": 0.006582388444587743,
+                "late_finger_world_fz_N": -7.096804602506845,
+                "late_palm_world_fz_N": 7.489202917812139
+              },
+              "spec": {
+                "id": "allegro-test-001",
+                "split": "test",
+                "seed": 333001,
+                "q_noise": 0.002,
+                "options": {
+                  "wrist_quat": "0 1 0 1",
+                  "object_pos": [
+                    0.03094237123711156,
+                    0.00023865244772388163,
+                    0.215
+                  ],
+                  "radius": 0.04061264112824076,
+                  "wrist_tilt": 0.0,
+                  "closed": [
+                    -0.2,
+                    0.6,
+                    0.6,
+                    0.6,
+                    0,
+                    0.6,
+                    0.6,
+                    0.6,
+                    0.2,
+                    0.6,
+                    0.6,
+                    0.6,
+                    1.1,
+                    0.6,
+                    0.9,
+                    0.7
+                  ]
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.0
+              },
+              "policy": "expert",
+              "completed": true,
+              "expert_calls": 1100,
+              "control_steps": 1100,
+              "base_model_xml_sha256": "5f8002704efe8ce2c28176bd6357b5125dc16134b89265d381a5d497d88dbb6d",
+              "action_clipped_fraction": 0.0,
+              "scope": "Finger-reference BC; palm-assisted caging; prescribed mocap wrist and withdrawing tray are external fixtures.",
+              "termination": "completed"
+            }
+          ],
+          "ood": [
+            {
+              "passed": false,
+              "criteria": {
+                "original_project03": false,
+                "relative_object_retention": true
+              },
+              "metrics": {
+                "max_height_m": 0.3593038803849027,
+                "final_height_m": 0.35916728571282996,
+                "max_tilt_deg": 0.0,
+                "contact_samples": 419,
+                "held_fraction_after_lift": 0.795,
+                "max_contacting_fingers": 2,
+                "support": "palm-assisted caging with prescribed wrist fixture",
+                "relative_object_drift_m": 0.006526499543097751,
+                "late_finger_world_fz_N": -8.146041368976121,
+                "late_palm_world_fz_N": 8.734639544414225
+              },
+              "spec": {
+                "id": "allegro-ood-000",
+                "split": "ood",
+                "seed": 444000,
+                "q_noise": 0.002,
+                "options": {
+                  "wrist_quat": "0 1 0 1",
+                  "object_pos": [
+                    0.029227678100843445,
+                    0.00040988157513260144,
+                    0.215
+                  ],
+                  "radius": 0.040648508187703755,
+                  "wrist_tilt": 0.0,
+                  "closed": [
+                    -0.2,
+                    0.6,
+                    0.6,
+                    0.6,
+                    0,
+                    0.6,
+                    0.6,
+                    0.6,
+                    0.2,
+                    0.6,
+                    0.6,
+                    0.6,
+                    1.1,
+                    0.6,
+                    0.9,
+                    0.7
+                  ]
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.5
+              },
+              "policy": "expert",
+              "completed": true,
+              "expert_calls": 1100,
+              "control_steps": 1100,
+              "base_model_xml_sha256": "b37e5c06db23330e8cb2c1832f1168fecd8c02548888b02717ab2a681e2a3961",
+              "action_clipped_fraction": 0.0,
+              "scope": "Finger-reference BC; palm-assisted caging; prescribed mocap wrist and withdrawing tray are external fixtures.",
+              "termination": "completed"
+            },
+            {
+              "passed": false,
+              "criteria": {
+                "original_project03": false,
+                "relative_object_retention": true
+              },
+              "metrics": {
+                "max_height_m": 0.3593173419709216,
+                "final_height_m": 0.35917707856768993,
+                "max_tilt_deg": 0.0,
+                "contact_samples": 419,
+                "held_fraction_after_lift": 0.795,
+                "max_contacting_fingers": 2,
+                "support": "palm-assisted caging with prescribed wrist fixture",
+                "relative_object_drift_m": 0.0064492622625329,
+                "late_finger_world_fz_N": -8.208821181823186,
+                "late_palm_world_fz_N": 8.797405768636066
+              },
+              "spec": {
+                "id": "allegro-ood-001",
+                "split": "ood",
+                "seed": 444001,
+                "q_noise": 0.002,
+                "options": {
+                  "wrist_quat": "0 1 0 1",
+                  "object_pos": [
+                    0.029926480729168415,
+                    0.00011284364993372712,
+                    0.215
+                  ],
+                  "radius": 0.0406741795755001,
+                  "wrist_tilt": 0.0,
+                  "closed": [
+                    -0.2,
+                    0.6,
+                    0.6,
+                    0.6,
+                    0,
+                    0.6,
+                    0.6,
+                    0.6,
+                    0.2,
+                    0.6,
+                    0.6,
+                    0.6,
+                    1.1,
+                    0.6,
+                    0.9,
+                    0.7
+                  ]
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.5
+              },
+              "policy": "expert",
+              "completed": true,
+              "expert_calls": 1100,
+              "control_steps": 1100,
+              "base_model_xml_sha256": "3e7c50ace70d8e4503ba1a1892a5b6d030419cb2eef92989cf438e8964e5fe98",
+              "action_clipped_fraction": 0.0,
+              "scope": "Finger-reference BC; palm-assisted caging; prescribed mocap wrist and withdrawing tray are external fixtures.",
+              "termination": "completed"
+            }
+          ]
+        },
+        "hold": {
+          "test": [
+            {
+              "passed": false,
+              "criteria": {
+                "original_project03": false,
+                "relative_object_retention": true
+              },
+              "metrics": {
+                "max_height_m": 0.36027072923181014,
+                "final_height_m": 0.36026580731168983,
+                "max_tilt_deg": 0.0,
+                "contact_samples": 366,
+                "held_fraction_after_lift": 0.0,
+                "max_contacting_fingers": 1,
+                "support": "palm-assisted caging with prescribed wrist fixture",
+                "relative_object_drift_m": 0.0009934850376510152,
+                "late_finger_world_fz_N": 0.37775211335373987,
+                "late_palm_world_fz_N": 0.014647885193503315
+              },
+              "spec": {
+                "id": "allegro-test-000",
+                "split": "test",
+                "seed": 333000,
+                "q_noise": 0.002,
+                "options": {
+                  "wrist_quat": "0 1 0 1",
+                  "object_pos": [
+                    0.030663014413517143,
+                    0.00010952177942047197,
+                    0.215
+                  ],
+                  "radius": 0.04083800365603554,
+                  "wrist_tilt": 0.0,
+                  "closed": [
+                    -0.2,
+                    0.6,
+                    0.6,
+                    0.6,
+                    0,
+                    0.6,
+                    0.6,
+                    0.6,
+                    0.2,
+                    0.6,
+                    0.6,
+                    0.6,
+                    1.1,
+                    0.6,
+                    0.9,
+                    0.7
+                  ]
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.0
+              },
+              "policy": "hold",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1100,
+              "base_model_xml_sha256": "49746d59e597d76bb26a1fd7ea7c653a7c8b4a076b2b8d577ab85943ab40a806",
+              "action_clipped_fraction": 0.0,
+              "scope": "Finger-reference BC; palm-assisted caging; prescribed mocap wrist and withdrawing tray are external fixtures.",
+              "termination": "completed"
+            },
+            {
+              "passed": false,
+              "criteria": {
+                "original_project03": false,
+                "relative_object_retention": true
+              },
+              "metrics": {
+                "max_height_m": 0.360071681221895,
+                "final_height_m": 0.3600716082345262,
+                "max_tilt_deg": 0.0,
+                "contact_samples": 365,
+                "held_fraction_after_lift": 0.0,
+                "max_contacting_fingers": 1,
+                "support": "palm-assisted caging with prescribed wrist fixture",
+                "relative_object_drift_m": 5.570549269156498e-05,
+                "late_finger_world_fz_N": 0.38000508146786255,
+                "late_palm_world_fz_N": 0.012394918527169597
+              },
+              "spec": {
+                "id": "allegro-test-001",
+                "split": "test",
+                "seed": 333001,
+                "q_noise": 0.002,
+                "options": {
+                  "wrist_quat": "0 1 0 1",
+                  "object_pos": [
+                    0.03094237123711156,
+                    0.00023865244772388163,
+                    0.215
+                  ],
+                  "radius": 0.04061264112824076,
+                  "wrist_tilt": 0.0,
+                  "closed": [
+                    -0.2,
+                    0.6,
+                    0.6,
+                    0.6,
+                    0,
+                    0.6,
+                    0.6,
+                    0.6,
+                    0.2,
+                    0.6,
+                    0.6,
+                    0.6,
+                    1.1,
+                    0.6,
+                    0.9,
+                    0.7
+                  ]
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.0
+              },
+              "policy": "hold",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1100,
+              "base_model_xml_sha256": "5f8002704efe8ce2c28176bd6357b5125dc16134b89265d381a5d497d88dbb6d",
+              "action_clipped_fraction": 0.0,
+              "scope": "Finger-reference BC; palm-assisted caging; prescribed mocap wrist and withdrawing tray are external fixtures.",
+              "termination": "completed"
+            }
+          ],
+          "ood": [
+            {
+              "passed": false,
+              "criteria": {
+                "original_project03": false,
+                "relative_object_retention": true
+              },
+              "metrics": {
+                "max_height_m": 0.3601030378601265,
+                "final_height_m": 0.3601022658039058,
+                "max_tilt_deg": 0.0,
+                "contact_samples": 367,
+                "held_fraction_after_lift": 0.0,
+                "max_contacting_fingers": 1,
+                "support": "palm-assisted caging with prescribed wrist fixture",
+                "relative_object_drift_m": 0.00037122145762740356,
+                "late_finger_world_fz_N": 0.5711022206294821,
+                "late_palm_world_fz_N": 0.017497778883064412
+              },
+              "spec": {
+                "id": "allegro-ood-000",
+                "split": "ood",
+                "seed": 444000,
+                "q_noise": 0.002,
+                "options": {
+                  "wrist_quat": "0 1 0 1",
+                  "object_pos": [
+                    0.029227678100843445,
+                    0.00040988157513260144,
+                    0.215
+                  ],
+                  "radius": 0.040648508187703755,
+                  "wrist_tilt": 0.0,
+                  "closed": [
+                    -0.2,
+                    0.6,
+                    0.6,
+                    0.6,
+                    0,
+                    0.6,
+                    0.6,
+                    0.6,
+                    0.2,
+                    0.6,
+                    0.6,
+                    0.6,
+                    1.1,
+                    0.6,
+                    0.9,
+                    0.7
+                  ]
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.5
+              },
+              "policy": "hold",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1100,
+              "base_model_xml_sha256": "b37e5c06db23330e8cb2c1832f1168fecd8c02548888b02717ab2a681e2a3961",
+              "action_clipped_fraction": 0.0,
+              "scope": "Finger-reference BC; palm-assisted caging; prescribed mocap wrist and withdrawing tray are external fixtures.",
+              "termination": "completed"
+            },
+            {
+              "passed": false,
+              "criteria": {
+                "original_project03": false,
+                "relative_object_retention": true
+              },
+              "metrics": {
+                "max_height_m": 0.36012937863539224,
+                "final_height_m": 0.36012909579591906,
+                "max_tilt_deg": 0.0,
+                "contact_samples": 366,
+                "held_fraction_after_lift": 0.0,
+                "max_contacting_fingers": 1,
+                "support": "palm-assisted caging with prescribed wrist fixture",
+                "relative_object_drift_m": 0.00018549778308297194,
+                "late_finger_world_fz_N": 0.5725845380563527,
+                "late_palm_world_fz_N": 0.016015461819535125
+              },
+              "spec": {
+                "id": "allegro-ood-001",
+                "split": "ood",
+                "seed": 444001,
+                "q_noise": 0.002,
+                "options": {
+                  "wrist_quat": "0 1 0 1",
+                  "object_pos": [
+                    0.029926480729168415,
+                    0.00011284364993372712,
+                    0.215
+                  ],
+                  "radius": 0.0406741795755001,
+                  "wrist_tilt": 0.0,
+                  "closed": [
+                    -0.2,
+                    0.6,
+                    0.6,
+                    0.6,
+                    0,
+                    0.6,
+                    0.6,
+                    0.6,
+                    0.2,
+                    0.6,
+                    0.6,
+                    0.6,
+                    1.1,
+                    0.6,
+                    0.9,
+                    0.7
+                  ]
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.5
+              },
+              "policy": "hold",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1100,
+              "base_model_xml_sha256": "3e7c50ace70d8e4503ba1a1892a5b6d030419cb2eef92989cf438e8964e5fe98",
+              "action_clipped_fraction": 0.0,
+              "scope": "Finger-reference BC; palm-assisted caging; prescribed mocap wrist and withdrawing tray are external fixtures.",
+              "termination": "completed"
+            }
+          ]
+        },
+        "phase_bc": {
+          "test": [
+            {
+              "passed": true,
+              "criteria": {
+                "original_project03": true,
+                "relative_object_retention": true
+              },
+              "metrics": {
+                "max_height_m": 0.3587901131018784,
+                "final_height_m": 0.3585940167708353,
+                "max_tilt_deg": 0.0,
+                "contact_samples": 418,
+                "held_fraction_after_lift": 1.0,
+                "max_contacting_fingers": 3,
+                "support": "palm-assisted caging with prescribed wrist fixture",
+                "relative_object_drift_m": 0.006809354874371993,
+                "late_finger_world_fz_N": -7.257033421774693,
+                "late_palm_world_fz_N": 7.6494372554102865
+              },
+              "spec": {
+                "id": "allegro-test-000",
+                "split": "test",
+                "seed": 333000,
+                "q_noise": 0.002,
+                "options": {
+                  "wrist_quat": "0 1 0 1",
+                  "object_pos": [
+                    0.030663014413517143,
+                    0.00010952177942047197,
+                    0.215
+                  ],
+                  "radius": 0.04083800365603554,
+                  "wrist_tilt": 0.0,
+                  "closed": [
+                    -0.2,
+                    0.6,
+                    0.6,
+                    0.6,
+                    0,
+                    0.6,
+                    0.6,
+                    0.6,
+                    0.2,
+                    0.6,
+                    0.6,
+                    0.6,
+                    1.1,
+                    0.6,
+                    0.9,
+                    0.7
+                  ]
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.0
+              },
+              "policy": "phase_bc",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1100,
+              "base_model_xml_sha256": "49746d59e597d76bb26a1fd7ea7c653a7c8b4a076b2b8d577ab85943ab40a806",
+              "action_clipped_fraction": 0.0,
+              "scope": "Finger-reference BC; palm-assisted caging; prescribed mocap wrist and withdrawing tray are external fixtures.",
+              "termination": "completed",
+              "policy_scope": "Clock-only training-reference average and interpolation; no state feedback or gait-parameter adaptation"
+            },
+            {
+              "passed": true,
+              "criteria": {
+                "original_project03": true,
+                "relative_object_retention": true
+              },
+              "metrics": {
+                "max_height_m": 0.3586109418475269,
+                "final_height_m": 0.3584226052967173,
+                "max_tilt_deg": 0.0,
+                "contact_samples": 418,
+                "held_fraction_after_lift": 1.0,
+                "max_contacting_fingers": 3,
+                "support": "palm-assisted caging with prescribed wrist fixture",
+                "relative_object_drift_m": 0.006582555029574165,
+                "late_finger_world_fz_N": -7.098828633912549,
+                "late_palm_world_fz_N": 7.491231760165593
+              },
+              "spec": {
+                "id": "allegro-test-001",
+                "split": "test",
+                "seed": 333001,
+                "q_noise": 0.002,
+                "options": {
+                  "wrist_quat": "0 1 0 1",
+                  "object_pos": [
+                    0.03094237123711156,
+                    0.00023865244772388163,
+                    0.215
+                  ],
+                  "radius": 0.04061264112824076,
+                  "wrist_tilt": 0.0,
+                  "closed": [
+                    -0.2,
+                    0.6,
+                    0.6,
+                    0.6,
+                    0,
+                    0.6,
+                    0.6,
+                    0.6,
+                    0.2,
+                    0.6,
+                    0.6,
+                    0.6,
+                    1.1,
+                    0.6,
+                    0.9,
+                    0.7
+                  ]
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.0
+              },
+              "policy": "phase_bc",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1100,
+              "base_model_xml_sha256": "5f8002704efe8ce2c28176bd6357b5125dc16134b89265d381a5d497d88dbb6d",
+              "action_clipped_fraction": 0.0,
+              "scope": "Finger-reference BC; palm-assisted caging; prescribed mocap wrist and withdrawing tray are external fixtures.",
+              "termination": "completed",
+              "policy_scope": "Clock-only training-reference average and interpolation; no state feedback or gait-parameter adaptation"
+            }
+          ],
+          "ood": [
+            {
+              "passed": false,
+              "criteria": {
+                "original_project03": false,
+                "relative_object_retention": true
+              },
+              "metrics": {
+                "max_height_m": 0.35930383259490895,
+                "final_height_m": 0.35916722262168427,
+                "max_tilt_deg": 0.0,
+                "contact_samples": 419,
+                "held_fraction_after_lift": 0.795,
+                "max_contacting_fingers": 2,
+                "support": "palm-assisted caging with prescribed wrist fixture",
+                "relative_object_drift_m": 0.006526285114397395,
+                "late_finger_world_fz_N": -8.146281815251847,
+                "late_palm_world_fz_N": 8.734879996343802
+              },
+              "spec": {
+                "id": "allegro-ood-000",
+                "split": "ood",
+                "seed": 444000,
+                "q_noise": 0.002,
+                "options": {
+                  "wrist_quat": "0 1 0 1",
+                  "object_pos": [
+                    0.029227678100843445,
+                    0.00040988157513260144,
+                    0.215
+                  ],
+                  "radius": 0.040648508187703755,
+                  "wrist_tilt": 0.0,
+                  "closed": [
+                    -0.2,
+                    0.6,
+                    0.6,
+                    0.6,
+                    0,
+                    0.6,
+                    0.6,
+                    0.6,
+                    0.2,
+                    0.6,
+                    0.6,
+                    0.6,
+                    1.1,
+                    0.6,
+                    0.9,
+                    0.7
+                  ]
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.5
+              },
+              "policy": "phase_bc",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1100,
+              "base_model_xml_sha256": "b37e5c06db23330e8cb2c1832f1168fecd8c02548888b02717ab2a681e2a3961",
+              "action_clipped_fraction": 0.0,
+              "scope": "Finger-reference BC; palm-assisted caging; prescribed mocap wrist and withdrawing tray are external fixtures.",
+              "termination": "completed",
+              "policy_scope": "Clock-only training-reference average and interpolation; no state feedback or gait-parameter adaptation"
+            },
+            {
+              "passed": false,
+              "criteria": {
+                "original_project03": false,
+                "relative_object_retention": true
+              },
+              "metrics": {
+                "max_height_m": 0.35931740545985125,
+                "final_height_m": 0.35917715250719146,
+                "max_tilt_deg": 0.0,
+                "contact_samples": 419,
+                "held_fraction_after_lift": 0.81,
+                "max_contacting_fingers": 2,
+                "support": "palm-assisted caging with prescribed wrist fixture",
+                "relative_object_drift_m": 0.006449256401949514,
+                "late_finger_world_fz_N": -8.20856015216744,
+                "late_palm_world_fz_N": 8.797144766893819
+              },
+              "spec": {
+                "id": "allegro-ood-001",
+                "split": "ood",
+                "seed": 444001,
+                "q_noise": 0.002,
+                "options": {
+                  "wrist_quat": "0 1 0 1",
+                  "object_pos": [
+                    0.029926480729168415,
+                    0.00011284364993372712,
+                    0.215
+                  ],
+                  "radius": 0.0406741795755001,
+                  "wrist_tilt": 0.0,
+                  "closed": [
+                    -0.2,
+                    0.6,
+                    0.6,
+                    0.6,
+                    0,
+                    0.6,
+                    0.6,
+                    0.6,
+                    0.2,
+                    0.6,
+                    0.6,
+                    0.6,
+                    1.1,
+                    0.6,
+                    0.9,
+                    0.7
+                  ]
+                },
+                "push_N": 0.0,
+                "mass_scale": 1.5
+              },
+              "policy": "phase_bc",
+              "completed": true,
+              "expert_calls": 0,
+              "control_steps": 1100,
+              "base_model_xml_sha256": "3e7c50ace70d8e4503ba1a1892a5b6d030419cb2eef92989cf438e8964e5fe98",
+              "action_clipped_fraction": 0.0,
+              "scope": "Finger-reference BC; palm-assisted caging; prescribed mocap wrist and withdrawing tray are external fixtures.",
+              "termination": "completed",
+              "policy_scope": "Clock-only training-reference average and interpolation; no state feedback or gait-parameter adaptation"
+            }
+          ]
+        }
+      },
+      "results": {
+        "0": {
+          "training_seconds": 1.4712626000000455,
+          "selected_update": 1600,
+          "normalized_test_action_mse": 0.23754362494423178,
+          "policies": {
+            "bc": {
+              "test": [
+                {
+                  "passed": false,
+                  "criteria": {
+                    "original_project03": false,
+                    "relative_object_retention": true
+                  },
+                  "metrics": {
+                    "max_height_m": 0.2148387920711287,
+                    "final_height_m": 0.04047082181357536,
+                    "max_tilt_deg": 0.0,
+                    "contact_samples": 28,
+                    "held_fraction_after_lift": 0.0,
+                    "max_contacting_fingers": 0,
+                    "support": "palm-assisted caging with prescribed wrist fixture",
+                    "relative_object_drift_m": 0.0,
+                    "late_finger_world_fz_N": 0.0,
+                    "late_palm_world_fz_N": 0.0
+                  },
+                  "spec": {
+                    "id": "allegro-test-000",
+                    "split": "test",
+                    "seed": 333000,
+                    "q_noise": 0.002,
+                    "options": {
+                      "wrist_quat": "0 1 0 1",
+                      "object_pos": [
+                        0.030663014413517143,
+                        0.00010952177942047197,
+                        0.215
+                      ],
+                      "radius": 0.04083800365603554,
+                      "wrist_tilt": 0.0,
+                      "closed": [
+                        -0.2,
+                        0.6,
+                        0.6,
+                        0.6,
+                        0,
+                        0.6,
+                        0.6,
+                        0.6,
+                        0.2,
+                        0.6,
+                        0.6,
+                        0.6,
+                        1.1,
+                        0.6,
+                        0.9,
+                        0.7
+                      ]
+                    },
+                    "push_N": 0.0,
+                    "mass_scale": 1.0
+                  },
+                  "policy": "bc",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1100,
+                  "base_model_xml_sha256": "49746d59e597d76bb26a1fd7ea7c653a7c8b4a076b2b8d577ab85943ab40a806",
+                  "action_clipped_fraction": 0.007272727272727273,
+                  "scope": "Finger-reference BC; palm-assisted caging; prescribed mocap wrist and withdrawing tray are external fixtures.",
+                  "termination": "completed"
+                },
+                {
+                  "passed": false,
+                  "criteria": {
+                    "original_project03": false,
+                    "relative_object_retention": true
+                  },
+                  "metrics": {
+                    "max_height_m": 0.22725100130266815,
+                    "final_height_m": 0.04024545928578063,
+                    "max_tilt_deg": 0.0,
+                    "contact_samples": 6,
+                    "held_fraction_after_lift": 0.0,
+                    "max_contacting_fingers": 0,
+                    "support": "palm-assisted caging with prescribed wrist fixture",
+                    "relative_object_drift_m": 0.0,
+                    "late_finger_world_fz_N": 0.0,
+                    "late_palm_world_fz_N": 0.0
+                  },
+                  "spec": {
+                    "id": "allegro-test-001",
+                    "split": "test",
+                    "seed": 333001,
+                    "q_noise": 0.002,
+                    "options": {
+                      "wrist_quat": "0 1 0 1",
+                      "object_pos": [
+                        0.03094237123711156,
+                        0.00023865244772388163,
+                        0.215
+                      ],
+                      "radius": 0.04061264112824076,
+                      "wrist_tilt": 0.0,
+                      "closed": [
+                        -0.2,
+                        0.6,
+                        0.6,
+                        0.6,
+                        0,
+                        0.6,
+                        0.6,
+                        0.6,
+                        0.2,
+                        0.6,
+                        0.6,
+                        0.6,
+                        1.1,
+                        0.6,
+                        0.9,
+                        0.7
+                      ]
+                    },
+                    "push_N": 0.0,
+                    "mass_scale": 1.0
+                  },
+                  "policy": "bc",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1100,
+                  "base_model_xml_sha256": "5f8002704efe8ce2c28176bd6357b5125dc16134b89265d381a5d497d88dbb6d",
+                  "action_clipped_fraction": 0.0,
+                  "scope": "Finger-reference BC; palm-assisted caging; prescribed mocap wrist and withdrawing tray are external fixtures.",
+                  "termination": "completed"
+                }
+              ],
+              "ood": [
+                {
+                  "passed": false,
+                  "criteria": {
+                    "original_project03": false,
+                    "relative_object_retention": true
+                  },
+                  "metrics": {
+                    "max_height_m": 0.21524085867370416,
+                    "final_height_m": 0.04028132634524359,
+                    "max_tilt_deg": 0.0,
+                    "contact_samples": 18,
+                    "held_fraction_after_lift": 0.0,
+                    "max_contacting_fingers": 0,
+                    "support": "palm-assisted caging with prescribed wrist fixture",
+                    "relative_object_drift_m": 0.0,
+                    "late_finger_world_fz_N": 0.0,
+                    "late_palm_world_fz_N": 0.0
+                  },
+                  "spec": {
+                    "id": "allegro-ood-000",
+                    "split": "ood",
+                    "seed": 444000,
+                    "q_noise": 0.002,
+                    "options": {
+                      "wrist_quat": "0 1 0 1",
+                      "object_pos": [
+                        0.029227678100843445,
+                        0.00040988157513260144,
+                        0.215
+                      ],
+                      "radius": 0.040648508187703755,
+                      "wrist_tilt": 0.0,
+                      "closed": [
+                        -0.2,
+                        0.6,
+                        0.6,
+                        0.6,
+                        0,
+                        0.6,
+                        0.6,
+                        0.6,
+                        0.2,
+                        0.6,
+                        0.6,
+                        0.6,
+                        1.1,
+                        0.6,
+                        0.9,
+                        0.7
+                      ]
+                    },
+                    "push_N": 0.0,
+                    "mass_scale": 1.5
+                  },
+                  "policy": "bc",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1100,
+                  "base_model_xml_sha256": "b37e5c06db23330e8cb2c1832f1168fecd8c02548888b02717ab2a681e2a3961",
+                  "action_clipped_fraction": 0.004545454545454545,
+                  "scope": "Finger-reference BC; palm-assisted caging; prescribed mocap wrist and withdrawing tray are external fixtures.",
+                  "termination": "completed"
+                },
+                {
+                  "passed": false,
+                  "criteria": {
+                    "original_project03": false,
+                    "relative_object_retention": true
+                  },
+                  "metrics": {
+                    "max_height_m": 0.22914551386545537,
+                    "final_height_m": 0.04030699773303997,
+                    "max_tilt_deg": 0.0,
+                    "contact_samples": 15,
+                    "held_fraction_after_lift": 0.0,
+                    "max_contacting_fingers": 0,
+                    "support": "palm-assisted caging with prescribed wrist fixture",
+                    "relative_object_drift_m": 0.0,
+                    "late_finger_world_fz_N": 0.0,
+                    "late_palm_world_fz_N": 0.0
+                  },
+                  "spec": {
+                    "id": "allegro-ood-001",
+                    "split": "ood",
+                    "seed": 444001,
+                    "q_noise": 0.002,
+                    "options": {
+                      "wrist_quat": "0 1 0 1",
+                      "object_pos": [
+                        0.029926480729168415,
+                        0.00011284364993372712,
+                        0.215
+                      ],
+                      "radius": 0.0406741795755001,
+                      "wrist_tilt": 0.0,
+                      "closed": [
+                        -0.2,
+                        0.6,
+                        0.6,
+                        0.6,
+                        0,
+                        0.6,
+                        0.6,
+                        0.6,
+                        0.2,
+                        0.6,
+                        0.6,
+                        0.6,
+                        1.1,
+                        0.6,
+                        0.9,
+                        0.7
+                      ]
+                    },
+                    "push_N": 0.0,
+                    "mass_scale": 1.5
+                  },
+                  "policy": "bc",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1100,
+                  "base_model_xml_sha256": "3e7c50ace70d8e4503ba1a1892a5b6d030419cb2eef92989cf438e8964e5fe98",
+                  "action_clipped_fraction": 0.0036363636363636364,
+                  "scope": "Finger-reference BC; palm-assisted caging; prescribed mocap wrist and withdrawing tray are external fixtures.",
+                  "termination": "completed"
+                }
+              ]
+            },
+            "frozen_state": {
+              "test": [
+                {
+                  "passed": false,
+                  "criteria": {
+                    "original_project03": false,
+                    "relative_object_retention": true
+                  },
+                  "metrics": {
+                    "max_height_m": 0.3615711300594406,
+                    "final_height_m": 0.3615708218135753,
+                    "max_tilt_deg": 0.0,
+                    "contact_samples": 366,
+                    "held_fraction_after_lift": 0.0,
+                    "max_contacting_fingers": 0,
+                    "support": "palm-assisted caging with prescribed wrist fixture",
+                    "relative_object_drift_m": 0.0,
+                    "late_finger_world_fz_N": 0.0,
+                    "late_palm_world_fz_N": 0.3923999999999999
+                  },
+                  "spec": {
+                    "id": "allegro-test-000",
+                    "split": "test",
+                    "seed": 333000,
+                    "q_noise": 0.002,
+                    "options": {
+                      "wrist_quat": "0 1 0 1",
+                      "object_pos": [
+                        0.030663014413517143,
+                        0.00010952177942047197,
+                        0.215
+                      ],
+                      "radius": 0.04083800365603554,
+                      "wrist_tilt": 0.0,
+                      "closed": [
+                        -0.2,
+                        0.6,
+                        0.6,
+                        0.6,
+                        0,
+                        0.6,
+                        0.6,
+                        0.6,
+                        0.2,
+                        0.6,
+                        0.6,
+                        0.6,
+                        1.1,
+                        0.6,
+                        0.9,
+                        0.7
+                      ]
+                    },
+                    "push_N": 0.0,
+                    "mass_scale": 1.0
+                  },
+                  "policy": "frozen_state",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1100,
+                  "base_model_xml_sha256": "49746d59e597d76bb26a1fd7ea7c653a7c8b4a076b2b8d577ab85943ab40a806",
+                  "action_clipped_fraction": 0.0,
+                  "scope": "Finger-reference BC; palm-assisted caging; prescribed mocap wrist and withdrawing tray are external fixtures.",
+                  "termination": "completed"
+                },
+                {
+                  "passed": false,
+                  "criteria": {
+                    "original_project03": false,
+                    "relative_object_retention": true
+                  },
+                  "metrics": {
+                    "max_height_m": 0.3600910363352469,
+                    "final_height_m": 0.3600680498587475,
+                    "max_tilt_deg": 0.0,
+                    "contact_samples": 365,
+                    "held_fraction_after_lift": 0.0,
+                    "max_contacting_fingers": 1,
+                    "support": "palm-assisted caging with prescribed wrist fixture",
+                    "relative_object_drift_m": 0.0008618073905281591,
+                    "late_finger_world_fz_N": 0.3725396273310326,
+                    "late_palm_world_fz_N": 0.02022331764870323
+                  },
+                  "spec": {
+                    "id": "allegro-test-001",
+                    "split": "test",
+                    "seed": 333001,
+                    "q_noise": 0.002,
+                    "options": {
+                      "wrist_quat": "0 1 0 1",
+                      "object_pos": [
+                        0.03094237123711156,
+                        0.00023865244772388163,
+                        0.215
+                      ],
+                      "radius": 0.04061264112824076,
+                      "wrist_tilt": 0.0,
+                      "closed": [
+                        -0.2,
+                        0.6,
+                        0.6,
+                        0.6,
+                        0,
+                        0.6,
+                        0.6,
+                        0.6,
+                        0.2,
+                        0.6,
+                        0.6,
+                        0.6,
+                        1.1,
+                        0.6,
+                        0.9,
+                        0.7
+                      ]
+                    },
+                    "push_N": 0.0,
+                    "mass_scale": 1.0
+                  },
+                  "policy": "frozen_state",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1100,
+                  "base_model_xml_sha256": "5f8002704efe8ce2c28176bd6357b5125dc16134b89265d381a5d497d88dbb6d",
+                  "action_clipped_fraction": 0.0,
+                  "scope": "Finger-reference BC; palm-assisted caging; prescribed mocap wrist and withdrawing tray are external fixtures.",
+                  "termination": "completed"
+                }
+              ],
+              "ood": [
+                {
+                  "passed": false,
+                  "criteria": {
+                    "original_project03": false,
+                    "relative_object_retention": true
+                  },
+                  "metrics": {
+                    "max_height_m": 0.3601303761236382,
+                    "final_height_m": 0.3601134699424048,
+                    "max_tilt_deg": 0.0,
+                    "contact_samples": 366,
+                    "held_fraction_after_lift": 0.0,
+                    "max_contacting_fingers": 1,
+                    "support": "palm-assisted caging with prescribed wrist fixture",
+                    "relative_object_drift_m": 0.0004073512048718526,
+                    "late_finger_world_fz_N": 0.5646607138726393,
+                    "late_palm_world_fz_N": 0.02370621146692001
+                  },
+                  "spec": {
+                    "id": "allegro-ood-000",
+                    "split": "ood",
+                    "seed": 444000,
+                    "q_noise": 0.002,
+                    "options": {
+                      "wrist_quat": "0 1 0 1",
+                      "object_pos": [
+                        0.029227678100843445,
+                        0.00040988157513260144,
+                        0.215
+                      ],
+                      "radius": 0.040648508187703755,
+                      "wrist_tilt": 0.0,
+                      "closed": [
+                        -0.2,
+                        0.6,
+                        0.6,
+                        0.6,
+                        0,
+                        0.6,
+                        0.6,
+                        0.6,
+                        0.2,
+                        0.6,
+                        0.6,
+                        0.6,
+                        1.1,
+                        0.6,
+                        0.9,
+                        0.7
+                      ]
+                    },
+                    "push_N": 0.0,
+                    "mass_scale": 1.5
+                  },
+                  "policy": "frozen_state",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1100,
+                  "base_model_xml_sha256": "b37e5c06db23330e8cb2c1832f1168fecd8c02548888b02717ab2a681e2a3961",
+                  "action_clipped_fraction": 0.0,
+                  "scope": "Finger-reference BC; palm-assisted caging; prescribed mocap wrist and withdrawing tray are external fixtures.",
+                  "termination": "completed"
+                },
+                {
+                  "passed": false,
+                  "criteria": {
+                    "original_project03": false,
+                    "relative_object_retention": true
+                  },
+                  "metrics": {
+                    "max_height_m": 0.36140730597890514,
+                    "final_height_m": 0.3614069977330397,
+                    "max_tilt_deg": 0.0,
+                    "contact_samples": 366,
+                    "held_fraction_after_lift": 0.0,
+                    "max_contacting_fingers": 0,
+                    "support": "palm-assisted caging with prescribed wrist fixture",
+                    "relative_object_drift_m": 0.0,
+                    "late_finger_world_fz_N": 0.0,
+                    "late_palm_world_fz_N": 0.5885999999999999
+                  },
+                  "spec": {
+                    "id": "allegro-ood-001",
+                    "split": "ood",
+                    "seed": 444001,
+                    "q_noise": 0.002,
+                    "options": {
+                      "wrist_quat": "0 1 0 1",
+                      "object_pos": [
+                        0.029926480729168415,
+                        0.00011284364993372712,
+                        0.215
+                      ],
+                      "radius": 0.0406741795755001,
+                      "wrist_tilt": 0.0,
+                      "closed": [
+                        -0.2,
+                        0.6,
+                        0.6,
+                        0.6,
+                        0,
+                        0.6,
+                        0.6,
+                        0.6,
+                        0.2,
+                        0.6,
+                        0.6,
+                        0.6,
+                        1.1,
+                        0.6,
+                        0.9,
+                        0.7
+                      ]
+                    },
+                    "push_N": 0.0,
+                    "mass_scale": 1.5
+                  },
+                  "policy": "frozen_state",
+                  "completed": true,
+                  "expert_calls": 0,
+                  "control_steps": 1100,
+                  "base_model_xml_sha256": "3e7c50ace70d8e4503ba1a1892a5b6d030419cb2eef92989cf438e8964e5fe98",
+                  "action_clipped_fraction": 0.0,
+                  "scope": "Finger-reference BC; palm-assisted caging; prescribed mocap wrist and withdrawing tray are external fixtures.",
+                  "termination": "completed"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "expert": {
+          "test": {
+            "per_seed_success_rate": [
+              1.0
+            ],
+            "mean_success_rate": 1.0,
+            "sample_std": null
+          },
+          "ood": {
+            "per_seed_success_rate": [
+              0.0
+            ],
+            "mean_success_rate": 0.0,
+            "sample_std": null
+          }
+        },
+        "hold": {
+          "test": {
+            "per_seed_success_rate": [
+              0.0
+            ],
+            "mean_success_rate": 0.0,
+            "sample_std": null
+          },
+          "ood": {
+            "per_seed_success_rate": [
+              0.0
+            ],
+            "mean_success_rate": 0.0,
+            "sample_std": null
+          }
+        },
+        "bc": {
+          "test": {
+            "per_seed_success_rate": [
+              0.0
+            ],
+            "mean_success_rate": 0.0,
+            "sample_std": null
+          },
+          "ood": {
+            "per_seed_success_rate": [
+              0.0
+            ],
+            "mean_success_rate": 0.0,
+            "sample_std": null
+          }
+        },
+        "frozen_state": {
+          "test": {
+            "per_seed_success_rate": [
+              0.0
+            ],
+            "mean_success_rate": 0.0,
+            "sample_std": null
+          },
+          "ood": {
+            "per_seed_success_rate": [
+              0.0
+            ],
+            "mean_success_rate": 0.0,
+            "sample_std": null
+          }
+        },
+        "phase_bc": {
+          "test": {
+            "per_seed_success_rate": [
+              1.0
+            ],
+            "mean_success_rate": 1.0,
+            "sample_std": null
+          },
+          "ood": {
+            "per_seed_success_rate": [
+              0.0
+            ],
+            "mean_success_rate": 0.0,
+            "sample_std": null
+          }
+        }
+      },
+      "reused_dataset_directory": "D:\\RCL\\深圳理工大学-具身智能\\project-04-imitation-learning\\outputs\\platform-baseline-20261012\\allegro"
+    }
+  },
+  "python": "3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:03:56) [MSC v.1929 64 bit (AMD64)]",
+  "numpy": "1.26.4",
+  "mujoco": "3.2.5",
+  "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+  "source_sha256": {
+    "platform_learning.py": "70cfd1d4826094abcf822800fd3c17ad0163157f172bc7616cf53c1491804a7c",
+    "learning.py": "baf627af5ff937046c8b7d8ef935cb8b17eefadffdc11cc7144adf8162689368",
+    "lab.py": "7ff5bfc42eaa3c5a435ed13b34f97bf1043a84ec1e4d1ca371bfe392a3e384cd",
+    "deep_practice.py": "dd276620550e20b1e1a17654cdf854e3e73fb0c8359cda189060c5582dea3b12"
+  },
+  "scope": "Phase-conditioned low-dimensional joint-reference BC. Full-body walking, vision, DAgger, dexterous reorientation and real robots are separately gated.",
+  "geometry_timestamp": "Diagnostics follow explicit mj_forward; geometry is refreshed at the reported current data.time.",
+  "elapsed_seconds": 71.20205309999801,
+  "rendered": true
+}

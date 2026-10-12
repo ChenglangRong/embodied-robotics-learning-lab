@@ -1,0 +1,4 @@
+请复核上一轮提出的事项修订，只读取test_deep_practice.py与深入训练与迁移.md相关段落。保持文件原状。
+已经修改：新增test_inclined_box_friction_vector_and_generalized_force：0.3rad斜面，非零切向摩擦，世界系合力约[0,0,1.962]N，另与自由物体qfrc_constraint[:3]核对；实测10项测试全部通过。观察器状态保护测试增加time、qacc、efc_force。教程改为分别说明合成旋转、静止球和斜面摩擦验证；明确当前测试只验证力，力矩另验；Panda动态过程与采样时序均标为候选解释。
+请核查这些修订是否解决你的合理意见。你的上一轮“水平地面接触frame约为单位阵”描述需复核，MuJoCo法向在接触第一轴，地面世界法向z意味着该frame通常是轴置换；force[:3]包含三轴力，force[1:3]是切向力。请按代码和官方约定判断，明确实际测试由主代理执行、你为静态复核。
+输出不超过450中文字，第一行VERDICT: PASS / CHANGES / BLOCKED。已完成项与剩余边界分开陈述。

@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "criteria": {
+    "original_project03": true,
+    "relative_object_retention": true
+  },
+  "metrics": {
+    "max_height_m": 0.3587877685185117,
+    "final_height_m": 0.35859140033084785,
+    "max_tilt_deg": 0.0,
+    "contact_samples": 418,
+    "held_fraction_after_lift": 1.0,
+    "max_contacting_fingers": 3,
+    "support": "palm-assisted caging with prescribed wrist fixture",
+    "relative_object_drift_m": 0.006809035816167046,
+    "late_finger_world_fz_N": -7.2641287338681115,
+    "late_palm_world_fz_N": 7.656515638722676
+  },
+  "spec": {
+    "id": "allegro-test-000",
+    "split": "test",
+    "seed": 333000,
+    "q_noise": 0.002,
+    "options": {
+      "wrist_quat": "0 1 0 1",
+      "object_pos": [
+        0.030663014413517143,
+        0.00010952177942047197,
+        0.215
+      ],
+      "radius": 0.04083800365603554,
+      "wrist_tilt": 0.0,
+      "closed": [
+        -0.2,
+        0.6,
+        0.6,
+        0.6,
+        0,
+        0.6,
+        0.6,
+        0.6,
+        0.2,
+        0.6,
+        0.6,
+        0.6,
+        1.1,
+        0.6,
+        0.9,
+        0.7
+      ]
+    },
+    "push_N": 0.0,
+    "mass_scale": 1.0
+  },
+  "policy": "expert",
+  "completed": true,
+  "expert_calls": 1100,
+  "control_steps": 1100,
+  "base_model_xml_sha256": "49746d59e597d76bb26a1fd7ea7c653a7c8b4a076b2b8d577ab85943ab40a806",
+  "action_clipped_fraction": 0.0,
+  "scope": "Finger-reference BC; palm-assisted caging; prescribed mocap wrist and withdrawing tray are external fixtures.",
+  "termination": "completed"
+}

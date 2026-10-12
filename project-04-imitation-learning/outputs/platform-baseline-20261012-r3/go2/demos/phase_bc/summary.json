@@ -1,0 +1,42 @@
+{
+  "passed": false,
+  "criteria": {
+    "original_project03": false
+  },
+  "metrics": {
+    "max_height_m": 0.29941293484967796,
+    "final_height_m": 0.26288672387166523,
+    "max_tilt_deg": 3.4357702862528887,
+    "contact_samples": 598,
+    "forward_displacement_m": -0.05808039627764185,
+    "min_base_height_m": 0.23529044478769726,
+    "max_foot_clearance_m": 0.014283637340274304,
+    "swing_samples": 0,
+    "mean_contact_tangent_speed_m_s": 0.08227010635523596,
+    "mean_saturated_actuator_fraction": 0.0
+  },
+  "spec": {
+    "id": "go2-test-000",
+    "split": "test",
+    "seed": 333000,
+    "q_noise": 0.002,
+    "options": {
+      "amp": 0.059190018280177704,
+      "lift": 0.07054760889710236,
+      "freq": 1.8663014413517143,
+      "kp": 100,
+      "kd": 3.5
+    },
+    "push_N": 0.0,
+    "mass_scale": 1.0
+  },
+  "policy": "phase_bc",
+  "completed": true,
+  "expert_calls": 0,
+  "control_steps": 1200,
+  "base_model_xml_sha256": "08db8c886d72fe639fc9f1366280cd5c53029328f0b45164175531199698896f",
+  "action_clipped_fraction": 0.0,
+  "scope": "Joint-reference BC; torque PD retained; flat terrain; phase and commanded gait parameters observed.",
+  "termination": "completed",
+  "policy_scope": "Clock-only training-reference average and interpolation; no state feedback or gait-parameter adaptation"
+}

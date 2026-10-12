@@ -1,0 +1,455 @@
+{
+  "kind": "allegro",
+  "mode": "quick",
+  "specs": {
+    "train": [
+      {
+        "id": "allegro-train-000",
+        "split": "train",
+        "seed": 111000,
+        "q_noise": 0.002,
+        "options": {
+          "wrist_quat": "0 1 0 1",
+          "object_pos": [
+            0.029338606601917935,
+            1.1928628996531318e-05,
+            0.215
+          ],
+          "radius": 0.039307322711904666,
+          "wrist_tilt": 0.0,
+          "closed": [
+            -0.2,
+            0.6,
+            0.6,
+            0.6,
+            0,
+            0.6,
+            0.6,
+            0.6,
+            0.2,
+            0.6,
+            0.6,
+            0.6,
+            1.1,
+            0.6,
+            0.9,
+            0.7
+          ]
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0
+      },
+      {
+        "id": "allegro-train-001",
+        "split": "train",
+        "seed": 111001,
+        "q_noise": 0.002,
+        "options": {
+          "wrist_quat": "0 1 0 1",
+          "object_pos": [
+            0.03053516175404861,
+            -0.0007815450822382892,
+            0.215
+          ],
+          "radius": 0.040316237746907506,
+          "wrist_tilt": 0.0,
+          "closed": [
+            -0.2,
+            0.6,
+            0.6,
+            0.6,
+            0,
+            0.6,
+            0.6,
+            0.6,
+            0.2,
+            0.6,
+            0.6,
+            0.6,
+            1.1,
+            0.6,
+            0.9,
+            0.7
+          ]
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0
+      },
+      {
+        "id": "allegro-train-002",
+        "split": "train",
+        "seed": 111002,
+        "q_noise": 0.002,
+        "options": {
+          "wrist_quat": "0 1 0 1",
+          "object_pos": [
+            0.03093749181389028,
+            -0.0005061013278873754,
+            0.215
+          ],
+          "radius": 0.04059519305273047,
+          "wrist_tilt": 0.0,
+          "closed": [
+            -0.2,
+            0.6,
+            0.6,
+            0.6,
+            0,
+            0.6,
+            0.6,
+            0.6,
+            0.2,
+            0.6,
+            0.6,
+            0.6,
+            1.1,
+            0.6,
+            0.9,
+            0.7
+          ]
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0
+      },
+      {
+        "id": "allegro-train-003",
+        "split": "train",
+        "seed": 111003,
+        "q_noise": 0.002,
+        "options": {
+          "wrist_quat": "0 1 0 1",
+          "object_pos": [
+            0.0296765510721369,
+            0.0004308344629050669,
+            0.215
+          ],
+          "radius": 0.0393950276582013,
+          "wrist_tilt": 0.0,
+          "closed": [
+            -0.2,
+            0.6,
+            0.6,
+            0.6,
+            0,
+            0.6,
+            0.6,
+            0.6,
+            0.2,
+            0.6,
+            0.6,
+            0.6,
+            1.1,
+            0.6,
+            0.9,
+            0.7
+          ]
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0
+      },
+      {
+        "id": "allegro-train-004",
+        "split": "train",
+        "seed": 111004,
+        "q_noise": 0.002,
+        "options": {
+          "wrist_quat": "0 1 0 1",
+          "object_pos": [
+            0.029832020515995886,
+            -0.0002045105967087837,
+            0.215
+          ],
+          "radius": 0.03915802956269474,
+          "wrist_tilt": 0.0,
+          "closed": [
+            -0.2,
+            0.6,
+            0.6,
+            0.6,
+            0,
+            0.6,
+            0.6,
+            0.6,
+            0.2,
+            0.6,
+            0.6,
+            0.6,
+            1.1,
+            0.6,
+            0.9,
+            0.7
+          ]
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0
+      },
+      {
+        "id": "allegro-train-005",
+        "split": "train",
+        "seed": 111005,
+        "q_noise": 0.002,
+        "options": {
+          "wrist_quat": "0 1 0 1",
+          "object_pos": [
+            0.029610848600698386,
+            0.00021792868271993814,
+            0.215
+          ],
+          "radius": 0.04087770260433918,
+          "wrist_tilt": 0.0,
+          "closed": [
+            -0.2,
+            0.6,
+            0.6,
+            0.6,
+            0,
+            0.6,
+            0.6,
+            0.6,
+            0.2,
+            0.6,
+            0.6,
+            0.6,
+            1.1,
+            0.6,
+            0.9,
+            0.7
+          ]
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0
+      }
+    ],
+    "validation": [
+      {
+        "id": "allegro-validation-000",
+        "split": "validation",
+        "seed": 222000,
+        "q_noise": 0.002,
+        "options": {
+          "wrist_quat": "0 1 0 1",
+          "object_pos": [
+            0.030407285024107198,
+            0.0004443972110820429,
+            0.215
+          ],
+          "radius": 0.03975441791974395,
+          "wrist_tilt": 0.0,
+          "closed": [
+            -0.2,
+            0.6,
+            0.6,
+            0.6,
+            0,
+            0.6,
+            0.6,
+            0.6,
+            0.2,
+            0.6,
+            0.6,
+            0.6,
+            1.1,
+            0.6,
+            0.9,
+            0.7
+          ]
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0
+      },
+      {
+        "id": "allegro-validation-001",
+        "split": "validation",
+        "seed": 222001,
+        "q_noise": 0.002,
+        "options": {
+          "wrist_quat": "0 1 0 1",
+          "object_pos": [
+            0.03079108550981616,
+            -0.0008399537646977177,
+            0.215
+          ],
+          "radius": 0.04073294136385868,
+          "wrist_tilt": 0.0,
+          "closed": [
+            -0.2,
+            0.6,
+            0.6,
+            0.6,
+            0,
+            0.6,
+            0.6,
+            0.6,
+            0.2,
+            0.6,
+            0.6,
+            0.6,
+            1.1,
+            0.6,
+            0.9,
+            0.7
+          ]
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0
+      }
+    ],
+    "test": [
+      {
+        "id": "allegro-test-000",
+        "split": "test",
+        "seed": 333000,
+        "q_noise": 0.002,
+        "options": {
+          "wrist_quat": "0 1 0 1",
+          "object_pos": [
+            0.030663014413517143,
+            0.00010952177942047197,
+            0.215
+          ],
+          "radius": 0.04083800365603554,
+          "wrist_tilt": 0.0,
+          "closed": [
+            -0.2,
+            0.6,
+            0.6,
+            0.6,
+            0,
+            0.6,
+            0.6,
+            0.6,
+            0.2,
+            0.6,
+            0.6,
+            0.6,
+            1.1,
+            0.6,
+            0.9,
+            0.7
+          ]
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0
+      },
+      {
+        "id": "allegro-test-001",
+        "split": "test",
+        "seed": 333001,
+        "q_noise": 0.002,
+        "options": {
+          "wrist_quat": "0 1 0 1",
+          "object_pos": [
+            0.03094237123711156,
+            0.00023865244772388163,
+            0.215
+          ],
+          "radius": 0.04061264112824076,
+          "wrist_tilt": 0.0,
+          "closed": [
+            -0.2,
+            0.6,
+            0.6,
+            0.6,
+            0,
+            0.6,
+            0.6,
+            0.6,
+            0.2,
+            0.6,
+            0.6,
+            0.6,
+            1.1,
+            0.6,
+            0.9,
+            0.7
+          ]
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0
+      }
+    ],
+    "ood": [
+      {
+        "id": "allegro-ood-000",
+        "split": "ood",
+        "seed": 444000,
+        "q_noise": 0.002,
+        "options": {
+          "wrist_quat": "0 1 0 1",
+          "object_pos": [
+            0.029227678100843445,
+            0.00040988157513260144,
+            0.215
+          ],
+          "radius": 0.040648508187703755,
+          "wrist_tilt": 0.0,
+          "closed": [
+            -0.2,
+            0.6,
+            0.6,
+            0.6,
+            0,
+            0.6,
+            0.6,
+            0.6,
+            0.2,
+            0.6,
+            0.6,
+            0.6,
+            1.1,
+            0.6,
+            0.9,
+            0.7
+          ]
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.5
+      },
+      {
+        "id": "allegro-ood-001",
+        "split": "ood",
+        "seed": 444001,
+        "q_noise": 0.002,
+        "options": {
+          "wrist_quat": "0 1 0 1",
+          "object_pos": [
+            0.029926480729168415,
+            0.00011284364993372712,
+            0.215
+          ],
+          "radius": 0.0406741795755001,
+          "wrist_tilt": 0.0,
+          "closed": [
+            -0.2,
+            0.6,
+            0.6,
+            0.6,
+            0,
+            0.6,
+            0.6,
+            0.6,
+            0.2,
+            0.6,
+            0.6,
+            0.6,
+            1.1,
+            0.6,
+            0.9,
+            0.7
+          ]
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.5
+      }
+    ]
+  },
+  "control_dt_s": 0.01,
+  "physics_dt_s": 0.002,
+  "sample_dt_s": 0.02,
+  "duration_s": 11.0,
+  "scope": "Finger-reference BC; palm-assisted caging; prescribed mocap wrist and withdrawing tray are external fixtures.",
+  "ood": "Object mass x1.5 (Panda/Allegro) or base x-direction force during 4.5–4.8 s (Go2/H1). One factor per platform.",
+  "checkpoint": "Lowest validation normalized reference-action MSE; no test or OOD selection.",
+  "seed_scope": "Quick: one training seed. Full: five training seeds sharing a frozen dataset/test set.",
+  "criteria": "Fixed project03 thresholds plus declared task-process checks; failed experts retained; no threshold tuning after results."
+}

@@ -1,0 +1,17 @@
+{
+  "task": "panda",
+  "passed": false,
+  "metrics": {
+    "max_height_m": 0.276,
+    "final_height_m": 0.27491276104018775,
+    "max_tilt_deg": 0.0,
+    "contact_samples": 60,
+    "placement_error_m": 0.3095655246456156,
+    "lift_m": 0.0
+  },
+  "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+  "mujoco_version": "3.2.5",
+  "scope": "deterministic physical baseline; no learned policy; no real robot claim",
+  "completed_duration_s": 14.000000000001345,
+  "termination": "task criteria failed"
+}

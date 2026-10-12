@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "criteria": {
+    "original_project03": true,
+    "two_finger_transport": true,
+    "release": true,
+    "relative_object_retention": true
+  },
+  "metrics": {
+    "max_height_m": 0.4675391096031249,
+    "final_height_m": 0.2749127610401858,
+    "max_tilt_deg": 0.0,
+    "contact_samples": 346,
+    "placement_error_m": 0.0037805547469834007,
+    "lift_m": 0.1921277096031248,
+    "relative_object_drift_m": 0.0034758474194736895,
+    "late_finger_world_fz_N": 0.5823785272035099,
+    "late_palm_world_fz_N": 0.0
+  },
+  "spec": {
+    "id": "panda-test-000",
+    "split": "test",
+    "seed": 333000,
+    "q_noise": 0.002,
+    "options": {
+      "close_ctrl": 0
+    },
+    "push_N": 0.0,
+    "mass_scale": 1.0,
+    "object_xy": [
+      0.5067040292482843,
+      0.12530411530813715
+    ],
+    "goal_xy": [
+      0.5008761742353638,
+      -0.18509887097407393
+    ]
+  },
+  "policy": "expert",
+  "completed": true,
+  "expert_calls": 1400,
+  "control_steps": 1400,
+  "base_model_xml_sha256": "e03069ee76d62b7082ebade369edcce1abad548fa15661bfd5b284a162028b90",
+  "action_clipped_fraction": 0.0,
+  "scope": "Joint-reference BC with a separate gripper command; position servos retained; simulator object pose and task clock observed.",
+  "termination": "completed"
+}

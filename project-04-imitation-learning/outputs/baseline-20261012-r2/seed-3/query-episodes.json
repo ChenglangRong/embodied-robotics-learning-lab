@@ -1,0 +1,501 @@
+{
+  "dagger": [
+    {
+      "id": "dagger-s3-0000",
+      "split": "dagger-s3",
+      "reset_seed": 1577904980,
+      "goal": [
+        0.5583991829439268,
+        0.1457867756150848
+      ],
+      "steps": 138,
+      "labels": 28,
+      "success": true,
+      "timeout": false,
+      "budget_truncated": false,
+      "final_error_m": 0.0009706975947450378
+    },
+    {
+      "id": "dagger-s3-0001",
+      "split": "dagger-s3",
+      "reset_seed": 1081938313,
+      "goal": [
+        0.4361039544545892,
+        0.30168125688666114
+      ],
+      "steps": 600,
+      "labels": 120,
+      "success": false,
+      "timeout": true,
+      "budget_truncated": false,
+      "final_error_m": 0.00965915838187783
+    },
+    {
+      "id": "dagger-s3-0002",
+      "split": "dagger-s3",
+      "reset_seed": 1307221928,
+      "goal": [
+        0.39605977482515564,
+        0.5629074768829689
+      ],
+      "steps": 600,
+      "labels": 120,
+      "success": false,
+      "timeout": true,
+      "budget_truncated": false,
+      "final_error_m": 0.039876880191327346
+    },
+    {
+      "id": "dagger-s3-0003",
+      "split": "dagger-s3",
+      "reset_seed": 1383091961,
+      "goal": [
+        0.5041800184728545,
+        0.5493104610153231
+      ],
+      "steps": 600,
+      "labels": 120,
+      "success": false,
+      "timeout": true,
+      "budget_truncated": false,
+      "final_error_m": 0.027976986486025434
+    },
+    {
+      "id": "dagger-s3-0004",
+      "split": "dagger-s3",
+      "reset_seed": 254363050,
+      "goal": [
+        0.5390231415428408,
+        0.4573975861993637
+      ],
+      "steps": 600,
+      "labels": 120,
+      "success": false,
+      "timeout": true,
+      "budget_truncated": false,
+      "final_error_m": 0.01719512574778871
+    },
+    {
+      "id": "dagger-s3-0005",
+      "split": "dagger-s3",
+      "reset_seed": 254702585,
+      "goal": [
+        0.3714207388755474,
+        0.41908436953956846
+      ],
+      "steps": 600,
+      "labels": 120,
+      "success": false,
+      "timeout": true,
+      "budget_truncated": false,
+      "final_error_m": 0.005943845679817105
+    },
+    {
+      "id": "dagger-s3-0006",
+      "split": "dagger-s3",
+      "reset_seed": 90448311,
+      "goal": [
+        0.48025828650924773,
+        0.30808712158566476
+      ],
+      "steps": 600,
+      "labels": 120,
+      "success": false,
+      "timeout": true,
+      "budget_truncated": false,
+      "final_error_m": 0.013682116740227488
+    },
+    {
+      "id": "dagger-s3-0007",
+      "split": "dagger-s3",
+      "reset_seed": 293770650,
+      "goal": [
+        0.505344019468942,
+        0.07685500707729083
+      ],
+      "steps": 600,
+      "labels": 120,
+      "success": false,
+      "timeout": true,
+      "budget_truncated": false,
+      "final_error_m": 0.05206148470552525
+    },
+    {
+      "id": "dagger-s3-0008",
+      "split": "dagger-s3",
+      "reset_seed": 1246223694,
+      "goal": [
+        0.7263004754739223,
+        0.3111416668934726
+      ],
+      "steps": 600,
+      "labels": 120,
+      "success": false,
+      "timeout": true,
+      "budget_truncated": false,
+      "final_error_m": 0.014307077137870298
+    },
+    {
+      "id": "dagger-s3-0009",
+      "split": "dagger-s3",
+      "reset_seed": 800830135,
+      "goal": [
+        0.30700702166037364,
+        0.2657294918173355
+      ],
+      "steps": 600,
+      "labels": 120,
+      "success": false,
+      "timeout": true,
+      "budget_truncated": false,
+      "final_error_m": 0.011011412402220406
+    },
+    {
+      "id": "dagger-s3-0010",
+      "split": "dagger-s3",
+      "reset_seed": 750725417,
+      "goal": [
+        0.39397740546914517,
+        0.3396835785661074
+      ],
+      "steps": 600,
+      "labels": 120,
+      "success": false,
+      "timeout": true,
+      "budget_truncated": false,
+      "final_error_m": 0.01421443773781462
+    },
+    {
+      "id": "dagger-s3-0011",
+      "split": "dagger-s3",
+      "reset_seed": 1573579705,
+      "goal": [
+        0.5648864850296226,
+        0.14306660662453566
+      ],
+      "steps": 148,
+      "labels": 30,
+      "success": true,
+      "timeout": false,
+      "budget_truncated": false,
+      "final_error_m": 0.0009843862998963559
+    },
+    {
+      "id": "dagger-s3-0012",
+      "split": "dagger-s3",
+      "reset_seed": 490501799,
+      "goal": [
+        0.6483059211779795,
+        0.4015155498022928
+      ],
+      "steps": 600,
+      "labels": 120,
+      "success": false,
+      "timeout": true,
+      "budget_truncated": false,
+      "final_error_m": 0.016293421122061266
+    },
+    {
+      "id": "dagger-s3-0013",
+      "split": "dagger-s3",
+      "reset_seed": 469712774,
+      "goal": [
+        0.6415011957169445,
+        0.2785629755020391
+      ],
+      "steps": 600,
+      "labels": 120,
+      "success": false,
+      "timeout": true,
+      "budget_truncated": false,
+      "final_error_m": 0.012037808987251779
+    },
+    {
+      "id": "dagger-s3-0014",
+      "split": "dagger-s3",
+      "reset_seed": 940285661,
+      "goal": [
+        0.603692698843725,
+        0.40491748891335916
+      ],
+      "steps": 600,
+      "labels": 120,
+      "success": false,
+      "timeout": true,
+      "budget_truncated": false,
+      "final_error_m": 0.02228846059246145
+    },
+    {
+      "id": "dagger-s3-0015",
+      "split": "dagger-s3",
+      "reset_seed": 1971815336,
+      "goal": [
+        0.5206895261187591,
+        0.22867354699794198
+      ],
+      "steps": 600,
+      "labels": 120,
+      "success": false,
+      "timeout": true,
+      "budget_truncated": false,
+      "final_error_m": 0.003996256974194237
+    }
+  ],
+  "fresh": [
+    {
+      "id": "fresh-s3-0000",
+      "split": "fresh-s3",
+      "reset_seed": 462282506,
+      "goal": [
+        0.6050649415764006,
+        0.17899266004979006
+      ],
+      "steps": 89,
+      "labels": 89,
+      "success": true,
+      "timeout": false,
+      "budget_truncated": false,
+      "final_error_m": 0.0009508242759819465
+    },
+    {
+      "id": "fresh-s3-0001",
+      "split": "fresh-s3",
+      "reset_seed": 1361253571,
+      "goal": [
+        0.12288428685998805,
+        0.38549299786652
+      ],
+      "steps": 147,
+      "labels": 147,
+      "success": true,
+      "timeout": false,
+      "budget_truncated": false,
+      "final_error_m": 0.0009728362370654375
+    },
+    {
+      "id": "fresh-s3-0002",
+      "split": "fresh-s3",
+      "reset_seed": 1469810738,
+      "goal": [
+        0.6447634493205119,
+        0.28890095848641295
+      ],
+      "steps": 91,
+      "labels": 91,
+      "success": true,
+      "timeout": false,
+      "budget_truncated": false,
+      "final_error_m": 0.0009474584978031049
+    },
+    {
+      "id": "fresh-s3-0003",
+      "split": "fresh-s3",
+      "reset_seed": 1858575466,
+      "goal": [
+        0.34679604580962486,
+        0.24859789469244253
+      ],
+      "steps": 109,
+      "labels": 109,
+      "success": true,
+      "timeout": false,
+      "budget_truncated": false,
+      "final_error_m": 0.0009941171124227786
+    },
+    {
+      "id": "fresh-s3-0004",
+      "split": "fresh-s3",
+      "reset_seed": 1883418310,
+      "goal": [
+        0.49476950849042506,
+        0.343275945020479
+      ],
+      "steps": 96,
+      "labels": 96,
+      "success": true,
+      "timeout": false,
+      "budget_truncated": false,
+      "final_error_m": 0.0009734862801854309
+    },
+    {
+      "id": "fresh-s3-0005",
+      "split": "fresh-s3",
+      "reset_seed": 334992351,
+      "goal": [
+        0.32731580041162667,
+        0.6664307250955176
+      ],
+      "steps": 103,
+      "labels": 103,
+      "success": true,
+      "timeout": false,
+      "budget_truncated": false,
+      "final_error_m": 0.0009406501580330768
+    },
+    {
+      "id": "fresh-s3-0006",
+      "split": "fresh-s3",
+      "reset_seed": 298367892,
+      "goal": [
+        0.4256089179240736,
+        0.07234071990686
+      ],
+      "steps": 108,
+      "labels": 108,
+      "success": true,
+      "timeout": false,
+      "budget_truncated": false,
+      "final_error_m": 0.0009559383620250096
+    },
+    {
+      "id": "fresh-s3-0007",
+      "split": "fresh-s3",
+      "reset_seed": 660748493,
+      "goal": [
+        0.2431347035438373,
+        0.7485135987008577
+      ],
+      "steps": 189,
+      "labels": 189,
+      "success": true,
+      "timeout": false,
+      "budget_truncated": false,
+      "final_error_m": 0.0009601198819787818
+    },
+    {
+      "id": "fresh-s3-0008",
+      "split": "fresh-s3",
+      "reset_seed": 112388370,
+      "goal": [
+        0.3325236512177609,
+        0.5302510475799167
+      ],
+      "steps": 98,
+      "labels": 98,
+      "success": true,
+      "timeout": false,
+      "budget_truncated": false,
+      "final_error_m": 0.0009309779776670215
+    },
+    {
+      "id": "fresh-s3-0009",
+      "split": "fresh-s3",
+      "reset_seed": 1472943326,
+      "goal": [
+        0.4606021310755097,
+        0.12645478379599198
+      ],
+      "steps": 103,
+      "labels": 103,
+      "success": true,
+      "timeout": false,
+      "budget_truncated": false,
+      "final_error_m": 0.0009567781845829502
+    },
+    {
+      "id": "fresh-s3-0010",
+      "split": "fresh-s3",
+      "reset_seed": 1897717064,
+      "goal": [
+        0.5788400309786812,
+        0.4235185073613943
+      ],
+      "steps": 94,
+      "labels": 94,
+      "success": true,
+      "timeout": false,
+      "budget_truncated": false,
+      "final_error_m": 0.0009387146290237528
+    },
+    {
+      "id": "fresh-s3-0011",
+      "split": "fresh-s3",
+      "reset_seed": 1084498132,
+      "goal": [
+        0.6817145388310889,
+        0.36112463936790956
+      ],
+      "steps": 83,
+      "labels": 83,
+      "success": true,
+      "timeout": false,
+      "budget_truncated": false,
+      "final_error_m": 0.0009332260503113236
+    },
+    {
+      "id": "fresh-s3-0012",
+      "split": "fresh-s3",
+      "reset_seed": 1612126044,
+      "goal": [
+        0.49844927859748045,
+        0.36694238108405075
+      ],
+      "steps": 98,
+      "labels": 98,
+      "success": true,
+      "timeout": false,
+      "budget_truncated": false,
+      "final_error_m": 0.0009213243522020598
+    },
+    {
+      "id": "fresh-s3-0013",
+      "split": "fresh-s3",
+      "reset_seed": 132887899,
+      "goal": [
+        0.4827359990420453,
+        0.3309234465752363
+      ],
+      "steps": 100,
+      "labels": 100,
+      "success": true,
+      "timeout": false,
+      "budget_truncated": false,
+      "final_error_m": 0.0009916553545359292
+    },
+    {
+      "id": "fresh-s3-0014",
+      "split": "fresh-s3",
+      "reset_seed": 1910592448,
+      "goal": [
+        0.6221911701467978,
+        0.42033640204446326
+      ],
+      "steps": 88,
+      "labels": 88,
+      "success": true,
+      "timeout": false,
+      "budget_truncated": false,
+      "final_error_m": 0.0009326237887344989
+    },
+    {
+      "id": "fresh-s3-0015",
+      "split": "fresh-s3",
+      "reset_seed": 236768301,
+      "goal": [
+        0.35425295034807913,
+        0.6740064065745528
+      ],
+      "steps": 101,
+      "labels": 101,
+      "success": true,
+      "timeout": false,
+      "budget_truncated": false,
+      "final_error_m": 0.000995304807884529
+    },
+    {
+      "id": "fresh-s3-0016",
+      "split": "fresh-s3",
+      "reset_seed": 798985969,
+      "goal": [
+        0.35110985973695424,
+        0.4338383293576357
+      ],
+      "steps": 41,
+      "labels": 41,
+      "success": false,
+      "timeout": false,
+      "budget_truncated": true,
+      "final_error_m": 0.7244963710028914
+    }
+  ]
+}

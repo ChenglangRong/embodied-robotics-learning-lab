@@ -2,6 +2,8 @@
 
 目标：让一台二连杆机械臂在物理仿真中运动，并把同一运动发布到 ROS 2。项目 01 给出理想速度积分；本项目加入惯量、关节速度、力矩命令与仿真步进。
 
+刚接触 Ubuntu、URDF、MuJoCo 或 RViz 时，从[图形化实操课](图形化实操课.md)开始；Windows 用户可双击 [`open_visual_demo.cmd`](open_visual_demo.cmd)观看慢速 MuJoCo 演示。
+
 [MuJoCo 实测动画](outputs/example/animation.gif)与[最后一帧](outputs/example/final_frame.png)展示当前模型的到达过程。
 
 ```text
@@ -89,7 +91,7 @@ source .venv/bin/activate
 python scripts/verify_bridge.py
 ```
 
-验收脚本会检查终态、目标误差、TF 与 MuJoCo 末端点的差、两连杆正运动学的差，并以退出码 0 表示通过。本机 seed 7 的结果为 `success`、目标误差 `0.000927351 m`、TF 差 `1.11e-16 m`。再执行 `ros2 run tf2_ros tf2_echo base_link tool_link` 可持续观察 TF 平移；核对后用 `Ctrl+C` 结束。输入 `rviz2` 可打开本机 WSL 图形窗口；在 RViz 中选择 `Fixed Frame=base_link`，添加 `RobotModel`（Description Topic 选 `/robot_description`）和 `TF` 显示，便于核对 link 与关节轴。本机已验证 RViz 启动和 OpenGL 4.5；显示配置需要在窗口里完成。
+验收脚本会检查终态、目标误差、TF 与 MuJoCo 末端点的差、两连杆正运动学的差，并以退出码 0 表示通过。本机 seed 7 的结果为 `success`、目标误差 `0.000927351 m`、TF 差 `1.11e-16 m`。再执行 `ros2 run tf2_ros tf2_echo base_link tool_link` 可持续观察 TF 平移；核对后用 `Ctrl+C` 结束。输入 `rviz2` 可打开本机 WSL 图形窗口；在 RViz 中选择 `Fixed Frame=base_link`，添加 `RobotModel`，将其 `Description Topic` 设为 `/robot_description`，再添加 `TF`。把右侧 `Views → Current View → Distance` 设为 `2.5`，即可清楚观察两段连杆和关节坐标轴。本机已实际完成这套 RViz 配置，并通过重置服务观察到机械臂从初始姿态运动至目标姿态。
 
 记录一次完整运行时，先开始 rosbag，再调用重置服务：
 
@@ -105,7 +107,7 @@ ros2 service call /robot_lab/reset std_srvs/srv/Trigger '{}'
 
 观察状态到 `success` 后，在录制终端用 `Ctrl+C` 正常结束；确认 `metadata.yaml` 已生成，再用 `ros2 bag info ~/robot_lab_demo` 检查消息数，并在停止桥接后用 `ros2 bag play ~/robot_lab_demo` 回放。`robot_state_publisher` 根据 `/joint_states` 发布活动关节的 `/tf`，固定关节发布到 `/tf_static`；接口语义见[上游 README](https://github.com/ros/robot_state_publisher)。
 
-仓库已保存一份可回放的[本机录包](outputs/ros-validation-2026-10-12/bag/metadata.yaml)。在项目目录运行 `python scripts/inspect_bag.py outputs/ros-validation-2026-10-12/bag`，应看到 6,735 条消息、99 条 `running`、783 条 `success` 和一次重置。桥接、TF、录制与回放已实测；RViz 的图形窗口已启动，手动配置后的机器人显示仍需亲手完成。Ubuntu 账户 `ubuntu` 目前尚未设置个人密码；在本机 PowerShell 输入 `wsl -d Ubuntu-24.04 -u root -- passwd ubuntu`，按终端提示私下设置，以便日后使用 `sudo`。
+仓库已保存一份可回放的[本机录包](outputs/ros-validation-2026-10-12/bag/metadata.yaml)。在项目目录运行 `python scripts/inspect_bag.py outputs/ros-validation-2026-10-12/bag`，应看到 6,735 条消息、99 条 `running`、783 条 `success` 和一次重置。桥接、TF、录制、回放与 RViz 模型显示均已实测。用户已告知 Ubuntu 账户 `ubuntu` 的个人密码设置完成。
 
 ## 项目验收
 

@@ -1,0 +1,679 @@
+{
+  "status": "PASS",
+  "run": "D:\\RCL\\深圳理工大学-具身智能\\project-04-imitation-learning\\outputs\\platform-baseline-20261012-r3",
+  "checks": [
+    {
+      "platform": "panda",
+      "source_data_hashes": "PASS",
+      "whole_episode_splits": "PASS",
+      "train_only_normalization": "PASS",
+      "train_only_phase_bc": "PASS"
+    },
+    {
+      "platform": "go2",
+      "source_data_hashes": "PASS",
+      "whole_episode_splits": "PASS",
+      "train_only_normalization": "PASS",
+      "train_only_phase_bc": "PASS"
+    },
+    {
+      "platform": "h1",
+      "source_data_hashes": "PASS",
+      "whole_episode_splits": "PASS",
+      "train_only_normalization": "PASS",
+      "train_only_phase_bc": "PASS"
+    },
+    {
+      "platform": "allegro",
+      "source_data_hashes": "PASS",
+      "whole_episode_splits": "PASS",
+      "train_only_normalization": "PASS",
+      "train_only_phase_bc": "PASS"
+    }
+  ],
+  "replayed": [
+    {
+      "platform": "panda",
+      "policy": "expert",
+      "seed": null,
+      "case": "panda-test-000",
+      "passed": true,
+      "exact_match": true
+    },
+    {
+      "platform": "panda",
+      "policy": "expert",
+      "seed": null,
+      "case": "panda-test-001",
+      "passed": true,
+      "exact_match": true
+    },
+    {
+      "platform": "panda",
+      "policy": "expert",
+      "seed": null,
+      "case": "panda-ood-000",
+      "passed": true,
+      "exact_match": true
+    },
+    {
+      "platform": "panda",
+      "policy": "expert",
+      "seed": null,
+      "case": "panda-ood-001",
+      "passed": true,
+      "exact_match": true
+    },
+    {
+      "platform": "panda",
+      "policy": "hold",
+      "seed": null,
+      "case": "panda-test-000",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "panda",
+      "policy": "hold",
+      "seed": null,
+      "case": "panda-test-001",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "panda",
+      "policy": "hold",
+      "seed": null,
+      "case": "panda-ood-000",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "panda",
+      "policy": "hold",
+      "seed": null,
+      "case": "panda-ood-001",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "panda",
+      "policy": "phase_bc",
+      "seed": null,
+      "case": "panda-test-000",
+      "passed": true,
+      "exact_match": true
+    },
+    {
+      "platform": "panda",
+      "policy": "phase_bc",
+      "seed": null,
+      "case": "panda-test-001",
+      "passed": true,
+      "exact_match": true
+    },
+    {
+      "platform": "panda",
+      "policy": "phase_bc",
+      "seed": null,
+      "case": "panda-ood-000",
+      "passed": true,
+      "exact_match": true
+    },
+    {
+      "platform": "panda",
+      "policy": "phase_bc",
+      "seed": null,
+      "case": "panda-ood-001",
+      "passed": true,
+      "exact_match": true
+    },
+    {
+      "platform": "panda",
+      "policy": "bc",
+      "seed": "0",
+      "case": "panda-test-000",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "panda",
+      "policy": "bc",
+      "seed": "0",
+      "case": "panda-test-001",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "panda",
+      "policy": "bc",
+      "seed": "0",
+      "case": "panda-ood-000",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "panda",
+      "policy": "bc",
+      "seed": "0",
+      "case": "panda-ood-001",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "panda",
+      "policy": "frozen_state",
+      "seed": "0",
+      "case": "panda-test-000",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "panda",
+      "policy": "frozen_state",
+      "seed": "0",
+      "case": "panda-test-001",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "panda",
+      "policy": "frozen_state",
+      "seed": "0",
+      "case": "panda-ood-000",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "panda",
+      "policy": "frozen_state",
+      "seed": "0",
+      "case": "panda-ood-001",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "go2",
+      "policy": "expert",
+      "seed": null,
+      "case": "go2-test-000",
+      "passed": true,
+      "exact_match": true
+    },
+    {
+      "platform": "go2",
+      "policy": "expert",
+      "seed": null,
+      "case": "go2-test-001",
+      "passed": true,
+      "exact_match": true
+    },
+    {
+      "platform": "go2",
+      "policy": "expert",
+      "seed": null,
+      "case": "go2-ood-000",
+      "passed": true,
+      "exact_match": true
+    },
+    {
+      "platform": "go2",
+      "policy": "expert",
+      "seed": null,
+      "case": "go2-ood-001",
+      "passed": true,
+      "exact_match": true
+    },
+    {
+      "platform": "go2",
+      "policy": "hold",
+      "seed": null,
+      "case": "go2-test-000",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "go2",
+      "policy": "hold",
+      "seed": null,
+      "case": "go2-test-001",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "go2",
+      "policy": "hold",
+      "seed": null,
+      "case": "go2-ood-000",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "go2",
+      "policy": "hold",
+      "seed": null,
+      "case": "go2-ood-001",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "go2",
+      "policy": "phase_bc",
+      "seed": null,
+      "case": "go2-test-000",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "go2",
+      "policy": "phase_bc",
+      "seed": null,
+      "case": "go2-test-001",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "go2",
+      "policy": "phase_bc",
+      "seed": null,
+      "case": "go2-ood-000",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "go2",
+      "policy": "phase_bc",
+      "seed": null,
+      "case": "go2-ood-001",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "go2",
+      "policy": "bc",
+      "seed": "0",
+      "case": "go2-test-000",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "go2",
+      "policy": "bc",
+      "seed": "0",
+      "case": "go2-test-001",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "go2",
+      "policy": "bc",
+      "seed": "0",
+      "case": "go2-ood-000",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "go2",
+      "policy": "bc",
+      "seed": "0",
+      "case": "go2-ood-001",
+      "passed": true,
+      "exact_match": true
+    },
+    {
+      "platform": "go2",
+      "policy": "frozen_state",
+      "seed": "0",
+      "case": "go2-test-000",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "go2",
+      "policy": "frozen_state",
+      "seed": "0",
+      "case": "go2-test-001",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "go2",
+      "policy": "frozen_state",
+      "seed": "0",
+      "case": "go2-ood-000",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "go2",
+      "policy": "frozen_state",
+      "seed": "0",
+      "case": "go2-ood-001",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "h1",
+      "policy": "expert",
+      "seed": null,
+      "case": "h1-test-000",
+      "passed": true,
+      "exact_match": true
+    },
+    {
+      "platform": "h1",
+      "policy": "expert",
+      "seed": null,
+      "case": "h1-test-001",
+      "passed": true,
+      "exact_match": true
+    },
+    {
+      "platform": "h1",
+      "policy": "expert",
+      "seed": null,
+      "case": "h1-ood-000",
+      "passed": true,
+      "exact_match": true
+    },
+    {
+      "platform": "h1",
+      "policy": "expert",
+      "seed": null,
+      "case": "h1-ood-001",
+      "passed": true,
+      "exact_match": true
+    },
+    {
+      "platform": "h1",
+      "policy": "hold",
+      "seed": null,
+      "case": "h1-test-000",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "h1",
+      "policy": "hold",
+      "seed": null,
+      "case": "h1-test-001",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "h1",
+      "policy": "hold",
+      "seed": null,
+      "case": "h1-ood-000",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "h1",
+      "policy": "hold",
+      "seed": null,
+      "case": "h1-ood-001",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "h1",
+      "policy": "phase_bc",
+      "seed": null,
+      "case": "h1-test-000",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "h1",
+      "policy": "phase_bc",
+      "seed": null,
+      "case": "h1-test-001",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "h1",
+      "policy": "phase_bc",
+      "seed": null,
+      "case": "h1-ood-000",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "h1",
+      "policy": "phase_bc",
+      "seed": null,
+      "case": "h1-ood-001",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "h1",
+      "policy": "bc",
+      "seed": "0",
+      "case": "h1-test-000",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "h1",
+      "policy": "bc",
+      "seed": "0",
+      "case": "h1-test-001",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "h1",
+      "policy": "bc",
+      "seed": "0",
+      "case": "h1-ood-000",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "h1",
+      "policy": "bc",
+      "seed": "0",
+      "case": "h1-ood-001",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "h1",
+      "policy": "frozen_state",
+      "seed": "0",
+      "case": "h1-test-000",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "h1",
+      "policy": "frozen_state",
+      "seed": "0",
+      "case": "h1-test-001",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "h1",
+      "policy": "frozen_state",
+      "seed": "0",
+      "case": "h1-ood-000",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "h1",
+      "policy": "frozen_state",
+      "seed": "0",
+      "case": "h1-ood-001",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "allegro",
+      "policy": "expert",
+      "seed": null,
+      "case": "allegro-test-000",
+      "passed": true,
+      "exact_match": true
+    },
+    {
+      "platform": "allegro",
+      "policy": "expert",
+      "seed": null,
+      "case": "allegro-test-001",
+      "passed": true,
+      "exact_match": true
+    },
+    {
+      "platform": "allegro",
+      "policy": "expert",
+      "seed": null,
+      "case": "allegro-ood-000",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "allegro",
+      "policy": "expert",
+      "seed": null,
+      "case": "allegro-ood-001",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "allegro",
+      "policy": "hold",
+      "seed": null,
+      "case": "allegro-test-000",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "allegro",
+      "policy": "hold",
+      "seed": null,
+      "case": "allegro-test-001",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "allegro",
+      "policy": "hold",
+      "seed": null,
+      "case": "allegro-ood-000",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "allegro",
+      "policy": "hold",
+      "seed": null,
+      "case": "allegro-ood-001",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "allegro",
+      "policy": "phase_bc",
+      "seed": null,
+      "case": "allegro-test-000",
+      "passed": true,
+      "exact_match": true
+    },
+    {
+      "platform": "allegro",
+      "policy": "phase_bc",
+      "seed": null,
+      "case": "allegro-test-001",
+      "passed": true,
+      "exact_match": true
+    },
+    {
+      "platform": "allegro",
+      "policy": "phase_bc",
+      "seed": null,
+      "case": "allegro-ood-000",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "allegro",
+      "policy": "phase_bc",
+      "seed": null,
+      "case": "allegro-ood-001",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "allegro",
+      "policy": "bc",
+      "seed": "0",
+      "case": "allegro-test-000",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "allegro",
+      "policy": "bc",
+      "seed": "0",
+      "case": "allegro-test-001",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "allegro",
+      "policy": "bc",
+      "seed": "0",
+      "case": "allegro-ood-000",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "allegro",
+      "policy": "bc",
+      "seed": "0",
+      "case": "allegro-ood-001",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "allegro",
+      "policy": "frozen_state",
+      "seed": "0",
+      "case": "allegro-test-000",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "allegro",
+      "policy": "frozen_state",
+      "seed": "0",
+      "case": "allegro-test-001",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "allegro",
+      "policy": "frozen_state",
+      "seed": "0",
+      "case": "allegro-ood-000",
+      "passed": false,
+      "exact_match": true
+    },
+    {
+      "platform": "allegro",
+      "policy": "frozen_state",
+      "seed": "0",
+      "case": "allegro-ood-001",
+      "passed": false,
+      "exact_match": true
+    }
+  ],
+  "episodes": 80,
+  "elapsed_seconds": 103.54450759999963,
+  "verification_scope": "Same installed simulator and evaluation implementation; exact stored-policy replay and data/provenance checks."
+}

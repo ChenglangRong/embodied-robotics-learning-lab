@@ -64,7 +64,11 @@ def tip_from_mujoco(data: mujoco.MjData) -> np.ndarray:
     return data.site("tool_tip").xpos.copy()
 
 
-def run(seed: int, goal: tuple[float, float], output: Path, viewer_enabled: bool, render_gif: bool = False) -> dict:
+def run(seed: int, goal: tuple[float, float], output: Path, viewer_enabled: bool,
+        render_gif: bool = False, viewer_speed: float = 1.0,
+        hold_final_s: float = 0.0) -> dict:
+    if viewer_speed <= 0 or hold_final_s < 0:
+        raise ValueError("viewer_speed must be positive and hold_final_s nonnegative")
     model = build_sim_model(output / "derived_scene.xml", goal)
     data = mujoco.MjData(model)
     cfg = Config()
@@ -124,7 +128,8 @@ def run(seed: int, goal: tuple[float, float], output: Path, viewer_enabled: bool
                 frames.append(Image.fromarray(renderer.render().copy()))
             if viewer is not None:
                 viewer.sync()
-                remaining = cfg.dt - (time.perf_counter() - tick)
+                # Presentation speed changes wall-clock pacing, never the physics timestep.
+                remaining = cfg.dt / viewer_speed - (time.perf_counter() - tick)
                 if remaining > 0:
                     time.sleep(remaining)
                 if not viewer.is_running():
@@ -135,6 +140,10 @@ def run(seed: int, goal: tuple[float, float], output: Path, viewer_enabled: bool
                 break
     finally:
         if viewer is not None:
+            deadline = time.perf_counter() + hold_final_s
+            while viewer.is_running() and time.perf_counter() < deadline:
+                viewer.sync()
+                time.sleep(0.05)
             viewer.close()
         if renderer is not None:
             renderer.close()
@@ -178,10 +187,15 @@ def main() -> None:
     parser.add_argument("--goal-y", type=float, default=0.55)
     parser.add_argument("--output", type=Path, default=ROOT / "outputs" / "first-run")
     parser.add_argument("--viewer", action="store_true", help="show live MuJoCo GUI")
+    parser.add_argument("--viewer-speed", type=float, default=1.0,
+                        help="presentation speed relative to real time; 0.25 shows motion four times slower")
+    parser.add_argument("--hold-final", type=float, default=0.0,
+                        help="seconds to keep the GUI open after the run")
     parser.add_argument("--render-gif", action="store_true", help="save an offscreen MuJoCo animation")
     args = parser.parse_args()
     print(json.dumps(run(args.seed, (args.goal_x, args.goal_y), args.output,
-                         args.viewer, args.render_gif), indent=2))
+                         args.viewer, args.render_gif, args.viewer_speed,
+                         args.hold_final), indent=2))
 
 
 if __name__ == "__main__":

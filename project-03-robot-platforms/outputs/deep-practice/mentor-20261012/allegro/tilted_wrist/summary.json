@@ -1,0 +1,18 @@
+{
+  "task": "allegro",
+  "passed": false,
+  "metrics": {
+    "max_height_m": 0.3630882602065217,
+    "final_height_m": 0.3558916784005754,
+    "max_tilt_deg": 0.0,
+    "contact_samples": 417,
+    "held_fraction_after_lift": 0.245,
+    "max_contacting_fingers": 2,
+    "support": "palm-assisted caging with prescribed wrist fixture"
+  },
+  "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+  "mujoco_version": "3.2.5",
+  "scope": "deterministic physical baseline; no learned policy; no real robot claim",
+  "completed_duration_s": 11.000000000000343,
+  "termination": "task criteria failed"
+}

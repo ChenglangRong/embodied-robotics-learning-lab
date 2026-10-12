@@ -1,0 +1,204 @@
+{
+  "changed_options": {
+    "kp": 55
+  },
+  "legacy_result": {
+    "task": "go2",
+    "passed": false,
+    "metrics": {
+      "max_height_m": 0.29996077544627586,
+      "final_height_m": 0.24964253719079757,
+      "max_tilt_deg": 3.737306483259578,
+      "contact_samples": 597,
+      "forward_displacement_m": -0.44492818118893057,
+      "min_base_height_m": 0.2266775442498462,
+      "max_foot_clearance_m": 0.010337763381371039,
+      "swing_samples": 0
+    },
+    "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+    "mujoco_version": "3.2.5",
+    "scope": "deterministic physical baseline; no learned policy; no real robot claim",
+    "completed_duration_s": 12.000000000000677,
+    "termination": "task criteria failed"
+  },
+  "diagnostics": {
+    "mean_tracking_rmse_rad": 0.11250911131181382,
+    "stance": {
+      "FL": {
+        "segments": 11,
+        "mean_net_travel_m": 0.04704122643508355,
+        "mean_path_length_m": 0.06706871742614919,
+        "records": [
+          {
+            "start_s": 2.002000000000001,
+            "end_s": 3.6219999999998227,
+            "net_travel_m": 0.09346280535891516,
+            "path_length_m": 0.12911894466945215
+          },
+          {
+            "start_s": 3.781999999999805,
+            "end_s": 4.1819999999997615,
+            "net_travel_m": 0.04288300614685798,
+            "path_length_m": 0.06884298531089937
+          },
+          {
+            "start_s": 4.341999999999744,
+            "end_s": 4.7419999999997,
+            "net_travel_m": 0.047227583252675294,
+            "path_length_m": 0.0690874216011415
+          },
+          {
+            "start_s": 4.901999999999682,
+            "end_s": 5.301999999999638,
+            "net_travel_m": 0.05055234805474158,
+            "path_length_m": 0.06938538181993019
+          },
+          {
+            "start_s": 5.4619999999996205,
+            "end_s": 5.841999999999579,
+            "net_travel_m": 0.044914369799288145,
+            "path_length_m": 0.06071396798586166
+          },
+          {
+            "start_s": 6.001999999999561,
+            "end_s": 6.401999999999517,
+            "net_travel_m": 0.0421867878126929,
+            "path_length_m": 0.06836804670618606
+          },
+          {
+            "start_s": 6.561999999999499,
+            "end_s": 6.961999999999455,
+            "net_travel_m": 0.04568391616409671,
+            "path_length_m": 0.06889159355187595
+          },
+          {
+            "start_s": 7.121999999999438,
+            "end_s": 7.521999999999394,
+            "net_travel_m": 0.048979598798785814,
+            "path_length_m": 0.06926022769761199
+          },
+          {
+            "start_s": 7.681999999999376,
+            "end_s": 8.061999999999362,
+            "net_travel_m": 0.043031523436449844,
+            "path_length_m": 0.06029140642830534
+          },
+          {
+            "start_s": 8.241999999999422,
+            "end_s": 8.621999999999549,
+            "net_travel_m": 0.0467780863177794,
+            "path_length_m": 0.061187985423960894
+          },
+          {
+            "start_s": 8.781999999999602,
+            "end_s": 8.981999999999669,
+            "net_travel_m": 0.011753465643636222,
+            "path_length_m": 0.01260793049241591
+          }
+        ]
+      },
+      "FR": {
+        "segments": 11,
+        "mean_net_travel_m": 0.048319044864531376,
+        "mean_path_length_m": 0.06739356160559001,
+        "records": [
+          {
+            "start_s": 2.002000000000001,
+            "end_s": 3.3419999999998535,
+            "net_travel_m": 0.074799271424156,
+            "path_length_m": 0.07814155203659973
+          },
+          {
+            "start_s": 3.501999999999836,
+            "end_s": 3.901999999999792,
+            "net_travel_m": 0.043724176092271486,
+            "path_length_m": 0.06731345932904073
+          },
+          {
+            "start_s": 4.061999999999775,
+            "end_s": 4.461999999999731,
+            "net_travel_m": 0.04521109760305486,
+            "path_length_m": 0.06890099018275612
+          },
+          {
+            "start_s": 4.621999999999713,
+            "end_s": 5.021999999999669,
+            "net_travel_m": 0.04894548766544308,
+            "path_length_m": 0.0692732765811152
+          },
+          {
+            "start_s": 5.181999999999651,
+            "end_s": 5.5619999999996095,
+            "net_travel_m": 0.04302821198885357,
+            "path_length_m": 0.06029589475437548
+          },
+          {
+            "start_s": 5.74199999999959,
+            "end_s": 6.121999999999548,
+            "net_travel_m": 0.04677813228456355,
+            "path_length_m": 0.06118951139415396
+          },
+          {
+            "start_s": 6.28199999999953,
+            "end_s": 6.681999999999486,
+            "net_travel_m": 0.043989682369572645,
+            "path_length_m": 0.06868429537732627
+          },
+          {
+            "start_s": 6.8419999999994685,
+            "end_s": 7.2419999999994245,
+            "net_travel_m": 0.047368121445180045,
+            "path_length_m": 0.06907096457762583
+          },
+          {
+            "start_s": 7.401999999999407,
+            "end_s": 7.801999999999363,
+            "net_travel_m": 0.050563293758514115,
+            "path_length_m": 0.06937692147109162
+          },
+          {
+            "start_s": 7.961999999999345,
+            "end_s": 8.341999999999455,
+            "net_travel_m": 0.04491518413307583,
+            "path_length_m": 0.06071337851589532
+          },
+          {
+            "start_s": 8.501999999999509,
+            "end_s": 8.901999999999642,
+            "net_travel_m": 0.04218683474515998,
+            "path_length_m": 0.06836893344150971
+          }
+        ]
+      },
+      "RL": {
+        "segments": 1,
+        "mean_net_travel_m": 0.3721900228334711,
+        "mean_path_length_m": 0.6816346664714755,
+        "records": [
+          {
+            "start_s": 2.002000000000001,
+            "end_s": 8.981999999999669,
+            "net_travel_m": 0.3721900228334711,
+            "path_length_m": 0.6816346664714755
+          }
+        ]
+      },
+      "RR": {
+        "segments": 1,
+        "mean_net_travel_m": 0.3466743417683514,
+        "mean_path_length_m": 0.6651716750485499,
+        "records": [
+          {
+            "start_s": 2.002000000000001,
+            "end_s": 8.981999999999669,
+            "net_travel_m": 0.3466743417683514,
+            "path_length_m": 0.6651716750485499
+          }
+        ]
+      }
+    },
+    "mean_saturated_actuator_fraction": 0.0
+  },
+  "saved_baseline_csv_identical": null,
+  "note": "diagnostics only; legacy pass does not certify new skill claims"
+}

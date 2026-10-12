@@ -1,0 +1,57 @@
+{
+  "spec": {
+    "id": "ood-0000",
+    "split": "ood",
+    "reset_seed": 1668458012,
+    "goal": [
+      0.42925212640295374,
+      -0.32150859393800013
+    ]
+  },
+  "seed": "0",
+  "selection": "first frozen evaluation case",
+  "results": {
+    "Expert": {
+      "id": "ood-0000",
+      "split": "ood",
+      "reset_seed": 1668458012,
+      "goal": [
+        0.42925212640295374,
+        -0.32150859393800013
+      ],
+      "success": true,
+      "termination": "success",
+      "steps": 104,
+      "final_error_m": 0.0009213569987567327,
+      "clipped_fraction": 0.0
+    },
+    "BC": {
+      "id": "ood-0000",
+      "split": "ood",
+      "reset_seed": 1668458012,
+      "goal": [
+        0.42925212640295374,
+        -0.32150859393800013
+      ],
+      "success": false,
+      "termination": "timeout",
+      "steps": 600,
+      "final_error_m": 0.8190646788085568,
+      "clipped_fraction": 0.075
+    },
+    "DAgger": {
+      "id": "ood-0000",
+      "split": "ood",
+      "reset_seed": 1668458012,
+      "goal": [
+        0.42925212640295374,
+        -0.32150859393800013
+      ],
+      "success": false,
+      "termination": "timeout",
+      "steps": 600,
+      "final_error_m": 0.5277214403040311,
+      "clipped_fraction": 0.08166666666666667
+    }
+  }
+}

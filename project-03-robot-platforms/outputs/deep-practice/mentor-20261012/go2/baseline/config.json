@@ -1,0 +1,46 @@
+{
+  "task": "go2",
+  "duration_s": 12,
+  "dt_s": 0.002,
+  "controller_dt_s": 0.01,
+  "options": {
+    "amp": 0.055,
+    "lift": 0.07,
+    "freq": 1.8,
+    "kp": 100,
+    "kd": 3.5
+  },
+  "model_xml_sha256": "08db8c886d72fe639fc9f1366280cd5c53029328f0b45164175531199698896f",
+  "source_sha256": "7ff5bfc42eaa3c5a435ed13b34f97bf1043a84ec1e4d1ca371bfe392a3e384cd",
+  "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+  "seed": 0,
+  "upstream_model_xml_sha256": "372bfd4e320952ab7c435245f32823466a4e4eebf8802da59f2104ee70c2257c",
+  "joint_names": [
+    "FL_hip_joint",
+    "FL_thigh_joint",
+    "FL_calf_joint",
+    "FR_hip_joint",
+    "FR_thigh_joint",
+    "FR_calf_joint",
+    "RL_hip_joint",
+    "RL_thigh_joint",
+    "RL_calf_joint",
+    "RR_hip_joint",
+    "RR_thigh_joint",
+    "RR_calf_joint"
+  ],
+  "actuator_names": [
+    "FL_hip",
+    "FL_thigh",
+    "FL_calf",
+    "FR_hip",
+    "FR_thigh",
+    "FR_calf",
+    "RL_hip",
+    "RL_thigh",
+    "RL_calf",
+    "RR_hip",
+    "RR_thigh",
+    "RR_calf"
+  ]
+}

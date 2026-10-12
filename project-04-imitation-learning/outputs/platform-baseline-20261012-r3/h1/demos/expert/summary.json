@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "criteria": {
+    "original_project03": true,
+    "recover_height": true
+  },
+  "metrics": {
+    "max_height_m": 0.979522935101526,
+    "final_height_m": 0.9287245318747455,
+    "max_tilt_deg": 5.595045251793074,
+    "contact_samples": 500,
+    "squat_depth_m": 0.0921940412174842,
+    "min_pelvis_height_m": 0.8554127092813627,
+    "recovery_height_error_m": 0.01827938939202156,
+    "mean_saturated_actuator_fraction": 0.0
+  },
+  "spec": {
+    "id": "h1-test-000",
+    "split": "test",
+    "seed": 333000,
+    "q_noise": 0.001,
+    "options": {
+      "com_gain": 5.0,
+      "velocity_gain": 0.8,
+      "foot_offset": 0.03,
+      "balance": 0.0,
+      "bend": 0.1583800365603554
+    },
+    "push_N": 0.0,
+    "mass_scale": 1.0
+  },
+  "policy": "expert",
+  "completed": true,
+  "expert_calls": 1000,
+  "control_steps": 1000,
+  "base_model_xml_sha256": "6cce250a869d152a9a413b5c89822fcc0ed4217ba93498b82334f93746774a0a",
+  "action_clipped_fraction": 0.0,
+  "scope": "Joint-reference BC including expert balance corrections; torque PD and bias compensation retained; double support, squat and arm motion.",
+  "termination": "completed"
+}

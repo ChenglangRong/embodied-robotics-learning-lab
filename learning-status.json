@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "updated_date": "2026-10-12",
+  "repository": "https://github.com/ChenglangRong/embodied-robotics-learning-lab",
+  "current_stage": "imitation_learning",
+  "evidence_authoring": "AI-assisted implementation and tool-executed verification; learner reports and independent assessments tracked separately",
+  "stages": [
+    {
+      "id": "robotics_foundations",
+      "implementation_status": "available",
+      "learner_status": "review_available",
+      "independent_assessment": "pending",
+      "materials": ["01-机器人学基础-讲解与自测.md", "project-01-simulation-software/README.md"]
+    },
+    {
+      "id": "simulation_and_robot_software",
+      "implementation_status": "locally_verified",
+      "learner_status": "self_reported_complete",
+      "learner_report": "用户确认四类仿真已亲自运行观看，并确认已学完；独立修改与解释按个人记录另行验收",
+      "independent_assessment": "pending",
+      "materials": ["project-02-urdf-mujoco-ros2/README.md", "project-03-robot-platforms/深入训练与迁移.md"],
+      "evidence": ["project-03-robot-platforms/outputs/validation.json", "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/study.json"]
+    },
+    {
+      "id": "imitation_learning",
+      "implementation_status": "baseline_verified",
+      "learner_status": "in_progress",
+      "independent_assessment": "pending",
+      "materials": ["project-04-imitation-learning/02-行为克隆实操课.md", "project-04-imitation-learning/03-五平台模仿学习实操课.md"],
+      "evidence": ["project-04-imitation-learning/outputs/baseline-20261012-r2/summary.json", "project-04-imitation-learning/outputs/baseline-20261012-r2/verification.json", "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/summary.json", "project-04-imitation-learning/outputs/platform-verification-20261012.json"],
+      "pending": ["五平台个人代码修改与解释", "复杂平台正式五种子与新留出场景", "反馈能力改进", "动作块策略", "H1行走与Allegro手内重定向独立项目"]
+    },
+    {"id": "reinforcement_learning_and_safety", "implementation_status": "planned", "learner_status": "planned", "independent_assessment": "pending", "materials": ["五平台项目矩阵.md"]},
+    {"id": "embodied_tasks_and_recovery", "implementation_status": "planned", "learner_status": "planned", "independent_assessment": "pending", "materials": ["五平台项目矩阵.md"]},
+    {"id": "world_models_and_vla", "implementation_status": "planned", "learner_status": "planned", "independent_assessment": "pending", "materials": ["五平台项目矩阵.md"]}
+  ],
+  "publication_policy": {
+    "trigger": "After each learning or experiment advancement",
+    "contents": ["progress", "source", "dependencies", "protocol", "tests", "frozen representative datasets", "inference weights", "metrics", "failures", "visual demos", "licenses"],
+    "excluded": ["credentials", "private conversations", "local runtime configuration", "third-party model cache", "duplicate historical raw datasets"],
+    "verification": "Remote commit SHA match and actual GitHub Actions status; publication is reported after push verification"
+  }
+}

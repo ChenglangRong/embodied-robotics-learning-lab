@@ -1,0 +1,135 @@
+{
+  "date": "2026-10-12T21:12:03.436713+08:00",
+  "platform": "Windows-11-10.0.22621-SP0",
+  "python": "3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:03:56) [MSC v.1929 64 bit (AMD64)]",
+  "mujoco": "3.2.5",
+  "numpy": "1.26.4",
+  "measured_model_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+  "expected_model_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+  "lab_source_sha256": "7ff5bfc42eaa3c5a435ed13b34f97bf1043a84ec1e4d1ca371bfe392a3e384cd",
+  "diagnostic_source_sha256": "dd276620550e20b1e1a17654cdf854e3e73fb0c8359cda189060c5582dea3b12",
+  "geometry_timestamp_note": "cached geometry/forces precede integrated qpos by one physics step",
+  "personal_learning_gate": "pending student explanation and independent modification",
+  "results": {
+    "panda": {
+      "baseline": {
+        "changed_options": {},
+        "legacy_result": {
+          "task": "panda",
+          "passed": true,
+          "metrics": {
+            "max_height_m": 0.4675365353964753,
+            "final_height_m": 0.2749127610401858,
+            "max_tilt_deg": 0.0,
+            "contact_samples": 347,
+            "placement_error_m": 0.0037928164626608992,
+            "lift_m": 0.19153653539647525
+          },
+          "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+          "mujoco_version": "3.2.5",
+          "scope": "deterministic physical baseline; no learned policy; no real robot claim",
+          "completed_duration_s": 14.000000000001345,
+          "termination": "completed"
+        },
+        "diagnostics": {
+          "mean_tracking_rmse_rad": 0.023716420638370102,
+          "relative_position_window_s": [
+            7.0,
+            9.0
+          ],
+          "max_relative_displacement_from_window_start_m": 0.0035257101676712545,
+          "late_mean_finger_world_fz_N": 0.6030424493757716,
+          "late_mean_finger_normal_sum_N": 2.492338789687054,
+          "late_mean_palm_world_fz_N": 0.0,
+          "late_mean_palm_normal_sum_N": 0.0,
+          "late_mean_external_world_fz_N": 0.0,
+          "late_mean_external_normal_sum_N": 0.0,
+          "object_weight_N": 0.5886,
+          "late_finger_contact_fraction": 1.0
+        },
+        "saved_baseline_csv_identical": true,
+        "note": "diagnostics only; legacy pass does not certify new skill claims"
+      },
+      "partly_open": {
+        "changed_options": {
+          "close_ctrl": 160
+        },
+        "legacy_result": {
+          "task": "panda",
+          "passed": false,
+          "metrics": {
+            "max_height_m": 0.276,
+            "final_height_m": 0.27491276104018775,
+            "max_tilt_deg": 0.0,
+            "contact_samples": 60,
+            "placement_error_m": 0.3095655246456156,
+            "lift_m": 0.0
+          },
+          "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+          "mujoco_version": "3.2.5",
+          "scope": "deterministic physical baseline; no learned policy; no real robot claim",
+          "completed_duration_s": 14.000000000001345,
+          "termination": "task criteria failed"
+        },
+        "diagnostics": {
+          "mean_tracking_rmse_rad": 0.023715931973158983,
+          "relative_position_window_s": [
+            7.0,
+            9.0
+          ],
+          "max_relative_displacement_from_window_start_m": 0.3084820443953172,
+          "late_mean_finger_world_fz_N": 0.0,
+          "late_mean_finger_normal_sum_N": 0.0,
+          "late_mean_palm_world_fz_N": 0.0,
+          "late_mean_palm_normal_sum_N": 0.0,
+          "late_mean_external_world_fz_N": 0.588600000014858,
+          "late_mean_external_normal_sum_N": 0.588600000014858,
+          "object_weight_N": 0.5886,
+          "late_finger_contact_fraction": 0.0
+        },
+        "saved_baseline_csv_identical": null,
+        "note": "diagnostics only; legacy pass does not certify new skill claims"
+      },
+      "open": {
+        "changed_options": {
+          "close_ctrl": 255
+        },
+        "legacy_result": {
+          "task": "panda",
+          "passed": false,
+          "metrics": {
+            "max_height_m": 0.276,
+            "final_height_m": 0.2749127610401858,
+            "max_tilt_deg": 0.0,
+            "contact_samples": 0,
+            "placement_error_m": 0.3100000000000001,
+            "lift_m": 0.0
+          },
+          "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+          "mujoco_version": "3.2.5",
+          "scope": "deterministic physical baseline; no learned policy; no real robot claim",
+          "completed_duration_s": 14.000000000001345,
+          "termination": "task criteria failed"
+        },
+        "diagnostics": {
+          "mean_tracking_rmse_rad": 0.023715940815234964,
+          "relative_position_window_s": [
+            7.0,
+            9.0
+          ],
+          "max_relative_displacement_from_window_start_m": 0.308482129555295,
+          "late_mean_finger_world_fz_N": 0.0,
+          "late_mean_finger_normal_sum_N": 0.0,
+          "late_mean_palm_world_fz_N": 0.0,
+          "late_mean_palm_normal_sum_N": 0.0,
+          "late_mean_external_world_fz_N": 0.5885999999999986,
+          "late_mean_external_normal_sum_N": 0.5885999999999986,
+          "object_weight_N": 0.5886,
+          "late_finger_contact_fraction": 0.0
+        },
+        "saved_baseline_csv_identical": null,
+        "note": "diagnostics only; legacy pass does not certify new skill claims"
+      }
+    }
+  }
+}

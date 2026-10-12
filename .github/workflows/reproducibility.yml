@@ -1,0 +1,93 @@
+name: Reproducibility checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      full_replay:
+        description: Full stored-policy replay (portable physical metrics)
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: reproducibility-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  windows-learning-checks:
+    runs-on: windows-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        shell: pwsh
+    env:
+      PYTHONUTF8: '1'
+      OPENBLAS_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      ROBOT_MODEL_CACHE: ${{ runner.temp }}/menagerie
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: '3.12.4'
+          cache: pip
+          cache-dependency-path: |
+            project-01-simulation-software/requirements.txt
+            project-04-imitation-learning/requirements.txt
+      - name: Install pinned dependencies
+        run: |
+          python -m pip install -r project-01-simulation-software/requirements.txt -r project-04-imitation-learning/requirements.txt
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+      - name: Prepare pinned public robot models
+        run: |
+          $ModelRevision = '0059d4335f8156206f63a35662313385f7ad6d74'
+          git clone --depth 1 --filter=blob:none --sparse https://github.com/google-deepmind/mujoco_menagerie.git $env:ROBOT_MODEL_CACHE
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          git -C $env:ROBOT_MODEL_CACHE fetch --depth 1 origin $ModelRevision
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          git -C $env:ROBOT_MODEL_CACHE sparse-checkout set franka_emika_panda unitree_go2 unitree_h1 wonik_allegro
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          git -C $env:ROBOT_MODEL_CACHE checkout --detach $ModelRevision
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+      - name: Verify progress, public evidence and credential patterns
+        run: python tools/verify_learning_record.py
+      - name: Project 01 tests
+        run: python -m unittest discover -s project-01-simulation-software/tests -v
+      - name: Project 02 tests
+        run: python -m unittest discover -s project-02-urdf-mujoco-ros2/tests -v
+      - name: Project 03 diagnostic tests
+        working-directory: project-03-robot-platforms
+        run: python -m unittest test_deep_practice -v
+      - name: Project 04 five-platform tests
+        working-directory: project-04-imitation-learning
+        run: python -m unittest test_learning test_panel test_platform_learning -v
+      - name: CLI collaboration offline tests
+        run: python -m unittest discover -s tools/ai-collab -p test_cooperate.py -v
+      - name: Stored data and model provenance (integrity only)
+        working-directory: project-04-imitation-learning
+        run: |
+          New-Item -ItemType Directory -Path ../.ci-output -Force | Out-Null
+          python verify_run.py outputs/baseline-20261012-r2 --skip-replay --output ../.ci-output/planar-integrity.json
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          python verify_platform_run.py outputs/platform-baseline-20261012-r3 --skip-replay --output ../.ci-output/physical-integrity.json
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+      - name: Full replay
+        if: github.event_name == 'workflow_dispatch' && inputs.full_replay
+        working-directory: project-04-imitation-learning
+        run: |
+          python verify_run.py outputs/baseline-20261012-r2 --output ../.ci-output/planar-full-replay.json
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          python verify_platform_run.py outputs/platform-baseline-20261012-r3 --portable --output ../.ci-output/physical-full-replay.json
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+      - name: Retain verification artifacts
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: verification-${{ github.sha }}
+          path: .ci-output/
+          if-no-files-found: warn
+          retention-days: 30

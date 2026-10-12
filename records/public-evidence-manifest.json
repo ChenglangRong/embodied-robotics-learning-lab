@@ -1,0 +1,2827 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-12",
+  "evidence_files": [
+    {
+      "path": "project-01-simulation-software/outputs/demo/run_config.json",
+      "bytes": 170,
+      "sha256": "634a4db72ea7204754a025b0824a947db2ce3cbcfc01289bc63c3acc480dd29e"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/demo/summary.json",
+      "bytes": 206,
+      "sha256": "cfc3e895e62b0bdc5717ea8d11b94efeb232f5fa20e7dc6bd0d1cca36bfc1031"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/demo/trajectory.csv",
+      "bytes": 14284,
+      "sha256": "7afc5381b0e2dfc7926cfee190e05bd4f81c24961c901c88356f0161157783f3"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/demo/trajectory.png",
+      "bytes": 53500,
+      "sha256": "1508deaabfb773a8c3466bab318c442777a0d6e800107f7e779a2445d434f249"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/example/reachable/animation.gif",
+      "bytes": 357262,
+      "sha256": "9b4cd90daf8fb0fabac00bf5dfeeb1d506c7f5d65e6c5a951da1c08656cfad29"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/example/reachable/run_config.json",
+      "bytes": 170,
+      "sha256": "634a4db72ea7204754a025b0824a947db2ce3cbcfc01289bc63c3acc480dd29e"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/example/reachable/run_metadata.json",
+      "bytes": 260,
+      "sha256": "83058d343afe05a5461694ddab9c59ecfc8b7fcc50430da37cd8cb05bbdbbf94"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/example/reachable/summary.json",
+      "bytes": 392,
+      "sha256": "f7d07d7b145f506ce7511f30be56c9798bf9b26ff348025c9aea1a71ed28eae7"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/example/reachable/trajectory.csv",
+      "bytes": 18190,
+      "sha256": "53950791f1eb6aea6eb04a9c38e3a35ce518b8abf44ec5a94527e09e1de593f9"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/example/reachable/trajectory.png",
+      "bytes": 52848,
+      "sha256": "c7afe7e727bcf1142c3c0176ae967413bf0dbdf7605a6bcf3f3e051f0cadf4d1"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/example/speed_limited/run_config.json",
+      "bytes": 171,
+      "sha256": "2990a0ad039d926ee8e408e28fdbc9450ee31fb4d7bbf954afa2d2dbe6af1472"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/example/speed_limited/run_metadata.json",
+      "bytes": 264,
+      "sha256": "7a951d4b259df3009f71764356d805d4bca6d2f4b18ba1169c90082819a33144"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/example/speed_limited/summary.json",
+      "bytes": 378,
+      "sha256": "df0ee29de9ec64772044005bffe4e8ff9650619a1d32f15a0d0d176f32a55f8e"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/example/speed_limited/trajectory.csv",
+      "bytes": 31428,
+      "sha256": "a21608a5b2f6b9d5b29c5734de90aaf1ec8fa824e6c53accb399ad644b211dfc"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/example/speed_limited/trajectory.png",
+      "bytes": 36843,
+      "sha256": "d6fded7406f21ecb60dedea3508c4342b0b3a83b997c559203f44ce030ac557b"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/example/unreachable/run_config.json",
+      "bytes": 170,
+      "sha256": "a00dbbcbd103da435aae10775fc4ec858eebf656dbcdba3ec9af251ae5e8ce21"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/example/unreachable/run_metadata.json",
+      "bytes": 262,
+      "sha256": "013dc294f41ceaa11b225dc54d7111277b4202257b03effb1d61015ed5af445e"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/example/unreachable/summary.json",
+      "bytes": 396,
+      "sha256": "bac3194895b998a8934f89b121b0f4bedaecfc7d8da65d0dc9f181f9f09b2bb0"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/example/unreachable/trajectory.csv",
+      "bytes": 64987,
+      "sha256": "c01ea937b83791f72171cf3a6a1bf959e926cdbbcb2b3aec9ea20d0d640df8e6"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/example/unreachable/trajectory.png",
+      "bytes": 41013,
+      "sha256": "f6fd0418122bb81636895beac061d5120c31592515f6395974164892466df56f"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/my-workshop/reachable/animation.gif",
+      "bytes": 357262,
+      "sha256": "9b4cd90daf8fb0fabac00bf5dfeeb1d506c7f5d65e6c5a951da1c08656cfad29"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/my-workshop/reachable/run_config.json",
+      "bytes": 170,
+      "sha256": "634a4db72ea7204754a025b0824a947db2ce3cbcfc01289bc63c3acc480dd29e"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/my-workshop/reachable/run_metadata.json",
+      "bytes": 260,
+      "sha256": "83058d343afe05a5461694ddab9c59ecfc8b7fcc50430da37cd8cb05bbdbbf94"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/my-workshop/reachable/summary.json",
+      "bytes": 392,
+      "sha256": "f7d07d7b145f506ce7511f30be56c9798bf9b26ff348025c9aea1a71ed28eae7"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/my-workshop/reachable/trajectory.csv",
+      "bytes": 18190,
+      "sha256": "53950791f1eb6aea6eb04a9c38e3a35ce518b8abf44ec5a94527e09e1de593f9"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/my-workshop/reachable/trajectory.png",
+      "bytes": 48885,
+      "sha256": "66e8f2264f3808ab9869739921e69ec84d919119dfbb49813d97e5862b2c30c6"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/my-workshop/speed_limited/run_config.json",
+      "bytes": 171,
+      "sha256": "2990a0ad039d926ee8e408e28fdbc9450ee31fb4d7bbf954afa2d2dbe6af1472"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/my-workshop/speed_limited/run_metadata.json",
+      "bytes": 264,
+      "sha256": "7a951d4b259df3009f71764356d805d4bca6d2f4b18ba1169c90082819a33144"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/my-workshop/speed_limited/summary.json",
+      "bytes": 378,
+      "sha256": "df0ee29de9ec64772044005bffe4e8ff9650619a1d32f15a0d0d176f32a55f8e"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/my-workshop/speed_limited/trajectory.csv",
+      "bytes": 31428,
+      "sha256": "a21608a5b2f6b9d5b29c5734de90aaf1ec8fa824e6c53accb399ad644b211dfc"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/my-workshop/speed_limited/trajectory.png",
+      "bytes": 32731,
+      "sha256": "5e9f5224abe77b3fccf3da42e13a05b4020785b617a76c4ac87aa26fe1532290"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/my-workshop/unreachable/run_config.json",
+      "bytes": 170,
+      "sha256": "a00dbbcbd103da435aae10775fc4ec858eebf656dbcdba3ec9af251ae5e8ce21"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/my-workshop/unreachable/run_metadata.json",
+      "bytes": 262,
+      "sha256": "013dc294f41ceaa11b225dc54d7111277b4202257b03effb1d61015ed5af445e"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/my-workshop/unreachable/summary.json",
+      "bytes": 396,
+      "sha256": "bac3194895b998a8934f89b121b0f4bedaecfc7d8da65d0dc9f181f9f09b2bb0"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/my-workshop/unreachable/trajectory.csv",
+      "bytes": 64987,
+      "sha256": "c01ea937b83791f72171cf3a6a1bf959e926cdbbcb2b3aec9ea20d0d640df8e6"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/my-workshop/unreachable/trajectory.png",
+      "bytes": 36969,
+      "sha256": "d76ef489eb4e0b93e7fc08630dde280210286cc347ee0425f11e0183416707ed"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/workshop/reachable/animation.gif",
+      "bytes": 357262,
+      "sha256": "9b4cd90daf8fb0fabac00bf5dfeeb1d506c7f5d65e6c5a951da1c08656cfad29"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/workshop/reachable/run_config.json",
+      "bytes": 170,
+      "sha256": "634a4db72ea7204754a025b0824a947db2ce3cbcfc01289bc63c3acc480dd29e"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/workshop/reachable/run_metadata.json",
+      "bytes": 260,
+      "sha256": "721419341279359c9a156a5e621414354cf108ad7740e70f8a7d016999b09fac"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/workshop/reachable/summary.json",
+      "bytes": 392,
+      "sha256": "f7d07d7b145f506ce7511f30be56c9798bf9b26ff348025c9aea1a71ed28eae7"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/workshop/reachable/trajectory.csv",
+      "bytes": 18190,
+      "sha256": "53950791f1eb6aea6eb04a9c38e3a35ce518b8abf44ec5a94527e09e1de593f9"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/workshop/reachable/trajectory.png",
+      "bytes": 52848,
+      "sha256": "c7afe7e727bcf1142c3c0176ae967413bf0dbdf7605a6bcf3f3e051f0cadf4d1"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/workshop/speed_limited/run_config.json",
+      "bytes": 171,
+      "sha256": "2990a0ad039d926ee8e408e28fdbc9450ee31fb4d7bbf954afa2d2dbe6af1472"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/workshop/speed_limited/run_metadata.json",
+      "bytes": 264,
+      "sha256": "3c9956f8e55f1ee297663d110b2a6d788ea1e3033d8eee3b7e30e636e2ac66a8"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/workshop/speed_limited/summary.json",
+      "bytes": 378,
+      "sha256": "df0ee29de9ec64772044005bffe4e8ff9650619a1d32f15a0d0d176f32a55f8e"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/workshop/speed_limited/trajectory.csv",
+      "bytes": 31428,
+      "sha256": "a21608a5b2f6b9d5b29c5734de90aaf1ec8fa824e6c53accb399ad644b211dfc"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/workshop/speed_limited/trajectory.png",
+      "bytes": 36843,
+      "sha256": "d6fded7406f21ecb60dedea3508c4342b0b3a83b997c559203f44ce030ac557b"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/workshop/unreachable/run_config.json",
+      "bytes": 170,
+      "sha256": "a00dbbcbd103da435aae10775fc4ec858eebf656dbcdba3ec9af251ae5e8ce21"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/workshop/unreachable/run_metadata.json",
+      "bytes": 262,
+      "sha256": "ed53cd4d90ff185ce426633ba7daa7530df2d205ba03e1564d1a20568e898cdb"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/workshop/unreachable/summary.json",
+      "bytes": 396,
+      "sha256": "bac3194895b998a8934f89b121b0f4bedaecfc7d8da65d0dc9f181f9f09b2bb0"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/workshop/unreachable/trajectory.csv",
+      "bytes": 64987,
+      "sha256": "c01ea937b83791f72171cf3a6a1bf959e926cdbbcb2b3aec9ea20d0d640df8e6"
+    },
+    {
+      "path": "project-01-simulation-software/outputs/workshop/unreachable/trajectory.png",
+      "bytes": 41013,
+      "sha256": "f6fd0418122bb81636895beac061d5120c31592515f6395974164892466df56f"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/example/animation.gif",
+      "bytes": 225437,
+      "sha256": "f175bf56ad8c46a294ca027b16b190d1bd5947e0e0441c072c72c6fe43508795"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/example/derived_scene.xml",
+      "bytes": 1243,
+      "sha256": "7914b35fbfdc70d3173f13cf393214478e17d75aecd5d705a598f85e7a1172e5"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/example/final_frame.png",
+      "bytes": 8257,
+      "sha256": "061f9c6e59f078c7ced141e74389887cd3773f5ef2583ddda8008f6fe3d93baa"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/example/run_config.json",
+      "bytes": 562,
+      "sha256": "202f58733c87c262fd2c9f9310ec3891fec1c7567ce48bb7b5019039a751a25c"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/example/summary.json",
+      "bytes": 486,
+      "sha256": "cd400bda0f7afdbd9739ea2995868db9df343baaa5b2e99e7ab709dfcd053339"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/example/trajectory.csv",
+      "bytes": 25693,
+      "sha256": "8907b1e477223a9d5a558a6ffb5027ca3ce59aeb0e26e50f9c8d7915cae5d2bb"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/guided-demo-live/derived_scene.xml",
+      "bytes": 1243,
+      "sha256": "7914b35fbfdc70d3173f13cf393214478e17d75aecd5d705a598f85e7a1172e5"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/guided-demo-live/run_config.json",
+      "bytes": 562,
+      "sha256": "d1ea2a9a4552aa09e1c4013b36a6e66392ad54d105e3dd980c8dce9ad3a23104"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/guided-demo-live/summary.json",
+      "bytes": 486,
+      "sha256": "cd400bda0f7afdbd9739ea2995868db9df343baaa5b2e99e7ab709dfcd053339"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/guided-demo-live/trajectory.csv",
+      "bytes": 25693,
+      "sha256": "8907b1e477223a9d5a558a6ffb5027ca3ce59aeb0e26e50f9c8d7915cae5d2bb"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/guided-demo/animation.gif",
+      "bytes": 225437,
+      "sha256": "f175bf56ad8c46a294ca027b16b190d1bd5947e0e0441c072c72c6fe43508795"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/guided-demo/derived_scene.xml",
+      "bytes": 1243,
+      "sha256": "7914b35fbfdc70d3173f13cf393214478e17d75aecd5d705a598f85e7a1172e5"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/guided-demo/final_frame.png",
+      "bytes": 8257,
+      "sha256": "061f9c6e59f078c7ced141e74389887cd3773f5ef2583ddda8008f6fe3d93baa"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/guided-demo/run_config.json",
+      "bytes": 562,
+      "sha256": "d1ea2a9a4552aa09e1c4013b36a6e66392ad54d105e3dd980c8dce9ad3a23104"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/guided-demo/summary.json",
+      "bytes": 486,
+      "sha256": "cd400bda0f7afdbd9739ea2995868db9df343baaa5b2e99e7ab709dfcd053339"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/guided-demo/trajectory.csv",
+      "bytes": 25693,
+      "sha256": "8907b1e477223a9d5a558a6ffb5027ca3ce59aeb0e26e50f9c8d7915cae5d2bb"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/local-validation-2026-10-12/live-view/derived_scene.xml",
+      "bytes": 1243,
+      "sha256": "7914b35fbfdc70d3173f13cf393214478e17d75aecd5d705a598f85e7a1172e5"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/local-validation-2026-10-12/live-view/run_config.json",
+      "bytes": 562,
+      "sha256": "202f58733c87c262fd2c9f9310ec3891fec1c7567ce48bb7b5019039a751a25c"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/local-validation-2026-10-12/live-view/summary.json",
+      "bytes": 486,
+      "sha256": "cd400bda0f7afdbd9739ea2995868db9df343baaa5b2e99e7ab709dfcd053339"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/local-validation-2026-10-12/live-view/trajectory.csv",
+      "bytes": 25693,
+      "sha256": "8907b1e477223a9d5a558a6ffb5027ca3ce59aeb0e26e50f9c8d7915cae5d2bb"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/local-validation-2026-10-12/reachable/animation.gif",
+      "bytes": 225437,
+      "sha256": "f175bf56ad8c46a294ca027b16b190d1bd5947e0e0441c072c72c6fe43508795"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/local-validation-2026-10-12/reachable/derived_scene.xml",
+      "bytes": 1243,
+      "sha256": "7914b35fbfdc70d3173f13cf393214478e17d75aecd5d705a598f85e7a1172e5"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/local-validation-2026-10-12/reachable/final_frame.png",
+      "bytes": 8257,
+      "sha256": "061f9c6e59f078c7ced141e74389887cd3773f5ef2583ddda8008f6fe3d93baa"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/local-validation-2026-10-12/reachable/run_config.json",
+      "bytes": 562,
+      "sha256": "202f58733c87c262fd2c9f9310ec3891fec1c7567ce48bb7b5019039a751a25c"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/local-validation-2026-10-12/reachable/summary.json",
+      "bytes": 486,
+      "sha256": "cd400bda0f7afdbd9739ea2995868db9df343baaa5b2e99e7ab709dfcd053339"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/local-validation-2026-10-12/reachable/trajectory.csv",
+      "bytes": 25693,
+      "sha256": "8907b1e477223a9d5a558a6ffb5027ca3ce59aeb0e26e50f9c8d7915cae5d2bb"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/local-validation-2026-10-12/seed11/animation.gif",
+      "bytes": 351285,
+      "sha256": "57e5e83429524863e180cf1bbcc64a9ddabd6c2f6ffbf3b65791f9987722176b"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/local-validation-2026-10-12/seed11/derived_scene.xml",
+      "bytes": 1243,
+      "sha256": "7914b35fbfdc70d3173f13cf393214478e17d75aecd5d705a598f85e7a1172e5"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/local-validation-2026-10-12/seed11/final_frame.png",
+      "bytes": 8288,
+      "sha256": "5140627ebb76441d3402d1b9de52f81a77bfda9f06a1a9fbe43d81b4a87708a4"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/local-validation-2026-10-12/seed11/run_config.json",
+      "bytes": 563,
+      "sha256": "10ca222820469e669e02668ca32d84ef60af49498e5a51435ec98db4d27cc1bb"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/local-validation-2026-10-12/seed11/summary.json",
+      "bytes": 491,
+      "sha256": "fa0c957619a07b7e3401842ca1126880454cfd809bdbdf6d093494bfd8994cd8"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/local-validation-2026-10-12/seed11/trajectory.csv",
+      "bytes": 37762,
+      "sha256": "e3c8a282c3080313122cc607ba2ab64445dc0b37d92a12e4a61cf2c1e9ec8269"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/local-validation-2026-10-12/unreachable/animation.gif",
+      "bytes": 283591,
+      "sha256": "b97ff89e3bbebc3d87adc5ddca4e823bd60af1fce2c9634397e3a28c380902b1"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/local-validation-2026-10-12/unreachable/derived_scene.xml",
+      "bytes": 1242,
+      "sha256": "403da859d12cd5e3a9491ac6805120c60129e20d268dbac72b7021a2c1baab7b"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/local-validation-2026-10-12/unreachable/final_frame.png",
+      "bytes": 3299,
+      "sha256": "9a06c5f00721e8f4f0f13dd2602eb4a0f6240d2a038ae5f11113339fcee5ca5a"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/local-validation-2026-10-12/unreachable/run_config.json",
+      "bytes": 561,
+      "sha256": "9ae666a12294ab08f2d6eab0a420760b8a6eadb688be9c6c8332c22fdf31a240"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/local-validation-2026-10-12/unreachable/summary.json",
+      "bytes": 488,
+      "sha256": "7e1257ae4164817882bc63aff30305a10a694a2b5e97ea081f3b56c5f8725b3b"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/local-validation-2026-10-12/unreachable/trajectory.csv",
+      "bytes": 162156,
+      "sha256": "295e1a1dc43251b3b4dea5fdd09acb42affa980f0bba5d3b7a5cb7d676f268a6"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/local-validation-2026-10-12/实验记录.md",
+      "bytes": 6723,
+      "sha256": "d8753d69ea743e916c3e23f0fc9a83680730f5afa26e543377c5393ec82729fb"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/ros-validation-2026-10-12/bag/metadata.yaml",
+      "bytes": 7335,
+      "sha256": "118768c916d324bae3eda46324bec7cbfde502058a1937bfdf613ec654149a0f"
+    },
+    {
+      "path": "project-02-urdf-mujoco-ros2/outputs/ros-validation-2026-10-12/bag/robot_lab_demo_clean_2026-10-12_0.mcap",
+      "bytes": 711777,
+      "sha256": "faae6597a2ca940316786b978f94df886de9adc0fc3266a8b94c767488f945cf"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/baseline/allegro/config.json",
+      "bytes": 1297,
+      "sha256": "f7d4d7f927ac920e715dd1508fb742b3192b0d86f6137b0fe580f10745676ad0"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/baseline/allegro/demo.gif",
+      "bytes": 1461586,
+      "sha256": "f1d3a3d69681124e192d96a9deac557a56dbad1359bba5b8d71d0abcbe4597d5"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/baseline/allegro/preview.png",
+      "bytes": 47891,
+      "sha256": "c498b6ef59b6dbee34a7841d7253580e67de0edf299b756308fa0b0a1b3f90e9"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/baseline/allegro/summary.json",
+      "bytes": 608,
+      "sha256": "45c74569497f32b12b4429225f1d8a5f9ca35d148920c52f623ec8fc06f5f60e"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/baseline/allegro/trajectory.csv",
+      "bytes": 594068,
+      "sha256": "0b9612d1336c902040d7fd2211844d4f52ea139aa53529e0906391bcc05932c3"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/baseline/go2/config.json",
+      "bytes": 1066,
+      "sha256": "3fa19eb2cbaed01868723dfb003d503ac18c5a1a15de9f83217407c9ce76dbd3"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/baseline/go2/demo.gif",
+      "bytes": 6698123,
+      "sha256": "948d0935f6b74a26f28ab20ffacb6d618b105f4c125225af19aa11875c97e98f"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/baseline/go2/preview.png",
+      "bytes": 86195,
+      "sha256": "88e688864bcc840e8210f31e76fb35c1f735724a33142b2c2a05cff5f2642d10"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/baseline/go2/summary.json",
+      "bytes": 653,
+      "sha256": "e126d80b14d750b99858d873bdf9c7ecc59f8b2f5b96aaa184c3dd502abce5c5"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/baseline/go2/trajectory.csv",
+      "bytes": 693240,
+      "sha256": "437431d89170cab1cd3fde7fe823e8c6a0210833b7f758c4cd73655943c53a80"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/baseline/h1/config.json",
+      "bytes": 1494,
+      "sha256": "cce6eda937db202f363ab85c82c90a2ffc9c3e4ec37258b932d93490ef81b100"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/baseline/h1/demo.gif",
+      "bytes": 6908963,
+      "sha256": "55c4a0976aac9eee1de3dcc3161f3423e5f901cdc52b7cc0fd49f50f1958a4a8"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/baseline/h1/preview.png",
+      "bytes": 98583,
+      "sha256": "d430edaa366d690aabac0d71305fcf535a0e8d0ea0eaedc423a8611380de751a"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/baseline/h1/summary.json",
+      "bytes": 566,
+      "sha256": "463db48fdbdbba68c44350127d1b47f15c28ca34d91fa1b41cc2f5f51bea64aa"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/baseline/h1/trajectory.csv",
+      "bytes": 795202,
+      "sha256": "8e84b814ca3a4aa144ca8d9f5f69a024718fc980b3d5a71cca233f829e277f39"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/baseline/panda/config.json",
+      "bytes": 826,
+      "sha256": "4743e2aebae6bb7588bc4fcfdbf1a9ea724736b54f53448669c695ad771efa12"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/baseline/panda/demo.gif",
+      "bytes": 6336373,
+      "sha256": "eac080f359de54b6e18268ea83ef3c42cb8c47612c375dd357e76c5d4263b158"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/baseline/panda/preview.png",
+      "bytes": 98816,
+      "sha256": "45933205e81e62cc9eb54cf7640211114eaad2335156e69b7cfbc55d31b83db3"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/baseline/panda/summary.json",
+      "bytes": 549,
+      "sha256": "0fbf377cb9d98033e64b958a95052b442fd9442b2f5d97a0897043324a6bd030"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/baseline/panda/trajectory.csv",
+      "bytes": 553476,
+      "sha256": "9e9e0795431f5753755cf8bb80dc7960f1f70aa013d6386b747aea836b64130a"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/20261012-211156-417922-panda/panda/baseline/config.json",
+      "bytes": 826,
+      "sha256": "4adb2d7f7293915f1a17164898a0a09bc0e9ede3bcf7d4a19e5c48a770c3dad2"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/20261012-211156-417922-panda/panda/baseline/diagnostic_summary.json",
+      "bytes": 1329,
+      "sha256": "37735e682b796953b668291e9fbfb64be602af1e912782314ae4e677df864515"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/20261012-211156-417922-panda/panda/baseline/diagnostics.csv",
+      "bytes": 150951,
+      "sha256": "347f7658098139f7d2db55ef144ee12b27e0785d3a62c8eb6b0e0b8b18ee60cb"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/20261012-211156-417922-panda/panda/baseline/summary.json",
+      "bytes": 549,
+      "sha256": "0fbf377cb9d98033e64b958a95052b442fd9442b2f5d97a0897043324a6bd030"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/20261012-211156-417922-panda/panda/baseline/trajectory.csv",
+      "bytes": 553476,
+      "sha256": "9e9e0795431f5753755cf8bb80dc7960f1f70aa013d6386b747aea836b64130a"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/20261012-211156-417922-panda/panda/open/config.json",
+      "bytes": 828,
+      "sha256": "b721a747897ab5f796944da976e03362dcccbb8f37a11d7656cf883e6522547f"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/20261012-211156-417922-panda/panda/open/diagnostic_summary.json",
+      "bytes": 1331,
+      "sha256": "f21d7ef9614f7d76e55ad47ecc390d7b3920e9366f52264c8f17cea2b0fe0fbd"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/20261012-211156-417922-panda/panda/open/diagnostics.csv",
+      "bytes": 144598,
+      "sha256": "aa78c5e707c455775b85cd5c958f55056573854bc9f3ac57a74f622c9825777e"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/20261012-211156-417922-panda/panda/open/summary.json",
+      "bytes": 527,
+      "sha256": "1f7f1f48318641913487e6b241aa48e474bce4a94ba7076604ab733049a3b38f"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/20261012-211156-417922-panda/panda/open/trajectory.csv",
+      "bytes": 537590,
+      "sha256": "192352423d53ae002551aabcaac680fabdb971f3a3af328b22b91229a6ec742e"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/20261012-211156-417922-panda/panda/partly_open/config.json",
+      "bytes": 828,
+      "sha256": "62ab767a135182cbc53e6af7f15e39482238f4fa9d65c57099a68cef42acf99a"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/20261012-211156-417922-panda/panda/partly_open/diagnostic_summary.json",
+      "bytes": 1332,
+      "sha256": "c86ae2f4634e47b326f7836de736e8bd856359dfeab305797227aa449126753e"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/20261012-211156-417922-panda/panda/partly_open/diagnostics.csv",
+      "bytes": 148237,
+      "sha256": "d7d5149adb1d9f98ff93254d73c217e3a40b8f95f60194d6c2f6cb708a147486"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/20261012-211156-417922-panda/panda/partly_open/summary.json",
+      "bytes": 529,
+      "sha256": "e49d8127c4e5d2f744d76aa35dc2bee36783a01543a74c53bdc17663f80adda8"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/20261012-211156-417922-panda/panda/partly_open/trajectory.csv",
+      "bytes": 553023,
+      "sha256": "463201a202fc15b84d8d0a45d4f6655373a42e7e8c6fb254885f2db168064911"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/20261012-211156-417922-panda/report.html",
+      "bytes": 51533,
+      "sha256": "c321e11a5d76bf87bd71136f5fed256973e5750970e0e0aeaf29a085685e2282"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/20261012-211156-417922-panda/study.json",
+      "bytes": 5562,
+      "sha256": "e25a3225ca54c203da30629fd73499015737a343fd13ce65f05a85c83c9fc263"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/flash-followup.prompt.txt",
+      "bytes": 1090,
+      "sha256": "4f3b7a65c54c78e47502fe1a5022a341d9f9a0c1ea5c817fd375a1728913c2fc"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/flash-followup.stderr.log",
+      "bytes": 81,
+      "sha256": "237f355dd4c52386530c0359232c9173d42e303fab8bd6cdbe7a305e2c4803a2"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/flash-followup.stdout.log",
+      "bytes": 2501,
+      "sha256": "9889cbc7907818c18ee8b60e574bceb82007022d137f73212d664206d359cbb3"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/flash-review.prompt.txt",
+      "bytes": 1204,
+      "sha256": "a3c41ffa7ceedd31ba52b08cf5d305ec70a4f684abd5b7048899ef3105e985d5"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/flash-review.stderr.log",
+      "bytes": 81,
+      "sha256": "237f355dd4c52386530c0359232c9173d42e303fab8bd6cdbe7a305e2c4803a2"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/flash-review.stdout.log",
+      "bytes": 3517,
+      "sha256": "876907895fa91fa653cbcb69798ac6bd3cd2a2bd7abe5136a4bbbd5f4d38d664"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/allegro/baseline/config.json",
+      "bytes": 1297,
+      "sha256": "198edaae9bfb8eccbdc41b948eda235a222b24bb44ef2b76dfcfd554b96abb87"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/allegro/baseline/diagnostic_summary.json",
+      "bytes": 1430,
+      "sha256": "ff2b9e28bd21e38bf907e2ffea408406296f11028d5c2eb81de955e58f705162"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/allegro/baseline/diagnostics.csv",
+      "bytes": 120095,
+      "sha256": "b4e725972eeea47b1c0240ab62f845a4764412ba2bb47049c97bec6adbaf32f6"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/allegro/baseline/summary.json",
+      "bytes": 608,
+      "sha256": "45c74569497f32b12b4429225f1d8a5f9ca35d148920c52f623ec8fc06f5f60e"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/allegro/baseline/trajectory.csv",
+      "bytes": 594068,
+      "sha256": "0b9612d1336c902040d7fd2211844d4f52ea139aa53529e0906391bcc05932c3"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/allegro/open_fingers/config.json",
+      "bytes": 1301,
+      "sha256": "d9c3776c69a943a3aac0e036d6ef7b082cac700308d6bc919041d3f52783fd5b"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/allegro/open_fingers/diagnostic_summary.json",
+      "bytes": 1676,
+      "sha256": "9109461f249ef99c7ff5ce29b504cdb6582a94133d1620fe686e22ce1b7db7ea"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/allegro/open_fingers/diagnostics.csv",
+      "bytes": 120628,
+      "sha256": "02515c4a48acfa0f70824f5e4565a09e8b242cbd1ed3447cf79bc09091e51e87"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/allegro/open_fingers/summary.json",
+      "bytes": 621,
+      "sha256": "921c89099a8474843b401d80e024664b6272866209e8392fe593314243fd4e62"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/allegro/open_fingers/trajectory.csv",
+      "bytes": 556632,
+      "sha256": "c5e82fe16645d1f57cd17d8c27dad69a07f00909bfe94e34df9641010b273dc9"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/allegro/tilted_wrist/config.json",
+      "bytes": 1297,
+      "sha256": "e97c22cfa74d538c46a2ce19baa547eb29ed112f61291b71c35cb15ea022ab6b"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/allegro/tilted_wrist/diagnostic_summary.json",
+      "bytes": 1488,
+      "sha256": "cf52c6d4cd2c406e6eedcdd6f8620342c19e323731402cc0e3e237f629194127"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/allegro/tilted_wrist/diagnostics.csv",
+      "bytes": 120204,
+      "sha256": "90ca6d50bb7f5430419c4c4e69686bf25a7d4defccbf873727649f20972b0ba3"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/allegro/tilted_wrist/summary.json",
+      "bytes": 622,
+      "sha256": "689b432850daeb49a62a0aca72dc8eca165125893b94926af39d0ce4d396c0df"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/allegro/tilted_wrist/trajectory.csv",
+      "bytes": 593895,
+      "sha256": "892cb09f92734d3c0c597d53fe89c72e795d46a12625876e195bd309516134c3"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/figure_config.json",
+      "bytes": 508,
+      "sha256": "59225c057c0d275aa35fdfdd4a9af5b80b238d8604a5aa2c79d0111d743da445"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/go2/baseline/config.json",
+      "bytes": 1066,
+      "sha256": "a6bdeebc2198ba7624a74e054b9089cfd57d3c849bd5cd4d2bec1f4231cda768"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/go2/baseline/diagnostic_summary.json",
+      "bytes": 11758,
+      "sha256": "d1dcb4e3839ddbd1f4a32abeb2c1f60b6af534f471155aaf2b865932e7aaf381"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/go2/baseline/diagnostics.csv",
+      "bytes": 215991,
+      "sha256": "759acc4f92f21915db25a94da064c264a7225d730c0085e18525d78ac99546b5"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/go2/baseline/summary.json",
+      "bytes": 653,
+      "sha256": "e126d80b14d750b99858d873bdf9c7ecc59f8b2f5b96aaa184c3dd502abce5c5"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/go2/baseline/trajectory.csv",
+      "bytes": 693240,
+      "sha256": "437431d89170cab1cd3fde7fe823e8c6a0210833b7f758c4cd73655943c53a80"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/go2/large_stride/config.json",
+      "bytes": 1065,
+      "sha256": "63d916a2d0e742ccc9fef33ac30e06f1508f3abc2a47c7aa7efa198fa83691b2"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/go2/large_stride/diagnostic_summary.json",
+      "bytes": 14069,
+      "sha256": "abe33038f31f598ab226561e25495a760d578d2b06c59de897b96b58afb8079b"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/go2/large_stride/diagnostics.csv",
+      "bytes": 212951,
+      "sha256": "c053f1a42b018de598193a99bbd4a98ef0b6c4bf3dc145d992c165e1179824ac"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/go2/large_stride/summary.json",
+      "bytes": 653,
+      "sha256": "7e0c8e1e24682eca48735bd83d9937d1e444584b7097fb7fc95c08827c0f0834"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/go2/large_stride/trajectory.csv",
+      "bytes": 687608,
+      "sha256": "d69c5c60d8ff883468bb2b5a47fafc0e972913a34648d7719b9cedfa9ab99d21"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/go2/soft_pd/config.json",
+      "bytes": 1065,
+      "sha256": "90247df7b19361807ec70d52ea61ea51a919e5d86d565cf61dadcf560a5609b3"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/go2/soft_pd/diagnostic_summary.json",
+      "bytes": 7094,
+      "sha256": "5327c6af5f49a8d357cdd6a423cd7a6966ce3a6c27a89555ee668d3ac6297d07"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/go2/soft_pd/diagnostics.csv",
+      "bytes": 222499,
+      "sha256": "6c429e6b1fc3f083538851e8b8128e2a6347394f32ec2c3769c24b336676eb66"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/go2/soft_pd/summary.json",
+      "bytes": 665,
+      "sha256": "706458ba5ee5c5f340e4b0e5ce55b70e09216a604e43e46532761e38a9a7264b"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/go2/soft_pd/trajectory.csv",
+      "bytes": 694753,
+      "sha256": "8783de381d2ecc29a7e3078f648dd14f664692ac966483bfd51a82869d823388"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/h1/baseline/config.json",
+      "bytes": 1494,
+      "sha256": "8f84192aa9e38ea4fa5d65b4c7849727a0c5c8da31d4cb4912f5b315257f56c2"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/h1/baseline/diagnostic_summary.json",
+      "bytes": 981,
+      "sha256": "0f19e57be73c48d76f8c6e90fd90d33660100d5b99bc66a022f977272c6d9bdc"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/h1/baseline/diagnostics.csv",
+      "bytes": 72841,
+      "sha256": "2e427087940b50af216de10dc900eaf3cbb9406493403786493c3dee7c4e254b"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/h1/baseline/summary.json",
+      "bytes": 566,
+      "sha256": "463db48fdbdbba68c44350127d1b47f15c28ca34d91fa1b41cc2f5f51bea64aa"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/h1/baseline/trajectory.csv",
+      "bytes": 795202,
+      "sha256": "8e84b814ca3a4aa144ca8d9f5f69a024718fc980b3d5a71cca233f829e277f39"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/h1/deep_squat/config.json",
+      "bytes": 1493,
+      "sha256": "db48c82322a4716d443d2c25f2cce3c8f5ea75214b0816da9ea51ca09ed84662"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/h1/deep_squat/diagnostic_summary.json",
+      "bytes": 1002,
+      "sha256": "02e47717e8cd4b430679982e4d1a074b9e06e7aee70b32d8c4330d01da8e62d0"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/h1/deep_squat/diagnostics.csv",
+      "bytes": 72872,
+      "sha256": "a7ecb0ce5b9ae4a43cf98759df7fbb334aba001bba8b0bb300fd264e7344fcc3"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/h1/deep_squat/summary.json",
+      "bytes": 566,
+      "sha256": "5a33c2d92afed2942f474555a3039d7eac024689cdf17841f3b3351b0c233d0f"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/h1/deep_squat/trajectory.csv",
+      "bytes": 795076,
+      "sha256": "96b53913efbbd0f5bd1535482be288be5da7daba1a932ea433dd6673b6844082"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/h1/low_feedback/config.json",
+      "bytes": 1494,
+      "sha256": "744cffb49ba925d98b7cec1b54e746dc2a16f27bd63a752ec837b84839719ba4"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/h1/low_feedback/diagnostic_summary.json",
+      "bytes": 1049,
+      "sha256": "f6442a774eae850586ae58a36f7b237c98b247f49cf6cdd9ed7c5baa9817109f"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/h1/low_feedback/diagnostics.csv",
+      "bytes": 75784,
+      "sha256": "2e172b1d8d51c44bb0f6a918bc3a6ff2b4ed08a8f07e03ab780b9475f8df0b1e"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/h1/low_feedback/summary.json",
+      "bytes": 578,
+      "sha256": "de2660d3a01260cdedd613531047083e4872aa44422a58324ea2d25406d0ae74"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/h1/low_feedback/trajectory.csv",
+      "bytes": 789685,
+      "sha256": "13e27f8afefbb7f7fea2769fc4e59bdd8f902b2f712fb42a46f57838add460f5"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/overview.png",
+      "bytes": 68143,
+      "sha256": "fc3575996f53a1d31dbf8539a2f8d404aea41ed687e695170b631401183aac97"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/panda/baseline/config.json",
+      "bytes": 826,
+      "sha256": "4adb2d7f7293915f1a17164898a0a09bc0e9ede3bcf7d4a19e5c48a770c3dad2"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/panda/baseline/diagnostic_summary.json",
+      "bytes": 1329,
+      "sha256": "37735e682b796953b668291e9fbfb64be602af1e912782314ae4e677df864515"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/panda/baseline/diagnostics.csv",
+      "bytes": 150951,
+      "sha256": "347f7658098139f7d2db55ef144ee12b27e0785d3a62c8eb6b0e0b8b18ee60cb"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/panda/baseline/summary.json",
+      "bytes": 549,
+      "sha256": "0fbf377cb9d98033e64b958a95052b442fd9442b2f5d97a0897043324a6bd030"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/panda/baseline/trajectory.csv",
+      "bytes": 553476,
+      "sha256": "9e9e0795431f5753755cf8bb80dc7960f1f70aa013d6386b747aea836b64130a"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/panda/open/config.json",
+      "bytes": 828,
+      "sha256": "b721a747897ab5f796944da976e03362dcccbb8f37a11d7656cf883e6522547f"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/panda/open/diagnostic_summary.json",
+      "bytes": 1331,
+      "sha256": "f21d7ef9614f7d76e55ad47ecc390d7b3920e9366f52264c8f17cea2b0fe0fbd"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/panda/open/diagnostics.csv",
+      "bytes": 144598,
+      "sha256": "aa78c5e707c455775b85cd5c958f55056573854bc9f3ac57a74f622c9825777e"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/panda/open/summary.json",
+      "bytes": 527,
+      "sha256": "1f7f1f48318641913487e6b241aa48e474bce4a94ba7076604ab733049a3b38f"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/panda/open/trajectory.csv",
+      "bytes": 537590,
+      "sha256": "192352423d53ae002551aabcaac680fabdb971f3a3af328b22b91229a6ec742e"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/panda/partly_open/config.json",
+      "bytes": 828,
+      "sha256": "62ab767a135182cbc53e6af7f15e39482238f4fa9d65c57099a68cef42acf99a"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/panda/partly_open/diagnostic_summary.json",
+      "bytes": 1332,
+      "sha256": "c86ae2f4634e47b326f7836de736e8bd856359dfeab305797227aa449126753e"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/panda/partly_open/diagnostics.csv",
+      "bytes": 148237,
+      "sha256": "d7d5149adb1d9f98ff93254d73c217e3a40b8f95f60194d6c2f6cb708a147486"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/panda/partly_open/summary.json",
+      "bytes": 529,
+      "sha256": "e49d8127c4e5d2f744d76aa35dc2bee36783a01543a74c53bdc17663f80adda8"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/panda/partly_open/trajectory.csv",
+      "bytes": 553023,
+      "sha256": "463201a202fc15b84d8d0a45d4f6655373a42e7e8c6fb254885f2db168064911"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/report.html",
+      "bytes": 187645,
+      "sha256": "acb69a8ca798e00648a90290e0d43f20b638e1c2a0a832242249228b4d9511da"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012-v2/study.json",
+      "bytes": 53395,
+      "sha256": "81d23b11bf09ce6a40aeefaab8a0ecf1fc15e66b83bb47f4b474db491fb5cf09"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/allegro/baseline/config.json",
+      "bytes": 1297,
+      "sha256": "198edaae9bfb8eccbdc41b948eda235a222b24bb44ef2b76dfcfd554b96abb87"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/allegro/baseline/diagnostic_summary.json",
+      "bytes": 1430,
+      "sha256": "ff2b9e28bd21e38bf907e2ffea408406296f11028d5c2eb81de955e58f705162"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/allegro/baseline/diagnostics.csv",
+      "bytes": 120095,
+      "sha256": "b4e725972eeea47b1c0240ab62f845a4764412ba2bb47049c97bec6adbaf32f6"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/allegro/baseline/summary.json",
+      "bytes": 608,
+      "sha256": "45c74569497f32b12b4429225f1d8a5f9ca35d148920c52f623ec8fc06f5f60e"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/allegro/baseline/trajectory.csv",
+      "bytes": 594068,
+      "sha256": "0b9612d1336c902040d7fd2211844d4f52ea139aa53529e0906391bcc05932c3"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/allegro/open_fingers/config.json",
+      "bytes": 1301,
+      "sha256": "d9c3776c69a943a3aac0e036d6ef7b082cac700308d6bc919041d3f52783fd5b"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/allegro/open_fingers/diagnostic_summary.json",
+      "bytes": 1676,
+      "sha256": "9109461f249ef99c7ff5ce29b504cdb6582a94133d1620fe686e22ce1b7db7ea"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/allegro/open_fingers/diagnostics.csv",
+      "bytes": 120628,
+      "sha256": "02515c4a48acfa0f70824f5e4565a09e8b242cbd1ed3447cf79bc09091e51e87"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/allegro/open_fingers/summary.json",
+      "bytes": 621,
+      "sha256": "921c89099a8474843b401d80e024664b6272866209e8392fe593314243fd4e62"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/allegro/open_fingers/trajectory.csv",
+      "bytes": 556632,
+      "sha256": "c5e82fe16645d1f57cd17d8c27dad69a07f00909bfe94e34df9641010b273dc9"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/allegro/tilted_wrist/config.json",
+      "bytes": 1297,
+      "sha256": "e97c22cfa74d538c46a2ce19baa547eb29ed112f61291b71c35cb15ea022ab6b"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/allegro/tilted_wrist/diagnostic_summary.json",
+      "bytes": 1488,
+      "sha256": "cf52c6d4cd2c406e6eedcdd6f8620342c19e323731402cc0e3e237f629194127"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/allegro/tilted_wrist/diagnostics.csv",
+      "bytes": 120204,
+      "sha256": "90ca6d50bb7f5430419c4c4e69686bf25a7d4defccbf873727649f20972b0ba3"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/allegro/tilted_wrist/summary.json",
+      "bytes": 622,
+      "sha256": "689b432850daeb49a62a0aca72dc8eca165125893b94926af39d0ce4d396c0df"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/allegro/tilted_wrist/trajectory.csv",
+      "bytes": 593895,
+      "sha256": "892cb09f92734d3c0c597d53fe89c72e795d46a12625876e195bd309516134c3"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/go2/baseline/config.json",
+      "bytes": 1066,
+      "sha256": "a6bdeebc2198ba7624a74e054b9089cfd57d3c849bd5cd4d2bec1f4231cda768"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/go2/baseline/diagnostic_summary.json",
+      "bytes": 11502,
+      "sha256": "0e32510c6ccfd6bf81877187e76f1ef29d0a8c2df2620fad216d875b39691c45"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/go2/baseline/diagnostics.csv",
+      "bytes": 172071,
+      "sha256": "d879a7e16156eae330093da626ea80c84e5b0a12bd8f5a7e36848aa98417a787"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/go2/baseline/summary.json",
+      "bytes": 653,
+      "sha256": "e126d80b14d750b99858d873bdf9c7ecc59f8b2f5b96aaa184c3dd502abce5c5"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/go2/baseline/trajectory.csv",
+      "bytes": 693240,
+      "sha256": "437431d89170cab1cd3fde7fe823e8c6a0210833b7f758c4cd73655943c53a80"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/go2/large_stride/config.json",
+      "bytes": 1065,
+      "sha256": "63d916a2d0e742ccc9fef33ac30e06f1508f3abc2a47c7aa7efa198fa83691b2"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/go2/large_stride/diagnostic_summary.json",
+      "bytes": 13816,
+      "sha256": "7d944accc77be599021edee3cc07cf26e0fbe8d0a993dfa6e143fcda20233463"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/go2/large_stride/diagnostics.csv",
+      "bytes": 172736,
+      "sha256": "f0391a59b6b4ecc862b4a5ff92367818ae3e79c923d6ac03a6074fd3af3169fc"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/go2/large_stride/summary.json",
+      "bytes": 653,
+      "sha256": "7e0c8e1e24682eca48735bd83d9937d1e444584b7097fb7fc95c08827c0f0834"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/go2/large_stride/trajectory.csv",
+      "bytes": 687608,
+      "sha256": "d69c5c60d8ff883468bb2b5a47fafc0e972913a34648d7719b9cedfa9ab99d21"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/go2/soft_pd/config.json",
+      "bytes": 1065,
+      "sha256": "90247df7b19361807ec70d52ea61ea51a919e5d86d565cf61dadcf560a5609b3"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/go2/soft_pd/diagnostic_summary.json",
+      "bytes": 6838,
+      "sha256": "cee028280c11edf9f32caaca2f2c4984e93769108c32feb2964f27a649709dcf"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/go2/soft_pd/diagnostics.csv",
+      "bytes": 174622,
+      "sha256": "c65940f56d43d1ef9c2e564975344141d99c99e3e8db385ed5a317363017e941"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/go2/soft_pd/summary.json",
+      "bytes": 665,
+      "sha256": "706458ba5ee5c5f340e4b0e5ce55b70e09216a604e43e46532761e38a9a7264b"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/go2/soft_pd/trajectory.csv",
+      "bytes": 694753,
+      "sha256": "8783de381d2ecc29a7e3078f648dd14f664692ac966483bfd51a82869d823388"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/h1/baseline/config.json",
+      "bytes": 1494,
+      "sha256": "8f84192aa9e38ea4fa5d65b4c7849727a0c5c8da31d4cb4912f5b315257f56c2"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/h1/baseline/diagnostic_summary.json",
+      "bytes": 981,
+      "sha256": "0f19e57be73c48d76f8c6e90fd90d33660100d5b99bc66a022f977272c6d9bdc"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/h1/baseline/diagnostics.csv",
+      "bytes": 72841,
+      "sha256": "2e427087940b50af216de10dc900eaf3cbb9406493403786493c3dee7c4e254b"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/h1/baseline/summary.json",
+      "bytes": 566,
+      "sha256": "463db48fdbdbba68c44350127d1b47f15c28ca34d91fa1b41cc2f5f51bea64aa"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/h1/baseline/trajectory.csv",
+      "bytes": 795202,
+      "sha256": "8e84b814ca3a4aa144ca8d9f5f69a024718fc980b3d5a71cca233f829e277f39"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/h1/deep_squat/config.json",
+      "bytes": 1493,
+      "sha256": "db48c82322a4716d443d2c25f2cce3c8f5ea75214b0816da9ea51ca09ed84662"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/h1/deep_squat/diagnostic_summary.json",
+      "bytes": 1002,
+      "sha256": "02e47717e8cd4b430679982e4d1a074b9e06e7aee70b32d8c4330d01da8e62d0"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/h1/deep_squat/diagnostics.csv",
+      "bytes": 72872,
+      "sha256": "a7ecb0ce5b9ae4a43cf98759df7fbb334aba001bba8b0bb300fd264e7344fcc3"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/h1/deep_squat/summary.json",
+      "bytes": 566,
+      "sha256": "5a33c2d92afed2942f474555a3039d7eac024689cdf17841f3b3351b0c233d0f"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/h1/deep_squat/trajectory.csv",
+      "bytes": 795076,
+      "sha256": "96b53913efbbd0f5bd1535482be288be5da7daba1a932ea433dd6673b6844082"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/h1/low_feedback/config.json",
+      "bytes": 1494,
+      "sha256": "744cffb49ba925d98b7cec1b54e746dc2a16f27bd63a752ec837b84839719ba4"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/h1/low_feedback/diagnostic_summary.json",
+      "bytes": 1049,
+      "sha256": "f6442a774eae850586ae58a36f7b237c98b247f49cf6cdd9ed7c5baa9817109f"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/h1/low_feedback/diagnostics.csv",
+      "bytes": 75784,
+      "sha256": "2e172b1d8d51c44bb0f6a918bc3a6ff2b4ed08a8f07e03ab780b9475f8df0b1e"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/h1/low_feedback/summary.json",
+      "bytes": 578,
+      "sha256": "de2660d3a01260cdedd613531047083e4872aa44422a58324ea2d25406d0ae74"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/h1/low_feedback/trajectory.csv",
+      "bytes": 789685,
+      "sha256": "13e27f8afefbb7f7fea2769fc4e59bdd8f902b2f712fb42a46f57838add460f5"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/panda/baseline/config.json",
+      "bytes": 826,
+      "sha256": "4adb2d7f7293915f1a17164898a0a09bc0e9ede3bcf7d4a19e5c48a770c3dad2"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/panda/baseline/diagnostic_summary.json",
+      "bytes": 1329,
+      "sha256": "37735e682b796953b668291e9fbfb64be602af1e912782314ae4e677df864515"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/panda/baseline/diagnostics.csv",
+      "bytes": 150951,
+      "sha256": "347f7658098139f7d2db55ef144ee12b27e0785d3a62c8eb6b0e0b8b18ee60cb"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/panda/baseline/summary.json",
+      "bytes": 549,
+      "sha256": "0fbf377cb9d98033e64b958a95052b442fd9442b2f5d97a0897043324a6bd030"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/panda/baseline/trajectory.csv",
+      "bytes": 553476,
+      "sha256": "9e9e0795431f5753755cf8bb80dc7960f1f70aa013d6386b747aea836b64130a"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/panda/open/config.json",
+      "bytes": 828,
+      "sha256": "b721a747897ab5f796944da976e03362dcccbb8f37a11d7656cf883e6522547f"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/panda/open/diagnostic_summary.json",
+      "bytes": 1331,
+      "sha256": "f21d7ef9614f7d76e55ad47ecc390d7b3920e9366f52264c8f17cea2b0fe0fbd"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/panda/open/diagnostics.csv",
+      "bytes": 144598,
+      "sha256": "aa78c5e707c455775b85cd5c958f55056573854bc9f3ac57a74f622c9825777e"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/panda/open/summary.json",
+      "bytes": 527,
+      "sha256": "1f7f1f48318641913487e6b241aa48e474bce4a94ba7076604ab733049a3b38f"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/panda/open/trajectory.csv",
+      "bytes": 537590,
+      "sha256": "192352423d53ae002551aabcaac680fabdb971f3a3af328b22b91229a6ec742e"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/panda/partly_open/config.json",
+      "bytes": 828,
+      "sha256": "62ab767a135182cbc53e6af7f15e39482238f4fa9d65c57099a68cef42acf99a"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/panda/partly_open/diagnostic_summary.json",
+      "bytes": 1332,
+      "sha256": "c86ae2f4634e47b326f7836de736e8bd856359dfeab305797227aa449126753e"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/panda/partly_open/diagnostics.csv",
+      "bytes": 148237,
+      "sha256": "d7d5149adb1d9f98ff93254d73c217e3a40b8f95f60194d6c2f6cb708a147486"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/panda/partly_open/summary.json",
+      "bytes": 529,
+      "sha256": "e49d8127c4e5d2f744d76aa35dc2bee36783a01543a74c53bdc17663f80adda8"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/panda/partly_open/trajectory.csv",
+      "bytes": 553023,
+      "sha256": "463201a202fc15b84d8d0a45d4f6655373a42e7e8c6fb254885f2db168064911"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/report.html",
+      "bytes": 172875,
+      "sha256": "fe2ffbe796f11447d3675a92c66da3dbdfec9660b0b3d10a5c85de01425c7770"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/study.json",
+      "bytes": 52558,
+      "sha256": "bd10f2b74433cc87bd8cf5a47dd7b047fde7b8d7cb5ada5bfbfa00fd38e5354b"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/mentor-20261012/verification.json",
+      "bytes": 9005,
+      "sha256": "77cce3b206407f7173d9193c89de4ec3f3d86a84f8f267402e2faec6d94f4ca4"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/review-followup.txt",
+      "bytes": 1086,
+      "sha256": "2e56df57c81e625c24dabc7b0eb43614a765d99c8412d632c636adc82b2f417b"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/review-prompt.txt",
+      "bytes": 1200,
+      "sha256": "d3f20cb9aa549440ac9270dfa963f0eec09f3854aeb8d6ab2f4a8f52701627d1"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/deep-practice/复核与验证记录.md",
+      "bytes": 2668,
+      "sha256": "bd6db2287ece88cbcc0f0055ee3ff971df6703290cbc3408a6f38e821d020a0c"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/failures/allegro/config.json",
+      "bytes": 1300,
+      "sha256": "8056724755780052f58b5abe70c62a6b3bd7aa70ecd04b9accab186f9667e88b"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/failures/allegro/demo.gif",
+      "bytes": 1826382,
+      "sha256": "01bb8203cf948e0f20d95de94c47ab6cc0dd96eae4b0518d0c74e90e7fa6cf31"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/failures/allegro/preview.png",
+      "bytes": 52109,
+      "sha256": "d4640addd406f1a17b25813bf65f9251914eb42ab3ec7cdc278360b2b86bdf77"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/failures/allegro/summary.json",
+      "bytes": 608,
+      "sha256": "366ffa4ae6ce67f360153f95a02c133bb24be016711341e84f3c064ca44b9468"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/failures/allegro/trajectory.csv",
+      "bytes": 590154,
+      "sha256": "e4f8f2e9247b847c88a8838e4427bc132c034844e1ae0ec9f0aa748d71e1d4b6"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/failures/go2/config.json",
+      "bytes": 1065,
+      "sha256": "0e52e2b84d94042b72aad39cd63637bd24b95496aefdeea910f5ba98601d0880"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/failures/go2/demo.gif",
+      "bytes": 6021092,
+      "sha256": "97c33978fe5f8d3c1bbe4fd19d8581965271338e81dcf6134321fbfce98e2f05"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/failures/go2/preview.png",
+      "bytes": 82557,
+      "sha256": "792e8c09dc4700bc22fcdd94ef124a57d590f357684e4ec2c890d951ca96ac2f"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/failures/go2/summary.json",
+      "bytes": 665,
+      "sha256": "706458ba5ee5c5f340e4b0e5ce55b70e09216a604e43e46532761e38a9a7264b"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/failures/go2/trajectory.csv",
+      "bytes": 694753,
+      "sha256": "8783de381d2ecc29a7e3078f648dd14f664692ac966483bfd51a82869d823388"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/failures/h1/config.json",
+      "bytes": 1494,
+      "sha256": "5d3b9acd8db435a9d6ec2bb0c462614e3b9f08fa901449d9b58effdb0cd2467b"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/failures/h1/demo.gif",
+      "bytes": 6387382,
+      "sha256": "6640f7de9cfb970b0850ce368f8b8bb8e4fa44fdc3e71a63a78237f638730e88"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/failures/h1/preview.png",
+      "bytes": 96479,
+      "sha256": "5994cc8edc91bfe1ef8ec5a19a983e5cfad300a6a2fb8f3e5243a1e124251958"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/failures/h1/summary.json",
+      "bytes": 579,
+      "sha256": "a3fd491e60854de6c03f5b2b4edd5ecb4a1ebe1f0ba95aac93b07072fbe3dc22"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/failures/h1/trajectory.csv",
+      "bytes": 786258,
+      "sha256": "6147c70bc00f4339f945eeb45cdc2d4c181db38d4024409b811709c60c9d9077"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/failures/panda/config.json",
+      "bytes": 828,
+      "sha256": "0e1e1aeb49f369248a2cb7d8dd1eeb1deb4855dc8a2915bce5c4a11933c5b1b7"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/failures/panda/demo.gif",
+      "bytes": 6329087,
+      "sha256": "01f5f8785727f7c0ca2d1b8987dd62d47b8c214341da06e2d8359fa0409e4aeb"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/failures/panda/preview.png",
+      "bytes": 99323,
+      "sha256": "99d3a434a39f09a3955d41edd57d15e865d57b28c84324d73b55e7324647092f"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/failures/panda/summary.json",
+      "bytes": 527,
+      "sha256": "1f7f1f48318641913487e6b241aa48e474bce4a94ba7076604ab733049a3b38f"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/failures/panda/trajectory.csv",
+      "bytes": 537590,
+      "sha256": "192352423d53ae002551aabcaac680fabdb971f3a3af328b22b91229a6ec742e"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/four-robots.gif",
+      "bytes": 20538003,
+      "sha256": "b376f165be4df8631c3d9ad92614fce9b6619141ec4abe39051db5e58ed8ebfd"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/four-robots.png",
+      "bytes": 264213,
+      "sha256": "61d785a6ea9f69190b43ee514c23d3617df2019ad030d7f9941a1691e0280184"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/ros-validation.json",
+      "bytes": 1106,
+      "sha256": "8664853f5a476bca33a6bc2550b30c459934af402f0ca00019594a9cc9396963"
+    },
+    {
+      "path": "project-03-robot-platforms/outputs/validation.json",
+      "bytes": 7963,
+      "sha256": "fd719b37824ce723fe6c822b6d6696fd2117ed69a3756b992b18f8a4894bcf37"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/data-ood.npz",
+      "bytes": 413744,
+      "sha256": "261a166d4235ab608351c975bc0c3909a5205a354a4e4d3019665ba35bd5e1af"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/data-test.npz",
+      "bytes": 408652,
+      "sha256": "34f86dc3fe605cc5f65b8cdbf5c6637b15a0adc5fb335767ea47372a98dac747"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/data-train.npz",
+      "bytes": 2032662,
+      "sha256": "04b214e261c4400d1d5fd91359ddeb6c9a55b8888ae6b470b73b811254a40c37"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/data-validation.npz",
+      "bytes": 415665,
+      "sha256": "33c8fdff61623f7c5a0d02c6f368a1b3de17be542e863a417c7c1ec6cb2ab358"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/demo-ood-selection.json",
+      "bytes": 1317,
+      "sha256": "a66ca3bcfc9d4cff2b6149f1d8920283d5548a7c71587d41432333124e80ec33"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/demo-ood.gif",
+      "bytes": 614414,
+      "sha256": "a2f394b90d61a1119a98d152a659fbbd494d422144c3a0865a1ac6f8e5948017"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/demo-test-selection.json",
+      "bytes": 1335,
+      "sha256": "badc04201303338289e699962f839b3011dcd02a5d2df8218cdc6a2dc96c94ed"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/demo-test.gif",
+      "bytes": 555035,
+      "sha256": "17bf2f99d64a48cf03cbf612ab70f9bf093957bd647e967924395524f21a3c02"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/expert-episodes.json",
+      "bytes": 68402,
+      "sha256": "8ce7c34c1d85ec75deef2daf074b89a496bafde16f5df637f15b502f5658cc2b"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/overview.png",
+      "bytes": 65859,
+      "sha256": "5d4c60fa1e54261d7c120ca92b07e9174e9cf0d6fed877214c1c7d1c49e570f8"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/protocol.json",
+      "bytes": 36142,
+      "sha256": "110054aa8c5b7070d84faa78fd25c937b71bf341a4360fb4c9fab93f878d0c53"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/report.html",
+      "bytes": 2810,
+      "sha256": "4279e2e09bd376dd3bcd641774509883eb6447e5dcf54ec0f11af6b9aa1d3d76"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-0/bc-loss.csv",
+      "bytes": 431,
+      "sha256": "a4babf8988e9e5069c5eb09079453094f2302be79b8afe8a59bab35177f2ee4a"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-0/bc.npz",
+      "bytes": 23493,
+      "sha256": "5b1c0d7d6b610c3299a51ca318bbdebc069ae474321c3ccd592be16de17dd02f"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-0/bc_more_data-loss.csv",
+      "bytes": 349,
+      "sha256": "de83e8e1a9beb600ed4aead085f125f0876e0baa8c0a5ee166b1935cc88dcfa5"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-0/bc_more_data.npz",
+      "bytes": 23492,
+      "sha256": "f7bdc0b1033698f3bb262619eb40284968853869b72c6a920564c23ed2cd0205"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-0/bc_more_steps-loss.csv",
+      "bytes": 350,
+      "sha256": "0201609399c6a656e4bc5cecd3c474788d6a9f7ebeb00888d612f41ec326b06b"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-0/bc_more_steps.npz",
+      "bytes": 23508,
+      "sha256": "7ba054d118803df78ee6ce487942d96f3a33d3807ad779d20c7c527b443904a7"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-0/dagger-labels.npz",
+      "bytes": 216523,
+      "sha256": "d4402dbd2f90aa79e5fd3858b55a868e1fbc3bd70f1d2fe5df954e6a8d6f306f"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-0/dagger-loss.csv",
+      "bytes": 348,
+      "sha256": "0374cc732b7c63e13bf871fe535a731dc256f99acb28dab60421a0eca45e652b"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-0/dagger.npz",
+      "bytes": 23495,
+      "sha256": "9882bd8d536cbacd0a112fa8b793cb52bce3b5d343c185a227d520bc186b27d1"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-0/fresh-expert-labels.npz",
+      "bytes": 276678,
+      "sha256": "380e549d400d57649c88d7011b151c820132588ab4fa838a60d1c8301ee7de01"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-0/query-episodes.json",
+      "bytes": 11629,
+      "sha256": "3273f2482f5b6b4a88bf6a48e213c84a394bac05b893d9f87f69738f46631dab"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-0/query-ledger.json",
+      "bytes": 451,
+      "sha256": "8fb0ad9c9825fb1d7b9e0d3f344f3e28d8730679e7b33fb472a3a2afcf0cbf82"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-0/traces/bc/ood/ood-0000.csv",
+      "bytes": 94345,
+      "sha256": "a6f390b522e9de86db0b2b31e2de0d6534d16433f25b7374d51225fdeb0ec0b1"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-0/traces/bc/test/test-0000.csv",
+      "bytes": 95240,
+      "sha256": "d47cdb2d8fc98b016147e4ed46c8506e5494e46a954f6295b9a8fab8962399d3"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-0/traces/bc_more_data/ood/ood-0000.csv",
+      "bytes": 95631,
+      "sha256": "987ec5b2e7d3f23f4570af8607c1d26e03ff10bd4e4104430ef20fe84575489c"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-0/traces/bc_more_data/test/test-0000.csv",
+      "bytes": 95193,
+      "sha256": "86c4efebaa34fcafef2552b7923f2f86356551b6f9cf3603bde1fd2b38d123ca"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-0/traces/bc_more_steps/ood/ood-0000.csv",
+      "bytes": 95020,
+      "sha256": "fd4beb2f1b708f4a62675ba4c420e59975eac519836552b258e8d230e73f9e1e"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-0/traces/bc_more_steps/test/test-0000.csv",
+      "bytes": 95431,
+      "sha256": "4c2596f2b6ab14647ce22d7552b6eda1ee7d40168abf0f009ccc0bdb981dba43"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-0/traces/dagger/ood/ood-0000.csv",
+      "bytes": 95050,
+      "sha256": "0bf83c6deddaa79608872be26e73ac1928f387ddd42bce2afd097b3ffd001d74"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-0/traces/dagger/test/test-0000.csv",
+      "bytes": 95230,
+      "sha256": "6664533db67a82485d163dc8b8e04fed153d5ed5debf3b06ba9aade7e7452cdf"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-1/bc-loss.csv",
+      "bytes": 432,
+      "sha256": "5f107255732e7e462513ff13dac73eaab44369c632108670da233f8149efe958"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-1/bc.npz",
+      "bytes": 23500,
+      "sha256": "0a4657c826eb17037f051b1b73bf2511ee24bee6321c83235a9d9e0e79b9e329"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-1/bc_more_data-loss.csv",
+      "bytes": 352,
+      "sha256": "6967d976d92ffbadfa17bf465c9223194bbb7fad8dbb15aaff42b4e046570494"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-1/bc_more_data.npz",
+      "bytes": 23506,
+      "sha256": "f8950d1585de8875073584d1c405a49d1519881704f565208fd7e7b2341392ce"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-1/bc_more_steps-loss.csv",
+      "bytes": 350,
+      "sha256": "73ca79379032c5eea5e8cd25c60394d161cb092ee8b1a3d1c0404ad308d784bc"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-1/bc_more_steps.npz",
+      "bytes": 23503,
+      "sha256": "c9b35634819f7cd954722b92f61573ba7e33033fcb354165e17db3a3306aff9f"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-1/dagger-labels.npz",
+      "bytes": 253484,
+      "sha256": "2a1117e8e168570ce09820eea991b13d8d6c4b7b20e80133cfaeb00deb2c13ea"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-1/dagger-loss.csv",
+      "bytes": 351,
+      "sha256": "f03317cd00e02370deadf5e6332b2ca46c7fe56bf9667d70bee491b12d59c71f"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-1/dagger.npz",
+      "bytes": 23491,
+      "sha256": "0fbc90298b77de93db4fa09acc522089e9b62fc579eb7f57ff0711e17bf5bf95"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-1/fresh-expert-labels.npz",
+      "bytes": 310828,
+      "sha256": "120d68ca011317251f8e6ee4c2314af0517a1e4e5a68070a1f81f6a7121099c2"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-1/query-episodes.json",
+      "bytes": 12696,
+      "sha256": "707cc8439d047e59d1ded6b6a271fafcfdae86cc3d08b5a2041ea2ef8f4dac7f"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-1/query-ledger.json",
+      "bytes": 451,
+      "sha256": "3595b8aa1bca44658b00d561c709080f6ff2397f0ee98bd275ec254c81a7fe75"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-2/bc-loss.csv",
+      "bytes": 438,
+      "sha256": "0378e922c4df635a6709fb3f5ee677449baf264b6c1bf46e4d076890ac07b26e"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-2/bc.npz",
+      "bytes": 23524,
+      "sha256": "967626b597ec4ef5349581dcc7fbaef6dc3e34ee738865f6eecd5d9c455acb0e"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-2/bc_more_data-loss.csv",
+      "bytes": 350,
+      "sha256": "57648344db5df9f6dfd508d9add1e5ce44cdff09a0f9ed362622897f1d2fc56a"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-2/bc_more_data.npz",
+      "bytes": 23497,
+      "sha256": "bd6bd807d60f3a9b0a2db3d2a39451cd94e1404de1f415bda5d3aa8f98f6d174"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-2/bc_more_steps-loss.csv",
+      "bytes": 349,
+      "sha256": "0c6bbbd567b4a5f5ee00e74658951f4976d1230ab566b865417f948d327e18ec"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-2/bc_more_steps.npz",
+      "bytes": 23499,
+      "sha256": "41ab5285f7cb3447a22ef5a334750b545f009be800ff5bc72733ef1166c49fbc"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-2/dagger-labels.npz",
+      "bytes": 218997,
+      "sha256": "630d2fee565c0766128617d57295611be9ed43300b8b1989550b2f5d1a114fa0"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-2/dagger-loss.csv",
+      "bytes": 350,
+      "sha256": "dca812013cffe5fae0a104dfb546042c3dbf3ac04d380bca4279e142397ff5c1"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-2/dagger.npz",
+      "bytes": 23494,
+      "sha256": "355b14c17080e5c45c8428a3a7c653dbb52782f1a686c1c4740932307c96e6ee"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-2/fresh-expert-labels.npz",
+      "bytes": 263800,
+      "sha256": "99c778aac93142a03047681c730afc6338ff5b3a0b7049ce536b3a3c562496b8"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-2/query-episodes.json",
+      "bytes": 11616,
+      "sha256": "9117b1007a12419a6ef2b52ad0a626a5cdf0f257484a89e9efb9e633391e5509"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-2/query-ledger.json",
+      "bytes": 452,
+      "sha256": "67ae578b54fd2c85863ceaf729eabdc549ba03938fa57800c9dff76074715247"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-3/bc-loss.csv",
+      "bytes": 432,
+      "sha256": "9db4cba7b199b6d8170bb426b1c4440a75573076aed8faff6cac02d9dd3fab5e"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-3/bc.npz",
+      "bytes": 23485,
+      "sha256": "41966aafe66478f2cbbf79b99d5583523fd61700b20e788c47b1da0b6cfc1ec7"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-3/bc_more_data-loss.csv",
+      "bytes": 353,
+      "sha256": "b808f454a73999e1fbb05f92db3f4d5c6332cbe72d7315bf452e74d6198ef9e9"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-3/bc_more_data.npz",
+      "bytes": 23507,
+      "sha256": "fe5b94e3bcc5abdfec492a3bfc2339dfce5efec8d183dfeb885672cb4db42477"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-3/bc_more_steps-loss.csv",
+      "bytes": 351,
+      "sha256": "9d618a01e5a9e6be1963041b0c6d7bf215ad140970cadffd9c94ecc8d84738ea"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-3/bc_more_steps.npz",
+      "bytes": 23507,
+      "sha256": "627d4b3af68c5b7d228d500348cc4a044ff37efa39eab11167560c021ebc97f6"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-3/dagger-labels.npz",
+      "bytes": 237112,
+      "sha256": "d3397b10100241ab096b795f045c80c0994ca6f8bdef5bef7eec0c41b9772944"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-3/dagger-loss.csv",
+      "bytes": 349,
+      "sha256": "6a62ff0abc26bc92ed3915d79806fd124db5a20d4224811a8a45f2264bc6706e"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-3/dagger.npz",
+      "bytes": 23500,
+      "sha256": "15f7324755d21c7939373f199c57191ccf01054a31d3b33270eb44b45ac3677b"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-3/fresh-expert-labels.npz",
+      "bytes": 279634,
+      "sha256": "f5575aad8c64458dce4a7e79848f8672f5f72e75af00cd3cdb2ecc1245f6931a"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-3/query-episodes.json",
+      "bytes": 11977,
+      "sha256": "5d49ebcf2b37a07f402f4f555a56fb57439adde1a225af1cb3f8777916a42741"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-3/query-ledger.json",
+      "bytes": 451,
+      "sha256": "bbb500f8412c3718eafa14c4ac5ddae9a76b9dc73fa734a7658f7d51c65c6bf8"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-4/bc-loss.csv",
+      "bytes": 434,
+      "sha256": "28322b7068ba415ab35ce9e8782697de5ceb0f06552a230600375efac2e746c3"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-4/bc.npz",
+      "bytes": 23488,
+      "sha256": "2b5e70c66714ea9a00767b58db244b17af59b2a4f08b71a15dad030e1c6d5dd1"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-4/bc_more_data-loss.csv",
+      "bytes": 351,
+      "sha256": "de5a0ed3542f3639ac07a2028d64c681711225cc6825b1c22569c083eb9c294f"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-4/bc_more_data.npz",
+      "bytes": 23507,
+      "sha256": "77019e101992b2f1933f56be978d83948d72d5075f7f45ce362d611831e80741"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-4/bc_more_steps-loss.csv",
+      "bytes": 348,
+      "sha256": "41485d660ac31b0ac42a671f485fd60e444a35c3ea72be56008bad94da18ac2d"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-4/bc_more_steps.npz",
+      "bytes": 23501,
+      "sha256": "2f2238099c90fa99daa4f4d26b4969e1d829f48e271338e9dec30e0346a27daf"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-4/dagger-labels.npz",
+      "bytes": 256918,
+      "sha256": "7b13776df132329b5c30e6e1eff7ce08a95840b6d3a8edf5f34e5eae3949c041"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-4/dagger-loss.csv",
+      "bytes": 347,
+      "sha256": "359531054e9218d4a296115a541f985a26c44725c4e0f73edb94fe68c3f9286e"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-4/dagger.npz",
+      "bytes": 23500,
+      "sha256": "5a72666c2a057dd4b80fb0fe0f87636acb6066ab9ced8f9cc025fb279f81b431"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-4/fresh-expert-labels.npz",
+      "bytes": 309688,
+      "sha256": "81c0003f221aec7608de87b104439e88e075a0f53ff1da1e340bc41ffc0fa2ac"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-4/query-episodes.json",
+      "bytes": 12704,
+      "sha256": "b534ce2cb7500b34b1ec4b009725efde2d6ffdf2d3504335567ea0252a5f1597"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/seed-4/query-ledger.json",
+      "bytes": 452,
+      "sha256": "9d7b0a49ec09a190c4f15aa5bb8f7da6b447647e3d5f511f74c20dcde7e0645f"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/summary.json",
+      "bytes": 549622,
+      "sha256": "eb96d5690a0a7efe9ba8ad57c7127057be6e64a5dcf881683bd4ad82ce75c02a"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/traces/expert/ood/ood-0000.csv",
+      "bytes": 15581,
+      "sha256": "c9ad65b306e36e81d6950d8a6da31938482f9f27e5bd0b1f3c8a2fcfee314fd6"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/traces/expert/test/test-0000.csv",
+      "bytes": 15052,
+      "sha256": "45ea8a89739a231501674a2d1d0dc59bb723c527e05e73c6e82ba3a7f0d9e8dc"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/traces/zero/ood/ood-0000.csv",
+      "bytes": 74775,
+      "sha256": "b51063f3f136832e5c7b8c3511e0b1593a5fcd535554b76d0b2326f0ffc78970"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/traces/zero/test/test-0000.csv",
+      "bytes": 74175,
+      "sha256": "f75729c43a9423f7614128ea7d0768edaa07eb6a442c15a6d60871456007b191"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012-r2/verification.json",
+      "bytes": 407,
+      "sha256": "36dcc54979c45287ed62292b5543946f8df0b7abae29052544443864662b131d"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/data-ood.npz",
+      "bytes": 413744,
+      "sha256": "261a166d4235ab608351c975bc0c3909a5205a354a4e4d3019665ba35bd5e1af"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/data-test.npz",
+      "bytes": 408652,
+      "sha256": "34f86dc3fe605cc5f65b8cdbf5c6637b15a0adc5fb335767ea47372a98dac747"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/data-train.npz",
+      "bytes": 2032662,
+      "sha256": "04b214e261c4400d1d5fd91359ddeb6c9a55b8888ae6b470b73b811254a40c37"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/data-validation.npz",
+      "bytes": 415665,
+      "sha256": "33c8fdff61623f7c5a0d02c6f368a1b3de17be542e863a417c7c1ec6cb2ab358"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/demo-ood-selection.json",
+      "bytes": 1317,
+      "sha256": "a66ca3bcfc9d4cff2b6149f1d8920283d5548a7c71587d41432333124e80ec33"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/demo-ood.gif",
+      "bytes": 614414,
+      "sha256": "a2f394b90d61a1119a98d152a659fbbd494d422144c3a0865a1ac6f8e5948017"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/demo-test-selection.json",
+      "bytes": 1335,
+      "sha256": "badc04201303338289e699962f839b3011dcd02a5d2df8218cdc6a2dc96c94ed"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/demo-test.gif",
+      "bytes": 555035,
+      "sha256": "17bf2f99d64a48cf03cbf612ab70f9bf093957bd647e967924395524f21a3c02"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/expert-episodes.json",
+      "bytes": 68402,
+      "sha256": "8ce7c34c1d85ec75deef2daf074b89a496bafde16f5df637f15b502f5658cc2b"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/overview.png",
+      "bytes": 65859,
+      "sha256": "5d4c60fa1e54261d7c120ca92b07e9174e9cf0d6fed877214c1c7d1c49e570f8"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/protocol.json",
+      "bytes": 36142,
+      "sha256": "110054aa8c5b7070d84faa78fd25c937b71bf341a4360fb4c9fab93f878d0c53"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/report.html",
+      "bytes": 2810,
+      "sha256": "4279e2e09bd376dd3bcd641774509883eb6447e5dcf54ec0f11af6b9aa1d3d76"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-0/bc-loss.csv",
+      "bytes": 431,
+      "sha256": "a4babf8988e9e5069c5eb09079453094f2302be79b8afe8a59bab35177f2ee4a"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-0/bc.npz",
+      "bytes": 23493,
+      "sha256": "5b1c0d7d6b610c3299a51ca318bbdebc069ae474321c3ccd592be16de17dd02f"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-0/bc_more_data-loss.csv",
+      "bytes": 349,
+      "sha256": "de83e8e1a9beb600ed4aead085f125f0876e0baa8c0a5ee166b1935cc88dcfa5"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-0/bc_more_data.npz",
+      "bytes": 23492,
+      "sha256": "f7bdc0b1033698f3bb262619eb40284968853869b72c6a920564c23ed2cd0205"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-0/bc_more_steps-loss.csv",
+      "bytes": 350,
+      "sha256": "0201609399c6a656e4bc5cecd3c474788d6a9f7ebeb00888d612f41ec326b06b"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-0/bc_more_steps.npz",
+      "bytes": 23508,
+      "sha256": "7ba054d118803df78ee6ce487942d96f3a33d3807ad779d20c7c527b443904a7"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-0/dagger-labels.npz",
+      "bytes": 216523,
+      "sha256": "d4402dbd2f90aa79e5fd3858b55a868e1fbc3bd70f1d2fe5df954e6a8d6f306f"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-0/dagger-loss.csv",
+      "bytes": 348,
+      "sha256": "0374cc732b7c63e13bf871fe535a731dc256f99acb28dab60421a0eca45e652b"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-0/dagger.npz",
+      "bytes": 23495,
+      "sha256": "9882bd8d536cbacd0a112fa8b793cb52bce3b5d343c185a227d520bc186b27d1"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-0/fresh-expert-labels.npz",
+      "bytes": 276678,
+      "sha256": "380e549d400d57649c88d7011b151c820132588ab4fa838a60d1c8301ee7de01"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-0/query-episodes.json",
+      "bytes": 11629,
+      "sha256": "3273f2482f5b6b4a88bf6a48e213c84a394bac05b893d9f87f69738f46631dab"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-0/query-ledger.json",
+      "bytes": 347,
+      "sha256": "535e0eb91ffccb6b47547322fb8ded72bb8459e93276ec11e94753f21c46abf8"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-0/traces/bc/ood/ood-0000.csv",
+      "bytes": 94345,
+      "sha256": "a6f390b522e9de86db0b2b31e2de0d6534d16433f25b7374d51225fdeb0ec0b1"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-0/traces/bc/test/test-0000.csv",
+      "bytes": 95240,
+      "sha256": "d47cdb2d8fc98b016147e4ed46c8506e5494e46a954f6295b9a8fab8962399d3"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-0/traces/bc_more_data/ood/ood-0000.csv",
+      "bytes": 95631,
+      "sha256": "987ec5b2e7d3f23f4570af8607c1d26e03ff10bd4e4104430ef20fe84575489c"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-0/traces/bc_more_data/test/test-0000.csv",
+      "bytes": 95193,
+      "sha256": "86c4efebaa34fcafef2552b7923f2f86356551b6f9cf3603bde1fd2b38d123ca"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-0/traces/bc_more_steps/ood/ood-0000.csv",
+      "bytes": 95020,
+      "sha256": "fd4beb2f1b708f4a62675ba4c420e59975eac519836552b258e8d230e73f9e1e"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-0/traces/bc_more_steps/test/test-0000.csv",
+      "bytes": 95431,
+      "sha256": "4c2596f2b6ab14647ce22d7552b6eda1ee7d40168abf0f009ccc0bdb981dba43"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-0/traces/dagger/ood/ood-0000.csv",
+      "bytes": 95050,
+      "sha256": "0bf83c6deddaa79608872be26e73ac1928f387ddd42bce2afd097b3ffd001d74"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-0/traces/dagger/test/test-0000.csv",
+      "bytes": 95230,
+      "sha256": "6664533db67a82485d163dc8b8e04fed153d5ed5debf3b06ba9aade7e7452cdf"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-1/bc-loss.csv",
+      "bytes": 432,
+      "sha256": "5f107255732e7e462513ff13dac73eaab44369c632108670da233f8149efe958"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-1/bc.npz",
+      "bytes": 23500,
+      "sha256": "0a4657c826eb17037f051b1b73bf2511ee24bee6321c83235a9d9e0e79b9e329"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-1/bc_more_data-loss.csv",
+      "bytes": 352,
+      "sha256": "6967d976d92ffbadfa17bf465c9223194bbb7fad8dbb15aaff42b4e046570494"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-1/bc_more_data.npz",
+      "bytes": 23506,
+      "sha256": "f8950d1585de8875073584d1c405a49d1519881704f565208fd7e7b2341392ce"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-1/bc_more_steps-loss.csv",
+      "bytes": 350,
+      "sha256": "73ca79379032c5eea5e8cd25c60394d161cb092ee8b1a3d1c0404ad308d784bc"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-1/bc_more_steps.npz",
+      "bytes": 23503,
+      "sha256": "c9b35634819f7cd954722b92f61573ba7e33033fcb354165e17db3a3306aff9f"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-1/dagger-labels.npz",
+      "bytes": 253484,
+      "sha256": "2a1117e8e168570ce09820eea991b13d8d6c4b7b20e80133cfaeb00deb2c13ea"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-1/dagger-loss.csv",
+      "bytes": 351,
+      "sha256": "f03317cd00e02370deadf5e6332b2ca46c7fe56bf9667d70bee491b12d59c71f"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-1/dagger.npz",
+      "bytes": 23491,
+      "sha256": "0fbc90298b77de93db4fa09acc522089e9b62fc579eb7f57ff0711e17bf5bf95"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-1/fresh-expert-labels.npz",
+      "bytes": 310828,
+      "sha256": "120d68ca011317251f8e6ee4c2314af0517a1e4e5a68070a1f81f6a7121099c2"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-1/query-episodes.json",
+      "bytes": 12696,
+      "sha256": "707cc8439d047e59d1ded6b6a271fafcfdae86cc3d08b5a2041ea2ef8f4dac7f"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-1/query-ledger.json",
+      "bytes": 347,
+      "sha256": "c1d6a762963717aa92fb7493c6c6cd88a12e9f975df12bdfdf00598f7888a1f2"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-2/bc-loss.csv",
+      "bytes": 438,
+      "sha256": "0378e922c4df635a6709fb3f5ee677449baf264b6c1bf46e4d076890ac07b26e"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-2/bc.npz",
+      "bytes": 23524,
+      "sha256": "967626b597ec4ef5349581dcc7fbaef6dc3e34ee738865f6eecd5d9c455acb0e"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-2/bc_more_data-loss.csv",
+      "bytes": 350,
+      "sha256": "57648344db5df9f6dfd508d9add1e5ce44cdff09a0f9ed362622897f1d2fc56a"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-2/bc_more_data.npz",
+      "bytes": 23497,
+      "sha256": "bd6bd807d60f3a9b0a2db3d2a39451cd94e1404de1f415bda5d3aa8f98f6d174"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-2/bc_more_steps-loss.csv",
+      "bytes": 349,
+      "sha256": "0c6bbbd567b4a5f5ee00e74658951f4976d1230ab566b865417f948d327e18ec"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-2/bc_more_steps.npz",
+      "bytes": 23499,
+      "sha256": "41ab5285f7cb3447a22ef5a334750b545f009be800ff5bc72733ef1166c49fbc"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-2/dagger-labels.npz",
+      "bytes": 218997,
+      "sha256": "630d2fee565c0766128617d57295611be9ed43300b8b1989550b2f5d1a114fa0"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-2/dagger-loss.csv",
+      "bytes": 350,
+      "sha256": "dca812013cffe5fae0a104dfb546042c3dbf3ac04d380bca4279e142397ff5c1"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-2/dagger.npz",
+      "bytes": 23494,
+      "sha256": "355b14c17080e5c45c8428a3a7c653dbb52782f1a686c1c4740932307c96e6ee"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-2/fresh-expert-labels.npz",
+      "bytes": 263800,
+      "sha256": "99c778aac93142a03047681c730afc6338ff5b3a0b7049ce536b3a3c562496b8"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-2/query-episodes.json",
+      "bytes": 11616,
+      "sha256": "9117b1007a12419a6ef2b52ad0a626a5cdf0f257484a89e9efb9e633391e5509"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-2/query-ledger.json",
+      "bytes": 347,
+      "sha256": "9253289528634e845c78df843d0ae7335d2aeb13634b1272ea170f329483a993"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-3/bc-loss.csv",
+      "bytes": 432,
+      "sha256": "9db4cba7b199b6d8170bb426b1c4440a75573076aed8faff6cac02d9dd3fab5e"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-3/bc.npz",
+      "bytes": 23485,
+      "sha256": "41966aafe66478f2cbbf79b99d5583523fd61700b20e788c47b1da0b6cfc1ec7"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-3/bc_more_data-loss.csv",
+      "bytes": 353,
+      "sha256": "b808f454a73999e1fbb05f92db3f4d5c6332cbe72d7315bf452e74d6198ef9e9"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-3/bc_more_data.npz",
+      "bytes": 23507,
+      "sha256": "fe5b94e3bcc5abdfec492a3bfc2339dfce5efec8d183dfeb885672cb4db42477"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-3/bc_more_steps-loss.csv",
+      "bytes": 351,
+      "sha256": "9d618a01e5a9e6be1963041b0c6d7bf215ad140970cadffd9c94ecc8d84738ea"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-3/bc_more_steps.npz",
+      "bytes": 23507,
+      "sha256": "627d4b3af68c5b7d228d500348cc4a044ff37efa39eab11167560c021ebc97f6"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-3/dagger-labels.npz",
+      "bytes": 237112,
+      "sha256": "d3397b10100241ab096b795f045c80c0994ca6f8bdef5bef7eec0c41b9772944"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-3/dagger-loss.csv",
+      "bytes": 349,
+      "sha256": "6a62ff0abc26bc92ed3915d79806fd124db5a20d4224811a8a45f2264bc6706e"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-3/dagger.npz",
+      "bytes": 23500,
+      "sha256": "15f7324755d21c7939373f199c57191ccf01054a31d3b33270eb44b45ac3677b"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-3/fresh-expert-labels.npz",
+      "bytes": 279634,
+      "sha256": "f5575aad8c64458dce4a7e79848f8672f5f72e75af00cd3cdb2ecc1245f6931a"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-3/query-episodes.json",
+      "bytes": 11977,
+      "sha256": "5d49ebcf2b37a07f402f4f555a56fb57439adde1a225af1cb3f8777916a42741"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-3/query-ledger.json",
+      "bytes": 347,
+      "sha256": "7ae7eb99713b2a2e12a7d4bbc447eca86366721835b1d7d1b196951bde428555"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-4/bc-loss.csv",
+      "bytes": 434,
+      "sha256": "28322b7068ba415ab35ce9e8782697de5ceb0f06552a230600375efac2e746c3"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-4/bc.npz",
+      "bytes": 23488,
+      "sha256": "2b5e70c66714ea9a00767b58db244b17af59b2a4f08b71a15dad030e1c6d5dd1"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-4/bc_more_data-loss.csv",
+      "bytes": 351,
+      "sha256": "de5a0ed3542f3639ac07a2028d64c681711225cc6825b1c22569c083eb9c294f"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-4/bc_more_data.npz",
+      "bytes": 23507,
+      "sha256": "77019e101992b2f1933f56be978d83948d72d5075f7f45ce362d611831e80741"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-4/bc_more_steps-loss.csv",
+      "bytes": 348,
+      "sha256": "41485d660ac31b0ac42a671f485fd60e444a35c3ea72be56008bad94da18ac2d"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-4/bc_more_steps.npz",
+      "bytes": 23501,
+      "sha256": "2f2238099c90fa99daa4f4d26b4969e1d829f48e271338e9dec30e0346a27daf"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-4/dagger-labels.npz",
+      "bytes": 256918,
+      "sha256": "7b13776df132329b5c30e6e1eff7ce08a95840b6d3a8edf5f34e5eae3949c041"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-4/dagger-loss.csv",
+      "bytes": 347,
+      "sha256": "359531054e9218d4a296115a541f985a26c44725c4e0f73edb94fe68c3f9286e"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-4/dagger.npz",
+      "bytes": 23500,
+      "sha256": "5a72666c2a057dd4b80fb0fe0f87636acb6066ab9ced8f9cc025fb279f81b431"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-4/fresh-expert-labels.npz",
+      "bytes": 309688,
+      "sha256": "81c0003f221aec7608de87b104439e88e075a0f53ff1da1e340bc41ffc0fa2ac"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-4/query-episodes.json",
+      "bytes": 12704,
+      "sha256": "b534ce2cb7500b34b1ec4b009725efde2d6ffdf2d3504335567ea0252a5f1597"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/seed-4/query-ledger.json",
+      "bytes": 347,
+      "sha256": "c1d6a762963717aa92fb7493c6c6cd88a12e9f975df12bdfdf00598f7888a1f2"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/summary.json",
+      "bytes": 547672,
+      "sha256": "57abf12ee26a977dc35ce4e1b3f178804343399ff4da871199a9bfa404e9f53d"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/traces/expert/ood/ood-0000.csv",
+      "bytes": 15581,
+      "sha256": "c9ad65b306e36e81d6950d8a6da31938482f9f27e5bd0b1f3c8a2fcfee314fd6"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/traces/expert/test/test-0000.csv",
+      "bytes": 15052,
+      "sha256": "45ea8a89739a231501674a2d1d0dc59bb723c527e05e73c6e82ba3a7f0d9e8dc"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/traces/zero/ood/ood-0000.csv",
+      "bytes": 74775,
+      "sha256": "b51063f3f136832e5c7b8c3511e0b1593a5fcd535554b76d0b2326f0ffc78970"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/baseline-20261012/traces/zero/test/test-0000.csv",
+      "bytes": 74175,
+      "sha256": "f75729c43a9423f7614128ea7d0768edaa07eb6a442c15a6d60871456007b191"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/allegro/bc-seed-0.npz",
+      "bytes": 86365,
+      "sha256": "66930eb0f0007b56d61443b3326bd74e35d9b3522b4d310b2bd5b68a67c1a6b9"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/allegro/data-ood.npz",
+      "bytes": 1286769,
+      "sha256": "c0637f5242feff16c847b73c0c5148891cc289d955436ca652af9e39c64fb4ee"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/allegro/data-test.npz",
+      "bytes": 1302005,
+      "sha256": "6b0040f16c227d019e6ac34413377aae785bb7adaca56c29ab9c4516d40af286"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/allegro/data-train.npz",
+      "bytes": 3859138,
+      "sha256": "c2958ae40c15a79ebf387f925bf3a19b4b02817fe8af9cd04eca2cdfdb438dba"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/allegro/data-validation.npz",
+      "bytes": 1293446,
+      "sha256": "f2eec92fec7626a5cf5df2f215027da24bbbd271e4962579204d9de7b1d8e43a"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/allegro/demos/bc/demo.gif",
+      "bytes": 660074,
+      "sha256": "d846eb2aa89ec331b375e285c087958c3e93bef05f106c6f97ee388d2676763f"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/allegro/demos/bc/diagnostics.csv",
+      "bytes": 114862,
+      "sha256": "abfded9d1f434cf3fe9a786a6c7a03440f67fb905d507bc6e5ede1ba475be3e0"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/allegro/demos/bc/preview.png",
+      "bytes": 9940,
+      "sha256": "fed1dfb6d86eede9398f0f7c0786f7bb18cb7be184e6623eb767250ca1b566aa"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/allegro/demos/bc/summary.json",
+      "bytes": 1564,
+      "sha256": "e59a1d613a3934a556bb77fc8a692b691444627a74333f09052295ca8562a559"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/allegro/demos/bc/trajectory.csv",
+      "bytes": 777836,
+      "sha256": "620b88a8bfcd5241fb2a3d8384762081196a0c5c135b1831c6b84d9dc447ad88"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/allegro/demos/expert/demo.gif",
+      "bytes": 418852,
+      "sha256": "c576d0091f4244c3cbe567b7e1505da951fb58b3eccc44b3fd34941aeefb32d4"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/allegro/demos/expert/diagnostics.csv",
+      "bytes": 123192,
+      "sha256": "41431fbf241dc827bf032b2a00c48a18c8ae799949c927df931da53273038d00"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/allegro/demos/expert/preview.png",
+      "bytes": 9806,
+      "sha256": "6857b6ef39e051bd7f1b440a3fa67827d7d05d91a10cfc2f35abd628ede950f4"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/allegro/demos/expert/summary.json",
+      "bytes": 1600,
+      "sha256": "794d9482c1e20cc7aa90c1e429bea444cafee977dd3752cc291efb3aecbe9dd8"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/allegro/demos/expert/trajectory.csv",
+      "bytes": 609815,
+      "sha256": "35a40ff3e5bd49063af09e6e00cac1323dbf81366bbd76d1374da5732879fdf3"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/allegro/demos/phase_bc/demo.gif",
+      "bytes": 437557,
+      "sha256": "405edc08c671330079c19c74bbd429ab6e956b4c2992100639f8d4d7b5954274"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/allegro/demos/phase_bc/diagnostics.csv",
+      "bytes": 123149,
+      "sha256": "d1cb637f24f5df512ade15ed24965ac89c5824fda2bcee19e2fc520dc01e3b68"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/allegro/demos/phase_bc/preview.png",
+      "bytes": 9840,
+      "sha256": "d8fd93a927bc9300722aed683c918cdd1e3788afc30b3bcbee111ab9a4002aee"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/allegro/demos/phase_bc/summary.json",
+      "bytes": 1724,
+      "sha256": "31040751abdc5ece2fdb0fd93a344d488c319b8dcccd94e4cb12bf38eb865c6e"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/allegro/demos/phase_bc/trajectory.csv",
+      "bytes": 660218,
+      "sha256": "14f0e60d27243d407e7e9a54a5fa4fdfb635ebb791a0a438f86da839b79febf4"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/allegro/expert-episodes.json",
+      "bytes": 22366,
+      "sha256": "e299630cf089ee7b86a253fdea232b69960ddd5afc1b045b5c89c8d7d3187058"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/allegro/loss-seed-0.csv",
+      "bytes": 494,
+      "sha256": "4656fabcbf0c45164de60890f340d77d36d7d6efd34c339d409ac83dc84b6b24"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/allegro/phase-bc.npz",
+      "bytes": 15144,
+      "sha256": "655d2072cd22817aa4639c006ac143da3521640e765fec484b29878ddb732bce"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/allegro/protocol.json",
+      "bytes": 10224,
+      "sha256": "739fa7d4607722e3809731f1860cad63d908fe63c9e474adf5a866c6653c74c0"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/go2/bc-seed-0.npz",
+      "bytes": 78234,
+      "sha256": "4d3546b4dd57a2212703c29445f833f8a67d81014a19b87730596b0b4b177669"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/go2/data-ood.npz",
+      "bytes": 1475921,
+      "sha256": "e23d8f565ea7fe741027794fac8eebbcdf59eede847cd46cb796ab58993fd48c"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/go2/data-test.npz",
+      "bytes": 1476053,
+      "sha256": "f147d8a670c8bef401e1dd7a21b45afd56e396c2926167b90d1511b272cd2fa6"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/go2/data-train.npz",
+      "bytes": 4415315,
+      "sha256": "3bdd9fddb1f1c2de3a7ffd724f5865380cc8b8d24c84ac0921e4f17a792a8371"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/go2/data-validation.npz",
+      "bytes": 1476059,
+      "sha256": "73afdefe153dddd45807f8f7567404eae3cca01f30c77d14139b11aa8b693268"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/go2/demos/bc/demo.gif",
+      "bytes": 2552554,
+      "sha256": "aec34fd1f6b57acf569f9f30d0f0176dd23afb7418916eaa7c1515eeceb7bf67"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/go2/demos/bc/diagnostics.csv",
+      "bytes": 228423,
+      "sha256": "c29c462a1e781e8c2255bdf6bbbfacb20a778cada9814a02fa4b6e49995c62c3"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/go2/demos/bc/preview.png",
+      "bytes": 14645,
+      "sha256": "83a782750fa008223775105be25e2e9403d23052901942f9d727bdf340967788"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/go2/demos/bc/summary.json",
+      "bytes": 1239,
+      "sha256": "5ae077b9c0289d1d7db2eb9bc32377106fa8c18ad90ce445a001efaeed4f659d"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/go2/demos/bc/trajectory.csv",
+      "bytes": 708285,
+      "sha256": "ecb5d9bb84a08d74067e68e3428c4d261cb2c17f51b9239e7b9a172fbcb616bc"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/go2/demos/expert/demo.gif",
+      "bytes": 2260737,
+      "sha256": "1b38751b6fa759bab181ae3fe51abed33c4dda073742c6a177ec65534b35ec68"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/go2/demos/expert/diagnostics.csv",
+      "bytes": 215730,
+      "sha256": "a630b6f466d24a4c489a0e1ff7ffb868634d0704aab6bdda83f76ef0cf69b40b"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/go2/demos/expert/preview.png",
+      "bytes": 16241,
+      "sha256": "555507ab0dd283460edd3d8c97e42f37334ccd54eb180d639de1824d56c4532e"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/go2/demos/expert/summary.json",
+      "bytes": 1226,
+      "sha256": "e186d0af7df5588fdd4a193d01cc1ce142959a31b5223e340daaaaeb60d2e031"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/go2/demos/expert/trajectory.csv",
+      "bytes": 734032,
+      "sha256": "a348dae8d2eeb352059e1a8796f65fe2d43363dc0355e5cde13b62189ff4c9f0"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/go2/demos/phase_bc/demo.gif",
+      "bytes": 1862371,
+      "sha256": "e7e57f0ba9554681f8dfa52e043942b5e07b96ca2f0a74a2277590fc83a7fb82"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/go2/demos/phase_bc/diagnostics.csv",
+      "bytes": 224361,
+      "sha256": "f4931dee9a7443d5d20a4eda5ef13e8acb103414610df3143082cb10e6e72eb0"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/go2/demos/phase_bc/preview.png",
+      "bytes": 15673,
+      "sha256": "6bce3af64909435f47a761188d09280449957ff7b97a324d0055e0252a67bb51"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/go2/demos/phase_bc/summary.json",
+      "bytes": 1359,
+      "sha256": "2d0e8a6163bfc6034303b215a47b6e8301b2b8b11c06145faf8462f1b26372a9"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/go2/demos/phase_bc/trajectory.csv",
+      "bytes": 740412,
+      "sha256": "d865c459acbb7a16573e00b5f0bee4c577b6f53ce553963b4b277da47d82a1b2"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/go2/expert-episodes.json",
+      "bytes": 16843,
+      "sha256": "1869e10da303d04fe221949a35c0d7a55f008665ca7bc0ad1a7faae37e7a12e4"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/go2/loss-seed-0.csv",
+      "bytes": 486,
+      "sha256": "5abf6c4530737449f07b984e426b2b20bae9c79d2510373a50f9634e31f738ee"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/go2/phase-bc.npz",
+      "bytes": 18553,
+      "sha256": "99901c4fa96cf99064a04cfa448c9711ffc6760fa633c5d422b3bfba24d3b06c"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/go2/protocol.json",
+      "bytes": 5357,
+      "sha256": "199228fd6882f4dbb2d965e393fe2710e0840e3a909b948af7ed30b3244f8e8b"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/h1/bc-seed-0.npz",
+      "bytes": 92849,
+      "sha256": "8b5cc8427fb6c185f3710be32423826c30135c3fd290989c3327558d05489713"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/h1/data-ood.npz",
+      "bytes": 1615418,
+      "sha256": "eb5e13ee95864be5092e584ef5229b4c1f55670f71c1525739d1a201b51f6817"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/h1/data-test.npz",
+      "bytes": 1615309,
+      "sha256": "a698edcc475675415749639bf3ab0bf6d040f3204b832b6f0d4359a3654300cb"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/h1/data-train.npz",
+      "bytes": 4835013,
+      "sha256": "dbf75342805a6d039da3c9fc0e8a045f798589949a458f8827bb4b718dfd4dcf"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/h1/data-validation.npz",
+      "bytes": 1616353,
+      "sha256": "adf378da5a77c36052e6406fe4d9e977108302f6742582d189929c33e8933b4b"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/h1/demos/bc/demo.gif",
+      "bytes": 786360,
+      "sha256": "77e4860732bb1e64be7323a59551016cfbee80a562f0b915308e9ee5e7f0ee4f"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/h1/demos/bc/diagnostics.csv",
+      "bytes": 72520,
+      "sha256": "f66f2d181e4a9d67e2cb8c201f59ddfb8646ad044c25f96d687a55d693c0cde2"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/h1/demos/bc/preview.png",
+      "bytes": 19161,
+      "sha256": "3ccd51b496d857f45a21b0bd582634599343ba35037c82b8e5c408e58eac475e"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/h1/demos/bc/summary.json",
+      "bytes": 1213,
+      "sha256": "65b2c72b7917577d5a3dec9313f3f0927aa2ab1536e2da025b6dfbf7024df466"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/h1/demos/bc/trajectory.csv",
+      "bytes": 890152,
+      "sha256": "dd6ce586e37caa1777673f8ff04e9e000ec5b01097af8b0e26d8836a668b3354"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/h1/demos/expert/demo.gif",
+      "bytes": 945515,
+      "sha256": "36337b1c4350735809fc8e6b7bbddf4dce987e4f4d0297b5e77ac4b84a07ce95"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/h1/demos/expert/diagnostics.csv",
+      "bytes": 72861,
+      "sha256": "d5f420768a5289d661a0fd4014e2ca08804e0dd2af1560dab2f7782899ed4054"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/h1/demos/expert/preview.png",
+      "bytes": 20342,
+      "sha256": "8a1e1bf3a42203d3d77e28516b45d433b2f7165aeed593cad2ad79e6e3ae061e"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/h1/demos/expert/summary.json",
+      "bytes": 1196,
+      "sha256": "c0d8b45968172a546cefc1b6fa125f76552b50d70882a8204488130f01f334b4"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/h1/demos/expert/trajectory.csv",
+      "bytes": 886771,
+      "sha256": "f1196925e258b379734fa07c3fabaafe6f6b945871b314fe2c10e6a1a0a6c407"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/h1/demos/phase_bc/demo.gif",
+      "bytes": 883349,
+      "sha256": "d520b4f603bf509a0dd90566ae9ed845926227aec801d276742a1972795b788c"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/h1/demos/phase_bc/diagnostics.csv",
+      "bytes": 72434,
+      "sha256": "af2b7a1581fa2a1cbe0f7a27dfedf98c77b6b4f9caadf086ef02b514ff4827fe"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/h1/demos/phase_bc/preview.png",
+      "bytes": 19546,
+      "sha256": "d40d57185a4ecf5f55db8b245bd9d4e96825cfed8c41842af5410fbd2b3c0b85"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/h1/demos/phase_bc/summary.json",
+      "bytes": 1344,
+      "sha256": "9c42c43909bf35003ec4688b40dbb02bb0a0422d50960cc8dcf1ad2ae6f5737a"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/h1/demos/phase_bc/trajectory.csv",
+      "bytes": 894089,
+      "sha256": "fd07ab3681e78c5fe1e182fdf392009901517a558f275607d7bedbb73bd22290"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/h1/expert-episodes.json",
+      "bytes": 16452,
+      "sha256": "3b47e74f05519b13be2b82a5f7818674ab78a492e911e0897c95d7c13fc59b39"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/h1/loss-seed-0.csv",
+      "bytes": 491,
+      "sha256": "5535c9eefdb4dce52e12e493b3a19935abcf0bce932ad1b347f0e7ca4c6f58f3"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/h1/phase-bc.npz",
+      "bytes": 23928,
+      "sha256": "4e487c5a02ceeb215dfd7f4c4d1048d4fa7846a49949c211abe6bf90a9e8f4f2"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/h1/protocol.json",
+      "bytes": 5355,
+      "sha256": "7ea1504b4cec6985c7d7da464322f48df1a0f2d9b8cb68f81ca13f0d1e08915e"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/panda/bc-seed-0.npz",
+      "bytes": 71657,
+      "sha256": "58df03fc143f52b076368f734e9d826a505279d23643fb0133bbb3856f23426b"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/panda/data-ood.npz",
+      "bytes": 1463564,
+      "sha256": "c225066cc2e45f48f4d2d774ba4c3cde10ae45e7bc8430fbaf9c224acd5e6b97"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/panda/data-test.npz",
+      "bytes": 1460389,
+      "sha256": "5b759d03f14505beeedb89c8707c137c005c36ce06948d3491a825857877715a"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/panda/data-train.npz",
+      "bytes": 4369751,
+      "sha256": "19fec7489e69904047641f83fa16ebeb0facee0ea6aca06779057ec58a27a83c"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/panda/data-validation.npz",
+      "bytes": 1460704,
+      "sha256": "80754b468b334f777117ec9bbb869562d8673965d3cc0817b6eab5292d42fb82"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/panda/demos/bc/demo.gif",
+      "bytes": 2340453,
+      "sha256": "39c7ed38600dee947f9d347fa6e6e503c3ccd822fe6e74c0fefcb8b16a027773"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/panda/demos/bc/diagnostics.csv",
+      "bytes": 145442,
+      "sha256": "44b1918b9b2174cdc687fb72472e9a3d0165532f9203442293c4b25ae69313a0"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/panda/demos/bc/preview.png",
+      "bytes": 14898,
+      "sha256": "d32e5bb3101efb70ba42e2a081d54c35b0335260b9ac8063a328c4ea8adc1107"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/panda/demos/bc/summary.json",
+      "bytes": 1304,
+      "sha256": "3aef86b45682352b17d6844979d62575efdea45867a7252f2abb3d2e83c5048e"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/panda/demos/bc/trajectory.csv",
+      "bytes": 558424,
+      "sha256": "f04c24c9dd4cffceabda688b0c1de5ec372cfd5896eb05599d1a6f8a7c14d7c4"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/panda/demos/expert/demo.gif",
+      "bytes": 1342954,
+      "sha256": "cc3f14250a41b902d73096962aa85c9789e2c0befa4572fb467413bd2e7f85a6"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/panda/demos/expert/diagnostics.csv",
+      "bytes": 150800,
+      "sha256": "52eeb58200b8f147c4ed55788a8a682e669569ce6912518d66eff03f0b8533ff"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/panda/demos/expert/preview.png",
+      "bytes": 15090,
+      "sha256": "1f1e204a95738d4ec93cbe8766665f181d1b3956d01554176f7728d501c1c67f"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/panda/demos/expert/summary.json",
+      "bytes": 1325,
+      "sha256": "015283736b69b875e8ebff249cdba17091b709cee1c897851122590c90d96b24"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/panda/demos/expert/trajectory.csv",
+      "bytes": 559033,
+      "sha256": "5b41076affd7c268c9db7025e0e369a82405fb655b6d7cf7f55effebd080d53d"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/panda/demos/phase_bc/demo.gif",
+      "bytes": 1326142,
+      "sha256": "092cf724f717bb91e5423e2369f8b8b9cc51b572bd2009ca057141ba8981e2f9"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/panda/demos/phase_bc/diagnostics.csv",
+      "bytes": 150566,
+      "sha256": "b95011ab02b2b386af047bb7fc18f8fe37a20855e849cf254b329e217c329af6"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/panda/demos/phase_bc/preview.png",
+      "bytes": 15163,
+      "sha256": "510be3866c7792971ac1f521a83cb98d54ef5e0b9bf71ffc1ba3dc888ad5df24"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/panda/demos/phase_bc/summary.json",
+      "bytes": 1450,
+      "sha256": "948f6c4ba1a6124bfacf8bf5283ce98b1fa8926942a7d326b7dd30f6acbcdf52"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/panda/demos/phase_bc/trajectory.csv",
+      "bytes": 559561,
+      "sha256": "826d6b8f6dac484e3d98e56f6906148d5b99c0c0cc6841fb14f4b07d3083636f"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/panda/expert-episodes.json",
+      "bytes": 18300,
+      "sha256": "6546400984386672868f2a3b25e6fb3fbef50f2c7a6e8fb06cf37d37a7171e68"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/panda/loss-seed-0.csv",
+      "bytes": 494,
+      "sha256": "bac9159025621344f03f5864e258e60693174b4648144dd73c826f1ca0c87109"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/panda/phase-bc.npz",
+      "bytes": 30179,
+      "sha256": "b1658da3890d938d23404364ef8e57c2a09f0cf7cac74ff0fe1d689ced8d1bd2"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/panda/protocol.json",
+      "bytes": 6136,
+      "sha256": "f9ceff9b082dd095dbe87c9edec0f53e50b2350a3e0d06808a2e301b23bd14f9"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/report.html",
+      "bytes": 5526,
+      "sha256": "1306d8dceb187c119032518a1c3cf6bf263cda58c777bc9aa9d15e107115e3fa"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/source-snapshot/deep_practice.py",
+      "bytes": 17275,
+      "sha256": "dd276620550e20b1e1a17654cdf854e3e73fb0c8359cda189060c5582dea3b12"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/source-snapshot/lab.py",
+      "bytes": 21551,
+      "sha256": "7ff5bfc42eaa3c5a435ed13b34f97bf1043a84ec1e4d1ca371bfe392a3e384cd"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/source-snapshot/learning.py",
+      "bytes": 19734,
+      "sha256": "baf627af5ff937046c8b7d8ef935cb8b17eefadffdc11cc7144adf8162689368"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/source-snapshot/platform_learning.py",
+      "bytes": 30622,
+      "sha256": "70cfd1d4826094abcf822800fd3c17ad0163157f172bc7616cf53c1491804a7c"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/summary.json",
+      "bytes": 177103,
+      "sha256": "0bb88727bcdda1ca14a0b2d8ddc0d6c9ab33988693cba01381003336b6b26ff5"
+    },
+    {
+      "path": "project-04-imitation-learning/outputs/platform-verification-20261012.json",
+      "bytes": 15003,
+      "sha256": "55dc5ef78620973ca9311a9f5d014d2c4d20f2210282f63cfd330d6bf485a6c7"
+    }
+  ],
+  "scope": "Git-visible public experimental outputs; original record bytes preserved by .gitattributes."
+}

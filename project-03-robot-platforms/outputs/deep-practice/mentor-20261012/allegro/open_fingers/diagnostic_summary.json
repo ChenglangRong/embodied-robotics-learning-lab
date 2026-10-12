@@ -1,0 +1,58 @@
+{
+  "changed_options": {
+    "closed": [
+      0,
+      0.15,
+      0.15,
+      0.15,
+      0,
+      0.15,
+      0.15,
+      0.15,
+      0,
+      0.15,
+      0.15,
+      0.15,
+      0.6,
+      0.2,
+      0.2,
+      0.2
+    ]
+  },
+  "legacy_result": {
+    "task": "allegro",
+    "passed": false,
+    "metrics": {
+      "max_height_m": 0.3594515001122734,
+      "final_height_m": 0.35945144107501414,
+      "max_tilt_deg": 0.0,
+      "contact_samples": 366,
+      "held_fraction_after_lift": 0.0,
+      "max_contacting_fingers": 1,
+      "support": "palm-assisted caging with prescribed wrist fixture"
+    },
+    "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+    "mujoco_version": "3.2.5",
+    "scope": "deterministic physical baseline; no learned policy; no real robot claim",
+    "completed_duration_s": 11.000000000000343,
+    "termination": "task criteria failed"
+  },
+  "diagnostics": {
+    "mean_tracking_rmse_rad": 0.007673971900269614,
+    "relative_position_window_s": [
+      8.0,
+      10.982000000000337
+    ],
+    "max_relative_displacement_from_window_start_m": 3.4577433849446312e-06,
+    "late_mean_finger_world_fz_N": 0.3837185678323597,
+    "late_mean_finger_normal_sum_N": 0.3838959921689313,
+    "late_mean_palm_world_fz_N": 0.008681432167621805,
+    "late_mean_palm_normal_sum_N": 0.009052325568445891,
+    "late_mean_external_world_fz_N": 0.0,
+    "late_mean_external_normal_sum_N": 0.0,
+    "object_weight_N": 0.3924,
+    "late_finger_contact_fraction": 0.0
+  },
+  "saved_baseline_csv_identical": null,
+  "note": "diagnostics only; legacy pass does not certify new skill claims"
+}

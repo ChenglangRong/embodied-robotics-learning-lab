@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "checks": "source/data integrity, split isolation, normalization, expert labels, exact label budgets, aggregate values, saved policy replay",
+  "saved_models": 20,
+  "replayed_episodes": 1056,
+  "elapsed_seconds": 23.460146099998383,
+  "scope": "Fresh execution of stored policies using the same environment; no independent optimizer implementation or real robot validation"
+}

@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "criteria": {
+    "original_project03": true
+  },
+  "metrics": {
+    "max_height_m": 0.2994114147939683,
+    "final_height_m": 0.2631996987466165,
+    "max_tilt_deg": 4.874003169389678,
+    "contact_samples": 598,
+    "forward_displacement_m": 1.3579741578762885,
+    "min_base_height_m": 0.2418168422590779,
+    "max_foot_clearance_m": 0.04046230208208199,
+    "swing_samples": 147,
+    "mean_contact_tangent_speed_m_s": 0.1560273917980147,
+    "mean_saturated_actuator_fraction": 0.0
+  },
+  "spec": {
+    "id": "go2-test-000",
+    "split": "test",
+    "seed": 333000,
+    "q_noise": 0.002,
+    "options": {
+      "amp": 0.059190018280177704,
+      "lift": 0.07054760889710236,
+      "freq": 1.8663014413517143,
+      "kp": 100,
+      "kd": 3.5
+    },
+    "push_N": 0.0,
+    "mass_scale": 1.0
+  },
+  "policy": "expert",
+  "completed": true,
+  "expert_calls": 1200,
+  "control_steps": 1200,
+  "base_model_xml_sha256": "08db8c886d72fe639fc9f1366280cd5c53029328f0b45164175531199698896f",
+  "action_clipped_fraction": 0.0,
+  "scope": "Joint-reference BC; torque PD retained; flat terrain; phase and commanded gait parameters observed.",
+  "termination": "completed"
+}

@@ -305,7 +305,7 @@ def assess(kind, rows):
             "mujoco_version": mujoco.__version__, "scope": "deterministic physical baseline; no learned policy; no real robot claim"}
 
 
-def run(kind, output=None, render=False, viewer=False, options=None, duration=None):
+def run(kind, output=None, render=False, viewer=False, options=None, duration=None, observer=None):
     options = {**DEFAULT_OPTIONS[kind], **(options or {})}
     m, d, qa, va, model_hash = build(kind, options)
     ctrl = Controller(kind, m, d, qa, va, options)
@@ -327,6 +327,8 @@ def run(kind, output=None, render=False, viewer=False, options=None, duration=No
         mujoco.mj_step(m, d)
         if step % 10 == 0:
             rows.append(sample(kind, m, d, ctrl))
+            if observer is not None:
+                observer(m, d, ctrl)
         if renderer and d.time >= next_frame:
             if kind == "go2":
                 cam.lookat[0:2] = d.qpos[:2]

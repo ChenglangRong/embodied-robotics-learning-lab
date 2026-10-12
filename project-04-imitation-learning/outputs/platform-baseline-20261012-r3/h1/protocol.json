@@ -1,0 +1,203 @@
+{
+  "kind": "h1",
+  "mode": "quick",
+  "specs": {
+    "train": [
+      {
+        "id": "h1-train-000",
+        "split": "train",
+        "seed": 111000,
+        "q_noise": 0.001,
+        "options": {
+          "com_gain": 5.0,
+          "velocity_gain": 0.8,
+          "foot_offset": 0.03,
+          "balance": 0.0,
+          "bend": 0.14307322711904666
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0
+      },
+      {
+        "id": "h1-train-001",
+        "split": "train",
+        "seed": 111001,
+        "q_noise": 0.001,
+        "options": {
+          "com_gain": 5.0,
+          "velocity_gain": 0.8,
+          "foot_offset": 0.03,
+          "balance": 0.0,
+          "bend": 0.14338606601917936
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0
+      },
+      {
+        "id": "h1-train-002",
+        "split": "train",
+        "seed": 111002,
+        "q_noise": 0.001,
+        "options": {
+          "com_gain": 5.0,
+          "velocity_gain": 0.8,
+          "foot_offset": 0.03,
+          "balance": 0.0,
+          "bend": 0.15011928628996532
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0
+      },
+      {
+        "id": "h1-train-003",
+        "split": "train",
+        "seed": 111003,
+        "q_noise": 0.001,
+        "options": {
+          "com_gain": 5.0,
+          "velocity_gain": 0.8,
+          "foot_offset": 0.03,
+          "balance": 0.0,
+          "bend": 0.15316237746907505
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0
+      },
+      {
+        "id": "h1-train-004",
+        "split": "train",
+        "seed": 111004,
+        "q_noise": 0.001,
+        "options": {
+          "com_gain": 5.0,
+          "velocity_gain": 0.8,
+          "foot_offset": 0.03,
+          "balance": 0.0,
+          "bend": 0.15535161754048613
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0
+      },
+      {
+        "id": "h1-train-005",
+        "split": "train",
+        "seed": 111005,
+        "q_noise": 0.001,
+        "options": {
+          "com_gain": 5.0,
+          "velocity_gain": 0.8,
+          "foot_offset": 0.03,
+          "balance": 0.0,
+          "bend": 0.1421845491776171
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0
+      }
+    ],
+    "validation": [
+      {
+        "id": "h1-validation-000",
+        "split": "validation",
+        "seed": 222000,
+        "q_noise": 0.001,
+        "options": {
+          "com_gain": 5.0,
+          "velocity_gain": 0.8,
+          "foot_offset": 0.03,
+          "balance": 0.0,
+          "bend": 0.14754417919743945
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0
+      },
+      {
+        "id": "h1-validation-001",
+        "split": "validation",
+        "seed": 222001,
+        "q_noise": 0.001,
+        "options": {
+          "com_gain": 5.0,
+          "velocity_gain": 0.8,
+          "foot_offset": 0.03,
+          "balance": 0.0,
+          "bend": 0.154072850241072
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0
+      }
+    ],
+    "test": [
+      {
+        "id": "h1-test-000",
+        "split": "test",
+        "seed": 333000,
+        "q_noise": 0.001,
+        "options": {
+          "com_gain": 5.0,
+          "velocity_gain": 0.8,
+          "foot_offset": 0.03,
+          "balance": 0.0,
+          "bend": 0.1583800365603554
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0
+      },
+      {
+        "id": "h1-test-001",
+        "split": "test",
+        "seed": 333001,
+        "q_noise": 0.001,
+        "options": {
+          "com_gain": 5.0,
+          "velocity_gain": 0.8,
+          "foot_offset": 0.03,
+          "balance": 0.0,
+          "bend": 0.15663014413517146
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0
+      }
+    ],
+    "ood": [
+      {
+        "id": "h1-ood-000",
+        "split": "ood",
+        "seed": 444000,
+        "q_noise": 0.001,
+        "options": {
+          "com_gain": 5.0,
+          "velocity_gain": 0.8,
+          "foot_offset": 0.03,
+          "balance": 0.0,
+          "bend": 0.15648508187703758
+        },
+        "push_N": 12.0,
+        "mass_scale": 1.0
+      },
+      {
+        "id": "h1-ood-001",
+        "split": "ood",
+        "seed": 444001,
+        "q_noise": 0.001,
+        "options": {
+          "com_gain": 5.0,
+          "velocity_gain": 0.8,
+          "foot_offset": 0.03,
+          "balance": 0.0,
+          "bend": 0.14227678100843447
+        },
+        "push_N": 12.0,
+        "mass_scale": 1.0
+      }
+    ]
+  },
+  "control_dt_s": 0.01,
+  "physics_dt_s": 0.002,
+  "sample_dt_s": 0.02,
+  "duration_s": 10.0,
+  "scope": "Joint-reference BC including expert balance corrections; torque PD and bias compensation retained; double support, squat and arm motion.",
+  "ood": "Object mass x1.5 (Panda/Allegro) or base x-direction force during 4.5–4.8 s (Go2/H1). One factor per platform.",
+  "checkpoint": "Lowest validation normalized reference-action MSE; no test or OOD selection.",
+  "seed_scope": "Quick: one training seed. Full: five training seeds sharing a frozen dataset/test set.",
+  "criteria": "Fixed project03 thresholds plus declared task-process checks; failed experts retained; no threshold tuning after results."
+}

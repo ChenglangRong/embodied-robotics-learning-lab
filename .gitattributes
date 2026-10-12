@@ -1,0 +1,15 @@
+# Keep hashed source bytes stable across Windows and Linux checkouts.
+* text=auto eol=lf
+# Experimental records and source snapshots retain their original bytes.
+**/outputs/** -text
+# CSV writers emit CRLF; preserve byte-identical numerical replay evidence.
+*.csv -text
+*.urdf -text
+*.xml -text
+*.npz -text
+*.png -text
+*.gif -text
+*.jpg -text
+*.mcap -text
+*.db3 -text
+*.zip -text

@@ -1,0 +1,1319 @@
+{
+  "date": "2026-10-12T20:46:50.985904+08:00",
+  "platform": "Windows-11-10.0.22621-SP0",
+  "python": "3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:03:56) [MSC v.1929 64 bit (AMD64)]",
+  "mujoco": "3.2.5",
+  "numpy": "1.26.4",
+  "measured_model_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+  "expected_model_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+  "lab_source_sha256": "7ff5bfc42eaa3c5a435ed13b34f97bf1043a84ec1e4d1ca371bfe392a3e384cd",
+  "diagnostic_source_sha256": "dd276620550e20b1e1a17654cdf854e3e73fb0c8359cda189060c5582dea3b12",
+  "geometry_timestamp_note": "cached geometry/forces precede integrated qpos by one physics step",
+  "personal_learning_gate": "pending student explanation and independent modification",
+  "results": {
+    "panda": {
+      "baseline": {
+        "changed_options": {},
+        "legacy_result": {
+          "task": "panda",
+          "passed": true,
+          "metrics": {
+            "max_height_m": 0.4675365353964753,
+            "final_height_m": 0.2749127610401858,
+            "max_tilt_deg": 0.0,
+            "contact_samples": 347,
+            "placement_error_m": 0.0037928164626608992,
+            "lift_m": 0.19153653539647525
+          },
+          "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+          "mujoco_version": "3.2.5",
+          "scope": "deterministic physical baseline; no learned policy; no real robot claim",
+          "completed_duration_s": 14.000000000001345,
+          "termination": "completed"
+        },
+        "diagnostics": {
+          "mean_tracking_rmse_rad": 0.023716420638370102,
+          "relative_position_window_s": [
+            7.0,
+            9.0
+          ],
+          "max_relative_displacement_from_window_start_m": 0.0035257101676712545,
+          "late_mean_finger_world_fz_N": 0.6030424493757716,
+          "late_mean_finger_normal_sum_N": 2.492338789687054,
+          "late_mean_palm_world_fz_N": 0.0,
+          "late_mean_palm_normal_sum_N": 0.0,
+          "late_mean_external_world_fz_N": 0.0,
+          "late_mean_external_normal_sum_N": 0.0,
+          "object_weight_N": 0.5886,
+          "late_finger_contact_fraction": 1.0
+        },
+        "saved_baseline_csv_identical": true,
+        "note": "diagnostics only; legacy pass does not certify new skill claims"
+      },
+      "partly_open": {
+        "changed_options": {
+          "close_ctrl": 160
+        },
+        "legacy_result": {
+          "task": "panda",
+          "passed": false,
+          "metrics": {
+            "max_height_m": 0.276,
+            "final_height_m": 0.27491276104018775,
+            "max_tilt_deg": 0.0,
+            "contact_samples": 60,
+            "placement_error_m": 0.3095655246456156,
+            "lift_m": 0.0
+          },
+          "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+          "mujoco_version": "3.2.5",
+          "scope": "deterministic physical baseline; no learned policy; no real robot claim",
+          "completed_duration_s": 14.000000000001345,
+          "termination": "task criteria failed"
+        },
+        "diagnostics": {
+          "mean_tracking_rmse_rad": 0.023715931973158983,
+          "relative_position_window_s": [
+            7.0,
+            9.0
+          ],
+          "max_relative_displacement_from_window_start_m": 0.3084820443953172,
+          "late_mean_finger_world_fz_N": 0.0,
+          "late_mean_finger_normal_sum_N": 0.0,
+          "late_mean_palm_world_fz_N": 0.0,
+          "late_mean_palm_normal_sum_N": 0.0,
+          "late_mean_external_world_fz_N": 0.588600000014858,
+          "late_mean_external_normal_sum_N": 0.588600000014858,
+          "object_weight_N": 0.5886,
+          "late_finger_contact_fraction": 0.0
+        },
+        "saved_baseline_csv_identical": null,
+        "note": "diagnostics only; legacy pass does not certify new skill claims"
+      },
+      "open": {
+        "changed_options": {
+          "close_ctrl": 255
+        },
+        "legacy_result": {
+          "task": "panda",
+          "passed": false,
+          "metrics": {
+            "max_height_m": 0.276,
+            "final_height_m": 0.2749127610401858,
+            "max_tilt_deg": 0.0,
+            "contact_samples": 0,
+            "placement_error_m": 0.3100000000000001,
+            "lift_m": 0.0
+          },
+          "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+          "mujoco_version": "3.2.5",
+          "scope": "deterministic physical baseline; no learned policy; no real robot claim",
+          "completed_duration_s": 14.000000000001345,
+          "termination": "task criteria failed"
+        },
+        "diagnostics": {
+          "mean_tracking_rmse_rad": 0.023715940815234964,
+          "relative_position_window_s": [
+            7.0,
+            9.0
+          ],
+          "max_relative_displacement_from_window_start_m": 0.308482129555295,
+          "late_mean_finger_world_fz_N": 0.0,
+          "late_mean_finger_normal_sum_N": 0.0,
+          "late_mean_palm_world_fz_N": 0.0,
+          "late_mean_palm_normal_sum_N": 0.0,
+          "late_mean_external_world_fz_N": 0.5885999999999986,
+          "late_mean_external_normal_sum_N": 0.5885999999999986,
+          "object_weight_N": 0.5886,
+          "late_finger_contact_fraction": 0.0
+        },
+        "saved_baseline_csv_identical": null,
+        "note": "diagnostics only; legacy pass does not certify new skill claims"
+      }
+    },
+    "go2": {
+      "baseline": {
+        "changed_options": {},
+        "legacy_result": {
+          "task": "go2",
+          "passed": true,
+          "metrics": {
+            "max_height_m": 0.29996078808413795,
+            "final_height_m": 0.26353022845976454,
+            "max_tilt_deg": 5.119856288122644,
+            "contact_samples": 597,
+            "forward_displacement_m": 1.1693953738272391,
+            "min_base_height_m": 0.24206245693813386,
+            "max_foot_clearance_m": 0.03943597157047115,
+            "swing_samples": 148
+          },
+          "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+          "mujoco_version": "3.2.5",
+          "scope": "deterministic physical baseline; no learned policy; no real robot claim",
+          "completed_duration_s": 12.000000000000677,
+          "termination": "completed"
+        },
+        "diagnostics": {
+          "mean_tracking_rmse_rad": 0.07335489558770217,
+          "stance": {
+            "FL": {
+              "segments": 12,
+              "mean_net_travel_m": 0.04343738280067336,
+              "mean_path_length_m": 0.06863574654384727,
+              "records": [
+                {
+                  "start_s": 2.002000000000001,
+                  "end_s": 3.0419999999998866,
+                  "net_travel_m": 0.05056309157326756,
+                  "path_length_m": 0.053353233260173355
+                },
+                {
+                  "start_s": 3.2419999999998645,
+                  "end_s": 3.601999999999825,
+                  "net_travel_m": 0.015127351770928032,
+                  "path_length_m": 0.04981458358103426
+                },
+                {
+                  "start_s": 3.801999999999803,
+                  "end_s": 4.161999999999764,
+                  "net_travel_m": 0.009867102514495478,
+                  "path_length_m": 0.03800616324993937
+                },
+                {
+                  "start_s": 4.321999999999746,
+                  "end_s": 4.701999999999704,
+                  "net_travel_m": 0.023252414126693908,
+                  "path_length_m": 0.04996363176311462
+                },
+                {
+                  "start_s": 4.841999999999689,
+                  "end_s": 5.2619999999996425,
+                  "net_travel_m": 0.05570958713985015,
+                  "path_length_m": 0.08463102896649914
+                },
+                {
+                  "start_s": 5.401999999999627,
+                  "end_s": 5.821999999999581,
+                  "net_travel_m": 0.05168065317300438,
+                  "path_length_m": 0.08307485170023117
+                },
+                {
+                  "start_s": 5.961999999999565,
+                  "end_s": 6.381999999999519,
+                  "net_travel_m": 0.047310397209144685,
+                  "path_length_m": 0.08044983118625704
+                },
+                {
+                  "start_s": 6.521999999999504,
+                  "end_s": 6.92199999999946,
+                  "net_travel_m": 0.047883756171906024,
+                  "path_length_m": 0.07304888943833997
+                },
+                {
+                  "start_s": 7.061999999999444,
+                  "end_s": 7.481999999999398,
+                  "net_travel_m": 0.05845022357977249,
+                  "path_length_m": 0.08626930423188577
+                },
+                {
+                  "start_s": 7.621999999999383,
+                  "end_s": 8.041999999999355,
+                  "net_travel_m": 0.05404500224386704,
+                  "path_length_m": 0.08439268531405252
+                },
+                {
+                  "start_s": 8.181999999999402,
+                  "end_s": 8.601999999999542,
+                  "net_travel_m": 0.04930392413933177,
+                  "path_length_m": 0.08153578472144538
+                },
+                {
+                  "start_s": 8.741999999999589,
+                  "end_s": 8.981999999999669,
+                  "net_travel_m": 0.05805508996581877,
+                  "path_length_m": 0.05908897111319469
+                }
+              ],
+              "mean_contact_tangent_speed_m_s": 0.17124708212442483
+            },
+            "FR": {
+              "segments": 11,
+              "mean_net_travel_m": 0.042969631287152386,
+              "mean_path_length_m": 0.07708054254058888,
+              "records": [
+                {
+                  "start_s": 2.002000000000001,
+                  "end_s": 3.3219999999998557,
+                  "net_travel_m": 0.046967468269286716,
+                  "path_length_m": 0.11682889142365468
+                },
+                {
+                  "start_s": 3.5419999999998315,
+                  "end_s": 3.881999999999794,
+                  "net_travel_m": 0.012924867660444879,
+                  "path_length_m": 0.03643097082368908
+                },
+                {
+                  "start_s": 4.061999999999775,
+                  "end_s": 4.441999999999733,
+                  "net_travel_m": 0.00859833499315795,
+                  "path_length_m": 0.04604784121659624
+                },
+                {
+                  "start_s": 4.581999999999717,
+                  "end_s": 4.981999999999673,
+                  "net_travel_m": 0.03931475511303738,
+                  "path_length_m": 0.0669325055567309
+                },
+                {
+                  "start_s": 5.121999999999658,
+                  "end_s": 5.541999999999612,
+                  "net_travel_m": 0.0541724533510092,
+                  "path_length_m": 0.0845283374650517
+                },
+                {
+                  "start_s": 5.681999999999596,
+                  "end_s": 6.10199999999955,
+                  "net_travel_m": 0.04929295333440912,
+                  "path_length_m": 0.08154960454080666
+                },
+                {
+                  "start_s": 6.241999999999535,
+                  "end_s": 6.661999999999488,
+                  "net_travel_m": 0.045357229859464,
+                  "path_length_m": 0.07938143341065765
+                },
+                {
+                  "start_s": 6.781999999999475,
+                  "end_s": 7.201999999999429,
+                  "net_travel_m": 0.060844037422323326,
+                  "path_length_m": 0.0873624238286109
+                },
+                {
+                  "start_s": 7.341999999999413,
+                  "end_s": 7.761999999999367,
+                  "net_travel_m": 0.05625845567551711,
+                  "path_length_m": 0.08531234951023174
+                },
+                {
+                  "start_s": 7.901999999999352,
+                  "end_s": 8.321999999999449,
+                  "net_travel_m": 0.05162955895435414,
+                  "path_length_m": 0.08304492388038835
+                },
+                {
+                  "start_s": 8.461999999999495,
+                  "end_s": 8.881999999999636,
+                  "net_travel_m": 0.04730582952567242,
+                  "path_length_m": 0.08046668629005983
+                }
+              ],
+              "mean_contact_tangent_speed_m_s": 0.17267881868066903
+            },
+            "RL": {
+              "segments": 11,
+              "mean_net_travel_m": 0.008196375326085116,
+              "mean_path_length_m": 0.03732209641209951,
+              "records": [
+                {
+                  "start_s": 2.002000000000001,
+                  "end_s": 3.301999999999858,
+                  "net_travel_m": 0.029913698426036178,
+                  "path_length_m": 0.08591216426284327
+                },
+                {
+                  "start_s": 3.481999999999838,
+                  "end_s": 3.8619999999997963,
+                  "net_travel_m": 0.010693900988789308,
+                  "path_length_m": 0.04636469104110881
+                },
+                {
+                  "start_s": 4.061999999999775,
+                  "end_s": 4.401999999999737,
+                  "net_travel_m": 0.015556001185668838,
+                  "path_length_m": 0.031696251071362175
+                },
+                {
+                  "start_s": 4.641999999999711,
+                  "end_s": 4.961999999999676,
+                  "net_travel_m": 0.006037525220988067,
+                  "path_length_m": 0.024480400678834592
+                },
+                {
+                  "start_s": 5.201999999999649,
+                  "end_s": 5.521999999999614,
+                  "net_travel_m": 0.0032282736062665194,
+                  "path_length_m": 0.02606621909815507
+                },
+                {
+                  "start_s": 5.7619999999995875,
+                  "end_s": 6.081999999999552,
+                  "net_travel_m": 0.0026027380985501,
+                  "path_length_m": 0.0261283151893684
+                },
+                {
+                  "start_s": 6.301999999999528,
+                  "end_s": 6.6419999999994905,
+                  "net_travel_m": 0.0059656605172393575,
+                  "path_length_m": 0.03931941006337962
+                },
+                {
+                  "start_s": 6.861999999999466,
+                  "end_s": 7.201999999999429,
+                  "net_travel_m": 0.0010632544353685648,
+                  "path_length_m": 0.03841340898215755
+                },
+                {
+                  "start_s": 7.421999999999405,
+                  "end_s": 7.741999999999369,
+                  "net_travel_m": 0.0059904536450205255,
+                  "path_length_m": 0.026083609759438124
+                },
+                {
+                  "start_s": 7.981999999999343,
+                  "end_s": 8.301999999999442,
+                  "net_travel_m": 0.0001994482200063926,
+                  "path_length_m": 0.026154956448810163
+                },
+                {
+                  "start_s": 8.521999999999515,
+                  "end_s": 8.861999999999629,
+                  "net_travel_m": 0.008909174243002436,
+                  "path_length_m": 0.03992363393763686
+                }
+              ],
+              "mean_contact_tangent_speed_m_s": 0.11445683480850849
+            },
+            "RR": {
+              "segments": 12,
+              "mean_net_travel_m": 0.009391812010651401,
+              "mean_path_length_m": 0.03179063250965673,
+              "records": [
+                {
+                  "start_s": 2.002000000000001,
+                  "end_s": 3.0419999999998866,
+                  "net_travel_m": 0.04301385732394489,
+                  "path_length_m": 0.044464637792568026
+                },
+                {
+                  "start_s": 3.181999999999871,
+                  "end_s": 3.581999999999827,
+                  "net_travel_m": 0.011825926610834458,
+                  "path_length_m": 0.04858807873844307
+                },
+                {
+                  "start_s": 3.781999999999805,
+                  "end_s": 4.141999999999766,
+                  "net_travel_m": 0.0024574422190845576,
+                  "path_length_m": 0.037092969332276134
+                },
+                {
+                  "start_s": 4.361999999999742,
+                  "end_s": 4.681999999999706,
+                  "net_travel_m": 0.0031601785059783287,
+                  "path_length_m": 0.02031695216577947
+                },
+                {
+                  "start_s": 4.92199999999968,
+                  "end_s": 5.241999999999645,
+                  "net_travel_m": 0.005758392452466124,
+                  "path_length_m": 0.025788387090325788
+                },
+                {
+                  "start_s": 5.481999999999618,
+                  "end_s": 5.801999999999583,
+                  "net_travel_m": 0.00019076598178792095,
+                  "path_length_m": 0.026126509836124405
+                },
+                {
+                  "start_s": 6.021999999999559,
+                  "end_s": 6.361999999999521,
+                  "net_travel_m": 0.008891972839308508,
+                  "path_length_m": 0.0398762313537685
+                },
+                {
+                  "start_s": 6.581999999999497,
+                  "end_s": 6.92199999999946,
+                  "net_travel_m": 0.0027470116059498304,
+                  "path_length_m": 0.03884069199272748
+                },
+                {
+                  "start_s": 7.1419999999994355,
+                  "end_s": 7.4619999999994,
+                  "net_travel_m": 0.008527115801130858,
+                  "path_length_m": 0.026482224070218875
+                },
+                {
+                  "start_s": 7.701999999999374,
+                  "end_s": 8.021999999999348,
+                  "net_travel_m": 0.0030975095841450488,
+                  "path_length_m": 0.025930340027936143
+                },
+                {
+                  "start_s": 8.261999999999428,
+                  "end_s": 8.581999999999535,
+                  "net_travel_m": 0.002609855576469118,
+                  "path_length_m": 0.026084894742266912
+                },
+                {
+                  "start_s": 8.801999999999609,
+                  "end_s": 8.981999999999669,
+                  "net_travel_m": 0.020421715626717175,
+                  "path_length_m": 0.02189567297344601
+                }
+              ],
+              "mean_contact_tangent_speed_m_s": 0.10968857332866458
+            }
+          },
+          "mean_saturated_actuator_fraction": 0.0
+        },
+        "saved_baseline_csv_identical": true,
+        "note": "diagnostics only; legacy pass does not certify new skill claims"
+      },
+      "soft_pd": {
+        "changed_options": {
+          "kp": 55
+        },
+        "legacy_result": {
+          "task": "go2",
+          "passed": false,
+          "metrics": {
+            "max_height_m": 0.29996077544627586,
+            "final_height_m": 0.24964253719079757,
+            "max_tilt_deg": 3.737306483259578,
+            "contact_samples": 597,
+            "forward_displacement_m": -0.44492818118893057,
+            "min_base_height_m": 0.2266775442498462,
+            "max_foot_clearance_m": 0.010337763381371039,
+            "swing_samples": 0
+          },
+          "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+          "mujoco_version": "3.2.5",
+          "scope": "deterministic physical baseline; no learned policy; no real robot claim",
+          "completed_duration_s": 12.000000000000677,
+          "termination": "task criteria failed"
+        },
+        "diagnostics": {
+          "mean_tracking_rmse_rad": 0.11250911131181382,
+          "stance": {
+            "FL": {
+              "segments": 11,
+              "mean_net_travel_m": 0.04704122643508355,
+              "mean_path_length_m": 0.06706871742614919,
+              "records": [
+                {
+                  "start_s": 2.002000000000001,
+                  "end_s": 3.6219999999998227,
+                  "net_travel_m": 0.09346280535891516,
+                  "path_length_m": 0.12911894466945215
+                },
+                {
+                  "start_s": 3.781999999999805,
+                  "end_s": 4.1819999999997615,
+                  "net_travel_m": 0.04288300614685798,
+                  "path_length_m": 0.06884298531089937
+                },
+                {
+                  "start_s": 4.341999999999744,
+                  "end_s": 4.7419999999997,
+                  "net_travel_m": 0.047227583252675294,
+                  "path_length_m": 0.0690874216011415
+                },
+                {
+                  "start_s": 4.901999999999682,
+                  "end_s": 5.301999999999638,
+                  "net_travel_m": 0.05055234805474158,
+                  "path_length_m": 0.06938538181993019
+                },
+                {
+                  "start_s": 5.4619999999996205,
+                  "end_s": 5.841999999999579,
+                  "net_travel_m": 0.044914369799288145,
+                  "path_length_m": 0.06071396798586166
+                },
+                {
+                  "start_s": 6.001999999999561,
+                  "end_s": 6.401999999999517,
+                  "net_travel_m": 0.0421867878126929,
+                  "path_length_m": 0.06836804670618606
+                },
+                {
+                  "start_s": 6.561999999999499,
+                  "end_s": 6.961999999999455,
+                  "net_travel_m": 0.04568391616409671,
+                  "path_length_m": 0.06889159355187595
+                },
+                {
+                  "start_s": 7.121999999999438,
+                  "end_s": 7.521999999999394,
+                  "net_travel_m": 0.048979598798785814,
+                  "path_length_m": 0.06926022769761199
+                },
+                {
+                  "start_s": 7.681999999999376,
+                  "end_s": 8.061999999999362,
+                  "net_travel_m": 0.043031523436449844,
+                  "path_length_m": 0.06029140642830534
+                },
+                {
+                  "start_s": 8.241999999999422,
+                  "end_s": 8.621999999999549,
+                  "net_travel_m": 0.0467780863177794,
+                  "path_length_m": 0.061187985423960894
+                },
+                {
+                  "start_s": 8.781999999999602,
+                  "end_s": 8.981999999999669,
+                  "net_travel_m": 0.011753465643636222,
+                  "path_length_m": 0.01260793049241591
+                }
+              ],
+              "mean_contact_tangent_speed_m_s": 0.15095489368468848
+            },
+            "FR": {
+              "segments": 11,
+              "mean_net_travel_m": 0.048319044864531376,
+              "mean_path_length_m": 0.06739356160559001,
+              "records": [
+                {
+                  "start_s": 2.002000000000001,
+                  "end_s": 3.3419999999998535,
+                  "net_travel_m": 0.074799271424156,
+                  "path_length_m": 0.07814155203659973
+                },
+                {
+                  "start_s": 3.501999999999836,
+                  "end_s": 3.901999999999792,
+                  "net_travel_m": 0.043724176092271486,
+                  "path_length_m": 0.06731345932904073
+                },
+                {
+                  "start_s": 4.061999999999775,
+                  "end_s": 4.461999999999731,
+                  "net_travel_m": 0.04521109760305486,
+                  "path_length_m": 0.06890099018275612
+                },
+                {
+                  "start_s": 4.621999999999713,
+                  "end_s": 5.021999999999669,
+                  "net_travel_m": 0.04894548766544308,
+                  "path_length_m": 0.0692732765811152
+                },
+                {
+                  "start_s": 5.181999999999651,
+                  "end_s": 5.5619999999996095,
+                  "net_travel_m": 0.04302821198885357,
+                  "path_length_m": 0.06029589475437548
+                },
+                {
+                  "start_s": 5.74199999999959,
+                  "end_s": 6.121999999999548,
+                  "net_travel_m": 0.04677813228456355,
+                  "path_length_m": 0.06118951139415396
+                },
+                {
+                  "start_s": 6.28199999999953,
+                  "end_s": 6.681999999999486,
+                  "net_travel_m": 0.043989682369572645,
+                  "path_length_m": 0.06868429537732627
+                },
+                {
+                  "start_s": 6.8419999999994685,
+                  "end_s": 7.2419999999994245,
+                  "net_travel_m": 0.047368121445180045,
+                  "path_length_m": 0.06907096457762583
+                },
+                {
+                  "start_s": 7.401999999999407,
+                  "end_s": 7.801999999999363,
+                  "net_travel_m": 0.050563293758514115,
+                  "path_length_m": 0.06937692147109162
+                },
+                {
+                  "start_s": 7.961999999999345,
+                  "end_s": 8.341999999999455,
+                  "net_travel_m": 0.04491518413307583,
+                  "path_length_m": 0.06071337851589532
+                },
+                {
+                  "start_s": 8.501999999999509,
+                  "end_s": 8.901999999999642,
+                  "net_travel_m": 0.04218683474515998,
+                  "path_length_m": 0.06836893344150971
+                }
+              ],
+              "mean_contact_tangent_speed_m_s": 0.15444771230625706
+            },
+            "RL": {
+              "segments": 1,
+              "mean_net_travel_m": 0.3721900228334711,
+              "mean_path_length_m": 0.6816346664714755,
+              "records": [
+                {
+                  "start_s": 2.002000000000001,
+                  "end_s": 8.981999999999669,
+                  "net_travel_m": 0.3721900228334711,
+                  "path_length_m": 0.6816346664714755
+                }
+              ],
+              "mean_contact_tangent_speed_m_s": 0.10371270374349421
+            },
+            "RR": {
+              "segments": 1,
+              "mean_net_travel_m": 0.3466743417683514,
+              "mean_path_length_m": 0.6651716750485499,
+              "records": [
+                {
+                  "start_s": 2.002000000000001,
+                  "end_s": 8.981999999999669,
+                  "net_travel_m": 0.3466743417683514,
+                  "path_length_m": 0.6651716750485499
+                }
+              ],
+              "mean_contact_tangent_speed_m_s": 0.10094971895370687
+            }
+          },
+          "mean_saturated_actuator_fraction": 0.0
+        },
+        "saved_baseline_csv_identical": null,
+        "note": "diagnostics only; legacy pass does not certify new skill claims"
+      },
+      "large_stride": {
+        "changed_options": {
+          "amp": 0.15
+        },
+        "legacy_result": {
+          "task": "go2",
+          "passed": true,
+          "metrics": {
+            "max_height_m": 0.32596342027729447,
+            "final_height_m": 0.26345642513135464,
+            "max_tilt_deg": 17.809267486364156,
+            "contact_samples": 587,
+            "forward_displacement_m": 4.959621924872541,
+            "min_base_height_m": 0.23890237718770507,
+            "max_foot_clearance_m": 0.10949623285749394,
+            "swing_samples": 210
+          },
+          "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+          "mujoco_version": "3.2.5",
+          "scope": "deterministic physical baseline; no learned policy; no real robot claim",
+          "completed_duration_s": 12.000000000000677,
+          "termination": "completed"
+        },
+        "diagnostics": {
+          "mean_tracking_rmse_rad": 0.12796847713508525,
+          "stance": {
+            "FL": {
+              "segments": 17,
+              "mean_net_travel_m": 0.1024423333055614,
+              "mean_path_length_m": 0.11770469691067295,
+              "records": [
+                {
+                  "start_s": 2.002000000000001,
+                  "end_s": 3.001999999999891,
+                  "net_travel_m": 0.09514932072115437,
+                  "path_length_m": 0.17796109917602124
+                },
+                {
+                  "start_s": 3.3619999999998513,
+                  "end_s": 3.581999999999827,
+                  "net_travel_m": 0.006762716381343543,
+                  "path_length_m": 0.018767083960636394
+                },
+                {
+                  "start_s": 3.8619999999997963,
+                  "end_s": 4.141999999999766,
+                  "net_travel_m": 0.059986931554995696,
+                  "path_length_m": 0.07719116753525346
+                },
+                {
+                  "start_s": 4.201999999999759,
+                  "end_s": 4.321999999999746,
+                  "net_travel_m": 0.2538990067968275,
+                  "path_length_m": 0.25470798931933364
+                },
+                {
+                  "start_s": 4.441999999999733,
+                  "end_s": 4.681999999999706,
+                  "net_travel_m": 0.05002986107909799,
+                  "path_length_m": 0.06289863431781846
+                },
+                {
+                  "start_s": 4.781999999999695,
+                  "end_s": 4.881999999999684,
+                  "net_travel_m": 0.18131645561252516,
+                  "path_length_m": 0.18230764417647097
+                },
+                {
+                  "start_s": 5.041999999999667,
+                  "end_s": 5.241999999999645,
+                  "net_travel_m": 0.05597883974794544,
+                  "path_length_m": 0.0658349310564888
+                },
+                {
+                  "start_s": 5.3619999999996315,
+                  "end_s": 5.541999999999612,
+                  "net_travel_m": 0.09375020573943808,
+                  "path_length_m": 0.09458324071911019
+                },
+                {
+                  "start_s": 5.701999999999594,
+                  "end_s": 5.7619999999995875,
+                  "net_travel_m": 0.020390374831861364,
+                  "path_length_m": 0.020895277861990157
+                },
+                {
+                  "start_s": 6.041999999999557,
+                  "end_s": 6.361999999999521,
+                  "net_travel_m": 0.029279127195770374,
+                  "path_length_m": 0.08152206290520368
+                },
+                {
+                  "start_s": 6.481999999999508,
+                  "end_s": 6.92199999999946,
+                  "net_travel_m": 0.3545258734886896,
+                  "path_length_m": 0.4081145186891595
+                },
+                {
+                  "start_s": 7.001999999999451,
+                  "end_s": 7.10199999999944,
+                  "net_travel_m": 0.21069663638759903,
+                  "path_length_m": 0.2111928675661475
+                },
+                {
+                  "start_s": 7.221999999999427,
+                  "end_s": 7.4619999999994,
+                  "net_travel_m": 0.0643648984897594,
+                  "path_length_m": 0.07452509176482706
+                },
+                {
+                  "start_s": 7.581999999999387,
+                  "end_s": 7.761999999999367,
+                  "net_travel_m": 0.09733267457005101,
+                  "path_length_m": 0.0987345299518246
+                },
+                {
+                  "start_s": 8.401999999999475,
+                  "end_s": 8.561999999999529,
+                  "net_travel_m": 0.012531827386146473,
+                  "path_length_m": 0.015355628897789703
+                },
+                {
+                  "start_s": 8.741999999999589,
+                  "end_s": 8.821999999999615,
+                  "net_travel_m": 0.14875856368168605,
+                  "path_length_m": 0.14908245692118172
+                },
+                {
+                  "start_s": 8.901999999999642,
+                  "end_s": 8.981999999999669,
+                  "net_travel_m": 0.00676635252965281,
+                  "path_length_m": 0.0073056226621833024
+                }
+              ],
+              "mean_contact_tangent_speed_m_s": 0.6112738650592883
+            },
+            "FR": {
+              "segments": 18,
+              "mean_net_travel_m": 0.10501672642390378,
+              "mean_path_length_m": 0.12393772502048933,
+              "records": [
+                {
+                  "start_s": 2.002000000000001,
+                  "end_s": 3.28199999999986,
+                  "net_travel_m": 0.114273893161088,
+                  "path_length_m": 0.371454399882973
+                },
+                {
+                  "start_s": 3.6619999999998183,
+                  "end_s": 3.8619999999997963,
+                  "net_travel_m": 0.020044031862095444,
+                  "path_length_m": 0.023847622471209882
+                },
+                {
+                  "start_s": 3.9419999999997875,
+                  "end_s": 4.10199999999977,
+                  "net_travel_m": 0.3332227232837208,
+                  "path_length_m": 0.3343020872975433
+                },
+                {
+                  "start_s": 4.161999999999764,
+                  "end_s": 4.421999999999735,
+                  "net_travel_m": 0.02697829308445508,
+                  "path_length_m": 0.03651700033428037
+                },
+                {
+                  "start_s": 4.481999999999728,
+                  "end_s": 4.641999999999711,
+                  "net_travel_m": 0.28963197044362166,
+                  "path_length_m": 0.29166248491404484
+                },
+                {
+                  "start_s": 4.761999999999698,
+                  "end_s": 4.961999999999676,
+                  "net_travel_m": 0.030043409164303665,
+                  "path_length_m": 0.038258395765728696
+                },
+                {
+                  "start_s": 5.0619999999996645,
+                  "end_s": 5.221999999999647,
+                  "net_travel_m": 0.19255709334001336,
+                  "path_length_m": 0.19606196750649402
+                },
+                {
+                  "start_s": 5.381999999999629,
+                  "end_s": 5.441999999999623,
+                  "net_travel_m": 0.05061564524978246,
+                  "path_length_m": 0.050683707969586475
+                },
+                {
+                  "start_s": 5.701999999999594,
+                  "end_s": 5.781999999999585,
+                  "net_travel_m": 0.029189162007309734,
+                  "path_length_m": 0.029361840094445948
+                },
+                {
+                  "start_s": 6.021999999999559,
+                  "end_s": 6.10199999999955,
+                  "net_travel_m": 0.008541569386923048,
+                  "path_length_m": 0.02514923048822522
+                },
+                {
+                  "start_s": 6.421999999999515,
+                  "end_s": 6.6419999999994905,
+                  "net_travel_m": 0.034144474656711644,
+                  "path_length_m": 0.042542899932840675
+                },
+                {
+                  "start_s": 6.701999999999484,
+                  "end_s": 6.861999999999466,
+                  "net_travel_m": 0.30668470231032546,
+                  "path_length_m": 0.30855748924202486
+                },
+                {
+                  "start_s": 6.961999999999455,
+                  "end_s": 7.201999999999429,
+                  "net_travel_m": 0.0266815551819242,
+                  "path_length_m": 0.036385395562462716
+                },
+                {
+                  "start_s": 7.261999999999422,
+                  "end_s": 7.441999999999402,
+                  "net_travel_m": 0.2513223500266317,
+                  "path_length_m": 0.25517608376215656
+                },
+                {
+                  "start_s": 7.581999999999387,
+                  "end_s": 7.681999999999376,
+                  "net_travel_m": 0.04567205774161155,
+                  "path_length_m": 0.046734095314741486
+                },
+                {
+                  "start_s": 7.881999999999354,
+                  "end_s": 8.021999999999348,
+                  "net_travel_m": 0.0662193178058511,
+                  "path_length_m": 0.06674764872646827
+                },
+                {
+                  "start_s": 8.201999999999408,
+                  "end_s": 8.301999999999442,
+                  "net_travel_m": 0.030453882656014595,
+                  "path_length_m": 0.032728569833284094
+                },
+                {
+                  "start_s": 8.701999999999575,
+                  "end_s": 8.861999999999629,
+                  "net_travel_m": 0.034024944267884646,
+                  "path_length_m": 0.0447081312702973
+                }
+              ],
+              "mean_contact_tangent_speed_m_s": 0.6622080625740648
+            },
+            "RL": {
+              "segments": 11,
+              "mean_net_travel_m": 0.09835487195283509,
+              "mean_path_length_m": 0.138614426116471,
+              "records": [
+                {
+                  "start_s": 2.002000000000001,
+                  "end_s": 3.3219999999998557,
+                  "net_travel_m": 0.06603987121542321,
+                  "path_length_m": 0.2577704100911566
+                },
+                {
+                  "start_s": 3.4419999999998425,
+                  "end_s": 3.8419999999997985,
+                  "net_travel_m": 0.28097155540996943,
+                  "path_length_m": 0.29317141261031976
+                },
+                {
+                  "start_s": 4.10199999999977,
+                  "end_s": 4.401999999999737,
+                  "net_travel_m": 0.06696378901066248,
+                  "path_length_m": 0.07831275312918036
+                },
+                {
+                  "start_s": 4.661999999999709,
+                  "end_s": 4.981999999999673,
+                  "net_travel_m": 0.05990221501221556,
+                  "path_length_m": 0.08066360284731389
+                },
+                {
+                  "start_s": 5.221999999999647,
+                  "end_s": 5.501999999999616,
+                  "net_travel_m": 0.024962630610588187,
+                  "path_length_m": 0.10064972028130319
+                },
+                {
+                  "start_s": 5.841999999999579,
+                  "end_s": 6.121999999999548,
+                  "net_travel_m": 0.036314820183430685,
+                  "path_length_m": 0.045796802094638905
+                },
+                {
+                  "start_s": 6.28199999999953,
+                  "end_s": 6.6419999999994905,
+                  "net_travel_m": 0.1461590752450649,
+                  "path_length_m": 0.15752067710403692
+                },
+                {
+                  "start_s": 6.881999999999464,
+                  "end_s": 7.181999999999431,
+                  "net_travel_m": 0.06616998942030096,
+                  "path_length_m": 0.08013200863458048
+                },
+                {
+                  "start_s": 7.441999999999402,
+                  "end_s": 7.721999999999372,
+                  "net_travel_m": 0.02877998698061435,
+                  "path_length_m": 0.09421807185813215
+                },
+                {
+                  "start_s": 8.141999999999388,
+                  "end_s": 8.341999999999455,
+                  "net_travel_m": 0.04418284652803919,
+                  "path_length_m": 0.04652202829097187
+                },
+                {
+                  "start_s": 8.441999999999489,
+                  "end_s": 8.861999999999629,
+                  "net_travel_m": 0.26145681186487696,
+                  "path_length_m": 0.2900012003395469
+                }
+              ],
+              "mean_contact_tangent_speed_m_s": 0.39762330405789775
+            },
+            "RR": {
+              "segments": 11,
+              "mean_net_travel_m": 0.10132485495135367,
+              "mean_path_length_m": 0.12870853216614722,
+              "records": [
+                {
+                  "start_s": 2.002000000000001,
+                  "end_s": 3.581999999999827,
+                  "net_travel_m": 0.3275803833142739,
+                  "path_length_m": 0.44888800210573687
+                },
+                {
+                  "start_s": 3.781999999999805,
+                  "end_s": 4.141999999999766,
+                  "net_travel_m": 0.15282857733911234,
+                  "path_length_m": 0.15987921494343219
+                },
+                {
+                  "start_s": 4.361999999999742,
+                  "end_s": 4.701999999999704,
+                  "net_travel_m": 0.09460051171734535,
+                  "path_length_m": 0.10897665878550616
+                },
+                {
+                  "start_s": 4.92199999999968,
+                  "end_s": 5.221999999999647,
+                  "net_travel_m": 0.07322181927626531,
+                  "path_length_m": 0.12222360997062533
+                },
+                {
+                  "start_s": 5.621999999999603,
+                  "end_s": 5.801999999999583,
+                  "net_travel_m": 0.04054958472034317,
+                  "path_length_m": 0.0444070328647728
+                },
+                {
+                  "start_s": 6.061999999999554,
+                  "end_s": 6.361999999999521,
+                  "net_travel_m": 0.0026718778515803484,
+                  "path_length_m": 0.0342047345130483
+                },
+                {
+                  "start_s": 6.601999999999495,
+                  "end_s": 6.92199999999946,
+                  "net_travel_m": 0.07239263824646679,
+                  "path_length_m": 0.08230422837450585
+                },
+                {
+                  "start_s": 7.121999999999438,
+                  "end_s": 7.441999999999402,
+                  "net_travel_m": 0.12523188973854474,
+                  "path_length_m": 0.14989572459351905
+                },
+                {
+                  "start_s": 7.801999999999363,
+                  "end_s": 8.021999999999348,
+                  "net_travel_m": 0.054497837195354205,
+                  "path_length_m": 0.06020860561710113
+                },
+                {
+                  "start_s": 8.201999999999408,
+                  "end_s": 8.581999999999535,
+                  "net_travel_m": 0.08569735820836208,
+                  "path_length_m": 0.11905836080192661
+                },
+                {
+                  "start_s": 8.821999999999615,
+                  "end_s": 8.981999999999669,
+                  "net_travel_m": 0.0853009268572422,
+                  "path_length_m": 0.08574768125744511
+                }
+              ],
+              "mean_contact_tangent_speed_m_s": 0.3673076737122687
+            }
+          },
+          "mean_saturated_actuator_fraction": 0.03166666666666666
+        },
+        "saved_baseline_csv_identical": null,
+        "note": "diagnostics only; legacy pass does not certify new skill claims"
+      }
+    },
+    "h1": {
+      "baseline": {
+        "changed_options": {},
+        "legacy_result": {
+          "task": "h1",
+          "passed": true,
+          "metrics": {
+            "max_height_m": 0.9799678007672838,
+            "final_height_m": 0.9282306890880654,
+            "max_tilt_deg": 5.569836478284266,
+            "contact_samples": 500,
+            "squat_depth_m": 0.08727009576587896,
+            "min_pelvis_height_m": 0.8599237408109652
+          },
+          "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+          "mujoco_version": "3.2.5",
+          "scope": "deterministic physical baseline; no learned policy; no real robot claim",
+          "completed_duration_s": 10.000000000000009,
+          "termination": "completed"
+        },
+        "diagnostics": {
+          "mean_tracking_rmse_rad": 0.06440593709006565,
+          "mean_saturated_actuator_fraction": 0.0,
+          "first_tilt_threshold_crossing_s": null,
+          "mean_ankle_saturation_fraction": 0.0
+        },
+        "saved_baseline_csv_identical": true,
+        "note": "diagnostics only; legacy pass does not certify new skill claims"
+      },
+      "low_feedback": {
+        "changed_options": {
+          "com_gain": 3.5
+        },
+        "legacy_result": {
+          "task": "h1",
+          "passed": false,
+          "metrics": {
+            "max_height_m": 0.9799673440207868,
+            "final_height_m": 0.0952918799533799,
+            "max_tilt_deg": 95.69250235120525,
+            "contact_samples": 499,
+            "squat_depth_m": 0.4958827029860795,
+            "min_pelvis_height_m": 0.08657490413587766
+          },
+          "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+          "mujoco_version": "3.2.5",
+          "scope": "deterministic physical baseline; no learned policy; no real robot claim",
+          "completed_duration_s": 10.000000000000009,
+          "termination": "task criteria failed"
+        },
+        "diagnostics": {
+          "mean_tracking_rmse_rad": 0.43208010971882366,
+          "mean_saturated_actuator_fraction": 0.04989473684210526,
+          "first_tilt_threshold_crossing_s": 5.321999999999636,
+          "mean_ankle_saturation_fraction": 0.472
+        },
+        "saved_baseline_csv_identical": null,
+        "note": "diagnostics only; legacy pass does not certify new skill claims"
+      },
+      "deep_squat": {
+        "changed_options": {
+          "bend": 0.2
+        },
+        "legacy_result": {
+          "task": "h1",
+          "passed": true,
+          "metrics": {
+            "max_height_m": 0.9799678007672838,
+            "final_height_m": 0.9279085093495136,
+            "max_tilt_deg": 6.290748822652701,
+            "contact_samples": 500,
+            "squat_depth_m": 0.11857460205762449,
+            "min_pelvis_height_m": 0.8286192345192197
+          },
+          "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+          "mujoco_version": "3.2.5",
+          "scope": "deterministic physical baseline; no learned policy; no real robot claim",
+          "completed_duration_s": 10.000000000000009,
+          "termination": "completed"
+        },
+        "diagnostics": {
+          "mean_tracking_rmse_rad": 0.06630632618128325,
+          "mean_saturated_actuator_fraction": 0.0,
+          "first_tilt_threshold_crossing_s": null,
+          "mean_ankle_saturation_fraction": 0.0
+        },
+        "saved_baseline_csv_identical": null,
+        "note": "diagnostics only; legacy pass does not certify new skill claims"
+      }
+    },
+    "allegro": {
+      "baseline": {
+        "changed_options": {},
+        "legacy_result": {
+          "task": "allegro",
+          "passed": true,
+          "metrics": {
+            "max_height_m": 0.3582147114505496,
+            "final_height_m": 0.3580601787714322,
+            "max_tilt_deg": 0.0,
+            "contact_samples": 417,
+            "held_fraction_after_lift": 1.0,
+            "max_contacting_fingers": 2,
+            "support": "palm-assisted caging with prescribed wrist fixture"
+          },
+          "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+          "mujoco_version": "3.2.5",
+          "scope": "deterministic physical baseline; no learned policy; no real robot claim",
+          "completed_duration_s": 11.000000000000343,
+          "termination": "completed"
+        },
+        "diagnostics": {
+          "mean_tracking_rmse_rad": 0.04405991722682666,
+          "relative_position_window_s": [
+            8.0,
+            10.982000000000337
+          ],
+          "max_relative_displacement_from_window_start_m": 0.006017586251999297,
+          "late_mean_finger_world_fz_N": -6.44345106162729,
+          "late_mean_finger_normal_sum_N": 9.120435178273887,
+          "late_mean_palm_world_fz_N": 6.835848003147956,
+          "late_mean_palm_normal_sum_N": 6.835848003147956,
+          "late_mean_external_world_fz_N": 0.0,
+          "late_mean_external_normal_sum_N": 0.0,
+          "object_weight_N": 0.3924,
+          "late_finger_contact_fraction": 1.0
+        },
+        "saved_baseline_csv_identical": true,
+        "note": "diagnostics only; legacy pass does not certify new skill claims"
+      },
+      "open_fingers": {
+        "changed_options": {
+          "closed": [
+            0,
+            0.15,
+            0.15,
+            0.15,
+            0,
+            0.15,
+            0.15,
+            0.15,
+            0,
+            0.15,
+            0.15,
+            0.15,
+            0.6,
+            0.2,
+            0.2,
+            0.2
+          ]
+        },
+        "legacy_result": {
+          "task": "allegro",
+          "passed": false,
+          "metrics": {
+            "max_height_m": 0.3594515001122734,
+            "final_height_m": 0.35945144107501414,
+            "max_tilt_deg": 0.0,
+            "contact_samples": 366,
+            "held_fraction_after_lift": 0.0,
+            "max_contacting_fingers": 1,
+            "support": "palm-assisted caging with prescribed wrist fixture"
+          },
+          "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+          "mujoco_version": "3.2.5",
+          "scope": "deterministic physical baseline; no learned policy; no real robot claim",
+          "completed_duration_s": 11.000000000000343,
+          "termination": "task criteria failed"
+        },
+        "diagnostics": {
+          "mean_tracking_rmse_rad": 0.007673971900269614,
+          "relative_position_window_s": [
+            8.0,
+            10.982000000000337
+          ],
+          "max_relative_displacement_from_window_start_m": 3.4577433849446312e-06,
+          "late_mean_finger_world_fz_N": 0.3837185678323597,
+          "late_mean_finger_normal_sum_N": 0.3838959921689313,
+          "late_mean_palm_world_fz_N": 0.008681432167621805,
+          "late_mean_palm_normal_sum_N": 0.009052325568445891,
+          "late_mean_external_world_fz_N": 0.0,
+          "late_mean_external_normal_sum_N": 0.0,
+          "object_weight_N": 0.3924,
+          "late_finger_contact_fraction": 0.0
+        },
+        "saved_baseline_csv_identical": null,
+        "note": "diagnostics only; legacy pass does not certify new skill claims"
+      },
+      "tilted_wrist": {
+        "changed_options": {
+          "wrist_tilt": 0.6
+        },
+        "legacy_result": {
+          "task": "allegro",
+          "passed": false,
+          "metrics": {
+            "max_height_m": 0.3630882602065217,
+            "final_height_m": 0.3558916784005754,
+            "max_tilt_deg": 0.0,
+            "contact_samples": 417,
+            "held_fraction_after_lift": 0.245,
+            "max_contacting_fingers": 2,
+            "support": "palm-assisted caging with prescribed wrist fixture"
+          },
+          "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+          "mujoco_version": "3.2.5",
+          "scope": "deterministic physical baseline; no learned policy; no real robot claim",
+          "completed_duration_s": 11.000000000000343,
+          "termination": "task criteria failed"
+        },
+        "diagnostics": {
+          "mean_tracking_rmse_rad": 0.04761813214379797,
+          "relative_position_window_s": [
+            8.0,
+            10.982000000000337
+          ],
+          "max_relative_displacement_from_window_start_m": 0.018880673914826795,
+          "late_mean_finger_world_fz_N": -8.815552185710358,
+          "late_mean_finger_normal_sum_N": 21.82592389689225,
+          "late_mean_palm_world_fz_N": 9.207907579747262,
+          "late_mean_palm_normal_sum_N": 8.471607253357373,
+          "late_mean_external_world_fz_N": 0.0,
+          "late_mean_external_normal_sum_N": 0.0,
+          "object_weight_N": 0.3924,
+          "late_finger_contact_fraction": 0.22666666666666666
+        },
+        "saved_baseline_csv_identical": null,
+        "note": "diagnostics only; legacy pass does not certify new skill claims"
+      }
+    }
+  }
+}

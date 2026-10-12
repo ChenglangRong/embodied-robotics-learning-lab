@@ -1,0 +1,251 @@
+{
+  "kind": "panda",
+  "mode": "quick",
+  "specs": {
+    "train": [
+      {
+        "id": "panda-train-000",
+        "split": "train",
+        "seed": 111000,
+        "q_noise": 0.002,
+        "options": {
+          "close_ctrl": 0
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0,
+        "object_xy": [
+          0.4944585816952373,
+          0.11470885281534347
+        ],
+        "goal_xy": [
+          0.5000954290319722,
+          -0.18747009802474
+        ]
+      },
+      {
+        "id": "panda-train-001",
+        "split": "train",
+        "seed": 111001,
+        "q_noise": 0.002,
+        "options": {
+          "close_ctrl": 0
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0,
+        "object_xy": [
+          0.5042812940323889,
+          0.11374763934209368
+        ],
+        "goal_xy": [
+          0.5047615444218437,
+          -0.18250006548887776
+        ]
+      },
+      {
+        "id": "panda-train-002",
+        "split": "train",
+        "seed": 111002,
+        "q_noise": 0.002,
+        "options": {
+          "close_ctrl": 0
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0,
+        "object_xy": [
+          0.49595118937690097,
+          0.11516022126561036
+        ],
+        "goal_xy": [
+          0.49741240857709523,
+          -0.18655332429675947
+        ]
+      },
+      {
+        "id": "panda-train-003",
+        "split": "train",
+        "seed": 111003,
+        "q_noise": 0.002,
+        "options": {
+          "close_ctrl": 0
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0,
+        "object_xy": [
+          0.49326423650155793,
+          0.1186561641279671
+        ],
+        "goal_xy": [
+          0.4983639152263297,
+          -0.18297837916528661
+        ]
+      },
+      {
+        "id": "panda-train-004",
+        "split": "train",
+        "seed": 111004,
+        "q_noise": 0.002,
+        "options": {
+          "close_ctrl": 0
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0,
+        "object_xy": [
+          0.4968867888055871,
+          0.1217434294617595
+        ],
+        "goal_xy": [
+          0.5038474670279436,
+          -0.19675436502144572
+        ]
+      },
+      {
+        "id": "panda-train-005",
+        "split": "train",
+        "seed": 111005,
+        "q_noise": 0.002,
+        "options": {
+          "close_ctrl": 0
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0,
+        "object_xy": [
+          0.5056802225501327,
+          0.12030342637394902
+        ],
+        "goal_xy": [
+          0.5058763763725045,
+          -0.19067640578984266
+        ]
+      }
+    ],
+    "validation": [
+      {
+        "id": "panda-validation-000",
+        "split": "validation",
+        "seed": 222000,
+        "q_noise": 0.002,
+        "options": {
+          "close_ctrl": 0
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0,
+        "object_xy": [
+          0.4980353433579516,
+          0.12325828019285759
+        ],
+        "goal_xy": [
+          0.5035551776886563,
+          -0.1841364690891306
+        ]
+      },
+      {
+        "id": "panda-validation-001",
+        "split": "validation",
+        "seed": 222001,
+        "q_noise": 0.002,
+        "options": {
+          "close_ctrl": 0
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0,
+        "object_xy": [
+          0.5063286840785293,
+          0.11328036988241826
+        ],
+        "goal_xy": [
+          0.5008864026117165,
+          -0.18948726975537106
+        ]
+      }
+    ],
+    "test": [
+      {
+        "id": "panda-test-000",
+        "split": "test",
+        "seed": 333000,
+        "q_noise": 0.002,
+        "options": {
+          "close_ctrl": 0
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0,
+        "object_xy": [
+          0.5067040292482843,
+          0.12530411530813715
+        ],
+        "goal_xy": [
+          0.5008761742353638,
+          -0.18509887097407393
+        ]
+      },
+      {
+        "id": "panda-test-001",
+        "split": "test",
+        "seed": 333001,
+        "q_noise": 0.002,
+        "options": {
+          "close_ctrl": 0
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0,
+        "object_xy": [
+          0.5075389698968925,
+          0.12190921958179105
+        ],
+        "goal_xy": [
+          0.5045839824679595,
+          -0.1886990219701485
+        ]
+      }
+    ],
+    "ood": [
+      {
+        "id": "panda-ood-000",
+        "split": "ood",
+        "seed": 444000,
+        "q_noise": 0.002,
+        "options": {
+          "close_ctrl": 0
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.5,
+        "object_xy": [
+          0.5051880655016301,
+          0.11382142480674756
+        ],
+        "goal_xy": [
+          0.5032790526010608,
+          -0.18460656339599923
+        ]
+      },
+      {
+        "id": "panda-ood-001",
+        "split": "ood",
+        "seed": 444001,
+        "q_noise": 0.002,
+        "options": {
+          "close_ctrl": 0
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.5,
+        "object_xy": [
+          0.4994118458333473,
+          0.1209027491994698
+        ],
+        "goal_xy": [
+          0.49225419424578637,
+          -0.19184980650585814
+        ]
+      }
+    ]
+  },
+  "control_dt_s": 0.01,
+  "physics_dt_s": 0.002,
+  "sample_dt_s": 0.02,
+  "duration_s": 14.0,
+  "scope": "Joint-reference BC with a separate gripper command; position servos retained; simulator object pose and task clock observed.",
+  "ood": "Object mass x1.5 (Panda/Allegro) or base x-direction force during 4.5–4.8 s (Go2/H1). One factor per platform.",
+  "checkpoint": "Lowest validation normalized reference-action MSE; no test or OOD selection.",
+  "seed_scope": "Quick: one training seed. Full: five training seeds sharing a frozen dataset/test set.",
+  "criteria": "Fixed project03 thresholds plus declared task-process checks; failed experts retained; no threshold tuning after results."
+}

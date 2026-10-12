@@ -1,0 +1,203 @@
+{
+  "kind": "go2",
+  "mode": "quick",
+  "specs": {
+    "train": [
+      {
+        "id": "go2-train-000",
+        "split": "train",
+        "seed": 111000,
+        "q_noise": 0.002,
+        "options": {
+          "amp": 0.05153661355952333,
+          "lift": 0.07005964314498266,
+          "freq": 1.7338606601917934,
+          "kp": 100,
+          "kd": 3.5
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0
+      },
+      {
+        "id": "go2-train-001",
+        "split": "train",
+        "seed": 111001,
+        "q_noise": 0.002,
+        "options": {
+          "amp": 0.05658118873453751,
+          "lift": 0.06609227458880855,
+          "freq": 1.853516175404861,
+          "kp": 100,
+          "kd": 3.5
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0
+      },
+      {
+        "id": "go2-train-002",
+        "split": "train",
+        "seed": 111002,
+        "q_noise": 0.002,
+        "options": {
+          "amp": 0.05797596526365234,
+          "lift": 0.06746949336056313,
+          "freq": 1.893749181389028,
+          "kp": 100,
+          "kd": 3.5
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0
+      },
+      {
+        "id": "go2-train-003",
+        "split": "train",
+        "seed": 111003,
+        "q_noise": 0.002,
+        "options": {
+          "amp": 0.05197513829100648,
+          "lift": 0.07215417231452534,
+          "freq": 1.7676551072136901,
+          "kp": 100,
+          "kd": 3.5
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0
+      },
+      {
+        "id": "go2-train-004",
+        "split": "train",
+        "seed": 111004,
+        "q_noise": 0.002,
+        "options": {
+          "amp": 0.05079014781347371,
+          "lift": 0.06897744701645608,
+          "freq": 1.7832020515995888,
+          "kp": 100,
+          "kd": 3.5
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0
+      },
+      {
+        "id": "go2-train-005",
+        "split": "train",
+        "seed": 111005,
+        "q_noise": 0.002,
+        "options": {
+          "amp": 0.05938851302169586,
+          "lift": 0.07108964341359969,
+          "freq": 1.7610848600698388,
+          "kp": 100,
+          "kd": 3.5
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0
+      }
+    ],
+    "validation": [
+      {
+        "id": "go2-validation-000",
+        "split": "validation",
+        "seed": 222000,
+        "q_noise": 0.002,
+        "options": {
+          "amp": 0.05377208959871972,
+          "lift": 0.07222198605541022,
+          "freq": 1.8407285024107198,
+          "kp": 100,
+          "kd": 3.5
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0
+      },
+      {
+        "id": "go2-validation-001",
+        "split": "validation",
+        "seed": 222001,
+        "q_noise": 0.002,
+        "options": {
+          "amp": 0.05866470681929338,
+          "lift": 0.06580023117651142,
+          "freq": 1.879108550981616,
+          "kp": 100,
+          "kd": 3.5
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0
+      }
+    ],
+    "test": [
+      {
+        "id": "go2-test-000",
+        "split": "test",
+        "seed": 333000,
+        "q_noise": 0.002,
+        "options": {
+          "amp": 0.059190018280177704,
+          "lift": 0.07054760889710236,
+          "freq": 1.8663014413517143,
+          "kp": 100,
+          "kd": 3.5
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0
+      },
+      {
+        "id": "go2-test-001",
+        "split": "test",
+        "seed": 333001,
+        "q_noise": 0.002,
+        "options": {
+          "amp": 0.058063205641203805,
+          "lift": 0.07119326223861941,
+          "freq": 1.8942371237111562,
+          "kp": 100,
+          "kd": 3.5
+        },
+        "push_N": 0.0,
+        "mass_scale": 1.0
+      }
+    ],
+    "ood": [
+      {
+        "id": "go2-ood-000",
+        "split": "ood",
+        "seed": 444000,
+        "q_noise": 0.002,
+        "options": {
+          "amp": 0.058242540938518786,
+          "lift": 0.07204940787566301,
+          "freq": 1.7227678100843444,
+          "kp": 100,
+          "kd": 3.5
+        },
+        "push_N": 8.0,
+        "mass_scale": 1.0
+      },
+      {
+        "id": "go2-ood-001",
+        "split": "ood",
+        "seed": 444001,
+        "q_noise": 0.002,
+        "options": {
+          "amp": 0.05837089787750048,
+          "lift": 0.07056421824966863,
+          "freq": 1.7926480729168415,
+          "kp": 100,
+          "kd": 3.5
+        },
+        "push_N": 8.0,
+        "mass_scale": 1.0
+      }
+    ]
+  },
+  "control_dt_s": 0.01,
+  "physics_dt_s": 0.002,
+  "sample_dt_s": 0.02,
+  "duration_s": 12.0,
+  "scope": "Joint-reference BC; torque PD retained; flat terrain; phase and commanded gait parameters observed.",
+  "ood": "Object mass x1.5 (Panda/Allegro) or base x-direction force during 4.5–4.8 s (Go2/H1). One factor per platform.",
+  "checkpoint": "Lowest validation normalized reference-action MSE; no test or OOD selection.",
+  "seed_scope": "Quick: one training seed. Full: five training seeds sharing a frozen dataset/test set.",
+  "criteria": "Fixed project03 thresholds plus declared task-process checks; failed experts retained; no threshold tuning after results."
+}

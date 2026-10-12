@@ -1,0 +1,22 @@
+{
+  "source_study_sha256": "81d23b11bf09ce6a40aeefaab8a0ecf1fc15e66b83bb47f4b474db491fb5cf09",
+  "plot_source_sha256": "44417902ea7d2871eb27f082455732d0931864dfff68af7b46b028da611b1854",
+  "units": {
+    "panda": {
+      "field": "object_height_m",
+      "unit": "m"
+    },
+    "go2": {
+      "field": "base_x_m",
+      "unit": "m"
+    },
+    "h1": {
+      "field": "tilt_deg",
+      "unit": "deg"
+    },
+    "allegro": {
+      "field": "finger_world_fz_N",
+      "unit": "N"
+    }
+  }
+}

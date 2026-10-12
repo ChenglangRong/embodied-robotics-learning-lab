@@ -1,0 +1,8 @@
+{
+  "command": "python scripts/run_workshop.py --output-root <path>",
+  "scenario": "speed_limited",
+  "python": "3.12.4",
+  "numpy": "1.26.4",
+  "matplotlib": "3.10.8",
+  "source_sha256": "f687377562e887ed6418d081a696c61582eed2a3e95c0e0c93c6d92e4c0a84b7"
+}

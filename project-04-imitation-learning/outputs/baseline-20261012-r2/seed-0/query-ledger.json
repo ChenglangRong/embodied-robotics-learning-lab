@@ -1,0 +1,11 @@
+{
+  "new_dagger_labels": 1720,
+  "new_fresh_expert_labels": 1720,
+  "new_more_steps_labels": 0,
+  "queries_every_steps": 5,
+  "dagger_environment_steps": 8596,
+  "fresh_environment_steps": 1720,
+  "dagger_collection_seconds": 0.40193709999948624,
+  "fresh_collection_seconds": 0.0943991999993159,
+  "compute_matching": "equal minibatch updates/batch size for the three post-BC branches; wall time and environment steps reported separately"
+}

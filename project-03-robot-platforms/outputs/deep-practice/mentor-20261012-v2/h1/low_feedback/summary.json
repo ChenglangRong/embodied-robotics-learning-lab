@@ -1,0 +1,17 @@
+{
+  "task": "h1",
+  "passed": false,
+  "metrics": {
+    "max_height_m": 0.9799673440207868,
+    "final_height_m": 0.0952918799533799,
+    "max_tilt_deg": 95.69250235120525,
+    "contact_samples": 499,
+    "squat_depth_m": 0.4958827029860795,
+    "min_pelvis_height_m": 0.08657490413587766
+  },
+  "menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+  "mujoco_version": "3.2.5",
+  "scope": "deterministic physical baseline; no learned policy; no real robot claim",
+  "completed_duration_s": 10.000000000000009,
+  "termination": "task criteria failed"
+}
