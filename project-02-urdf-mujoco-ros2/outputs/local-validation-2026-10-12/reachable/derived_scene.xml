@@ -1,0 +1,16 @@
+<mujoco model="two_link_lab">
+  <compiler angle="radian" />
+
+  <worldbody>
+    <body name="link1">
+      <inertial pos="0.3 0 0" quat="0.5 0.5 0.5 0.5" mass="0.6" diaginertia="0.02 0.02 0.002" />
+      <joint name="shoulder" pos="0 0 0" axis="0 0 1" range="-3.14159 3.14159" actuatorfrcrange="-3 3" damping="0.12" />
+      <geom name="link1_collision" size="0.025 0.3" pos="0.3 0 0" quat="0.707107 0 0.707107 0" type="cylinder" rgba="0.1 0.4 0.8 1" />
+      <body name="link2" pos="0.6 0 0">
+        <inertial pos="0.2 0 0" quat="0.5 0.5 0.5 0.5" mass="0.4" diaginertia="0.006 0.006 0.001" />
+        <joint name="elbow" pos="0 0 0" axis="0 0 1" range="-3.14159 3.14159" actuatorfrcrange="-3 3" damping="0.08" />
+        <geom name="link2_collision" size="0.02 0.2" pos="0.2 0 0" quat="0.707107 0 0.707107 0" type="cylinder" rgba="0.9 0.45 0.1 1" />
+      <site name="tool_tip" pos="0.4 0 0" size="0.01" /></body>
+    </body>
+  <site name="goal_marker" pos="0.55 0.55 0" size="0.025" rgba="1 0.1 0.1 1" /></worldbody>
+<actuator><motor name="shoulder_motor" joint="shoulder" gear="1" ctrllimited="true" ctrlrange="-3 3" /><motor name="elbow_motor" joint="elbow" gear="1" ctrllimited="true" ctrlrange="-3 3" /></actuator></mujoco>

@@ -1,0 +1,23 @@
+{
+  "controller": {
+    "link_lengths": [
+      0.6,
+      0.4
+    ],
+    "dt": 0.02,
+    "max_steps": 600,
+    "tolerance": 0.001,
+    "gain": 4.0,
+    "damping": 0.05,
+    "velocity_limit": 2.0
+  },
+  "goal_m": [
+    1.05,
+    0.0
+  ],
+  "seed": 7,
+  "control_law": "DLS desired joint velocity; clipped velocity servo torque",
+  "motor_torque_limit_Nm": 3.0,
+  "runner_sha256": "a3ff142a275344cf9ea44b2be114ac6a0fb0e57e7c967f3079aad717b990e16c",
+  "controller_sha256": "0bdb721cfafa9e9c986461ba428bd3780429fff0487cbc7e79a10c27bee0c351"
+}
