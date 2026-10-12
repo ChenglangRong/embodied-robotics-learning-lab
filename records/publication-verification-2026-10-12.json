@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-12",
+  "repository": "https://github.com/ChenglangRong/embodied-robotics-learning-lab",
+  "published_evidence_commit": "c44236081655e97048a9c06cb357bd164de787eb",
+  "workflow_context_fix_commit": "d4c9548253e52cbbd27281a704a49f716be7be05",
+  "local_clean_clone": {
+    "commit": "c44236081655e97048a9c06cb357bd164de787eb",
+    "result": "PASS",
+    "existing_python_environment_reused": true,
+    "existing_pinned_robot_model_cache_reused": true,
+    "software_tests_passed": 63,
+    "public_evidence_files_verified": 564,
+    "planar_saved_models": 20,
+    "planar_replayed_episodes": 1056,
+    "planar_replay_mode": "full_replay_exact_same_environment",
+    "planar_replay_seconds": 22.04932949999784,
+    "physical_replayed_episodes": 80,
+    "physical_replay_mode": "portable_replay",
+    "physical_metric_rtol": 1e-7,
+    "physical_metric_atol": 1e-9,
+    "physical_replay_seconds": 52.36702569999761,
+    "scope": "Fresh Git checkout byte preservation and saved-policy execution; task decisions, criteria, status and counts match strictly. Existing installed dependencies and pinned model cache reused locally. Raw XML path hashes are reported separately in portable mode."
+  },
+  "cloud_checks": {
+    "commit": "d4c9548253e52cbbd27281a704a49f716be7be05",
+    "run_id": 38268441519,
+    "url": "https://github.com/ChenglangRong/embodied-robotics-learning-lab/actions/runs/38268441519",
+    "conclusion": "success",
+    "scope": "Fresh hosted Windows runner, Python3.12.4, pinned pip dependencies and model download; 63 software tests plus public-record and stored-data/model integrity checks. Full replay skipped in this push-triggered run.",
+    "artifact_warning": "The first successful run filtered the hidden report directory; follow-up workflow adds include-hidden-files and restricts uploads to JSON verification reports."
+  },
+  "retained_failure": {
+    "run_id": 38267999600,
+    "url": "https://github.com/ChenglangRong/embodied-robotics-learning-lab/actions/runs/38267999600",
+    "conclusion": "failure",
+    "stage": "workflow_validation_before_job_start",
+    "cause": "runner.temp was referenced in job-level env; runner context becomes available in step execution",
+    "resolution": "Set cache in the model-preparation step using RUNNER_TEMP and persist it through GITHUB_ENV"
+  },
+  "learner_independent_assessment": "pending; see learning-status.json",
+  "live_status": "The Actions badge and each commit check expose subsequent actual outcomes. This record cites fixed historical commits and runs."
+}
