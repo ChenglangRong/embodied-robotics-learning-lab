@@ -9,7 +9,8 @@
 - 学习路线：[学习路线-顺序制.md](学习路线-顺序制.md)
 - 五平台贯穿的项目安排：[五平台项目矩阵.md](五平台项目矩阵.md)
 - 旧版详细查阅材料：[学习路线.md](学习路线.md)
-- 当前项目：[project-04-imitation-learning](project-04-imitation-learning/)，模仿学习BC与DAgger
+- 当前项目：[project-05-reinforcement-safety](project-05-reinforcement-safety/)，从可视表格Q-learning到五平台残差强化学习
+- 当前逐步教学：[强化学习知识卡与二连杆实操](project-05-reinforcement-safety/01-知识卡与二连杆实操.md)
 - 机器人学基础讲解：[01-机器人学基础-讲解与自测.md](01-机器人学基础-讲解与自测.md)
 - 项目 01 手把手操作：[project-01-simulation-software/从零动手.md](project-01-simulation-software/从零动手.md)
 - 项目 02 URDF + MuJoCo + ROS 2：[project-02-urdf-mujoco-ros2](project-02-urdf-mujoco-ros2/)

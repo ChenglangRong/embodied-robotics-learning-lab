@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_date": "2026-10-12",
+  "updated_date": "2026-10-13",
   "repository": "https://github.com/ChenglangRong/embodied-robotics-learning-lab",
-  "current_stage": "imitation_learning",
+  "current_stage": "reinforcement_learning_and_safety",
   "evidence_authoring": "AI-assisted implementation and tool-executed verification; learner reports and independent assessments tracked separately",
   "stages": [
     {
@@ -24,13 +24,22 @@
     {
       "id": "imitation_learning",
       "implementation_status": "baseline_verified",
-      "learner_status": "in_progress",
+      "learner_status": "self_reported_complete",
+      "learner_report": "2026-10-13用户自报已学完并请求进入下一部分；个人修改、动作块和复杂平台正式评测继续按证据验收",
       "independent_assessment": "pending",
       "materials": ["project-04-imitation-learning/02-行为克隆实操课.md", "project-04-imitation-learning/03-五平台模仿学习实操课.md"],
       "evidence": ["project-04-imitation-learning/outputs/baseline-20261012-r2/summary.json", "project-04-imitation-learning/outputs/baseline-20261012-r2/verification.json", "project-04-imitation-learning/outputs/platform-baseline-20261012-r3/summary.json", "project-04-imitation-learning/outputs/platform-verification-20261012.json"],
       "pending": ["五平台个人代码修改与解释", "复杂平台正式五种子与新留出场景", "反馈能力改进", "动作块策略", "H1行走与Allegro手内重定向独立项目"]
     },
-    {"id": "reinforcement_learning_and_safety", "implementation_status": "planned", "learner_status": "planned", "independent_assessment": "pending", "materials": ["五平台项目矩阵.md"]},
+    {
+      "id": "reinforcement_learning_and_safety",
+      "implementation_status": "planar_tabular_baseline_verified",
+      "learner_status": "in_progress",
+      "independent_assessment": "pending",
+      "materials": ["project-05-reinforcement-safety/README.md", "project-05-reinforcement-safety/01-知识卡与二连杆实操.md", "project-05-reinforcement-safety/02-五平台进阶任务.md"],
+      "evidence": ["project-05-reinforcement-safety/outputs/baseline-20261013/summary.json", "project-05-reinforcement-safety/outputs/verification-20261013.json", "project-05-reinforcement-safety/outputs/showcase-20261013/selection.json"],
+      "pending": ["个人TD手算和单因素修改", "连续动作PPO与二连杆物理执行", "Panda残差放置", "Go2速度/转向反馈", "H1扰动恢复与行走", "Allegro抗滑与手内重定向", "SAC与固定环境步数五种子正式比较"]
+    },
     {"id": "embodied_tasks_and_recovery", "implementation_status": "planned", "learner_status": "planned", "independent_assessment": "pending", "materials": ["五平台项目矩阵.md"]},
     {"id": "world_models_and_vla", "implementation_status": "planned", "learner_status": "planned", "independent_assessment": "pending", "materials": ["五平台项目矩阵.md"]}
   ],

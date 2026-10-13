@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "exhaustive_policy_replays": 5720,
+  "changed_goal_replays": 44,
+  "hashes": 31,
+  "training_rerun": false,
+  "scope": "Saved-policy exhaustive replay, data/protocol/hash checks. Training regeneration and independent learner assessment are separate."
+}

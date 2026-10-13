@@ -1,0 +1,10 @@
+{
+  "start": 0,
+  "success": false,
+  "steps": 80,
+  "return": -126.52835779010208,
+  "final_error_m": 1.6377187164206004,
+  "interventions": 8,
+  "violations": 0,
+  "termination": "truncated"
+}

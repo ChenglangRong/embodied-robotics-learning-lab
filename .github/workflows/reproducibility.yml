@@ -69,6 +69,14 @@ jobs:
         run: python -m unittest test_learning test_panel test_platform_learning -v
       - name: CLI collaboration offline tests
         run: python -m unittest discover -s tools/ai-collab -p test_cooperate.py -v
+      - name: Project 05 tabular RL tests
+        working-directory: project-05-reinforcement-safety
+        run: python -m unittest test_tabular_lab -v
+      - name: Project 05 exhaustive saved-policy replay
+        run: |
+          New-Item -ItemType Directory -Path .ci-output -Force | Out-Null
+          python project-05-reinforcement-safety/verify_run.py project-05-reinforcement-safety/outputs/baseline-20261013 --output .ci-output/rl-replay.json
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
       - name: Stored data and model provenance (integrity only)
         working-directory: project-04-imitation-learning
         run: |

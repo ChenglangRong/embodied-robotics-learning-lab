@@ -1,0 +1,77 @@
+{
+  "algorithm": "tabular Q-learning",
+  "training_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "source_sha256": "580fb954a88d5802a09e0b35b959a084a02a0f84b2c30f3b173e2c8db1a9fc00",
+  "dependencies": {
+    "python": "3.12.4",
+    "numpy": "1.26.4"
+  },
+  "training_environment_steps": {
+    "0": 192992,
+    "1": 195391,
+    "2": 190795,
+    "3": 192634,
+    "4": 191924
+  },
+  "aggregate": {
+    "untrained": {
+      "successes": 14,
+      "cases": 440,
+      "success_rate": 0.031818181818181815,
+      "violations": 0
+    },
+    "random": {
+      "successes": 38,
+      "cases": 440,
+      "success_rate": 0.08636363636363636,
+      "violations": 0
+    },
+    "model_oracle": {
+      "successes": 440,
+      "cases": 440,
+      "success_rate": 1.0,
+      "violations": 0
+    },
+    "q_seed_0": {
+      "successes": 418,
+      "cases": 440,
+      "success_rate": 0.95,
+      "violations": 0
+    },
+    "q_seed_1": {
+      "successes": 410,
+      "cases": 440,
+      "success_rate": 0.9318181818181818,
+      "violations": 0
+    },
+    "q_seed_2": {
+      "successes": 405,
+      "cases": 440,
+      "success_rate": 0.9204545454545454,
+      "violations": 0
+    },
+    "q_seed_3": {
+      "successes": 419,
+      "cases": 440,
+      "success_rate": 0.9522727272727273,
+      "violations": 0
+    },
+    "q_seed_4": {
+      "successes": 408,
+      "cases": 440,
+      "success_rate": 0.9272727272727272,
+      "violations": 0
+    }
+  },
+  "evaluation_scope": "Exhaustive nonterminal starts in the SAME finite fixed-goal MDP; training may visit every evaluated state.",
+  "software_status": "verification pending",
+  "task_status": "see per-policy outcomes",
+  "claim_boundary": "Kinematic grid and deterministic joint projection; complex robot RL and physical safety remain separate projects.",
+  "command": "D:\\RCL\\深圳理工大学-具身智能\\project-02-urdf-mujoco-ros2\\.venv\\Scripts\\python.exe D:\\RCL\\深圳理工大学-具身智能\\project-05-reinforcement-safety\\tabular_lab.py --output project-05-reinforcement-safety\\outputs\\baseline-20261013 --episodes 6000 --seeds 0 1 2 3 4"
+}

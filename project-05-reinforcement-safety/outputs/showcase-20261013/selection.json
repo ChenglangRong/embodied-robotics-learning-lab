@@ -1,0 +1,67 @@
+{
+  "cases": [
+    {
+      "name": "learned-success",
+      "random_seed": null,
+      "start": 210,
+      "success": true,
+      "steps": 20,
+      "return": -5.355778710467829,
+      "final_error_m": 0.0,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "success"
+    },
+    {
+      "name": "learned-failure",
+      "random_seed": null,
+      "start": 0,
+      "success": false,
+      "steps": 80,
+      "return": -133.44083439008958,
+      "final_error_m": 1.6480104298761202,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "name": "untrained-matched",
+      "random_seed": null,
+      "start": 210,
+      "success": false,
+      "steps": 80,
+      "return": -34.27426433701858,
+      "final_error_m": 0.39118226773493014,
+      "interventions": 70,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "name": "random-matched",
+      "random_seed": 10210,
+      "start": 210,
+      "success": false,
+      "steps": 80,
+      "return": -46.43567909750383,
+      "final_error_m": 0.4117886678089469,
+      "interventions": 8,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "name": "oracle-matched",
+      "random_seed": null,
+      "start": 210,
+      "success": true,
+      "steps": 20,
+      "return": -5.355778710467829,
+      "final_error_m": 0.0,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "success"
+    }
+  ],
+  "selection_rule": "Teaching starts 210 and 0 were selected after inspecting baseline outcomes; performance uses exhaustive evaluation, and these demos provide illustration only.",
+  "weights_sha256": "dcbfde3a71a4a454acb5f424b41ca74c7934f96475a1497f370dce45173b2373",
+  "showcase_source_sha256": "aa351b1c2c2fd044b2467cf11f41733af22110c9bec33fae9ad3512e4e960631"
+}

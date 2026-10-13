@@ -1,0 +1,456 @@
+{
+  "config": {
+    "bins": 21,
+    "gamma": 0.97,
+    "alpha": 0.15,
+    "episodes": 6000,
+    "max_steps": 80,
+    "tolerance": 0.045,
+    "step_cost": 0.02,
+    "success_bonus": 2.0,
+    "goal_shift": 0.25
+  },
+  "cases": [
+    {
+      "start": 0,
+      "success": false,
+      "steps": 80,
+      "return": -136.90231698862257,
+      "final_error_m": 1.6912789623577824,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 10,
+      "success": false,
+      "steps": 80,
+      "return": -99.15234182564653,
+      "final_error_m": 1.2176082085425273,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 20,
+      "success": false,
+      "steps": 80,
+      "return": -77.3998882834337,
+      "final_error_m": 0.9474986035429207,
+      "interventions": 80,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 30,
+      "success": false,
+      "steps": 80,
+      "return": -29.49179761148894,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 40,
+      "success": false,
+      "steps": 80,
+      "return": -28.13638066187177,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 50,
+      "success": false,
+      "steps": 80,
+      "return": -28.85392371552154,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 60,
+      "success": false,
+      "steps": 80,
+      "return": -27.457829323023468,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 70,
+      "success": false,
+      "steps": 80,
+      "return": -28.223400031745474,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 80,
+      "success": false,
+      "steps": 80,
+      "return": -26.789852514942602,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 90,
+      "success": false,
+      "steps": 80,
+      "return": -27.613602022154737,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 100,
+      "success": false,
+      "steps": 80,
+      "return": -26.262291245856918,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 110,
+      "success": false,
+      "steps": 80,
+      "return": -27.03442654943984,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 120,
+      "success": false,
+      "steps": 80,
+      "return": -25.87843469101666,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 130,
+      "success": false,
+      "steps": 80,
+      "return": -26.493863234222903,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 140,
+      "success": false,
+      "steps": 80,
+      "return": -25.516572967281455,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 150,
+      "success": false,
+      "steps": 80,
+      "return": -25.999082465025932,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 160,
+      "success": false,
+      "steps": 80,
+      "return": -25.157146487712524,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 170,
+      "success": false,
+      "steps": 80,
+      "return": -25.556880248771815,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 180,
+      "success": false,
+      "steps": 80,
+      "return": -24.86814115147485,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 190,
+      "success": false,
+      "steps": 80,
+      "return": -25.590283425876297,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 200,
+      "success": true,
+      "steps": 4,
+      "return": 1.2512654558257,
+      "final_error_m": 0.02592236914488011,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "success"
+    },
+    {
+      "start": 210,
+      "success": false,
+      "steps": 80,
+      "return": -25.20899668573049,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 220,
+      "success": true,
+      "steps": 3,
+      "return": 1.5216267703262778,
+      "final_error_m": 0.02956407759335809,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "success"
+    },
+    {
+      "start": 230,
+      "success": false,
+      "steps": 80,
+      "return": -25.5843981516747,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 240,
+      "success": false,
+      "steps": 80,
+      "return": -24.449522390327047,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 250,
+      "success": false,
+      "steps": 80,
+      "return": -25.43559146248836,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 260,
+      "success": false,
+      "steps": 80,
+      "return": -24.41372489460138,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 270,
+      "success": false,
+      "steps": 80,
+      "return": -25.42427548547967,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 280,
+      "success": false,
+      "steps": 80,
+      "return": -24.405533022335295,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 292,
+      "success": false,
+      "steps": 80,
+      "return": -25.42427548547967,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 302,
+      "success": false,
+      "steps": 80,
+      "return": -24.79554866887803,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 312,
+      "success": false,
+      "steps": 80,
+      "return": -25.6068856879892,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 322,
+      "success": false,
+      "steps": 80,
+      "return": -25.176119583378505,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 332,
+      "success": false,
+      "steps": 80,
+      "return": -25.6068856879892,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 342,
+      "success": false,
+      "steps": 80,
+      "return": -25.312564769557422,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 352,
+      "success": false,
+      "steps": 80,
+      "return": -25.654268719515393,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 362,
+      "success": false,
+      "steps": 80,
+      "return": -25.353966701407582,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 372,
+      "success": false,
+      "steps": 80,
+      "return": -25.777648545300035,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 382,
+      "success": false,
+      "steps": 80,
+      "return": -25.432099936354653,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 392,
+      "success": false,
+      "steps": 80,
+      "return": -25.99595275782985,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 402,
+      "success": false,
+      "steps": 80,
+      "return": -25.686364384021484,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 412,
+      "success": false,
+      "steps": 80,
+      "return": -26.18411405633683,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 422,
+      "success": false,
+      "steps": 80,
+      "return": -25.964785555047754,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    },
+    {
+      "start": 432,
+      "success": false,
+      "steps": 80,
+      "return": -26.554310140091896,
+      "final_error_m": 0.25,
+      "interventions": 0,
+      "violations": 0,
+      "termination": "truncated"
+    }
+  ],
+  "scope": "Changed MDP and unobserved goal; diagnostic transfer failure, outside the trained task."
+}

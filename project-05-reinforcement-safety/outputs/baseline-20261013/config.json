@@ -1,0 +1,11 @@
+{
+  "bins": 21,
+  "gamma": 0.97,
+  "alpha": 0.15,
+  "episodes": 6000,
+  "max_steps": 80,
+  "tolerance": 0.045,
+  "step_cost": 0.02,
+  "success_bonus": 2.0,
+  "goal_shift": 0.0
+}
