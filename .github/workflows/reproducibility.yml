@@ -37,9 +37,10 @@ jobs:
           cache-dependency-path: |
             project-01-simulation-software/requirements.txt
             project-04-imitation-learning/requirements.txt
+            project-05-reinforcement-safety/requirements.txt
       - name: Install pinned dependencies
         run: |
-          python -m pip install -r project-01-simulation-software/requirements.txt -r project-04-imitation-learning/requirements.txt
+          python -m pip install -r project-01-simulation-software/requirements.txt -r project-04-imitation-learning/requirements.txt -r project-05-reinforcement-safety/requirements.txt
           if ($LASTEXITCODE) { exit $LASTEXITCODE }
       - name: Prepare pinned public robot models
         run: |
@@ -76,6 +77,16 @@ jobs:
         run: |
           New-Item -ItemType Directory -Path .ci-output -Force | Out-Null
           python project-05-reinforcement-safety/verify_run.py project-05-reinforcement-safety/outputs/baseline-20261013 --output .ci-output/rl-replay.json
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+      - name: Project 05 PPO and offline robot interface tests
+        working-directory: project-05-reinforcement-safety
+        run: python -m unittest test_ppo test_model_contracts -v
+      - name: Physical PPO and Pendulum frozen-policy replay
+        working-directory: project-05-reinforcement-safety
+        run: |
+          python verify_continuous.py outputs/continuous-20261013-r2 --output ../.ci-output/continuous-replay.json
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          python verify_continuous.py outputs/pendulum-20261013-r2 --output ../.ci-output/pendulum-replay.json
           if ($LASTEXITCODE) { exit $LASTEXITCODE }
       - name: Stored data and model provenance (integrity only)
         working-directory: project-04-imitation-learning

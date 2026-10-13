@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "kind": "pendulum",
+  "replayed_cases": 96,
+  "replayed_failure_trajectories": 0,
+  "hashed_files": 10,
+  "implementation": "Frozen source snapshot; current helper fallback for historical snapshots",
+  "current_source_differences": [
+    "continuous.py"
+  ],
+  "scope": "Stored-policy numerical replay and complete retained failure trajectories; training regeneration and learner competence assessed separately"
+}

@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-14",
+  "experiment_date": "2026-10-13",
+  "authoring": "AI-assisted implementation; tool-executed tests and runs; learner independent assessment pending",
+  "local_software_tests": {"project01": 6, "project02": 2, "project03": 10, "project04": 30, "collaboration_offline": 15, "project05": 29, "total": 92, "status": "PASS", "native_panel_tests_in_total": 6},
+  "saved_policy_replay": {"tabular": 5720, "tabular_changed_goal": 44, "physical_ppo": 864, "physical_failure_trajectories": 539, "pendulum": 96, "status": "PASS"},
+  "historical_imitation_check": "Integrity-only source/data/splits/normalization/labels/budgets/aggregates; no new imitation rollout claimed",
+  "physical_training_regeneration": {"runs": ["continuous-20261013", "continuous-20261013-r2"], "training_seeds": [0, 1, 2, 3, 4], "environment_steps_per_seed": 65536, "comparison": "All five inference NPZ and cases.json SHA256 identical; wall-clock durations retained separately"},
+  "physical_task_scores": {"ppo_id": "72/120", "dls_id": "24/24", "ppo_mirrored_target_ood": "8/120", "ppo_id_mass_and_inertia_1_5": "73/120", "ppo_id_guard_bypass": "72/120", "scope": "Same 24 ID scenes across five training seeds; state input, planar dynamics and retained velocity servo; contact disabled"},
+  "model_application": {"requested_focus": ["GPT 6.0", "pi0.5"], "gpt_api_calls": 0, "pi05_inferences": 0, "offline_interface_tests": 4, "openpi_source_commit": "215abfb217dbac7d5f1273282331b9b1866c0479", "gpu_vram_mib": 6144, "upstream_standard_inference_requirement": ">8GB", "actual_gpt_api_id": "pending selection"},
+  "gui": {"layout": "Visually inspected", "gif_load_play_pause": "Native automated tests passed", "live_3d_button_manual_check": "Pending: UI automation stopped after user-input detection", "physical_gifs": "Generated from actual MuJoCo episodes"},
+  "public_checks": "Public evidence hash manifest and known credential-pattern scan passed; these checks have a bounded pattern scope",
+  "cloud_validation": "86 noninteractive software tests plus saved-policy replay configured; actual status is linked to the publication commit GitHub Actions run",
+  "next_independent_task": "Matched PPO/DLS success-and-failure demonstration; closed-book clipping/GAE; one-factor code modification with five seeds",
+  "next_platform": "Panda residual placement"
+}

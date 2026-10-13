@@ -1,0 +1,63 @@
+{
+  "kind": "pendulum",
+  "training": [
+    {
+      "seed": 0,
+      "environment_steps": 32768,
+      "physics_substeps": null,
+      "validation_selected_update": 16,
+      "validation_score": -1164.5427087415346,
+      "wall_seconds": 2.3565703999993275,
+      "epochs": 6,
+      "rollout": 128,
+      "environments": 8
+    }
+  ],
+  "aggregate": {
+    "zero": {
+      "successes": 0,
+      "cases": 24,
+      "mean_return": -1167.614408803123,
+      "mean_error_m": null,
+      "violations": 0
+    },
+    "random": {
+      "successes": 0,
+      "cases": 24,
+      "mean_return": -1165.694672273724,
+      "mean_error_m": null,
+      "violations": 0
+    },
+    "untrained": {
+      "successes": 0,
+      "cases": 24,
+      "mean_return": -1165.418142746407,
+      "mean_error_m": null,
+      "violations": 0
+    },
+    "ppo_seed_0": {
+      "successes": 0,
+      "cases": 24,
+      "mean_return": -1147.7780885882714,
+      "mean_error_m": null,
+      "violations": 0
+    }
+  },
+  "source_sha256": {
+    "ppo.py": "904385fab0675b845f6d93a04653213c960ae9b06d9cd7d7b424d2ea03807a34",
+    "physical_env.py": "52e788c5507bffede2faa2e276bdf704096ff9234de20b32f1bb9a361c4e03f9",
+    "continuous.py": "b8880c941b0d26a4d7b275801c76c356292f140d167e5764e921e4588289aa8b",
+    "model/arm2d-rl.xml": "69b6b7243d1a3cb6fca7c6118ad3a4f70dca8daa436dae36bbfd166b61589acb"
+  },
+  "evaluation_cases": 96,
+  "retained_failure_traces": 0,
+  "dependencies": {
+    "numpy": "1.26.4",
+    "Pillow": "12.3.0",
+    "mujoco": "3.2.5",
+    "gymnasium": "1.2.3"
+  },
+  "python": "3.12.4",
+  "scope": "Goal-conditioned velocity actions, retained velocity servo and hard torque clipping; planar MuJoCo inertia, no contact manipulation or certified physical safety. GPT and pi05 inference are separate planned integrations.",
+  "task_status": "Per-policy results retained; no automatic pass from software tests"
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "path": "cases.json",
+    "sha256": "00c7280ce7a7f9303d07e78e70ef00d9a622848d1ecc5b9e27c0fb836b1b2c8e"
+  },
+  {
+    "path": "failures.jsonl.gz",
+    "sha256": "f55f2b21fb8c887fa7261cf540d6b85d3e0b1ce5c4634564977c41dd4d2ea751"
+  },
+  {
+    "path": "ppo-seed-0.npz",
+    "sha256": "7453c5092ad665296a354fdd22d9d39a47bdd729e54fc6edb44a74aae443ff5e"
+  },
+  {
+    "path": "protocol.json",
+    "sha256": "76729236add229b782a9596bd623b7f832335bd3573976259c5bb6269cfa93b4"
+  },
+  {
+    "path": "source/continuous.py",
+    "sha256": "b8880c941b0d26a4d7b275801c76c356292f140d167e5764e921e4588289aa8b"
+  },
+  {
+    "path": "source/model/arm2d-rl.xml",
+    "sha256": "69b6b7243d1a3cb6fca7c6118ad3a4f70dca8daa436dae36bbfd166b61589acb"
+  },
+  {
+    "path": "source/physical_env.py",
+    "sha256": "52e788c5507bffede2faa2e276bdf704096ff9234de20b32f1bb9a361c4e03f9"
+  },
+  {
+    "path": "source/ppo.py",
+    "sha256": "904385fab0675b845f6d93a04653213c960ae9b06d9cd7d7b424d2ea03807a34"
+  },
+  {
+    "path": "summary.json",
+    "sha256": "4df2326823d928ad891b4ba6709cc513d02be5b997fb19219cefaf33ae3fd6d9"
+  },
+  {
+    "path": "training-seed-0.csv",
+    "sha256": "321d62e8ddfb6211ab100d5e8df425b8107b7ac36811e3420fc3794f84723d16"
+  }
+]

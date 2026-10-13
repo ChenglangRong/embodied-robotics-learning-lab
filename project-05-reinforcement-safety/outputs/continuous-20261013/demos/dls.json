@@ -1,0 +1,14 @@
+{
+  "reset_seed": 1000000,
+  "split": "test",
+  "guard": true,
+  "mass_scale": 1.0,
+  "return": -0.5215442708910571,
+  "steps": 24,
+  "success": true,
+  "final_error_m": 0.02473475568066657,
+  "violations": 0,
+  "guard_interventions": 0,
+  "torque_peak_nm": 1.8051659303508494,
+  "termination": "success"
+}

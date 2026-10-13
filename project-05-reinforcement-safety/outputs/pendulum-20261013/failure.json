@@ -1,0 +1,11 @@
+{
+  "status": "FAILED",
+  "phase": "first PPO update",
+  "error": "TypeError: numpy boolean negative is not supported",
+  "cause": "Unary negation was applied to the boolean active-branch mask before multiplying advantages",
+  "software_test_result": "10 tests: 8 passed, 2 gradient tests errored",
+  "training_completed": false,
+  "repair": "Negate the floating-point advantages, then multiply the active mask; rerun gradient tests and train in a new directory",
+  "source_snapshot": "source/ppo.py",
+  "rerun": "pendulum-20261013-r2"
+}

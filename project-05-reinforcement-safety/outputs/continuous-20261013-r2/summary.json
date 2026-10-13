@@ -1,0 +1,143 @@
+{
+  "kind": "arm",
+  "training": [
+    {
+      "seed": 0,
+      "environment_steps": 65536,
+      "physics_substeps": 327680,
+      "validation_selected_update": 64,
+      "validation_score": 0.8745281050915256,
+      "wall_seconds": 21.440487799998664,
+      "epochs": 6,
+      "rollout": 128,
+      "environments": 8
+    },
+    {
+      "seed": 1,
+      "environment_steps": 65536,
+      "physics_substeps": 327680,
+      "validation_selected_update": 40,
+      "validation_score": 0.8745677493872266,
+      "wall_seconds": 27.65907100000186,
+      "epochs": 6,
+      "rollout": 128,
+      "environments": 8
+    },
+    {
+      "seed": 2,
+      "environment_steps": 65536,
+      "physics_substeps": 327680,
+      "validation_selected_update": 48,
+      "validation_score": 0.7494788276554359,
+      "wall_seconds": 27.47395239999605,
+      "epochs": 6,
+      "rollout": 128,
+      "environments": 8
+    },
+    {
+      "seed": 3,
+      "environment_steps": 65536,
+      "physics_substeps": 327680,
+      "validation_selected_update": 64,
+      "validation_score": 0.874560909700734,
+      "wall_seconds": 27.357976899998903,
+      "epochs": 6,
+      "rollout": 128,
+      "environments": 8
+    },
+    {
+      "seed": 4,
+      "environment_steps": 65536,
+      "physics_substeps": 327680,
+      "validation_selected_update": 48,
+      "validation_score": 0.874562049813131,
+      "wall_seconds": 27.266384700000344,
+      "epochs": 6,
+      "rollout": 128,
+      "environments": 8
+    }
+  ],
+  "aggregate": {
+    "zero": {
+      "successes": 0,
+      "cases": 24,
+      "mean_return": -81.1837236196122,
+      "mean_error_m": 0.265612412065374,
+      "violations": 0
+    },
+    "random": {
+      "successes": 1,
+      "cases": 24,
+      "mean_return": -87.94691327138281,
+      "mean_error_m": 0.30489495775197506,
+      "violations": 0
+    },
+    "untrained": {
+      "successes": 0,
+      "cases": 24,
+      "mean_return": -81.08234567464984,
+      "mean_error_m": 0.26493800706259923,
+      "violations": 0
+    },
+    "dls": {
+      "successes": 24,
+      "cases": 24,
+      "mean_return": -4.631377631518924,
+      "mean_error_m": 0.021904956233524786,
+      "violations": 0
+    },
+    "ppo_seed_0": {
+      "successes": 15,
+      "cases": 24,
+      "mean_return": -16.884422116002792,
+      "mean_error_m": 0.06099385765325788,
+      "violations": 0
+    },
+    "ppo_seed_1": {
+      "successes": 15,
+      "cases": 24,
+      "mean_return": -19.291783340502278,
+      "mean_error_m": 0.0621947232525502,
+      "violations": 0
+    },
+    "ppo_seed_2": {
+      "successes": 11,
+      "cases": 24,
+      "mean_return": -21.54441512732066,
+      "mean_error_m": 0.062039490139343345,
+      "violations": 0
+    },
+    "ppo_seed_3": {
+      "successes": 16,
+      "cases": 24,
+      "mean_return": -16.920479356963554,
+      "mean_error_m": 0.06271856361539221,
+      "violations": 0
+    },
+    "ppo_seed_4": {
+      "successes": 15,
+      "cases": 24,
+      "mean_return": -21.679367071563618,
+      "mean_error_m": 0.0722129897030326,
+      "violations": 0
+    }
+  },
+  "source_sha256": {
+    "ppo.py": "904385fab0675b845f6d93a04653213c960ae9b06d9cd7d7b424d2ea03807a34",
+    "physical_env.py": "52e788c5507bffede2faa2e276bdf704096ff9234de20b32f1bb9a361c4e03f9",
+    "continuous.py": "b6bbd3930d71e02893b87fa3435b9db324e2d00b20ba1993a80c7d112380d47f",
+    "tabular_lab.py": "580fb954a88d5802a09e0b35b959a084a02a0f84b2c30f3b173e2c8db1a9fc00",
+    "model/arm2d-rl.xml": "69b6b7243d1a3cb6fca7c6118ad3a4f70dca8daa436dae36bbfd166b61589acb"
+  },
+  "evaluation_cases": 864,
+  "retained_failure_traces": 539,
+  "dependencies": {
+    "numpy": "1.26.4",
+    "Pillow": "12.3.0",
+    "mujoco": "3.2.5",
+    "gymnasium": "1.2.3"
+  },
+  "python": "3.12.4",
+  "scope": "Goal-conditioned velocity actions, retained velocity servo and hard torque clipping; planar MuJoCo inertia, no contact manipulation or certified physical safety. GPT and pi05 inference are separate planned integrations.",
+  "task_status": "Per-policy results retained; no automatic pass from software tests"
+}

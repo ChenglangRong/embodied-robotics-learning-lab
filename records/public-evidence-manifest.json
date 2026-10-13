@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "date": "2026-10-13",
+  "date": "2026-10-14",
   "evidence_files": [
     {
       "path": "project-01-simulation-software/outputs/demo/run_config.json",
@@ -2981,6 +2981,386 @@
       "path": "project-05-reinforcement-safety/outputs/baseline-20261013/value-iteration.json",
       "bytes": 736,
       "sha256": "bde1892671e056ca067092930f4d0a603d7c7169e6a3eede82c70c0e411b1892"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013-r2/cases.json",
+      "bytes": 310853,
+      "sha256": "f8d9cfc297c91374182c29d36108e2a153062efbe2d38c55156ab606a7d58cb6"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013-r2/demos/dls.csv",
+      "bytes": 9411,
+      "sha256": "aa320a1efb9271e67678ff29ea9783ca39eb47e0bbdb821a633d178890dc95f6"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013-r2/demos/dls.gif",
+      "bytes": 306555,
+      "sha256": "4f1fa7d0700be53e0b505974d13437289c2fa5ca45ca83b5f8fbc566787adc04"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013-r2/demos/dls.json",
+      "bytes": 307,
+      "sha256": "bbda1a5a0085fbfcef1e86f805784203e0425942df543de09a354ed729185e03"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013-r2/demos/ppo_seed_0.csv",
+      "bytes": 17044,
+      "sha256": "7f01f4f9c9e2d93912f35c80512a88cce4383d27fd386761ec78e05317e46d03"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013-r2/demos/ppo_seed_0.gif",
+      "bytes": 390074,
+      "sha256": "8b1e6aedf366523952684727bb3daf70d51d27ed719ededc7e69e825283f3c14"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013-r2/demos/ppo_seed_0.json",
+      "bytes": 307,
+      "sha256": "592125bd42bc8471cbe2bb6730d6016f393319d75dcbefb93c42ed81ef10540d"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013-r2/demos/untrained.csv",
+      "bytes": 59279,
+      "sha256": "256e300de3668f68826fca8a19c3d7c373bca84f1d97c653f0661e23f7a9cc65"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013-r2/demos/untrained.gif",
+      "bytes": 1504172,
+      "sha256": "5b7c97b72bbaa0f87673179f36290559629638b1e8c8203e787f880730e933d3"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013-r2/demos/untrained.json",
+      "bytes": 309,
+      "sha256": "5c62cd6e9df834793b0729bdb01ad25fe334cc4852cad96dd7a55f1bf8bcc272"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013-r2/failures.jsonl.gz",
+      "bytes": 9161252,
+      "sha256": "ea3985326233aeb4a3e851c2e42dc00d51ef1aab5ac2a9ba2ea006ccacf856de"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013-r2/manifest.json",
+      "bytes": 3448,
+      "sha256": "3009631dc2091a359f64565131e51f5b6f6a3f35bfeb231a7b777f07519fbd11"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013-r2/ppo-seed-0.npz",
+      "bytes": 25680,
+      "sha256": "8854a8b99983d6a220450abe0c691ec7bae57c0300453a26a90b9581aa06e98e"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013-r2/ppo-seed-1.npz",
+      "bytes": 25677,
+      "sha256": "47614391807c00462295daedbf9d6df687e1363ad21d024fed9b156d49edff2d"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013-r2/ppo-seed-2.npz",
+      "bytes": 25674,
+      "sha256": "cdd078ed4e60c6202326b8f3a2b11e02526479dc704b31a63d891ca7960f61d1"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013-r2/ppo-seed-3.npz",
+      "bytes": 25672,
+      "sha256": "d71c7d26dd918f4ee555cd9a1c4f67254970c4f94f7ae3649a25a156f83e6ccd"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013-r2/ppo-seed-4.npz",
+      "bytes": 25692,
+      "sha256": "6d6cc777eed59c23d2d4e34d1217cc56e5ba8940a291d1184438c10e42520db2"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013-r2/protocol.json",
+      "bytes": 1629,
+      "sha256": "46e7ad67b3e17cd1f1fe193406490534d806709f9900541433a7fc6bd1863516"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013-r2/source/continuous.py",
+      "bytes": 14184,
+      "sha256": "b6bbd3930d71e02893b87fa3435b9db324e2d00b20ba1993a80c7d112380d47f"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013-r2/source/model/arm2d-rl.xml",
+      "bytes": 1277,
+      "sha256": "69b6b7243d1a3cb6fca7c6118ad3a4f70dca8daa436dae36bbfd166b61589acb"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013-r2/source/physical_env.py",
+      "bytes": 5712,
+      "sha256": "52e788c5507bffede2faa2e276bdf704096ff9234de20b32f1bb9a361c4e03f9"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013-r2/source/ppo.py",
+      "bytes": 6104,
+      "sha256": "904385fab0675b845f6d93a04653213c960ae9b06d9cd7d7b424d2ea03807a34"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013-r2/source/tabular_lab.py",
+      "bytes": 15620,
+      "sha256": "580fb954a88d5802a09e0b35b959a084a02a0f84b2c30f3b173e2c8db1a9fc00"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013-r2/summary.json",
+      "bytes": 4062,
+      "sha256": "086b845fd8ac8b3e51a34b07050e346e2bde8599d61b9f6b045d2eab57cadc38"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013-r2/training-seed-0.csv",
+      "bytes": 9050,
+      "sha256": "8403b5c81aa595ffc9a9315d78fe21f895fec1a1f93e4241f12e02740dc120bd"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013-r2/training-seed-1.csv",
+      "bytes": 9085,
+      "sha256": "3591cd82ce03d0599d01f454b4136322506d1924290e3d86ffa0b299a6f6351f"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013-r2/training-seed-2.csv",
+      "bytes": 8961,
+      "sha256": "b8d7bb046b4799d6265e476b077fee0169c7a8f13ae77fe383064eaab93723bd"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013-r2/training-seed-3.csv",
+      "bytes": 9079,
+      "sha256": "4bb8798abc170938bb358a39071e3a2bdbcbd180379bb22fd7558d3ee1458f39"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013-r2/training-seed-4.csv",
+      "bytes": 9076,
+      "sha256": "7ac27812e481f6679bfd6f89d3a919efd038f6cea3b00aefb5edd05d4fecd8d7"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013/cases.json",
+      "bytes": 310853,
+      "sha256": "f8d9cfc297c91374182c29d36108e2a153062efbe2d38c55156ab606a7d58cb6"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013/demos/dls.csv",
+      "bytes": 9411,
+      "sha256": "aa320a1efb9271e67678ff29ea9783ca39eb47e0bbdb821a633d178890dc95f6"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013/demos/dls.gif",
+      "bytes": 306565,
+      "sha256": "dd5833ad91bc4c239defddea431ca51b65640e78f744cd40c0a659ea4add0dfa"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013/demos/dls.json",
+      "bytes": 307,
+      "sha256": "bbda1a5a0085fbfcef1e86f805784203e0425942df543de09a354ed729185e03"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013/demos/ppo_seed_0.csv",
+      "bytes": 17044,
+      "sha256": "7f01f4f9c9e2d93912f35c80512a88cce4383d27fd386761ec78e05317e46d03"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013/demos/ppo_seed_0.gif",
+      "bytes": 389792,
+      "sha256": "0756924810f4afb9e8e63bcda5d13893ad1c980cb2b32b9a5c6fe492eb729bb1"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013/demos/ppo_seed_0.json",
+      "bytes": 307,
+      "sha256": "592125bd42bc8471cbe2bb6730d6016f393319d75dcbefb93c42ed81ef10540d"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013/demos/untrained.csv",
+      "bytes": 59279,
+      "sha256": "256e300de3668f68826fca8a19c3d7c373bca84f1d97c653f0661e23f7a9cc65"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013/demos/untrained.gif",
+      "bytes": 1508967,
+      "sha256": "984bd5458cad5a41af5694f06f774ac5aad8f3ec3941c462488ea41ce22de590"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013/demos/untrained.json",
+      "bytes": 309,
+      "sha256": "5c62cd6e9df834793b0729bdb01ad25fe334cc4852cad96dd7a55f1bf8bcc272"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013/failures.jsonl.gz",
+      "bytes": 9161252,
+      "sha256": "9793ee4559db30ac85f8162d877a5a1178f4afc011e7e0687bf47df49413f3bb"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013/manifest.json",
+      "bytes": 3321,
+      "sha256": "29f6a89c5caf7f13bc13e9e240a129786a16877c9ab8e3c1b9c034252e1b32c6"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013/ppo-seed-0.npz",
+      "bytes": 25680,
+      "sha256": "8854a8b99983d6a220450abe0c691ec7bae57c0300453a26a90b9581aa06e98e"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013/ppo-seed-1.npz",
+      "bytes": 25677,
+      "sha256": "47614391807c00462295daedbf9d6df687e1363ad21d024fed9b156d49edff2d"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013/ppo-seed-2.npz",
+      "bytes": 25674,
+      "sha256": "cdd078ed4e60c6202326b8f3a2b11e02526479dc704b31a63d891ca7960f61d1"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013/ppo-seed-3.npz",
+      "bytes": 25672,
+      "sha256": "d71c7d26dd918f4ee555cd9a1c4f67254970c4f94f7ae3649a25a156f83e6ccd"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013/ppo-seed-4.npz",
+      "bytes": 25692,
+      "sha256": "6d6cc777eed59c23d2d4e34d1217cc56e5ba8940a291d1184438c10e42520db2"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013/protocol.json",
+      "bytes": 1629,
+      "sha256": "46e7ad67b3e17cd1f1fe193406490534d806709f9900541433a7fc6bd1863516"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013/source/continuous.py",
+      "bytes": 13897,
+      "sha256": "b8880c941b0d26a4d7b275801c76c356292f140d167e5764e921e4588289aa8b"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013/source/model/arm2d-rl.xml",
+      "bytes": 1277,
+      "sha256": "69b6b7243d1a3cb6fca7c6118ad3a4f70dca8daa436dae36bbfd166b61589acb"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013/source/physical_env.py",
+      "bytes": 5712,
+      "sha256": "52e788c5507bffede2faa2e276bdf704096ff9234de20b32f1bb9a361c4e03f9"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013/source/ppo.py",
+      "bytes": 6104,
+      "sha256": "904385fab0675b845f6d93a04653213c960ae9b06d9cd7d7b424d2ea03807a34"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013/summary.json",
+      "bytes": 3971,
+      "sha256": "01bbacbf479c550d225817333758a04e2cd2599fbf4866ed8ababf5b819f2f8f"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013/training-seed-0.csv",
+      "bytes": 9050,
+      "sha256": "8403b5c81aa595ffc9a9315d78fe21f895fec1a1f93e4241f12e02740dc120bd"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013/training-seed-1.csv",
+      "bytes": 9085,
+      "sha256": "3591cd82ce03d0599d01f454b4136322506d1924290e3d86ffa0b299a6f6351f"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013/training-seed-2.csv",
+      "bytes": 8961,
+      "sha256": "b8d7bb046b4799d6265e476b077fee0169c7a8f13ae77fe383064eaab93723bd"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013/training-seed-3.csv",
+      "bytes": 9079,
+      "sha256": "4bb8798abc170938bb358a39071e3a2bdbcbd180379bb22fd7558d3ee1458f39"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-20261013/training-seed-4.csv",
+      "bytes": 9076,
+      "sha256": "7ac27812e481f6679bfd6f89d3a919efd038f6cea3b00aefb5edd05d4fecd8d7"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/continuous-verification-20261013.json",
+      "bytes": 413,
+      "sha256": "b42ef99f0b5a917282d7aa9f7730b6d911ef22d76e20b6f32bc8fb139ceaf3f5"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/pendulum-20261013-r2/cases.json",
+      "bytes": 31942,
+      "sha256": "00c7280ce7a7f9303d07e78e70ef00d9a622848d1ecc5b9e27c0fb836b1b2c8e"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/pendulum-20261013-r2/failures.jsonl.gz",
+      "bytes": 40,
+      "sha256": "f55f2b21fb8c887fa7261cf540d6b85d3e0b1ce5c4634564977c41dd4d2ea751"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/pendulum-20261013-r2/manifest.json",
+      "bytes": 1228,
+      "sha256": "c86ba2cd0f9fc7b471f8692b4ccaaf6ca517198d2d562cfd5e230875a92f6ed0"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/pendulum-20261013-r2/ppo-seed-0.npz",
+      "bytes": 21503,
+      "sha256": "7453c5092ad665296a354fdd22d9d39a47bdd729e54fc6edb44a74aae443ff5e"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/pendulum-20261013-r2/protocol.json",
+      "bytes": 1606,
+      "sha256": "76729236add229b782a9596bd623b7f832335bd3573976259c5bb6269cfa93b4"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/pendulum-20261013-r2/source/continuous.py",
+      "bytes": 13897,
+      "sha256": "b8880c941b0d26a4d7b275801c76c356292f140d167e5764e921e4588289aa8b"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/pendulum-20261013-r2/source/model/arm2d-rl.xml",
+      "bytes": 1277,
+      "sha256": "69b6b7243d1a3cb6fca7c6118ad3a4f70dca8daa436dae36bbfd166b61589acb"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/pendulum-20261013-r2/source/physical_env.py",
+      "bytes": 5712,
+      "sha256": "52e788c5507bffede2faa2e276bdf704096ff9234de20b32f1bb9a361c4e03f9"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/pendulum-20261013-r2/source/ppo.py",
+      "bytes": 6104,
+      "sha256": "904385fab0675b845f6d93a04653213c960ae9b06d9cd7d7b424d2ea03807a34"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/pendulum-20261013-r2/summary.json",
+      "bytes": 1884,
+      "sha256": "4df2326823d928ad891b4ba6709cc513d02be5b997fb19219cefaf33ae3fd6d9"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/pendulum-20261013-r2/training-seed-0.csv",
+      "bytes": 4342,
+      "sha256": "321d62e8ddfb6211ab100d5e8df425b8107b7ac36811e3420fc3794f84723d16"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/pendulum-20261013/failure.json",
+      "bytes": 538,
+      "sha256": "69328228def692911db2a8e8b6509a4f29e4ec72881c75a89e651d5afa1aa3c8"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/pendulum-20261013/protocol.json",
+      "bytes": 1606,
+      "sha256": "76729236add229b782a9596bd623b7f832335bd3573976259c5bb6269cfa93b4"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/pendulum-20261013/source/continuous.py",
+      "bytes": 13897,
+      "sha256": "b8880c941b0d26a4d7b275801c76c356292f140d167e5764e921e4588289aa8b"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/pendulum-20261013/source/model/arm2d-rl.xml",
+      "bytes": 1277,
+      "sha256": "69b6b7243d1a3cb6fca7c6118ad3a4f70dca8daa436dae36bbfd166b61589acb"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/pendulum-20261013/source/physical_env.py",
+      "bytes": 5712,
+      "sha256": "52e788c5507bffede2faa2e276bdf704096ff9234de20b32f1bb9a361c4e03f9"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/pendulum-20261013/source/ppo.py",
+      "bytes": 6104,
+      "sha256": "73ab345b362771cacfee025ee8684bbd75e1c6488daa22f3c07de14767a84ba7"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/pendulum-verification-20261013.json",
+      "bytes": 438,
+      "sha256": "48eff8fe511287eb05e264b1909454f5069527cd757628e48454153175a91aed"
     },
     {
       "path": "project-05-reinforcement-safety/outputs/showcase-20261013/learned-failure.csv",

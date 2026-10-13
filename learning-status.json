@@ -1,8 +1,9 @@
 {
   "schema_version": 1,
-  "updated_date": "2026-10-13",
+  "updated_date": "2026-10-14",
   "repository": "https://github.com/ChenglangRong/embodied-robotics-learning-lab",
   "current_stage": "reinforcement_learning_and_safety",
+  "learning_preferences": {"model_focus": ["用户称GPT 6.0；实际API型号待选择并记录", "pi0.5"], "official_sources_checked": "2026-10-13", "application_status": "Offline interface tests passed; GPT calls=0, pi0.5 checkpoint inference=0; local GPU six GB, upstream standard inference greater than eight GB"},
   "evidence_authoring": "AI-assisted implementation and tool-executed verification; learner reports and independent assessments tracked separately",
   "stages": [
     {
@@ -33,12 +34,14 @@
     },
     {
       "id": "reinforcement_learning_and_safety",
-      "implementation_status": "planar_tabular_baseline_verified",
+      "implementation_status": "tabular_and_continuous_physics_ppo_baseline_verified",
       "learner_status": "in_progress",
       "independent_assessment": "pending",
-      "materials": ["project-05-reinforcement-safety/README.md", "project-05-reinforcement-safety/01-知识卡与二连杆实操.md", "project-05-reinforcement-safety/02-五平台进阶任务.md"],
-      "evidence": ["project-05-reinforcement-safety/outputs/baseline-20261013/summary.json", "project-05-reinforcement-safety/outputs/verification-20261013.json", "project-05-reinforcement-safety/outputs/showcase-20261013/selection.json"],
-      "pending": ["个人TD手算和单因素修改", "连续动作PPO与二连杆物理执行", "Panda残差放置", "Go2速度/转向反馈", "H1扰动恢复与行走", "Allegro抗滑与手内重定向", "SAC与固定环境步数五种子正式比较"]
+      "learner_report": "2026-10-13用户自报上一部分已学完，进入连续PPO实操；个人TD、代码修改与解释证据按独立验收保留",
+      "lesson_units": [{"id": "tabular_q", "learner_status": "self_reported_complete", "independent_assessment": "pending"}, {"id": "continuous_ppo", "learner_status": "in_progress", "independent_assessment": "pending", "task_result": "Five-seed ID 72/120; DLS 24/24; PPO mirrored-target OOD 8/120"}],
+      "materials": ["project-05-reinforcement-safety/README.md", "project-05-reinforcement-safety/01-知识卡与二连杆实操.md", "project-05-reinforcement-safety/02-五平台进阶任务.md", "project-05-reinforcement-safety/03-连续动作PPO实操.md", "project-05-reinforcement-safety/04-GPT6与pi05机器人应用.md"],
+      "evidence": ["project-05-reinforcement-safety/outputs/baseline-20261013/summary.json", "project-05-reinforcement-safety/outputs/verification-20261013.json", "project-05-reinforcement-safety/outputs/showcase-20261013/selection.json", "project-05-reinforcement-safety/outputs/continuous-20261013-r2/summary.json", "project-05-reinforcement-safety/outputs/continuous-verification-20261013.json", "project-05-reinforcement-safety/outputs/pendulum-verification-20261013.json"],
+      "pending": ["个人TD/PPO手算和单因素代码修改", "连续PPO OOD与Pendulum性能改进", "同物理环境BC/PPO比较", "Panda残差放置", "Go2速度/转向反馈", "H1扰动恢复与行走", "Allegro抗滑与手内重定向", "SAC与固定环境步数五种子正式比较", "GPT具体ID选择与真实推理评测", "pi0.5算力、许可、检查点与机器人适配部署"]
     },
     {"id": "embodied_tasks_and_recovery", "implementation_status": "planned", "learner_status": "planned", "independent_assessment": "pending", "materials": ["五平台项目矩阵.md"]},
     {"id": "world_models_and_vla", "implementation_status": "planned", "learner_status": "planned", "independent_assessment": "pending", "materials": ["五平台项目矩阵.md"]}

@@ -1,2 +1,7 @@
 numpy==1.26.4
 Pillow==12.3.0
+mujoco==3.2.5
+gymnasium==1.2.3
+cloudpickle==3.1.2
+farama-notifications==0.0.6
+typing-extensions==4.16.0
