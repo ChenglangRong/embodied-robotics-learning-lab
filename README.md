@@ -10,7 +10,8 @@
 - 五平台贯穿的项目安排：[五平台项目矩阵.md](五平台项目矩阵.md)
 - 旧版详细查阅材料：[学习路线.md](学习路线.md)
 - 当前项目：[project-05-reinforcement-safety](project-05-reinforcement-safety/)，从可视表格Q-learning到五平台残差强化学习
-- 当前逐步教学：[连续动作PPO与二连杆物理实操](project-05-reinforcement-safety/03-连续动作PPO实操.md)，双击项目05的 `open_continuous_lab.cmd`
+- 当前逐步教学：[Panda残差放置实操](project-05-reinforcement-safety/05-Panda残差放置实操.md)，双击项目05的 `open_panda_lab.cmd`
+- 前一关：[连续动作PPO与二连杆物理实操](project-05-reinforcement-safety/03-连续动作PPO实操.md)，前序个人验收继续登记
 - 模型应用学习线：[GPT 6.0与π0.5接口、资源和匹配评测](project-05-reinforcement-safety/04-GPT6与pi05机器人应用.md)
 - 机器人学基础讲解：[01-机器人学基础-讲解与自测.md](01-机器人学基础-讲解与自测.md)
 - 项目 01 手把手操作：[project-01-simulation-software/从零动手.md](project-01-simulation-software/从零动手.md)

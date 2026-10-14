@@ -1,0 +1,146 @@
+[
+  {
+    "path": "cases.json",
+    "sha256": "9859b0881cb57a1d1f2b6e6c51eb6f405740cfe851c295fa292c02e82df6ded9"
+  },
+  {
+    "path": "demos/analytical.csv",
+    "sha256": "14644f9adcd6d3c41834a77d213a1fae34b05b42aa426a7f741d720a2e4a2086"
+  },
+  {
+    "path": "demos/analytical.gif",
+    "sha256": "d79cd3b2272ad072fa90fd1a49aa73143478ac423deabb463dee3a256e5b9835"
+  },
+  {
+    "path": "demos/analytical.json",
+    "sha256": "95537650d9023a65f6f7026a949d4a8b6dd8b4582df0c361de4cd7881c939443"
+  },
+  {
+    "path": "demos/analytical.png",
+    "sha256": "4b0cddb03d52135de2ee4d8bd2d89c9f5e27db6df49ba442f8bdebb0d8574e59"
+  },
+  {
+    "path": "demos/ppo_seed_0.csv",
+    "sha256": "64d9c2ae69d208fe54343a4b5cc87c0f1e2cbaf18d8ef22308165c9db406b3db"
+  },
+  {
+    "path": "demos/ppo_seed_0.gif",
+    "sha256": "4016f8f0d34d57290501e36059f71187862285910dabd1fbd916e451c8d9afa9"
+  },
+  {
+    "path": "demos/ppo_seed_0.json",
+    "sha256": "8be2f325aa3342b4e4d68200dc7c973846d8424c54421363884e22abd0042770"
+  },
+  {
+    "path": "demos/ppo_seed_0.png",
+    "sha256": "54856c50708380108b5c319382715dcc73a1824390d10c7447c1f91b5e67228e"
+  },
+  {
+    "path": "demos/zero.csv",
+    "sha256": "d79eed699221096472f318dde673a4224e0fd1896a525ef4757381b791ccf5c5"
+  },
+  {
+    "path": "demos/zero.gif",
+    "sha256": "c9eb02fc1a3c448acdc30aaf6b9531a9a2de0e8df1e5e6cf10f6e97c7a7ca0b4"
+  },
+  {
+    "path": "demos/zero.json",
+    "sha256": "e1bff94f9a11d8dad35381df135fd0708f23725d23ca5f798f8828ce60fb1f1a"
+  },
+  {
+    "path": "demos/zero.png",
+    "sha256": "6154d3b57251f829bde231c685397313188dae799d9c25585ae8e2e2a2869a95"
+  },
+  {
+    "path": "failures.jsonl.gz",
+    "sha256": "0b1b8632f399361893b4664655661c959edab1c01bf11008ed69658a77b2986b"
+  },
+  {
+    "path": "ppo-seed-0.npz",
+    "sha256": "4b9af05fcd935bc8ff4bdee1a844b981973f5c06565f7867652eb9769789bada"
+  },
+  {
+    "path": "ppo-seed-1.npz",
+    "sha256": "b76003f7747dd3898e8a71869a2c755686109a89400fe14eb0de5f727accc8c8"
+  },
+  {
+    "path": "ppo-seed-2.npz",
+    "sha256": "381a7cd275379f36f4e00c93c2aa25b60aa299b299b2bdc0f52dceb0567fa5ca"
+  },
+  {
+    "path": "ppo-seed-3.npz",
+    "sha256": "42b73309510ac89f7fc4e3680a939447ad2b6eec94a590ebadb49f5f10a61ca1"
+  },
+  {
+    "path": "ppo-seed-4.npz",
+    "sha256": "3e5c8856250d40738cd15f83c1baf48581dafbfcc9fffdd5080c9b893c7d5e4c"
+  },
+  {
+    "path": "protocol.json",
+    "sha256": "084d6a5c74abf3c187549f146465634a9fbc8ce4ad18c6ce95e9a5f9ccfaa645"
+  },
+  {
+    "path": "source/lab.py",
+    "sha256": "7ff5bfc42eaa3c5a435ed13b34f97bf1043a84ec1e4d1ca371bfe392a3e384cd"
+  },
+  {
+    "path": "source/panda_residual.py",
+    "sha256": "f2c8486a4c17a79d0841d574d1be66d6d35cf106e2b518bcbed344c058b0d0a0"
+  },
+  {
+    "path": "source/panda_residual_env.py",
+    "sha256": "f36ac3d01dcb6c2be22f3ae270fa8138adfc6cb58bb8d1615e0a1d14477c711b"
+  },
+  {
+    "path": "source/ppo.py",
+    "sha256": "904385fab0675b845f6d93a04653213c960ae9b06d9cd7d7b424d2ea03807a34"
+  },
+  {
+    "path": "source/tabular_lab.py",
+    "sha256": "580fb954a88d5802a09e0b35b959a084a02a0f84b2c30f3b173e2c8db1a9fc00"
+  },
+  {
+    "path": "summary.json",
+    "sha256": "3e6f0d204ca28623a5817b19b043fe5ba6816d4528cdac471a2065c89f334ba6"
+  },
+  {
+    "path": "training-seed-0.csv",
+    "sha256": "c23e271f3235c9b1ae2650298cd6d62d6b7d5097d2e20da0806993f2915a928b"
+  },
+  {
+    "path": "training-seed-0.json",
+    "sha256": "5124f70e19e946032e6641a2c0dfa88b291b8d0b5f5a9d9897b0e08fbade9675"
+  },
+  {
+    "path": "training-seed-1.csv",
+    "sha256": "6cf21eda2a93cc286f016e6a662c82b8a565b1a1b14ef31de2f620b982d2fbf4"
+  },
+  {
+    "path": "training-seed-1.json",
+    "sha256": "8c250f61ca7a5a3df83410959acefa4b40dc11f43fbe38a03f764ced08fd66a7"
+  },
+  {
+    "path": "training-seed-2.csv",
+    "sha256": "9d6b3cfc4c0d1aa397e356204cdb3bd609a872a00eb75de8b1549ab037a0b76a"
+  },
+  {
+    "path": "training-seed-2.json",
+    "sha256": "3bd20b27461c5d53ccaf9e5817fa1ff5b6cca00efbb5e04b3582f58a3f13a493"
+  },
+  {
+    "path": "training-seed-3.csv",
+    "sha256": "123a6bf6963ec46507348b2ec43ba7589bc7964c3c2e817cbcd02bfe7858a39f"
+  },
+  {
+    "path": "training-seed-3.json",
+    "sha256": "f9f0d4ea2b5c9a8793ff8b2e7f5d13e3a128e8bc9625ca8a48fcf6bbe7bd37ef"
+  },
+  {
+    "path": "training-seed-4.csv",
+    "sha256": "9759229ee27bab75ce8e057794c8467e56d2a9d43f56093dd23e7b0b17af1a84"
+  },
+  {
+    "path": "training-seed-4.json",
+    "sha256": "e4b9e0ec057e575c8e967757e0ea21625857efb9f1e4079067e9af2fbda0438c"
+  }
+]

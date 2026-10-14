@@ -1,0 +1,7 @@
+{
+  "status": "FAILED_BEFORE_RENDER",
+  "source_sha256": "40ac545b841fe68ff16cc6ecf6b04c317dd507875ce74285209a2a7059b532d9",
+  "error": "UnboundLocalError: conditional import mujoco.viewer bound local mujoco in non-viewer branch",
+  "repair": "Use from mujoco import viewer; rerender prefix successfully in panda-prefix-20261014",
+  "scope": "Rendering helper only; trained physical environment separate"
+}

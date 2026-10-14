@@ -1,0 +1,7 @@
+{
+  "model_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+  "physics_steps": 4500,
+  "physics_dt_s": 0.002,
+  "controller_period_s": 0.01,
+  "scope": "Fixed nominal grasp/transport; actual physical integration; placement begins at9s"
+}

@@ -96,6 +96,12 @@ jobs:
           if ($LASTEXITCODE) { exit $LASTEXITCODE }
           python verify_platform_run.py outputs/platform-baseline-20261012-r3 --skip-replay --output ../.ci-output/physical-integrity.json
           if ($LASTEXITCODE) { exit $LASTEXITCODE }
+      - name: Panda residual physical interface tests
+        working-directory: project-05-reinforcement-safety
+        run: python -m unittest test_panda_residual -v
+      - name: Panda frozen physical replay
+        working-directory: project-05-reinforcement-safety
+        run: python verify_panda_residual.py outputs/panda-residual-20261014-r3 --output ../.ci-output/panda-full-replay.json
       - name: Full replay
         if: github.event_name == 'workflow_dispatch' && inputs.full_replay
         working-directory: project-04-imitation-learning

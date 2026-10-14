@@ -1,0 +1,6 @@
+{
+  "status": "SUPERSEDED_INCOMPLETE",
+  "date": "2026-10-14",
+  "reason": "Four training logs completed before the process stopped for protocol tightening: release now requires absence of either finger contact. No complete five-seed evaluation claimed.",
+  "next": "Independent validation environment retained; strengthen release criterion and rerun five seeds under frozen protocol in r3"
+}

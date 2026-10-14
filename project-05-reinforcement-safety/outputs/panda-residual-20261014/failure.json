@@ -1,0 +1,8 @@
+{
+  "status": "FAILED",
+  "date": "2026-10-14",
+  "scope": "Initial seed0 PPO training reached validation at4096 interactions; full8192 budget and five-seed evaluation incomplete",
+  "failure": "Validation reused training environment0 and left it terminal; next collection step raised reset required",
+  "repair": "Independent validation environment; preserve frozen source, protocol and intermediate weight; rerun in a new directory",
+  "software_tests_before_failure": "8 physical interface tests passed; training-loop integration bug exposed by actual run"
+}

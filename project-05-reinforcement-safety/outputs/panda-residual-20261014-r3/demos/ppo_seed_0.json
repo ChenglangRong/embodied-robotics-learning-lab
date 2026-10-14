@@ -1,0 +1,25 @@
+{
+  "seed": 1000000,
+  "split": "test",
+  "filter_enabled": true,
+  "return": -47.85283635900443,
+  "steps": 125,
+  "completed": true,
+  "success": false,
+  "criteria": {
+    "placement": false,
+    "table_height": true,
+    "settled": true,
+    "released": true,
+    "transport_contact": true,
+    "transport_slip": true,
+    "joint_bounds": true
+  },
+  "final_error_m": 0.03862509548029238,
+  "final_height_m": 0.2749127610401858,
+  "final_speed_m_s": 1.0806039343964312e-14,
+  "transport_contact_fraction": 1.0,
+  "transport_relative_drift_m": 0.0025747923878901885,
+  "filter_interventions": 0,
+  "violations": 0
+}

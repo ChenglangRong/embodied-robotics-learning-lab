@@ -1,0 +1,62 @@
+{
+  "aggregate": {
+    "zero": {
+      "successes": 0,
+      "cases": 8,
+      "mean_error_m": 0.05493737477741584,
+      "violations": 0
+    },
+    "random": {
+      "successes": 1,
+      "cases": 8,
+      "mean_error_m": 0.061790794807750474,
+      "violations": 0
+    },
+    "analytical": {
+      "successes": 8,
+      "cases": 8,
+      "mean_error_m": 0.003699193008400084,
+      "violations": 0
+    },
+    "untrained": {
+      "successes": 0,
+      "cases": 8,
+      "mean_error_m": 0.05500590666054443,
+      "violations": 0
+    },
+    "ppo_seed_0": {
+      "successes": 0,
+      "cases": 8,
+      "mean_error_m": 0.049769515639663364,
+      "violations": 0
+    },
+    "ppo_seed_1": {
+      "successes": 1,
+      "cases": 8,
+      "mean_error_m": 0.04718088867802642,
+      "violations": 0
+    },
+    "ppo_seed_2": {
+      "successes": 0,
+      "cases": 8,
+      "mean_error_m": 0.0468459839773491,
+      "violations": 0
+    },
+    "ppo_seed_3": {
+      "successes": 1,
+      "cases": 8,
+      "mean_error_m": 0.04522308876669294,
+      "violations": 0
+    },
+    "ppo_seed_4": {
+      "successes": 0,
+      "cases": 8,
+      "mean_error_m": 0.05097123072661566,
+      "violations": 0
+    }
+  },
+  "evaluation_cases": 288,
+  "retained_failures": 251,
+  "prefix_state_sha256": "fd6f2dd973be5e4b98fec3bf46224ba37b0aaddd7318660a316715a59eac4e6d",
+  "task_status": "Per-policy task scores; formal expanded-scene assessment and learner evidence remain separate"
+}

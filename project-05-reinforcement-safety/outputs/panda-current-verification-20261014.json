@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "mode": "full_current_physical_replay",
+  "hashed_files": 36,
+  "covered_cases": 288,
+  "replayed_cases": 288,
+  "retained_failure_trajectories": 251,
+  "current_source_differences": [
+    "panda_residual_env.py"
+  ],
+  "scope": "Task outcomes and histories checked; learner capability and expanded-scene assessment separate"
+}

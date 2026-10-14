@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-14",
+  "authoring": "AI-assisted implementation; tool-executed verification; learner independent evidence pending",
+  "local_tests": {"project01": 6, "project02": 2, "project03": 10, "project04": 30, "collaboration_offline": 15, "project05": 42, "total": 105, "native_gui_tests_in_total": 9, "status": "PASS"},
+  "panda_run": "panda-residual-20261014-r3",
+  "training": {"seeds": [0, 1, 2, 3, 4], "interactions_per_seed": 8192, "total_interactions": 40960, "physics_substeps_per_interaction": 20, "scope": "Pilot budget; identical grasped initial state; state inputs; fixed height/gripper schedule and retained IK/position servos"},
+  "scores": {"ppo_id_successes_per_seed": [0, 1, 0, 1, 0], "ppo_id": "2/40", "ppo_ood": "0/40", "analytical_id": "8/8", "analytical_mean_error_m": 0.003699193008400084, "zero_id": "0/8", "task_acceptance": "All seven physical criteria AND125 completed steps"},
+  "replay": {"frozen_source_cases": 288, "current_source_cases": 288, "failure_trajectories_each": 251, "hashed_run_files": 36, "status": "PASS", "current_source_difference": "panda_residual_env.py named import isolation; full numerical outcomes and trajectories reproduced"},
+  "ui": {"layout": "Visually inspected native Panda panel", "automated_gui": "3 new tests passed", "live_3d_button": {"policy": "ppo_seed_0", "split": "test", "case": 0, "filter_enabled": true, "completed_steps": 125, "final_error_m": 0.03862509548029238, "success": false, "scope": "Placement threshold failed; release, settled, contact, slip, height and joint criteria passed"}},
+  "failures_retained": ["Validation reused terminal training environment", "r2 superseded for stricter single-finger release gate", "prefix rendering conditional-import binding", "combined test import-path pollution repaired with named loading", "251 task failure trajectories"],
+  "independent_training_regeneration": "pending; stored-policy replay is separately verified",
+  "cloud_checks": "96 noninteractive software tests plus Panda frozen physical replay configured; actual conclusion bound to publication commit Actions",
+  "model_calls": {"gpt_api": 0, "pi05_inference": 0},
+  "next_personal_task": "Matched zero/analytical/PPO case0 demonstrations, closed-book XY unit conversion and one-factor five-seed code modification",
+  "next_platform": "Go2 velocity and turn feedback"
+}
