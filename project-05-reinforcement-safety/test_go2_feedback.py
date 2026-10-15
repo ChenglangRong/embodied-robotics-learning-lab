@@ -67,4 +67,24 @@ class FeedbackTests(unittest.TestCase):
         self.assertEqual(Path(importlib.import_module("panel").__file__).resolve().parent,Path(__file__).resolve().parent)
 
 
+class ReplayToleranceTests(unittest.TestCase):
+    def test_observed_cloud_roundoff_is_measured(self):
+        from verify_go2 import equal_trajectory
+        stats={"compared_float_values":0,"maximum_absolute_difference":0.,"largest_difference_path":None,"maximum_tolerance_fraction":0.}
+        equal_trajectory({"applied_torque_nm":[0.0008412553537757717]},
+                         {"applied_torque_nm":[0.0008412532144022045]},stats=stats)
+        self.assertEqual(stats["compared_float_values"],1)
+        self.assertAlmostEqual(stats["maximum_absolute_difference"],2.1393735671897396e-9,places=17)
+
+    def test_meaningful_error_and_nonfinite_values_fail(self):
+        from verify_go2 import equal_trajectory
+        for value in (0.0009412532144022045,float("nan"),float("inf")):
+            with self.assertRaises(AssertionError):equal_trajectory(value,0.0008412532144022045)
+
+    def test_discrete_state_and_structure_stay_exact(self):
+        from verify_go2 import equal_trajectory
+        for actual,expected in ((True,False),(1,2),([1.],[]),({"v":0.},{"w":0.}),(1,True)):
+            with self.assertRaises(AssertionError):equal_trajectory(actual,expected)
+
+
 if __name__=="__main__":unittest.main()

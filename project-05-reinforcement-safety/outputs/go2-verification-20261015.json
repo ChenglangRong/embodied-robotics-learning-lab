@@ -5,5 +5,16 @@
   "replayed_cases": 100,
   "retained_failure_cases": 55,
   "hashed_files": 25,
+  "trajectory_comparison": {
+    "rtol": 1e-07,
+    "atol": 1e-07,
+    "discrete_fields": "exact",
+    "case_metric_rtol": 1e-07,
+    "case_metric_atol": 1e-09,
+    "compared_float_values": 3694707,
+    "maximum_absolute_difference": 0.0,
+    "largest_difference_path": null,
+    "maximum_tolerance_fraction": 0.0
+  },
   "scope": "All scenario/controller/reset keys, complete control/state/slip trajectories, raw and cycle-average metrics; no RL training or learner competence claim"
 }

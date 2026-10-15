@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-15",
+  "failed_run_url": "https://github.com/ChenglangRong/embodied-robotics-learning-lab/actions/runs/38712936538",
+  "failed_commit": "e4d7ce4f0fc88acfe28ebe2462fead6222dc24a7",
+  "step": "Go2 frozen complete physical replay",
+  "outcome": "FAIL",
+  "error_path": "trajectory61[378].applied_torque_nm[1]",
+  "cloud_value_nm": 0.0008412553537757717,
+  "stored_value_nm": 0.0008412532144022045,
+  "absolute_difference_nm": 2.1393735671897396e-9,
+  "original_float_comparison": {"rtol": 1e-7, "atol": 1e-9},
+  "corrected_trajectory_comparison": {"rtol": 1e-7, "atol": 1e-7, "maximum_measured_difference": "reported in each verification artifact", "discrete_fields": "exact"},
+  "unchanged": ["task success thresholds", "case metric rtol1e-7 and atol1e-9", "100 frozen trajectories", "controller source snapshots", "model assets", "all failures"],
+  "regression_checks": ["observed nanotorque difference accepted and measured", "1e-4 N m error rejected", "NaN and Inf rejected", "discrete states, types, lengths and keys exact"],
+  "followup_cloud_status": "Bound to correction commit Actions; verify actual run conclusion"
+}

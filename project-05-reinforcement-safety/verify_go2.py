@@ -6,6 +6,7 @@ import hashlib
 import json
 from pathlib import Path
 import sys
+import numpy as np
 sys.dont_write_bytecode=True
 from verify_continuous import equal
 
@@ -13,6 +14,34 @@ from verify_continuous import equal
 def read(p):return json.loads(p.read_text(encoding="utf-8"))
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def key(c):return (c["controller"],c["scenario"],c["seed"])
+
+
+TRAJECTORY_RTOL=1e-7
+TRAJECTORY_ATOL=1e-7
+
+
+def equal_trajectory(actual,expected,label="trajectory",stats=None):
+    """Compare every value; tolerate CPU roundoff only in floating trajectories."""
+    if isinstance(expected,dict):
+        assert isinstance(actual,dict) and actual.keys()==expected.keys(),label
+        for name in expected:equal_trajectory(actual[name],expected[name],f"{label}.{name}",stats)
+    elif isinstance(expected,list):
+        assert isinstance(actual,list) and len(actual)==len(expected),label
+        for i,(a,b) in enumerate(zip(actual,expected)):equal_trajectory(a,b,f"{label}[{i}]",stats)
+    elif isinstance(expected,float):
+        assert isinstance(actual,(int,float)) and not isinstance(actual,bool),label
+        assert np.isfinite(actual) and np.isfinite(expected),(label,actual,expected)
+        difference=abs(actual-expected)
+        tolerance=TRAJECTORY_ATOL+TRAJECTORY_RTOL*abs(expected)
+        assert difference<=tolerance,(label,actual,expected,tolerance)
+        if stats is not None:
+            stats["compared_float_values"]+=1
+            if difference>stats["maximum_absolute_difference"]:
+                stats["maximum_absolute_difference"]=difference
+                stats["largest_difference_path"]=label
+            stats["maximum_tolerance_fraction"]=max(stats["maximum_tolerance_fraction"],difference/tolerance)
+    else:
+        assert type(actual) is type(expected) and actual==expected,(label,actual,expected)
 
 
 def verify(folder,skip=False):
@@ -41,15 +70,16 @@ def verify(folder,skip=False):
     assert protocol["model_commit"]==lab.PIN
     for name,digest in protocol["model_assets_sha256"].items():assert sha(lab.CACHE/name)==digest,name
     replayed=0
+    stats={"compared_float_values":0,"maximum_absolute_difference":0.,"largest_difference_path":None,"maximum_tolerance_fraction":0.}
     if not skip:
         env=Go2(Config(**protocol["config"]))
         try:
             for c in cases:
                 result,rows,_=episode(env,c["controller"],c["scenario"],c["seed"])
-                equal(result,c,f"case{replayed}");equal(rows,trajectories[key(c)]["trajectory"],f"trajectory{replayed}")
+                equal(result,c,f"case{replayed}");equal_trajectory(rows,trajectories[key(c)]["trajectory"],f"trajectory{replayed}",stats)
                 replayed+=1
         finally:env.close()
-    return {"status":"PASS","mode":"integrity_only" if skip else "full_frozen_physical_replay","covered_cases":len(cases),"replayed_cases":replayed,"retained_failure_cases":summary["retained_failure_cases"],"hashed_files":len(manifest),"scope":"All scenario/controller/reset keys, complete control/state/slip trajectories, raw and cycle-average metrics; no RL training or learner competence claim"}
+    return {"status":"PASS","mode":"integrity_only" if skip else "full_frozen_physical_replay","covered_cases":len(cases),"replayed_cases":replayed,"retained_failure_cases":summary["retained_failure_cases"],"hashed_files":len(manifest),"trajectory_comparison":{"rtol":TRAJECTORY_RTOL,"atol":TRAJECTORY_ATOL,"discrete_fields":"exact","case_metric_rtol":1e-7,"case_metric_atol":1e-9,**stats},"scope":"All scenario/controller/reset keys, complete control/state/slip trajectories, raw and cycle-average metrics; no RL training or learner competence claim"}
 
 
 if __name__=="__main__":
