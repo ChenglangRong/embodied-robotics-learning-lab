@@ -1,0 +1,102 @@
+[
+  {
+    "path": "cases.json",
+    "sha256": "ac78df64dcdee87b5473c02901936a7ba30b87a4f1bb40f168470c82d9f413f9"
+  },
+  {
+    "path": "demos/feedback-fast.csv",
+    "sha256": "17e56f1f0722d3160744baef6a7c2459edef13cbc7fa03b81ed8f025d6931b29"
+  },
+  {
+    "path": "demos/feedback-fast.gif",
+    "sha256": "1cca1e5e84c9524b27568243ab28d9b9c068c4d7af8224396c6118795e2e81a0"
+  },
+  {
+    "path": "demos/feedback-fast.png",
+    "sha256": "803cf232b6cb29fe6e4ea2a8c482746def2a2635c382eecafa98cacf23b9247b"
+  },
+  {
+    "path": "demos/feedback-left.csv",
+    "sha256": "02eda18f79de7ac52eebb31d5b56993b2ae97ab45c9223e3a879ceb3697dd245"
+  },
+  {
+    "path": "demos/feedback-left.gif",
+    "sha256": "ff81b8ea1a991c6e9f0434c66a32209627b939461df6ffe8bc18f1af6caf96fc"
+  },
+  {
+    "path": "demos/feedback-left.png",
+    "sha256": "c76c12106e75bd9201a38da2328f43e6a393a2d0638b6f7b6a17f4cf479dfbbb"
+  },
+  {
+    "path": "demos/feedback-step_stop.csv",
+    "sha256": "1f7bdc9ed314906ed7beee897fc5829725fa5f4c46ecfc73b6191fb08817be40"
+  },
+  {
+    "path": "demos/feedback-step_stop.gif",
+    "sha256": "4e5be25c5f8c505e040d25afbcb6129dcd7645fc91cbd62543387fe0f5867c41"
+  },
+  {
+    "path": "demos/feedback-step_stop.png",
+    "sha256": "7f67205a98d30414e03f21a7883db638a5f44f798757994c416e29cf6e780aef"
+  },
+  {
+    "path": "demos/fixed-fast.csv",
+    "sha256": "98ff640f2bcdd58ff29f89d56ecc5087e1775e4c125117262abbe646d5b40550"
+  },
+  {
+    "path": "demos/fixed-fast.gif",
+    "sha256": "b6d211af88d8056308de5062b3fb7bdeada2dd6eefe0e175a4d798a9050ce8d4"
+  },
+  {
+    "path": "demos/fixed-fast.png",
+    "sha256": "b333b52166b20994a317b17a8ede245fe6dffc0e8374dad44df3ea543037cb8b"
+  },
+  {
+    "path": "demos/fixed-left.csv",
+    "sha256": "24eb96de9868ae0ede095e987095dc180af58ee24d16eb8d6f2fdcc11a6b64b1"
+  },
+  {
+    "path": "demos/fixed-left.gif",
+    "sha256": "cb1d11bb9638293656d9849027a9658a57d407d314e00e4a6ecb6ba3bbc58453"
+  },
+  {
+    "path": "demos/fixed-left.png",
+    "sha256": "6745ddbe8a763f6a2db1dbda9997582541a4766d6332bb811ff34b92f24baf20"
+  },
+  {
+    "path": "demos/fixed-step_stop.csv",
+    "sha256": "1669a2b006b85130a5658db27d7342fb6f63b6f51339199a91a275514e37e979"
+  },
+  {
+    "path": "demos/fixed-step_stop.gif",
+    "sha256": "b8c98ea7f408d11f7491696e8be68d37c4771d0bf7673cc365aade4858940468"
+  },
+  {
+    "path": "demos/fixed-step_stop.png",
+    "sha256": "4d69510cfe2b4e052a95e604d02b8cbc61b9d7148591057c1fabe22e9ee4b64f"
+  },
+  {
+    "path": "protocol.json",
+    "sha256": "539782c5f36e570f7d57aabef8b59f4d7d5f290c2bd49faf60d0281cfb0fe81a"
+  },
+  {
+    "path": "source/go2_feedback.py",
+    "sha256": "4f42ed3f5e43f9b50f37c3f5d43ccae1e6e710c5ce6837d57f81b5ef2a5b7da9"
+  },
+  {
+    "path": "source/lab.py",
+    "sha256": "7ff5bfc42eaa3c5a435ed13b34f97bf1043a84ec1e4d1ca371bfe392a3e384cd"
+  },
+  {
+    "path": "source/tabular_lab.py",
+    "sha256": "580fb954a88d5802a09e0b35b959a084a02a0f84b2c30f3b173e2c8db1a9fc00"
+  },
+  {
+    "path": "summary.json",
+    "sha256": "8c7664b6c767b86d9fb1c2ecaaf6ff1134bb394260de8d21e0dbe0ed3dbb43e8"
+  },
+  {
+    "path": "trajectories.jsonl.gz",
+    "sha256": "65b591977ec934fe8bfc1b6762641aa1052819499056ce6d3832e94b43a5a1e5"
+  }
+]

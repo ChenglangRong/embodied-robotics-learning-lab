@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "date": "2026-10-14",
+  "date": "2026-10-15",
   "evidence_files": [
     {
       "path": "project-01-simulation-software/outputs/demo/run_config.json",
@@ -3271,6 +3271,251 @@
       "path": "project-05-reinforcement-safety/outputs/continuous-verification-20261013.json",
       "bytes": 413,
       "sha256": "b42ef99f0b5a917282d7aa9f7730b6d911ef22d76e20b6f32bc8fb139ceaf3f5"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-calibration-20261015/cases.json",
+      "bytes": 16194,
+      "sha256": "818149f6dadb9a0a7632218419e39e04aa6f8a4c603e5441b6cfda3f839f4599"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-calibration-20261015/manifest.json",
+      "bytes": 857,
+      "sha256": "ab620d607f5a88823da52567c6f976a8aeb49d6c5c89f3ef033b69d5e3570328"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-calibration-20261015/protocol.json",
+      "bytes": 3746,
+      "sha256": "7c115e6450e3d30084d5319918158d31aacc2c1d3a55b5660a94d84f9e77b49d"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-calibration-20261015/source/go2_feedback.py",
+      "bytes": 14992,
+      "sha256": "55ad641e10a0f37ba2ddbf8f60a2860719c1815a67993eccb01c14489becfb47"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-calibration-20261015/source/lab.py",
+      "bytes": 21551,
+      "sha256": "7ff5bfc42eaa3c5a435ed13b34f97bf1043a84ec1e4d1ca371bfe392a3e384cd"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-calibration-20261015/source/tabular_lab.py",
+      "bytes": 15620,
+      "sha256": "580fb954a88d5802a09e0b35b959a084a02a0f84b2c30f3b173e2c8db1a9fc00"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-calibration-20261015/summary.json",
+      "bytes": 535,
+      "sha256": "b2d874cbf09507dc567d3ca8a8e668dc20de187c117f173e8d321ee4464bd0e9"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-calibration-20261015/trajectories.jsonl.gz",
+      "bytes": 1851948,
+      "sha256": "80a1feff95d053cf0c3dc218c55c4f70f3133f0bb4d846053a3bd2e817cb1f4f"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-curves-20261015/feedback-fast.png",
+      "bytes": 24067,
+      "sha256": "fb3b4a61caaa182d8e2f58a19e007db81967fe235e568d842f7b6300782abfa5"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-curves-20261015/feedback-left.png",
+      "bytes": 24439,
+      "sha256": "9c2084e22749a88a875733f07c964eeb446c94f342f91ed33356fbb14d6998a5"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-curves-20261015/feedback-step_stop.png",
+      "bytes": 22114,
+      "sha256": "00e6e6788d2ed64aa8312fd2c885f49a6bbdba6cb2b45b110f0370195907b197"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-curves-20261015/fixed-fast.png",
+      "bytes": 21859,
+      "sha256": "479a8adb60792527fbfefb2cc890c69aca504e4f0c25783870b93205e529cb3d"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-curves-20261015/fixed-left.png",
+      "bytes": 21857,
+      "sha256": "463f80e87894dc5dc8360b9b4853c10b5fb8d24387ef2df249bceb05e7947060"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-curves-20261015/fixed-step_stop.png",
+      "bytes": 22142,
+      "sha256": "9c58b83e18518ce70ee971aa528116a2fc660990cc3fd636d46aaa00e1f9769e"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-feedback-20261015/cases.json",
+      "bytes": 81572,
+      "sha256": "ac78df64dcdee87b5473c02901936a7ba30b87a4f1bb40f168470c82d9f413f9"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-feedback-20261015/demos/feedback-fast.csv",
+      "bytes": 739820,
+      "sha256": "17e56f1f0722d3160744baef6a7c2459edef13cbc7fa03b81ed8f025d6931b29"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-feedback-20261015/demos/feedback-fast.gif",
+      "bytes": 5700262,
+      "sha256": "1cca1e5e84c9524b27568243ab28d9b9c068c4d7af8224396c6118795e2e81a0"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-feedback-20261015/demos/feedback-fast.png",
+      "bytes": 95756,
+      "sha256": "803cf232b6cb29fe6e4ea2a8c482746def2a2635c382eecafa98cacf23b9247b"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-feedback-20261015/demos/feedback-left.csv",
+      "bytes": 739549,
+      "sha256": "02eda18f79de7ac52eebb31d5b56993b2ae97ab45c9223e3a879ceb3697dd245"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-feedback-20261015/demos/feedback-left.gif",
+      "bytes": 5376737,
+      "sha256": "ff81b8ea1a991c6e9f0434c66a32209627b939461df6ffe8bc18f1af6caf96fc"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-feedback-20261015/demos/feedback-left.png",
+      "bytes": 86755,
+      "sha256": "c76c12106e75bd9201a38da2328f43e6a393a2d0638b6f7b6a17f4cf479dfbbb"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-feedback-20261015/demos/feedback-step_stop.csv",
+      "bytes": 731097,
+      "sha256": "1f7bdc9ed314906ed7beee897fc5829725fa5f4c46ecfc73b6191fb08817be40"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-feedback-20261015/demos/feedback-step_stop.gif",
+      "bytes": 5383072,
+      "sha256": "4e5be25c5f8c505e040d25afbcb6129dcd7645fc91cbd62543387fe0f5867c41"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-feedback-20261015/demos/feedback-step_stop.png",
+      "bytes": 87726,
+      "sha256": "7f67205a98d30414e03f21a7883db638a5f44f798757994c416e29cf6e780aef"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-feedback-20261015/demos/fixed-fast.csv",
+      "bytes": 686564,
+      "sha256": "98ff640f2bcdd58ff29f89d56ecc5087e1775e4c125117262abbe646d5b40550"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-feedback-20261015/demos/fixed-fast.gif",
+      "bytes": 5603536,
+      "sha256": "b6d211af88d8056308de5062b3fb7bdeada2dd6eefe0e175a4d798a9050ce8d4"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-feedback-20261015/demos/fixed-fast.png",
+      "bytes": 95048,
+      "sha256": "b333b52166b20994a317b17a8ede245fe6dffc0e8374dad44df3ea543037cb8b"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-feedback-20261015/demos/fixed-left.csv",
+      "bytes": 687064,
+      "sha256": "24eb96de9868ae0ede095e987095dc180af58ee24d16eb8d6f2fdcc11a6b64b1"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-feedback-20261015/demos/fixed-left.gif",
+      "bytes": 5603052,
+      "sha256": "cb1d11bb9638293656d9849027a9658a57d407d314e00e4a6ecb6ba3bbc58453"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-feedback-20261015/demos/fixed-left.png",
+      "bytes": 95029,
+      "sha256": "6745ddbe8a763f6a2db1dbda9997582541a4766d6332bb811ff34b92f24baf20"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-feedback-20261015/demos/fixed-step_stop.csv",
+      "bytes": 686364,
+      "sha256": "1669a2b006b85130a5658db27d7342fb6f63b6f51339199a91a275514e37e979"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-feedback-20261015/demos/fixed-step_stop.gif",
+      "bytes": 5612197,
+      "sha256": "b8c98ea7f408d11f7491696e8be68d37c4771d0bf7673cc365aade4858940468"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-feedback-20261015/demos/fixed-step_stop.png",
+      "bytes": 95054,
+      "sha256": "4d69510cfe2b4e052a95e604d02b8cbc61b9d7148591057c1fabe22e9ee4b64f"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-feedback-20261015/manifest.json",
+      "bytes": 3182,
+      "sha256": "a936852aa407594a06972e64d4f9ef306b3c2b1dfda8ee732b86a375574a805e"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-feedback-20261015/protocol.json",
+      "bytes": 4314,
+      "sha256": "539782c5f36e570f7d57aabef8b59f4d7d5f290c2bd49faf60d0281cfb0fe81a"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-feedback-20261015/source/go2_feedback.py",
+      "bytes": 15675,
+      "sha256": "4f42ed3f5e43f9b50f37c3f5d43ccae1e6e710c5ce6837d57f81b5ef2a5b7da9"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-feedback-20261015/source/lab.py",
+      "bytes": 21551,
+      "sha256": "7ff5bfc42eaa3c5a435ed13b34f97bf1043a84ec1e4d1ca371bfe392a3e384cd"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-feedback-20261015/source/tabular_lab.py",
+      "bytes": 15620,
+      "sha256": "580fb954a88d5802a09e0b35b959a084a02a0f84b2c30f3b173e2c8db1a9fc00"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-feedback-20261015/summary.json",
+      "bytes": 542,
+      "sha256": "8c7664b6c767b86d9fb1c2ecaaf6ff1134bb394260de8d21e0dbe0ed3dbb43e8"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-feedback-20261015/trajectories.jsonl.gz",
+      "bytes": 29668003,
+      "sha256": "65b591977ec934fe8bfc1b6762641aa1052819499056ce6d3832e94b43a5a1e5"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-probe-20261015/cases.json",
+      "bytes": 13722,
+      "sha256": "729a548ca9c8ef38d1dc5d6b488ab605b5a5c45a9b558df8abfb05273da49c5c"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-probe-20261015/manifest.json",
+      "bytes": 857,
+      "sha256": "c72d894636c7695622008472fe961c953348cc0fb6743e9891cf2fbf91aa7549"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-probe-20261015/protocol.json",
+      "bytes": 3746,
+      "sha256": "3192eebfd23d0f1e62063252e3fec5894f7f2baa749827952293d158190b8e74"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-probe-20261015/source/go2_feedback.py",
+      "bytes": 14298,
+      "sha256": "97c9d39564c2c4595f81b44eff254e8686662ea4d9c3645e2e6b0bbb92f07362"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-probe-20261015/source/lab.py",
+      "bytes": 21551,
+      "sha256": "7ff5bfc42eaa3c5a435ed13b34f97bf1043a84ec1e4d1ca371bfe392a3e384cd"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-probe-20261015/source/tabular_lab.py",
+      "bytes": 15620,
+      "sha256": "580fb954a88d5802a09e0b35b959a084a02a0f84b2c30f3b173e2c8db1a9fc00"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-probe-20261015/summary.json",
+      "bytes": 535,
+      "sha256": "31166c37140780dc2ba7d8c7626af5f79eb4cc01f9a75474cfd8fec9a60ba9c7"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-probe-20261015/trajectories.jsonl.gz",
+      "bytes": 1638710,
+      "sha256": "a2db9b4b626d3133fa2ed6cf313d46bb1b40bf30bc3e8840510cc76e10ccfe43"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/go2-verification-20261015.json",
+      "bytes": 333,
+      "sha256": "fcb7e549ce9f3ab474287337ff81c923cea1319b385c21d7b8c749f82330f4b7"
     },
     {
       "path": "project-05-reinforcement-safety/outputs/panda-current-verification-20261014.json",

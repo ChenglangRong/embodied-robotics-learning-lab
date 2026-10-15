@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-15",
+  "config": {
+    "dt": 0.02,
+    "horizon": 500,
+    "freq_hz": 1.8,
+    "stride_scale_s": 0.45,
+    "velocity_gain": 2.0,
+    "yaw_gain": 2.0,
+    "filter_alpha": 0.12,
+    "stride_limit_m": 0.09,
+    "stride_slew_m": 0.002,
+    "lift_m": 0.07,
+    "kp": 100.0,
+    "kd": 3.5
+  },
+  "seeds": [
+    0
+  ],
+  "scenarios": [
+    "slow",
+    "fast",
+    "left",
+    "right",
+    "step_stop"
+  ],
+  "controllers": [
+    "fixed",
+    "feedforward",
+    "feedback",
+    "wrong_sign"
+  ],
+  "model_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+  "model_assets_sha256": {
+    "unitree_go2/CHANGELOG.md": "c48a9feccce48078499cc5b5df06870c6dcf1fd0ee9a4c107dce2a05efcfb8e3",
+    "unitree_go2/go2.png": "838924da23e5034f7210a14e3540194750ab1469110c6d3832909dc55968a5e9",
+    "unitree_go2/go2.xml": "372bfd4e320952ab7c435245f32823466a4e4eebf8802da59f2104ee70c2257c",
+    "unitree_go2/go2_mjx.png": "6f2cdfa110b0826122b296bc7db4fd5212f688b177ea70d65a9331bee11ca469",
+    "unitree_go2/go2_mjx.xml": "73eb9f6996ad72ea0d528171ba43c6bf41c13400fc007725f50f8ba8f5f18a0e",
+    "unitree_go2/LICENSE": "aac77466e48052857bd3d138713830c41a2be0b52cc6b219156e3a98451eefad",
+    "unitree_go2/README.md": "c6cac2436c235b79f78e53062aef43c2a0aad6a2c02b5a1288b53409dfd69ecd",
+    "unitree_go2/scene.xml": "5a71fadef4307507ad17101e82202fee5a73549a8da05b323c4277a8b95f1934",
+    "unitree_go2/scene_mjx.xml": "4b0a958d9af6539bbbd0833d7b177e1e98b99d253c62738a687687ffb784bb28",
+    "unitree_go2/assets/base_0.obj": "25134a5dc51ae6ad50a4c452c219cff5c10add573dae56b2098c4b0eaee4cc61",
+    "unitree_go2/assets/base_1.obj": "119384942f6fe896473da8442fa1f0b91bcdbe3ef18754cc85217b481fb1b670",
+    "unitree_go2/assets/base_2.obj": "08c84b27583be4589be8e83c3fb38ebc654154a4118a879661c25ac37a6f4a04",
+    "unitree_go2/assets/base_3.obj": "c485dee967b8d37f422ce51b35886b504c2754f8794b2b1c2c5828a80e6a88b9",
+    "unitree_go2/assets/base_4.obj": "7930e5f6614097cdccc36734f62f8f861642a37b844b8474976bdc2940a2d842",
+    "unitree_go2/assets/calf_0.obj": "cf31a09f97204d62e9a448ef0ce45e150ae8294989351989fb968b4ff3560b0b",
+    "unitree_go2/assets/calf_1.obj": "8c586d68205926f5b4e7e121ef37e47b663a45cfcf6e2869873cff2a99e80f2d",
+    "unitree_go2/assets/calf_mirror_0.obj": "5ed525542abd3b1897b3f1f55feac97e8b49ff8f9284e0f8afddeb085450403b",
+    "unitree_go2/assets/calf_mirror_1.obj": "28bbdc6311f06e5efce183a78ebb2b422e18b35f02356006266b5b97a1b45aee",
+    "unitree_go2/assets/foot.obj": "228f80ff74ca93033976ca05d908513e1dba6b2372c6cc72f8c5de944481ef46",
+    "unitree_go2/assets/hip_0.obj": "2df3b24a0012826021356d8861f2bb354f2f2feef2f4f0b4539d33dd6540ed54",
+    "unitree_go2/assets/hip_1.obj": "c456392ad509f3c78d8a7084296be10a306576b8aad014dfd9be28f738578584",
+    "unitree_go2/assets/thigh_0.obj": "201b41523863d8d8e9e8bfdc936ee2d1c5ee794467a41d959bc4cc4493a6551b",
+    "unitree_go2/assets/thigh_1.obj": "a363dd76e33e73ca8593c606c4d581f5d493080f41b92038bb21a001b95ef60e",
+    "unitree_go2/assets/thigh_mirror_0.obj": "80b96e40faf2ebc769fc180225ef26278dfef73e14408eb95b3e76936b58ce23",
+    "unitree_go2/assets/thigh_mirror_1.obj": "3d2cf7d14ee1ebe100ccf57a5a6152b67d85dff7e8abaecbe71f1abe066ccc88"
+  },
+  "source_sha256": {
+    "go2_feedback.py": "55ad641e10a0f37ba2ddbf8f60a2860719c1815a67993eccb01c14489becfb47",
+    "lab.py": "7ff5bfc42eaa3c5a435ed13b34f97bf1043a84ec1e4d1ca371bfe392a3e384cd",
+    "tabular_lab.py": "580fb954a88d5802a09e0b35b959a084a02a0f84b2c30f3b173e2c8db1a9fc00"
+  },
+  "dependencies": {
+    "numpy": "1.26.4",
+    "mujoco": "3.2.5"
+  },
+  "scope": "Analytic feedback engineering baseline, no RL training; matched reset seeds across controllers; fixed flat floor, twelve-joint PD and scripted gait; thresholds frozen before evaluation"
+}

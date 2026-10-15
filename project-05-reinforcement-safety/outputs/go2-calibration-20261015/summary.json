@@ -1,0 +1,27 @@
+{
+  "aggregate": {
+    "fixed": {
+      "successes": 1,
+      "cases": 5,
+      "falls": 0
+    },
+    "feedforward": {
+      "successes": 3,
+      "cases": 5,
+      "falls": 0
+    },
+    "feedback": {
+      "successes": 4,
+      "cases": 5,
+      "falls": 0
+    },
+    "wrong_sign": {
+      "successes": 0,
+      "cases": 5,
+      "falls": 0
+    }
+  },
+  "evaluation_cases": 20,
+  "retained_failure_cases": 12,
+  "task_status": "Per-scenario physical outcomes retained; learner evidence and RL residual training assessed separately"
+}

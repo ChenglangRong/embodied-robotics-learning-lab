@@ -110,6 +110,12 @@ jobs:
           if ($LASTEXITCODE) { exit $LASTEXITCODE }
           python verify_platform_run.py outputs/platform-baseline-20261012-r3 --portable --output ../.ci-output/physical-full-replay.json
           if ($LASTEXITCODE) { exit $LASTEXITCODE }
+      - name: Go2 feedback physical tests
+        working-directory: project-05-reinforcement-safety
+        run: python -m unittest test_go2_feedback -v
+      - name: Go2 frozen complete physical replay
+        working-directory: project-05-reinforcement-safety
+        run: python verify_go2.py outputs/go2-feedback-20261015 --output ../.ci-output/go2-full-replay.json
       - name: Retain verification artifacts
         if: always()
         uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6 (Node 24)

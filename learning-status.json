@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_date": "2026-10-14",
+  "updated_date": "2026-10-15",
   "repository": "https://github.com/ChenglangRong/embodied-robotics-learning-lab",
   "current_stage": "reinforcement_learning_and_safety",
   "learning_preferences": {"model_focus": ["用户称GPT 6.0；实际API型号待选择并记录", "pi0.5"], "official_sources_checked": "2026-10-13", "application_status": "Offline interface tests passed; GPT calls=0, pi0.5 checkpoint inference=0; local GPU six GB, upstream standard inference greater than eight GB"},
@@ -34,14 +34,15 @@
     },
     {
       "id": "reinforcement_learning_and_safety",
-      "implementation_status": "tabular_continuous_ppo_and_panda_residual_pilot_verified",
+      "implementation_status": "panda_residual_pilot_and_go2_analytic_feedback_baseline_verified",
       "learner_status": "in_progress",
       "independent_assessment": "pending",
-      "learner_report": "2026-10-14用户自报连续PPO部分学完，请求Panda残差放置；前序个人修改与独立解释证据继续验收",
-      "lesson_units": [{"id": "tabular_q", "learner_status": "self_reported_complete", "independent_assessment": "pending"}, {"id": "continuous_ppo", "learner_status": "self_reported_complete", "independent_assessment": "pending", "task_result": "Five-seed ID72/120; DLS24/24; PPO OOD8/120"}, {"id": "panda_residual_placement", "learner_status": "in_progress", "independent_assessment": "pending", "task_result": "Pilot8192 interactions per seed; ID2/40 across five seeds, analytical8/8, zero0/8; OOD0/40; full288 physical replay and251 failure histories verified"}],
-      "materials": ["project-05-reinforcement-safety/README.md", "project-05-reinforcement-safety/01-知识卡与二连杆实操.md", "project-05-reinforcement-safety/02-五平台进阶任务.md", "project-05-reinforcement-safety/03-连续动作PPO实操.md", "project-05-reinforcement-safety/04-GPT6与pi05机器人应用.md", "project-05-reinforcement-safety/05-Panda残差放置实操.md"],
+      "learner_report": "2026-10-15用户自报Panda部分学完，请求Go2速度与转向反馈；Panda性能与个人独立证据继续保留验收",
+      "lesson_units": [{"id": "tabular_q", "learner_status": "self_reported_complete", "independent_assessment": "pending"}, {"id": "continuous_ppo", "learner_status": "self_reported_complete", "independent_assessment": "pending", "task_result": "Five-seed ID72/120; DLS24/24; PPO OOD8/120"}, {"id": "panda_residual_placement", "learner_status": "self_reported_complete", "independent_assessment": "pending", "task_result": "Pilot ID2/40, analytical8/8, OOD0/40; full288 physical replay"}, {"id": "go2_velocity_yaw_feedback", "learner_status": "in_progress", "independent_assessment": "pending", "task_result": "Analytic feedback25/25, feedforward15/25, fixed5/25, wrong-sign0/25; five held-out reset seeds and five flat-floor scenarios; RL training0"}],
+      "materials": ["project-05-reinforcement-safety/README.md", "project-05-reinforcement-safety/01-知识卡与二连杆实操.md", "project-05-reinforcement-safety/02-五平台进阶任务.md", "project-05-reinforcement-safety/03-连续动作PPO实操.md", "project-05-reinforcement-safety/04-GPT6与pi05机器人应用.md", "project-05-reinforcement-safety/05-Panda残差放置实操.md", "project-05-reinforcement-safety/06-Go2速度与转向反馈实操.md"],
       "evidence": ["project-05-reinforcement-safety/outputs/baseline-20261013/summary.json", "project-05-reinforcement-safety/outputs/verification-20261013.json", "project-05-reinforcement-safety/outputs/showcase-20261013/selection.json", "project-05-reinforcement-safety/outputs/continuous-20261013-r2/summary.json", "project-05-reinforcement-safety/outputs/continuous-verification-20261013.json", "project-05-reinforcement-safety/outputs/pendulum-verification-20261013.json", "project-05-reinforcement-safety/outputs/panda-residual-20261014-r3/summary.json", "project-05-reinforcement-safety/outputs/panda-verification-20261014.json", "project-05-reinforcement-safety/outputs/panda-current-verification-20261014.json"],
-      "pending": ["个人TD/PPO手算和单因素代码修改", "连续PPO OOD与Pendulum性能改进", "同物理环境BC/PPO比较", "Panda个人残差修改、性能改进与新初态正式评测", "Go2速度/转向反馈", "H1扰动恢复与行走", "Allegro抗滑与手内重定向", "SAC与固定环境步数五种子正式比较", "GPT具体ID选择与真实推理评测", "pi0.5算力、许可、检查点与机器人适配部署"]
+      "go2_evidence": ["project-05-reinforcement-safety/outputs/go2-feedback-20261015/summary.json", "project-05-reinforcement-safety/outputs/go2-verification-20261015.json"],
+      "pending": ["个人TD/PPO手算和单因素代码修改", "连续PPO OOD与Pendulum性能改进", "同物理环境BC/PPO比较", "Panda个人残差修改、性能改进与新初态正式评测", "Go2个人反馈修改、精确跟踪、RL残差与地形/推力评测", "H1扰动恢复与行走", "Allegro抗滑与手内重定向", "SAC与固定环境步数五种子正式比较", "GPT具体ID选择与真实推理评测", "pi0.5算力、许可、检查点与机器人适配部署"]
     },
     {"id": "embodied_tasks_and_recovery", "implementation_status": "planned", "learner_status": "planned", "independent_assessment": "pending", "materials": ["五平台项目矩阵.md"]},
     {"id": "world_models_and_vla", "implementation_status": "planned", "learner_status": "planned", "independent_assessment": "pending", "materials": ["五平台项目矩阵.md"]}

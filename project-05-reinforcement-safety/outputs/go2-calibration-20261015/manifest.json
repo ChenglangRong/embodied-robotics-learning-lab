@@ -1,0 +1,30 @@
+[
+  {
+    "path": "cases.json",
+    "sha256": "818149f6dadb9a0a7632218419e39e04aa6f8a4c603e5441b6cfda3f839f4599"
+  },
+  {
+    "path": "protocol.json",
+    "sha256": "7c115e6450e3d30084d5319918158d31aacc2c1d3a55b5660a94d84f9e77b49d"
+  },
+  {
+    "path": "source/go2_feedback.py",
+    "sha256": "55ad641e10a0f37ba2ddbf8f60a2860719c1815a67993eccb01c14489becfb47"
+  },
+  {
+    "path": "source/lab.py",
+    "sha256": "7ff5bfc42eaa3c5a435ed13b34f97bf1043a84ec1e4d1ca371bfe392a3e384cd"
+  },
+  {
+    "path": "source/tabular_lab.py",
+    "sha256": "580fb954a88d5802a09e0b35b959a084a02a0f84b2c30f3b173e2c8db1a9fc00"
+  },
+  {
+    "path": "summary.json",
+    "sha256": "b2d874cbf09507dc567d3ca8a8e668dc20de187c117f173e8d321ee4464bd0e9"
+  },
+  {
+    "path": "trajectories.jsonl.gz",
+    "sha256": "80a1feff95d053cf0c3dc218c55c4f70f3133f0bb4d846053a3bd2e817cb1f4f"
+  }
+]

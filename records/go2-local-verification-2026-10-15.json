@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-15",
+  "authoring": "AI-assisted implementation; tool-executed experiments; learner independent evidence pending",
+  "learner_report": "Panda course self-reported complete; Go2 course started",
+  "local_tests": {"project01": 6, "project02": 2, "project03": 10, "project04": 30, "collaboration_offline": 15, "project05": 55, "total": 118, "native_gui_tests_in_total": 12, "status": "PASS"},
+  "experiment": {"run": "go2-feedback-20261015", "development_seed": 0, "held_out_reset_seeds": [1000000, 1000001, 1000002, 1000003, 1000004], "scenarios": ["slow", "fast", "left", "right", "step_stop"], "controllers": ["fixed", "feedforward", "feedback", "wrong_sign"], "cases": 100, "main_control_steps": 50000, "main_physics_substeps": 500000, "extra_standing_physics_substeps": 100000, "rl_training_steps": 0},
+  "scores": {"fixed": "5/25", "feedforward": "15/25", "feedback": "25/25", "wrong_sign": "0/25", "retained_failures": 55, "scope": "Introductory thresholds, flat floor and small reset perturbations; raw oscillation and mean tracking separately reported; slow-speed feedback RMSE increases versus feedforward"},
+  "verification": {"frozen_cases_replayed": 100, "complete_trajectories_replayed": 100, "hashed_files": 25, "status": "PASS", "source": "project-05-reinforcement-safety/outputs/go2-verification-20261015.json"},
+  "historical_failures": ["go2-probe-20261015: raw-RMSE protocol20/20 failed", "go2-calibration-20261015: feedback stop failed before explicit stand mode"],
+  "gui": {"native_tests": "3 new tests passed", "visual": "Panel and generated CSV curves inspected", "live_3d_button_manual_verification": "Pending; Computer Use stopped input after user-input detection", "demonstration": "Six fixed-seed MuJoCo GIF/CSV pairs plus raw/mean response curves"},
+  "models": {"menagerie_commit": "0059d4335f8156206f63a35662313385f7ad6d74", "gpt_api_calls": 0, "pi05_inferences": 0},
+  "cloud": "106 noninteractive tests and Go2 full physical replay configured; actual conclusion bound to publication commit Actions",
+  "next_personal_task": "Matched fast/left/step_stop comparisons, body-frame and stride derivation, one-gain five-new-reset experiment",
+  "next_platform": "H1 disturbance recovery"
+}

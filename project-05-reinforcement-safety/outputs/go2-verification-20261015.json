@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "mode": "full_frozen_physical_replay",
+  "covered_cases": 100,
+  "replayed_cases": 100,
+  "retained_failure_cases": 55,
+  "hashed_files": 25,
+  "scope": "All scenario/controller/reset keys, complete control/state/slip trajectories, raw and cycle-average metrics; no RL training or learner competence claim"
+}
