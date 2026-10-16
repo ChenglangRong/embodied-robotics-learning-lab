@@ -1,0 +1,27 @@
+{
+  "aggregate": {
+    "fixed": {
+      "successes": 0,
+      "cases": 25,
+      "falls": 25
+    },
+    "com": {
+      "successes": 25,
+      "cases": 25,
+      "falls": 0
+    },
+    "com_no_damping": {
+      "successes": 0,
+      "cases": 25,
+      "falls": 25
+    },
+    "wrong_sign": {
+      "successes": 0,
+      "cases": 25,
+      "falls": 25
+    }
+  },
+  "evaluation_cases": 100,
+  "retained_failure_cases": 75,
+  "task_status": "Per-scenario physical outcomes retained; RL residual recovery and stepping remain separate tasks"
+}

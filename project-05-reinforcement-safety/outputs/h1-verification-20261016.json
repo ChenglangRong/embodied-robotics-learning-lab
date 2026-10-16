@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "mode": "full_frozen_physical_replay",
+  "covered_cases": 100,
+  "replayed_cases": 100,
+  "retained_failure_cases": 75,
+  "hashed_files": 19,
+  "trajectory_comparison": {
+    "rtol": 1e-07,
+    "atol": 1e-07,
+    "discrete_fields": "exact",
+    "case_metric_rtol": 1e-07,
+    "case_metric_atol": 1e-09,
+    "compared_float_values": 1391419,
+    "maximum_absolute_difference": 0.0,
+    "largest_difference_path": null,
+    "maximum_tolerance_fraction": 0.0
+  },
+  "scope": "All controller/scenario/reset keys, complete logged trajectories, frozen task metrics and per-controller aggregates; replay imports the frozen source snapshot on the pinned H1 model. No RL training and no learner competence claim"
+}

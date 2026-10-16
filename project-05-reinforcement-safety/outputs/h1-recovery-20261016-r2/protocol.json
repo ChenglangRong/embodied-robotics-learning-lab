@@ -1,0 +1,142 @@
+{
+  "date": "2026-10-16",
+  "config": {
+    "dt": 0.02,
+    "substeps": 10,
+    "horizon": 300,
+    "push_onset_s": 2.0,
+    "feedback_start_s": 0.3,
+    "com_gain": 12.0,
+    "com_rate_gain": 2.4,
+    "com_target_m": 0.05,
+    "filter_alpha": 0.15,
+    "reference_hip": -0.2,
+    "reference_knee": 0.45,
+    "reference_ankle": -0.25,
+    "reference_pelvis_z": 1.06279,
+    "kp_leg": [
+      160.0,
+      240.0,
+      300.0,
+      300.0,
+      100.0
+    ],
+    "kd_scale": 0.6
+  },
+  "seeds": [
+    3000000,
+    3000001,
+    3000002,
+    3000003,
+    3000004
+  ],
+  "scenarios": [
+    "none",
+    "push_front",
+    "strong_front",
+    "push_back",
+    "push_left"
+  ],
+  "controllers": [
+    "fixed",
+    "com",
+    "com_no_damping",
+    "wrong_sign"
+  ],
+  "model_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+  "model_assets_sha256": {
+    "unitree_h1/CHANGELOG.md": "34fe9122af0797da7d86d7e4a63136f688198596ed04f6534457cfcc1c708f82",
+    "unitree_h1/h1.png": "817ee498d4aa49f7f6b1a374b672fd648ccbea2355a42d9f4195382fe7e1664f",
+    "unitree_h1/h1.xml": "c72da9acec5d92e4258c57c3598936b182498b3a3f5c992fb791fb5e44d22b42",
+    "unitree_h1/LICENSE": "f06e3555fa07ac5bf70d2b7ceaad3d9a2ec32d46edc582b9b9d60ccb752fdb68",
+    "unitree_h1/README.md": "76b732cf66a80ee1ac46cc94ebe85ff95621f4980cf6477bee295b947dd6d3ff",
+    "unitree_h1/scene.xml": "14d31a01ad68008a5e7a60f928580155a8b1b131dad3fcd10ace67e41409fe27",
+    "unitree_h1/assets/left_ankle_link.stl": "f623223b59d0f8cd86a799f409f4e8680da3e48d9b60e9f4bf9dad5c5dc8ac25",
+    "unitree_h1/assets/left_elbow_link.stl": "5ccf9bc83a751c1965b692e75534e57ee3c8a0916cbcff2ccccd8fe2b9d818d7",
+    "unitree_h1/assets/left_hip_pitch_link.stl": "aa790c31ffc100cd182f2bf4480e7bfda675edc58ed8f361b6553a4975c9de3b",
+    "unitree_h1/assets/left_hip_roll_link.stl": "8ed880cf1171e048cfe50489fe2546c32790ac0c24a2b3b4c560495401013552",
+    "unitree_h1/assets/left_hip_yaw_link.stl": "103a854e684b84e1baba7d073822079069c64d0fa7b1592f29d38bd29f545bfb",
+    "unitree_h1/assets/left_knee_link.stl": "efda8a6c54406c788102c0d6e59ea95e24114607bc2da9a2bf7f287ef7e48109",
+    "unitree_h1/assets/left_shoulder_pitch_link.stl": "42e1db49464ca0f44f933114ee426e7f6d6310d20cf104bfa38b5ed4794cfab7",
+    "unitree_h1/assets/left_shoulder_roll_link.stl": "8d3bcf767d72a9a5d7dae539eae79dc4132f0159b8803a6f6f2f9ad4b7e94d19",
+    "unitree_h1/assets/left_shoulder_yaw_link.stl": "e22a5b53f8f307e6c5d6c17f9ceae4852c6468547a951cb39dfdec9ee414b515",
+    "unitree_h1/assets/logo_link.stl": "ef9635c847ca7cd61aeaed86ad599935b648fb6f8688867c0448917b1811511b",
+    "unitree_h1/assets/pelvis.stl": "dc2cbbeb07d3b63bce9fedeb8cf5252609dca1e89380734d22d5b3c8ded2f15c",
+    "unitree_h1/assets/right_ankle_link.stl": "a72e7b10d3961b5c5bb7b0ca09f20cbc203619f5ded33ca030517c06298d2fd9",
+    "unitree_h1/assets/right_elbow_link.stl": "bc1b2aa33cffda279b3e6a40b5b932b86de9cce6c41f0c0d860b442e81edcdc2",
+    "unitree_h1/assets/right_hip_pitch_link.stl": "3c0300dd96432f218857886007e9d4e8be038cd8b85e04e84a59df4de7f90476",
+    "unitree_h1/assets/right_hip_roll_link.stl": "3e95b01b0a215e1d134545d4073cf7a72ab38ca33e35c606c03f1706d63588c6",
+    "unitree_h1/assets/right_hip_yaw_link.stl": "10badbb0ac78e22fc220f421b1c919cfcf59406b412d78313e4b8b06cbc51e47",
+    "unitree_h1/assets/right_knee_link.stl": "6183abbaef2afc775c220853e403b8479022a99954dbeef829b39d71916ddeda",
+    "unitree_h1/assets/right_shoulder_pitch_link.stl": "850ffa7321993bfadcdb8bab1d422239f6a20abe27daa5ef99622f55d4da3217",
+    "unitree_h1/assets/right_shoulder_roll_link.stl": "b9e793e351e09027d27427c06df2c1cb6b37c0205d0f68686b0d73916c6821de",
+    "unitree_h1/assets/right_shoulder_yaw_link.stl": "0c9e4bec895f24c07fb2c4d132fc5e3cc7146155547267e9c270789af6567781",
+    "unitree_h1/assets/torso_link.stl": "3ab785cbfbd851b0e9c59a46871aabc4718f3f8e726e21a2d14360d217ec7ba8"
+  },
+  "source_sha256": {
+    "h1_recovery.py": "d34901e78ae210acfed0e797ffe3ef2214c8db0608bd44d925c38cd762d0c724",
+    "lab.py": "7ff5bfc42eaa3c5a435ed13b34f97bf1043a84ec1e4d1ca371bfe392a3e384cd",
+    "tabular_lab.py": "580fb954a88d5802a09e0b35b959a084a02a0f84b2c30f3b173e2c8db1a9fc00"
+  },
+  "dependencies": {
+    "numpy": "1.26.4",
+    "mujoco": "3.2.5"
+  },
+  "acceptance": {
+    "horizon_steps": 300,
+    "episode_s": 6.0,
+    "push_onset_s": 2.0,
+    "feedback_start_s": 0.3,
+    "min_pelvis_height_m": 0.62,
+    "max_tilt_rad": 0.55,
+    "com_target_m": 0.05,
+    "recovery_window_m": 0.035,
+    "recovery_rate_m_s": 0.12,
+    "recovery_time_s": 2.5,
+    "mean_contact_slip_m_s": 0.25
+  },
+  "scenario_push": {
+    "none": {
+      "force_x_n": 0.0,
+      "force_y_n": 0.0,
+      "duration_s": 0.2
+    },
+    "push_front": {
+      "force_x_n": 40.0,
+      "force_y_n": 0.0,
+      "duration_s": 0.2
+    },
+    "strong_front": {
+      "force_x_n": 60.0,
+      "force_y_n": 0.0,
+      "duration_s": 0.2
+    },
+    "push_back": {
+      "force_x_n": -60.0,
+      "force_y_n": 0.0,
+      "duration_s": 0.2
+    },
+    "push_left": {
+      "force_x_n": 0.0,
+      "force_y_n": 120.0,
+      "duration_s": 0.2
+    }
+  },
+  "development_seeds": [
+    0
+  ],
+  "reset_scope": "Pelvis XY normal .001 m, height normal .0005 m around the calibrated 1.06279 m stance, joint noise .001 rad, world velocity .002 m/s for six axes, no pre-settle; flat floor, both feet in contact from the first step, push scheduled at 2.0 s",
+  "calibration": {
+    "reference_hip": -0.2,
+    "reference_knee": 0.45,
+    "reference_ankle": -0.25,
+    "reference_pelvis_z": 1.06279,
+    "measured_ankle_command_to_com_acceleration": {
+      "value": -2.85,
+      "unit": "1/s^2 per rad",
+      "note": "negative: a negative ankle reference accelerates the CoM forward"
+    },
+    "note": "the shipped h1.xml default pose penetrates the floor by about 0.10 m and is not used"
+  },
+  "scope": "Analytic standing/recovery baseline on the pinned H1 model, no RL training, no stepping; matched push force, duration, reset seed and torque limits across controllers; thresholds frozen before the five held-out seeds"
+}

@@ -1,0 +1,78 @@
+[
+  {
+    "path": "cases.json",
+    "sha256": "29a1022949de23f98212a46108577021526cc280a394b19fd0369480de3e8875"
+  },
+  {
+    "path": "demos/com-push_left.csv",
+    "sha256": "515a3651b1ce57c96a340b04f651da2379bba18531c7ac06ca9f882ad3306185"
+  },
+  {
+    "path": "demos/com-push_left.gif",
+    "sha256": "6577b3aadbed33e261699e404b7e27839d98075f6ecf269d52c3035083014e58"
+  },
+  {
+    "path": "demos/com-push_left.png",
+    "sha256": "9a6294e514bf475403525d35b3443d5a5760c0ae190df294564bea13eb9b1198"
+  },
+  {
+    "path": "demos/com-strong_front.csv",
+    "sha256": "88d308b0b73bb82db7570f29a0fd21d7c969cb5393d21fe4c18a745d92c93d08"
+  },
+  {
+    "path": "demos/com-strong_front.gif",
+    "sha256": "7b1e30de0e6bc0334d86850890c928467cde080262bc24a6b5581ea4ed3c17ab"
+  },
+  {
+    "path": "demos/com-strong_front.png",
+    "sha256": "329d5aef4577b5b7c4bd359f4203d194a8d57583b5774476b1ad9817aa29e794"
+  },
+  {
+    "path": "demos/fixed-push_left.csv",
+    "sha256": "40b2984c040b2081c3944b64c5c89c493e48a645c97a6bffd7fafa56d2214351"
+  },
+  {
+    "path": "demos/fixed-push_left.gif",
+    "sha256": "9ec93823e35bb18f2da16dc7daa712f3d2cf7ce3797b3dea13e6090bd6ad2f0f"
+  },
+  {
+    "path": "demos/fixed-push_left.png",
+    "sha256": "9431b6018588f899931510323dc32b96215ca57c22d0373e1bd8759f55e76326"
+  },
+  {
+    "path": "demos/fixed-strong_front.csv",
+    "sha256": "40b2984c040b2081c3944b64c5c89c493e48a645c97a6bffd7fafa56d2214351"
+  },
+  {
+    "path": "demos/fixed-strong_front.gif",
+    "sha256": "286ec3933f9809e3793fc0d659ffa2fc1c0202bdbf9fdb147c61ddc51c0a3c57"
+  },
+  {
+    "path": "demos/fixed-strong_front.png",
+    "sha256": "45e4da23dbcf756faa80b51909f5872f58846a2bf1262a09293b686dae2db810"
+  },
+  {
+    "path": "protocol.json",
+    "sha256": "3317c11219ab6bfc900982624818ff4b879d72bf57555b5121457d2b3d222427"
+  },
+  {
+    "path": "source/h1_recovery.py",
+    "sha256": "d34901e78ae210acfed0e797ffe3ef2214c8db0608bd44d925c38cd762d0c724"
+  },
+  {
+    "path": "source/lab.py",
+    "sha256": "7ff5bfc42eaa3c5a435ed13b34f97bf1043a84ec1e4d1ca371bfe392a3e384cd"
+  },
+  {
+    "path": "source/tabular_lab.py",
+    "sha256": "580fb954a88d5802a09e0b35b959a084a02a0f84b2c30f3b173e2c8db1a9fc00"
+  },
+  {
+    "path": "summary.json",
+    "sha256": "27caa8b7fbf5c8842489e9eadc7e7ef4e7142c39a3ef65dc8d0adc7f64da286e"
+  },
+  {
+    "path": "trajectories.jsonl.gz",
+    "sha256": "091419fabf93974faa632791b30a5c41098dc673687c9c38351d83ea9bca9640"
+  }
+]

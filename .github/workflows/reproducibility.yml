@@ -116,6 +116,12 @@ jobs:
       - name: Go2 frozen complete physical replay
         working-directory: project-05-reinforcement-safety
         run: python verify_go2.py outputs/go2-feedback-20261015 --output ../.ci-output/go2-full-replay.json
+      - name: H1 push-recovery physical tests
+        working-directory: project-05-reinforcement-safety
+        run: python -m unittest test_h1_recovery -v
+      - name: H1 frozen complete physical replay
+        working-directory: project-05-reinforcement-safety
+        run: python verify_h1.py outputs/h1-recovery-20261016-r2 --output ../.ci-output/h1-full-replay.json
       - name: Retain verification artifacts
         if: always()
         uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6 (Node 24)
