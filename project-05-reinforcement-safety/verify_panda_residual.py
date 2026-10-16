@@ -25,6 +25,34 @@ METRIC_RTOL=1e-7
 METRIC_ATOL=1e-9
 REPLAY_METRIC_RTOL=1e-5
 REPLAY_METRIC_ATOL=1e-7
+# Same treatment for the stored trajectory floats: the second cloud run failed on
+# trace160[29].object_speed_m_s 0.05498645217537508 vs 0.05498644365051704 (1.5e-7 relative),
+# which is CPU roundoff on an 8192-step rollout, not a physical difference.
+TRAJECTORY_RTOL=1e-7
+TRAJECTORY_ATOL=1e-7
+
+
+def equal_trajectory(actual,expected,label,stats):
+    """Compare stored trajectories; tolerate CPU roundoff, keep discrete fields exact."""
+    if isinstance(expected,dict):
+        assert isinstance(actual,dict) and actual.keys()==expected.keys(),(label,actual,expected)
+        for name in expected:equal_trajectory(actual[name],expected[name],f"{label}.{name}",stats)
+    elif isinstance(expected,list):
+        assert isinstance(actual,list) and len(actual)==len(expected),(label,actual,expected)
+        for i,(a,b) in enumerate(zip(actual,expected)):equal_trajectory(a,b,f"{label}[{i}]",stats)
+    elif isinstance(expected,float):
+        assert isinstance(actual,(int,float)) and not isinstance(actual,bool),(label,actual,expected)
+        assert np.isfinite(actual) and np.isfinite(expected),(label,actual,expected)
+        difference=abs(actual-expected)
+        tolerance=TRAJECTORY_ATOL+TRAJECTORY_RTOL*abs(expected)
+        assert difference<=tolerance,(label,actual,expected,tolerance)
+        stats["compared_trajectory_values"]+=1
+        if difference>stats["maximum_trajectory_difference"]:
+            stats["maximum_trajectory_difference"]=difference
+            stats["maximum_trajectory_difference_path"]=label
+        stats["maximum_trajectory_tolerance_fraction"]=max(stats["maximum_trajectory_tolerance_fraction"],difference/tolerance)
+    else:
+        assert type(actual) is type(expected) and actual==expected,(label,actual,expected)
 
 
 def equal_metric(actual,expected,label,stats):
@@ -85,7 +113,9 @@ def verify(folder,skip=False,current=False):
     for name,digest in protocol["model_assets_sha256"].items():assert sha(lab.CACHE/name)==digest,name
     replayed=0
     stats={"compared_metric_values":0,"maximum_absolute_difference":0.,"maximum_difference_path":None,
-           "maximum_tolerance_fraction":0.,"values_beyond_task_metric_tolerance":0}
+           "maximum_tolerance_fraction":0.,"values_beyond_task_metric_tolerance":0,
+           "compared_trajectory_values":0,"maximum_trajectory_difference":0.,
+           "maximum_trajectory_difference_path":None,"maximum_trajectory_tolerance_fraction":0.}
     if not skip:
         actual={"zero":"zero","random":"random","analytical":"analytical","untrained":Agent(27,2,777)}
         actual.update({f"ppo_seed_{s}":Agent.load(folder/f"ppo-seed-{s}.npz") for s in protocol["training_seeds"]})
@@ -99,12 +129,15 @@ def verify(folder,skip=False,current=False):
                     equal_metric(result,c,f"case{replayed}",stats)
                     if key(c) in traces:
                         equal(traces[key(c)]["case"],c,f"failure{replayed}")
-                        equal(rows,traces[key(c)]["trajectory"],f"trace{replayed}")
+                        equal_trajectory(rows,traces[key(c)]["trajectory"],f"trace{replayed}",stats)
                     replayed+=1
             finally:env.close()
     return {"status":"PASS","mode":"integrity_only" if skip else "full_current_physical_replay" if current else "full_frozen_physical_replay","hashed_files":len(manifest),"covered_cases":len(cases),"replayed_cases":replayed,"retained_failure_trajectories":len(records),
             "case_metric_comparison":{"rtol":METRIC_RTOL,"atol":METRIC_ATOL,"replay_rtol":REPLAY_METRIC_RTOL,"replay_atol":REPLAY_METRIC_ATOL,
-                                      "prior_cloud_failure":"case160.return -150.63968815353596 vs -150.63963004988793 (5.8e-5 absolute, 3.9e-7 relative)",**stats},
+                                      "prior_cloud_failures":["case160.return -150.63968815353596 vs -150.63963004988793 (5.8e-5 absolute, 3.9e-7 relative)",
+                                                              "trace160[29].object_speed_m_s 0.05498645217537508 vs 0.05498644365051704 (1.5e-7 relative)"],
+                                      **stats},
+            "trajectory_comparison":{"rtol":TRAJECTORY_RTOL,"atol":TRAJECTORY_ATOL,"discrete_fields":"exact"},
             "current_source_differences":[name for name,digest in protocol["source_sha256"].items() if name!="lab.py" and sha(Path(__file__).resolve().parent/name)!=digest],"scope":"Task outcomes and histories checked; learner capability and expanded-scene assessment separate"}
 
 
