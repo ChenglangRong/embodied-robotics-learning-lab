@@ -1,0 +1,193 @@
+{
+  "reset_seed": 4000,
+  "data_scope": "Development demonstration, no training or held-out evaluation",
+  "environment_split": "test",
+  "config": {
+    "dt": 0.02,
+    "substeps": 5,
+    "horizon": 150,
+    "tolerance": 0.045,
+    "velocity_limit": 2.0,
+    "torque_limit": 6.0,
+    "guard": true,
+    "mass_scale": 1.0
+  },
+  "versions": {
+    "python": "3.12.4",
+    "numpy": "1.26.4",
+    "mujoco": "3.2.5"
+  },
+  "sha256": {
+    "script": "73493a6435741ad7842a27b2aec2d89750835ea0a1ce7091293beb151ad668ba",
+    "environment": "52e788c5507bffede2faa2e276bdf704096ff9234de20b32f1bb9a361c4e03f9",
+    "model_xml": "69b6b7243d1a3cb6fca7c6118ad3a4f70dca8daa436dae36bbfd166b61589acb"
+  },
+  "goal_m": [
+    0.5841019913102505,
+    0.36162948308697773
+  ],
+  "initial": {
+    "time_s": 0.0,
+    "q_rad": [
+      -0.3954424277094421,
+      1.9746785829718203
+    ],
+    "dq_rad_s": [
+      0.0,
+      0.0
+    ],
+    "observation": [
+      -0.3852165103891018,
+      0.919542234968844,
+      0.9228262242283989,
+      -0.39299119342359734,
+      0.0,
+      0.0,
+      0.5841019913102505,
+      0.36162948308697773,
+      0.03378214808201807,
+      0.19277363537678743,
+      0.0
+    ]
+  },
+  "cases": {
+    "positive": {
+      "action": [
+        0.5,
+        0.0
+      ],
+      "velocity_ref_rad_s": [
+        1.0,
+        0.0
+      ],
+      "applied_velocity_ref_rad_s": [
+        1.0,
+        0.0
+      ],
+      "final": {
+        "time_s": 0.02,
+        "q_rad": [
+          -0.3940200926325285,
+          1.974611066481992
+        ],
+        "dq_rad_s": [
+          0.11626243598293783,
+          -0.005121163144491363
+        ],
+        "observation": [
+          -0.38390355306947355,
+          0.9195687662588814,
+          0.9233731975429187,
+          -0.39292910826397,
+          0.029065608995734456,
+          -0.0012802907861228408,
+          0.5841019913102505,
+          0.36162948308697773,
+          0.03399586896325646,
+          0.19199080179745465,
+          0.0
+        ]
+      },
+      "reward": -0.3982853731200778,
+      "error_m": 0.1949774014633399,
+      "torque_peak_nm": 3.0,
+      "guard_intervention": false,
+      "success": false,
+      "violation": false,
+      "terminated": false,
+      "truncated": false
+    },
+    "negative": {
+      "action": [
+        -0.5,
+        0.0
+      ],
+      "velocity_ref_rad_s": [
+        -1.0,
+        0.0
+      ],
+      "applied_velocity_ref_rad_s": [
+        -1.0,
+        0.0
+      ],
+      "final": {
+        "time_s": 0.02,
+        "q_rad": [
+          -0.3968647808052425,
+          1.9747454774571014
+        ],
+        "dq_rad_s": [
+          -0.11626495165821646,
+          0.005030545318921856
+        ],
+        "observation": [
+          -0.38652870501999226,
+          0.9195159439678425,
+          0.9222773770377152,
+          -0.3930527048487612,
+          -0.029066237914554115,
+          0.001257636329730464,
+          0.5841019913102505,
+          0.36162948308697773,
+          0.03356928932696912,
+          0.19355674371624615,
+          0.0
+        ]
+      },
+      "reward": -0.40856697587415136,
+      "error_m": 0.19644620185677897,
+      "torque_peak_nm": 3.0,
+      "guard_intervention": false,
+      "success": false,
+      "violation": false,
+      "terminated": false,
+      "truncated": false
+    },
+    "zero": {
+      "action": [
+        0.0,
+        0.0
+      ],
+      "velocity_ref_rad_s": [
+        0.0,
+        0.0
+      ],
+      "applied_velocity_ref_rad_s": [
+        0.0,
+        0.0
+      ],
+      "final": {
+        "time_s": 0.02,
+        "q_rad": [
+          -0.3954424277094421,
+          1.9746785829718203
+        ],
+        "dq_rad_s": [
+          0.0,
+          0.0
+        ],
+        "observation": [
+          -0.3852165103891018,
+          0.919542234968844,
+          0.9228262242283989,
+          -0.39299119342359734,
+          0.0,
+          0.0,
+          0.5841019913102505,
+          0.36162948308697773,
+          0.03378214808201807,
+          0.19277363537678743,
+          0.0
+        ]
+      },
+      "reward": -0.4014225748493206,
+      "error_m": 0.1957112874246603,
+      "torque_peak_nm": 0.0,
+      "guard_intervention": false,
+      "success": false,
+      "violation": false,
+      "terminated": false,
+      "truncated": false
+    }
+  }
+}

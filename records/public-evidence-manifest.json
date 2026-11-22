@@ -4221,6 +4221,11 @@
       "path": "project-05-reinforcement-safety/outputs/verification-20261013.json",
       "bytes": 277,
       "sha256": "9c2c63b9a88cc820c1e47570c0df3dad39c57896bd89da3b56503a9424a59ba2"
+    },
+    {
+      "path": "project-06-world-model-wam/outputs/day1-control-step-20261122.json",
+      "bytes": 4281,
+      "sha256": "060356895ced201706b9ef1ac8edfc549ad480ab2cedf15fabaa8633744ba361"
     }
   ],
   "scope": "Git-visible public experimental outputs; original record bytes preserved by .gitattributes."

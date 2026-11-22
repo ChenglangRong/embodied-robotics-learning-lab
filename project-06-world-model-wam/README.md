@@ -6,7 +6,7 @@
 
 | 时间 | 学什么 | 动手与当天验收 |
 | --- | --- | --- |
-| Day 1 · 75 分钟 | 前向动力学、BC、WAM 的输入输出 | 读 DreamZero 方法图与 Fast-WAM 的消融。画三条数据流，注明训练目标、推理可用字段、动作块长度和实际执行步数。跑下方命令，手查一个 20 ms 控制步。 |
+| Day 1 · 75 分钟 | 前向动力学、BC、WAM 的输入输出 | 读 DreamZero 方法图与 Fast-WAM 的消融。画三条数据流，注明训练目标、推理可用字段、动作块长度和实际执行步数。先预测正、反、零三个动作的结果，再跑下方命令核对 20 ms 后的关节速度。 |
 | Day 2 · 90 分钟 | 时序对齐、动作表示、按回合划分 | 自己实现采集和滑窗。保存一条可手查的 10 步轨迹，在同一重置状态分别施加正、反、零动作。用变化动作的片段做一格错位测试，验证正确对齐的片段可重放，故意错位的片段会触发检查。 |
 | Day 3 · 90 分钟 | 单步预测与多步误差累积 | 实验 A 先用一个训练种子跑通。看一步和五步末端误差，再检查正反动作的预测差是否与仿真差方向一致。保存一个预测偏差最大的案例。 |
 | Day 4 · 105 分钟 | 动作块、未来状态监督、滚动执行 | 实验 B 先在一个训练回合跑通拟合，然后做一个种子的配对闭环。检查真实未来只参与训练损失、推理每次收到当前新观测。 |
@@ -21,19 +21,10 @@ Day 1 阅读范围为联合未来画面和动作的 [DreamZero](https://dreamzer
 在仓库根目录打开 PowerShell。已有项目 02 虚拟环境且依赖可导入时，直接复用它。也可以使用项目 05 的固定依赖环境。
 
 ```powershell
-$weekPython = (Resolve-Path '.\project-02-urdf-mujoco-ros2\.venv\Scripts\python.exe').Path
-Push-Location '.\project-05-reinforcement-safety'
-try {
-    & $weekPython -m unittest test_ppo -q
-    if ($LASTEXITCODE) { throw 'Project 05 tests failed' }
-    & $weekPython -c "from physical_env import ArmPhysics; e=ArmPhysics(); x,g=e.reset(4000); y,_,done,cut,i=e.step([.7,-.3]); print(x.shape,y.shape,i['q'],i['dq'],i['applied_velocity'],done,cut)"
-    if ($LASTEXITCODE) { throw 'ArmPhysics smoke check failed' }
-} finally {
-    Pop-Location
-}
+& .\project-02-urdf-mujoco-ros2\.venv\Scripts\python.exe .\project-06-world-model-wam\day1_control_step.py
 ```
 
-项目 02 环境缺失时，从根目录运行 `powershell -ExecutionPolicy Bypass -File .\project-05-reinforcement-safety\setup.ps1`，将上面的解释器路径换为项目 05 的 `.venv\Scripts\python.exe`。期望看到两个 11 维观测，输入为两维归一化关节速度指令 `[-1,1]`，输出含步后关节角、角速度和实际施加的速度参考。对照 [ArmPhysics 接口](../project-05-reinforcement-safety/physical_env.py) 和 [DLS 评测入口](../project-05-reinforcement-safety/continuous.py)。可复用 [项目 04 的 NumPy MLP 与 BC 实现](../project-04-imitation-learning/learning.py) 的训练结构。
+项目 02 环境缺失时，从根目录运行 `powershell -ExecutionPolicy Bypass -File .\project-05-reinforcement-safety\setup.ps1`，将上面的解释器路径换为项目 05 的 `.venv\Scripts\python.exe`。查看 `initial.observation` 和各组的 `final.observation`，它们都是 11 维。观测第 5、6 项乘 4 得到关节角速度，在 `final.dq_rad_s` 中核对。输入为两维归一化关节速度指令 `[-1,1]`，试验报告也打印护栏处理后的速度参考 `applied_velocity_ref_rad_s`。对照 [ArmPhysics 接口](../project-05-reinforcement-safety/physical_env.py) 和 [DLS 评测入口](../project-05-reinforcement-safety/continuous.py)。可复用 [项目 04 的 NumPy MLP 与 BC 实现](../project-04-imitation-learning/learning.py) 的训练结构。
 
 ## 冻结的数据和实验协议
 
