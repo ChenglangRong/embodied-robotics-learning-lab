@@ -26,6 +26,18 @@ Day 1 阅读范围为联合未来画面和动作的 [DreamZero](https://dreamzer
 
 项目 02 环境缺失时，从根目录运行 `powershell -ExecutionPolicy Bypass -File .\project-05-reinforcement-safety\setup.ps1`，将上面的解释器路径换为项目 05 的 `.venv\Scripts\python.exe`。查看 `initial.observation` 和各组的 `final.observation`，它们都是 11 维。观测第 5、6 项乘 4 得到关节角速度，在 `final.dq_rad_s` 中核对。输入为两维归一化关节速度指令 `[-1,1]`，试验报告也打印护栏处理后的速度参考 `applied_velocity_ref_rad_s`。对照 [ArmPhysics 接口](../project-05-reinforcement-safety/physical_env.py) 和 [DLS 评测入口](../project-05-reinforcement-safety/continuous.py)。可复用 [项目 04 的 NumPy MLP 与 BC 实现](../project-04-imitation-learning/learning.py) 的训练结构。
 
+### 三动作逐步慢放
+
+![同一初态下正、反、零动作的 MuJoCo 二连杆慢放](outputs/day1-motion.gif)
+
+动图显示 0–20 ms 的六个实测状态。彩色姿态的关节角变化放大 180 倍，灰虚线标出起始位置，速度和末端位移是仿真读数。先跟左列从速度指令看到实际转动，再看右列，最后对比三列中的第二关节速度。
+
+在仓库根目录复现，Windows 默认使用微软雅黑。其他环境可用 `--font` 和 `--bold-font` 指定本地中文字体。
+
+```powershell
+& .\project-02-urdf-mujoco-ros2\.venv\Scripts\python.exe .\project-06-world-model-wam\render_day1_motion.py --output-dir .ci-output
+```
+
 ## 冻结的数据和实验协议
 
 - 用 `ArmPhysics` 默认物理配置。一个控制步 20 ms，内部 5 个仿真子步。成功为末端误差小于 45 mm 且关节速度向量范数小于 0.4 rad/s，连续 5 步。每回合至多 150 步，保留现有 guard 与越界判据。

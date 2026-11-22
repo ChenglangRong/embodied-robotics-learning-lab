@@ -56,7 +56,7 @@
       "learner_report": "Day 1 引导练习中先提交第一关节正、反、零速度符号预测，三项与仿真吻合；个人独立验收待提交",
       "independent_assessment": "pending",
       "materials": ["project-06-world-model-wam/README.md", "project-06-world-model-wam/CHANGELOG.md", "五平台项目矩阵.md"],
-      "evidence": ["project-06-world-model-wam/outputs/day1-control-step-20261122.json"],
+      "evidence": ["project-06-world-model-wam/outputs/day1-control-step-20261122.json", "project-06-world-model-wam/outputs/day1-motion-samples.json", "project-06-world-model-wam/outputs/day1-motion.gif"],
       "pending": ["二连杆数据对齐与错位回放检查", "动作条件动力学的留出预测", "未来状态辅助监督与动作块 BC 的同种子闭环对照", "个人复现与独立代码修改", "Panda、Go2、H1 与 Allegro 迁移", "视觉模型检查点与闭环验收"]
     }
   ],

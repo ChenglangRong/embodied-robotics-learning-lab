@@ -4226,6 +4226,16 @@
       "path": "project-06-world-model-wam/outputs/day1-control-step-20261122.json",
       "bytes": 4281,
       "sha256": "060356895ced201706b9ef1ac8edfc549ad480ab2cedf15fabaa8633744ba361"
+    },
+    {
+      "path": "project-06-world-model-wam/outputs/day1-motion-samples.json",
+      "bytes": 6874,
+      "sha256": "d4c4ee3ce1b3c5e2180bb63cf348f60096a161fff3028540371a79257228740f"
+    },
+    {
+      "path": "project-06-world-model-wam/outputs/day1-motion.gif",
+      "bytes": 252914,
+      "sha256": "8f16147b26085406499f6dd32375f2a7bb572db97cc9a74d99b8691b45fd1209"
     }
   ],
   "scope": "Git-visible public experimental outputs; original record bytes preserved by .gitattributes."
