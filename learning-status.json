@@ -2,7 +2,7 @@
   "schema_version": 1,
   "updated_date": "2026-11-22",
   "repository": "https://github.com/ChenglangRong/embodied-robotics-learning-lab",
-  "current_stage": "reinforcement_learning_and_safety",
+  "current_stage": "world_models_and_vla",
   "learning_preferences": {"model_focus": ["用户称GPT 6.0；实际API型号待选择并记录", "pi0.5"], "official_sources_checked": "2026-10-13", "application_status": "Offline interface tests passed; GPT calls=0, pi0.5 checkpoint inference=0; local GPU six GB, upstream standard inference greater than eight GB"},
   "evidence_authoring": "AI-assisted implementation and tool-executed verification; learner reports and independent assessments tracked separately",
   "stages": [
@@ -49,7 +49,14 @@
       "pending": ["个人TD/PPO手算和单因素代码修改", "连续PPO OOD与Pendulum性能改进", "同物理环境BC/PPO比较", "Panda个人残差修改、性能改进与新初态正式评测", "Go2个人反馈修改、精确跟踪、RL残差与地形/推力评测", "H1个人增益修改与闭卷解释；H1行走、落脚点规划与踏步恢复", "Allegro抗滑与手内重定向", "SAC与固定环境步数五种子正式比较", "GPT具体ID选择与真实推理评测", "pi0.5算力、许可、检查点与机器人适配部署"]
     },
     {"id": "embodied_tasks_and_recovery", "implementation_status": "planned", "learner_status": "planned", "independent_assessment": "pending", "materials": ["五平台项目矩阵.md"]},
-    {"id": "world_models_and_vla", "implementation_status": "planned", "learner_status": "planned", "independent_assessment": "pending", "materials": ["五平台项目矩阵.md"]}
+    {
+      "id": "world_models_and_vla",
+      "implementation_status": "week_one_protocol_available_experiments_planned",
+      "learner_status": "planned",
+      "independent_assessment": "pending",
+      "materials": ["project-06-world-model-wam/README.md", "project-06-world-model-wam/CHANGELOG.md", "五平台项目矩阵.md"],
+      "pending": ["二连杆数据对齐与错位回放检查", "动作条件动力学的留出预测", "未来状态辅助监督与动作块 BC 的同种子闭环对照", "个人复现与独立代码修改", "Panda、Go2、H1 与 Allegro 迁移", "视觉模型检查点与闭环验收"]
+    }
   ],
   "publication_policy": {
     "trigger": "After each learning or experiment advancement",
