@@ -1,0 +1,12 @@
+{
+  "aggregate": {
+    "com": {
+      "successes": 25,
+      "cases": 25,
+      "falls": 0
+    }
+  },
+  "evaluation_cases": 25,
+  "retained_failure_cases": 0,
+  "task_status": "Per-scenario physical outcomes retained; RL residual recovery and stepping remain separate tasks"
+}

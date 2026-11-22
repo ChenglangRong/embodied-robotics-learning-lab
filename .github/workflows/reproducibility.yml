@@ -122,6 +122,18 @@ jobs:
       - name: H1 frozen complete physical replay
         working-directory: project-05-reinforcement-safety
         run: python verify_h1.py outputs/h1-recovery-20261016-r2 --output ../.ci-output/h1-full-replay.json
+      - name: H1 matched gain experiment replay
+        working-directory: project-05-reinforcement-safety
+        run: |
+          python verify_h1.py outputs/h1-gain12-20261122 --output ../.ci-output/h1-gain12-replay.json
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          python verify_h1.py outputs/h1-gain6-20261122 --output ../.ci-output/h1-gain6-replay.json
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          python compare_h1_gains.py outputs/h1-gain12-20261122 outputs/h1-gain6-20261122 --output ../.ci-output/h1-gain-comparison.json
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          if ((Get-FileHash ../.ci-output/h1-gain-comparison.json).Hash -ne (Get-FileHash outputs/h1-gain-comparison-20261122.json).Hash) {
+            throw 'H1 gain comparison differs from the public evidence'
+          }
       - name: Retain verification artifacts
         if: always()
         uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6 (Node 24)

@@ -34,11 +34,16 @@ class H1PanelTests(unittest.TestCase):
         self.assertEqual(self.app.logdir,ROOT/"outputs/h1-student")
 
     def test_live_and_experiment_arguments(self):
-        self.assertEqual(self.app.live_args(),["--demo","--controller","com","--scenario","strong_front","--seed","3000000"])
+        self.assertEqual(self.app.live_args(),["--demo","--controller","com","--scenario","strong_front","--seed","3000000","--com-gain","12.0"])
         self.app.mode.set("wrong_sign");self.app.scenario.set("push_left");self.app.seed.set("3000004")
-        self.assertEqual(self.app.live_args(),["--demo","--controller","wrong_sign","--scenario","push_left","--seed","3000004"])
+        self.app.com_gain.set("6")
+        self.assertEqual(self.app.live_args(),["--demo","--controller","wrong_sign","--scenario","push_left","--seed","3000004","--com-gain","6.0"])
         folder=self.app.logdir/"unit-test"
-        self.assertEqual(self.app.experiment_args(folder),["--output",str(folder)])
+        self.assertEqual(self.app.experiment_args(folder),["--output",str(folder),"--com-gain","6.0"])
+        self.app.com_gain.set("nan")
+        self.app.live()
+        self.assertIsNone(self.app.process)
+        self.assertIn("有限的非负数", self.app.status.cget("text"))
 
     def test_play_pause_and_stop(self):
         self.app.toggle();self.assertTrue(self.app.playing)

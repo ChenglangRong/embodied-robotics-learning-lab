@@ -222,4 +222,26 @@ class ReplayToleranceTests(unittest.TestCase):
             with self.assertRaises(AssertionError):equal_trajectory(actual,expected)
 
 
+class PushAuditTests(unittest.TestCase):
+    def test_logged_force_uses_interval_start_and_integrates_impulse(self):
+        from dataclasses import asdict
+        from compare_h1_gains import audit_trace
+
+        cfg = Config()
+        rows = [{"step": step, "time_s": step * cfg.dt,
+                 "push_force_n": push_force("strong_front", (step - 1) * cfg.dt, cfg).tolist(),
+                 "fallen": False, "foot_contacts": [True, True], "com_error_x_m": 0., "com_error_y_m": 0.,
+                 "com_rate_x_m_s": 0., "com_rate_y_m_s": 0.} for step in range(1, cfg.horizon + 1)]
+        force = {"force_x_n": 60., "force_y_n": 0., "duration_s": .2}
+        result = audit_trace(rows, force, asdict(cfg))
+        self.assertEqual(result, {"full_scheduled_push": True, "push_steps": 10,
+                                  "impulse_xy_n_s": [12., 0.], "post_release_settle_s": 0.})
+        early_stop = audit_trace(rows[:69], force, asdict(cfg))
+        self.assertFalse(early_stop["full_scheduled_push"])
+        self.assertIsNone(early_stop["post_release_settle_s"])
+        rows[100]["push_force_n"] = [0., 0., 0.]
+        with self.assertRaises(ValueError):
+            audit_trace(rows, force, asdict(cfg))
+
+
 if __name__=="__main__":unittest.main()

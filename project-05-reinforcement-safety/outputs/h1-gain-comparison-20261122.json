@@ -1,0 +1,2601 @@
+{
+  "reference_gain": 12.0,
+  "variant_gain": 6.0,
+  "fixed_rate_gain": 2.4,
+  "matched_pairs": 25,
+  "technical_metric": "Time from scheduled force removal to start of final in-band interval with at least 0.4 s attendance through episode end. In band: both feet at sampled steps, |ex| <= .035 m, |ey| <= .03 m, pelvis xy speed <= .12 m/s. For none the time origin is nominal force removal.",
+  "by_scenario": {
+    "none": {
+      "reference": {
+        "cases": 5,
+        "successes": 5,
+        "full_scheduled_pushes": 5,
+        "recovery_time_s": {
+          "mean": 0.52,
+          "measured": 5
+        },
+        "post_release_settle_s": {
+          "mean": 0.0,
+          "measured": 5
+        },
+        "push_peak_com_error_m": {
+          "mean": 0.023892815915015134,
+          "measured": 5
+        },
+        "final_com_error_m": {
+          "mean": 0.0015639609276612218,
+          "measured": 5
+        },
+        "mean_contact_slip_m_s": {
+          "mean": 0.007603977855264262,
+          "measured": 5
+        },
+        "saturation_fraction": {
+          "mean": 0.0,
+          "measured": 5
+        },
+        "max_abs_ankle_correction_rad": {
+          "mean": 0.6372342751987676,
+          "measured": 5
+        }
+      },
+      "variant": {
+        "cases": 5,
+        "successes": 5,
+        "full_scheduled_pushes": 5,
+        "recovery_time_s": {
+          "mean": 0.52,
+          "measured": 5
+        },
+        "post_release_settle_s": {
+          "mean": 0.0,
+          "measured": 5
+        },
+        "push_peak_com_error_m": {
+          "mean": 0.030546065688535854,
+          "measured": 5
+        },
+        "final_com_error_m": {
+          "mean": 0.0031688399138305656,
+          "measured": 5
+        },
+        "mean_contact_slip_m_s": {
+          "mean": 0.0074588511972865194,
+          "measured": 5
+        },
+        "saturation_fraction": {
+          "mean": 0.0,
+          "measured": 5
+        },
+        "max_abs_ankle_correction_rad": {
+          "mean": 0.3986328685501656,
+          "measured": 5
+        }
+      }
+    },
+    "push_front": {
+      "reference": {
+        "cases": 5,
+        "successes": 5,
+        "full_scheduled_pushes": 5,
+        "recovery_time_s": {
+          "mean": 0.52,
+          "measured": 5
+        },
+        "post_release_settle_s": {
+          "mean": 0.0,
+          "measured": 5
+        },
+        "push_peak_com_error_m": {
+          "mean": 0.03289172989194793,
+          "measured": 5
+        },
+        "final_com_error_m": {
+          "mean": 0.001547357609966772,
+          "measured": 5
+        },
+        "mean_contact_slip_m_s": {
+          "mean": 0.00788863858842641,
+          "measured": 5
+        },
+        "saturation_fraction": {
+          "mean": 0.0,
+          "measured": 5
+        },
+        "max_abs_ankle_correction_rad": {
+          "mean": 0.6372342751987676,
+          "measured": 5
+        }
+      },
+      "variant": {
+        "cases": 5,
+        "successes": 5,
+        "full_scheduled_pushes": 5,
+        "recovery_time_s": {
+          "mean": 0.52,
+          "measured": 5
+        },
+        "post_release_settle_s": {
+          "mean": 0.0,
+          "measured": 5
+        },
+        "push_peak_com_error_m": {
+          "mean": 0.04524209018641914,
+          "measured": 5
+        },
+        "final_com_error_m": {
+          "mean": 0.0032108428632773582,
+          "measured": 5
+        },
+        "mean_contact_slip_m_s": {
+          "mean": 0.0073407984246734136,
+          "measured": 5
+        },
+        "saturation_fraction": {
+          "mean": 0.0,
+          "measured": 5
+        },
+        "max_abs_ankle_correction_rad": {
+          "mean": 0.3986328685501656,
+          "measured": 5
+        }
+      }
+    },
+    "strong_front": {
+      "reference": {
+        "cases": 5,
+        "successes": 5,
+        "full_scheduled_pushes": 5,
+        "recovery_time_s": {
+          "mean": 0.8160000000000001,
+          "measured": 5
+        },
+        "post_release_settle_s": {
+          "mean": 0.436,
+          "measured": 5
+        },
+        "push_peak_com_error_m": {
+          "mean": 0.052162098749523086,
+          "measured": 5
+        },
+        "final_com_error_m": {
+          "mean": 0.0016893336178782363,
+          "measured": 5
+        },
+        "mean_contact_slip_m_s": {
+          "mean": 0.008330612995925269,
+          "measured": 5
+        },
+        "saturation_fraction": {
+          "mean": 0.0019333333333333333,
+          "measured": 5
+        },
+        "max_abs_ankle_correction_rad": {
+          "mean": 0.6372342751987676,
+          "measured": 5
+        }
+      },
+      "variant": {
+        "cases": 5,
+        "successes": 5,
+        "full_scheduled_pushes": 5,
+        "recovery_time_s": {
+          "mean": 0.52,
+          "measured": 5
+        },
+        "post_release_settle_s": {
+          "mean": 0.032,
+          "measured": 5
+        },
+        "push_peak_com_error_m": {
+          "mean": 0.05505644439442052,
+          "measured": 5
+        },
+        "final_com_error_m": {
+          "mean": 0.0031821266226529014,
+          "measured": 5
+        },
+        "mean_contact_slip_m_s": {
+          "mean": 0.00762662661295115,
+          "measured": 5
+        },
+        "saturation_fraction": {
+          "mean": 0.0,
+          "measured": 5
+        },
+        "max_abs_ankle_correction_rad": {
+          "mean": 0.3986328685501656,
+          "measured": 5
+        }
+      }
+    },
+    "push_back": {
+      "reference": {
+        "cases": 5,
+        "successes": 5,
+        "full_scheduled_pushes": 5,
+        "recovery_time_s": {
+          "mean": 0.52,
+          "measured": 5
+        },
+        "post_release_settle_s": {
+          "mean": 0.016,
+          "measured": 5
+        },
+        "push_peak_com_error_m": {
+          "mean": 0.028604914775204857,
+          "measured": 5
+        },
+        "final_com_error_m": {
+          "mean": 0.001561299449723317,
+          "measured": 5
+        },
+        "mean_contact_slip_m_s": {
+          "mean": 0.008066828867100992,
+          "measured": 5
+        },
+        "saturation_fraction": {
+          "mean": 0.0,
+          "measured": 5
+        },
+        "max_abs_ankle_correction_rad": {
+          "mean": 0.6372342751987676,
+          "measured": 5
+        }
+      },
+      "variant": {
+        "cases": 5,
+        "successes": 5,
+        "full_scheduled_pushes": 5,
+        "recovery_time_s": {
+          "mean": 0.52,
+          "measured": 5
+        },
+        "post_release_settle_s": {
+          "mean": 0.0,
+          "measured": 5
+        },
+        "push_peak_com_error_m": {
+          "mean": 0.02713422743682138,
+          "measured": 5
+        },
+        "final_com_error_m": {
+          "mean": 0.003017677979806371,
+          "measured": 5
+        },
+        "mean_contact_slip_m_s": {
+          "mean": 0.008197449359033325,
+          "measured": 5
+        },
+        "saturation_fraction": {
+          "mean": 0.0,
+          "measured": 5
+        },
+        "max_abs_ankle_correction_rad": {
+          "mean": 0.3986328685501656,
+          "measured": 5
+        }
+      }
+    },
+    "push_left": {
+      "reference": {
+        "cases": 5,
+        "successes": 5,
+        "full_scheduled_pushes": 5,
+        "recovery_time_s": {
+          "mean": 0.78,
+          "measured": 5
+        },
+        "post_release_settle_s": {
+          "mean": 0.6,
+          "measured": 5
+        },
+        "push_peak_com_error_m": {
+          "mean": 0.06750559585649997,
+          "measured": 5
+        },
+        "final_com_error_m": {
+          "mean": 0.0024650874090384797,
+          "measured": 5
+        },
+        "mean_contact_slip_m_s": {
+          "mean": 0.008147791243202314,
+          "measured": 5
+        },
+        "saturation_fraction": {
+          "mean": 0.0,
+          "measured": 5
+        },
+        "max_abs_ankle_correction_rad": {
+          "mean": 0.6372342751987676,
+          "measured": 5
+        }
+      },
+      "variant": {
+        "cases": 5,
+        "successes": 5,
+        "full_scheduled_pushes": 5,
+        "recovery_time_s": {
+          "mean": 0.6840000000000002,
+          "measured": 5
+        },
+        "post_release_settle_s": {
+          "mean": 0.504,
+          "measured": 5
+        },
+        "push_peak_com_error_m": {
+          "mean": 0.06511673629379007,
+          "measured": 5
+        },
+        "final_com_error_m": {
+          "mean": 0.004056105304763213,
+          "measured": 5
+        },
+        "mean_contact_slip_m_s": {
+          "mean": 0.007999665578392655,
+          "measured": 5
+        },
+        "saturation_fraction": {
+          "mean": 0.0,
+          "measured": 5
+        },
+        "max_abs_ankle_correction_rad": {
+          "mean": 0.3986328685501656,
+          "measured": 5
+        }
+      }
+    }
+  },
+  "pairs": [
+    {
+      "scenario": "none",
+      "seed": 3000010,
+      "reference": {
+        "controller": "com",
+        "scenario": "none",
+        "seed": 3000010,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.05587018337852339,
+        "push_peak_com_error_m": 0.017577635493758726,
+        "max_lateral_error_m": 0.001765833834409056,
+        "pre_push_com_x_m": 0.08089418806635161,
+        "final_com_error_m": 0.0017415659171499528,
+        "tail_com_error_m": 0.0017536789650456554,
+        "tail_com_rate_m_s": 0.00022649671587340525,
+        "settled_com_offset_m": 0.05112812298165312,
+        "recovery_time_s": 0.52,
+        "min_height_m": 1.0004664520071869,
+        "max_pitch_rad": 0.07586280833723939,
+        "max_roll_rad": 0.0022968434088287467,
+        "max_abs_ankle_correction_rad": 0.6001235745039403,
+        "mean_contact_slip_m_s": 0.007632148759938862,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.04865424532749602,
+        "full_scheduled_push": true,
+        "push_steps": 0,
+        "impulse_xy_n_s": [
+          0.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.0
+      },
+      "variant": {
+        "controller": "com",
+        "scenario": "none",
+        "seed": 3000010,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.056666372008038216,
+        "push_peak_com_error_m": 0.012273521588476003,
+        "max_lateral_error_m": 0.001785882389039396,
+        "pre_push_com_x_m": 0.061972688196577204,
+        "final_com_error_m": 0.003402543158905687,
+        "tail_com_error_m": 0.003501176170047016,
+        "tail_com_rate_m_s": 0.0005634688081088727,
+        "settled_com_offset_m": 0.05312972967872194,
+        "recovery_time_s": 0.52,
+        "min_height_m": 1.0003110131007849,
+        "max_pitch_rad": 0.0843661611196136,
+        "max_roll_rad": 0.0022852581949487213,
+        "max_abs_ankle_correction_rad": 0.3647289644925904,
+        "mean_contact_slip_m_s": 0.007352727184377699,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.05136221902526387,
+        "full_scheduled_push": true,
+        "push_steps": 0,
+        "impulse_xy_n_s": [
+          0.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.0
+      }
+    },
+    {
+      "scenario": "none",
+      "seed": 3000011,
+      "reference": {
+        "controller": "com",
+        "scenario": "none",
+        "seed": 3000011,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.05732889642655836,
+        "push_peak_com_error_m": 0.014457477296164067,
+        "max_lateral_error_m": 0.0016045932170739045,
+        "pre_push_com_x_m": 0.07435089593470073,
+        "final_com_error_m": 0.0015542747435001185,
+        "tail_com_error_m": 0.001590532165979753,
+        "tail_com_rate_m_s": 0.0004325028656727479,
+        "settled_com_offset_m": 0.051042127376883406,
+        "recovery_time_s": 0.52,
+        "min_height_m": 0.9999015566151366,
+        "max_pitch_rad": 0.07757206388242394,
+        "max_roll_rad": 0.0022763085677685695,
+        "max_abs_ankle_correction_rad": 0.6356219537702545,
+        "mean_contact_slip_m_s": 0.007644172897381032,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.05237965103226158,
+        "full_scheduled_push": true,
+        "push_steps": 0,
+        "impulse_xy_n_s": [
+          0.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.0
+      },
+      "variant": {
+        "controller": "com",
+        "scenario": "none",
+        "seed": 3000011,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.05807458450718081,
+        "push_peak_com_error_m": 0.024856372457479712,
+        "max_lateral_error_m": 0.0016233008329991669,
+        "pre_push_com_x_m": 0.05306137693057748,
+        "final_com_error_m": 0.003191715527721836,
+        "tail_com_error_m": 0.0032902777986897024,
+        "tail_com_rate_m_s": 0.0005584060968720445,
+        "settled_com_offset_m": 0.052974810607872236,
+        "recovery_time_s": 0.52,
+        "min_height_m": 0.9996783296691936,
+        "max_pitch_rad": 0.08577405552238779,
+        "max_roll_rad": 0.002374276325560628,
+        "max_abs_ankle_correction_rad": 0.3967530355057208,
+        "mean_contact_slip_m_s": 0.007439210448438326,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.05499239185281807,
+        "full_scheduled_push": true,
+        "push_steps": 0,
+        "impulse_xy_n_s": [
+          0.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.0
+      }
+    },
+    {
+      "scenario": "none",
+      "seed": 3000012,
+      "reference": {
+        "controller": "com",
+        "scenario": "none",
+        "seed": 3000012,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.057534495758283975,
+        "push_peak_com_error_m": 0.021687733705157097,
+        "max_lateral_error_m": 0.0014859816643090118,
+        "pre_push_com_x_m": 0.06614374485743468,
+        "final_com_error_m": 0.0015119031649965483,
+        "tail_com_error_m": 0.0015641617893380824,
+        "tail_com_rate_m_s": 0.0005408763640444008,
+        "settled_com_offset_m": 0.05101990475755866,
+        "recovery_time_s": 0.52,
+        "min_height_m": 0.9996963573320233,
+        "max_pitch_rad": 0.07776210685720428,
+        "max_roll_rad": 0.0019600541669796295,
+        "max_abs_ankle_correction_rad": 0.6440926006784928,
+        "mean_contact_slip_m_s": 0.007608769483260733,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.051347225885245956,
+        "full_scheduled_push": true,
+        "push_steps": 0,
+        "impulse_xy_n_s": [
+          0.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.0
+      },
+      "variant": {
+        "controller": "com",
+        "scenario": "none",
+        "seed": 3000012,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.05910309311577763,
+        "push_peak_com_error_m": 0.031650529104653616,
+        "max_lateral_error_m": 0.0014339342238166226,
+        "pre_push_com_x_m": 0.045191314697458795,
+        "final_com_error_m": 0.003129892976887097,
+        "tail_com_error_m": 0.003227021847606149,
+        "tail_com_rate_m_s": 0.0005505465375762239,
+        "settled_com_offset_m": 0.05292456151405073,
+        "recovery_time_s": 0.52,
+        "min_height_m": 0.9994725355525099,
+        "max_pitch_rad": 0.08596234622129978,
+        "max_roll_rad": 0.0019055884733964448,
+        "max_abs_ankle_correction_rad": 0.4049786177413006,
+        "mean_contact_slip_m_s": 0.0074667472880462155,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.05392861636510963,
+        "full_scheduled_push": true,
+        "push_steps": 0,
+        "impulse_xy_n_s": [
+          0.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.0
+      }
+    },
+    {
+      "scenario": "none",
+      "seed": 3000013,
+      "reference": {
+        "controller": "com",
+        "scenario": "none",
+        "seed": 3000013,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.05761204619221491,
+        "push_peak_com_error_m": 0.02971329092732407,
+        "max_lateral_error_m": 0.0015561597364717407,
+        "pre_push_com_x_m": 0.05667688462268365,
+        "final_com_error_m": 0.0015362464747481618,
+        "tail_com_error_m": 0.0016044275878796495,
+        "tail_com_rate_m_s": 0.0006412977178609411,
+        "settled_com_offset_m": 0.050996708752933176,
+        "recovery_time_s": 0.52,
+        "min_height_m": 0.9994966660773494,
+        "max_pitch_rad": 0.07802901971833906,
+        "max_roll_rad": 0.0020243470543221207,
+        "max_abs_ankle_correction_rad": 0.6504952573184266,
+        "mean_contact_slip_m_s": 0.007577934640006895,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.04982411022554569,
+        "full_scheduled_push": true,
+        "push_steps": 0,
+        "impulse_xy_n_s": [
+          0.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.0
+      },
+      "variant": {
+        "controller": "com",
+        "scenario": "none",
+        "seed": 3000013,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.060142994585339435,
+        "push_peak_com_error_m": 0.0389561982585659,
+        "max_lateral_error_m": 0.0015267941482824598,
+        "pre_push_com_x_m": 0.036308153313052115,
+        "final_com_error_m": 0.0030852083170407694,
+        "tail_com_error_m": 0.0031815092993103225,
+        "tail_com_rate_m_s": 0.0005482622700395719,
+        "settled_com_offset_m": 0.05285529382805834,
+        "recovery_time_s": 0.52,
+        "min_height_m": 0.9991198410481833,
+        "max_pitch_rad": 0.0861335746442753,
+        "max_roll_rad": 0.0020819686438574925,
+        "max_abs_ankle_correction_rad": 0.4113286936846744,
+        "mean_contact_slip_m_s": 0.00750711304715384,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.052354658351247765,
+        "full_scheduled_push": true,
+        "push_steps": 0,
+        "impulse_xy_n_s": [
+          0.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.0
+      }
+    },
+    {
+      "scenario": "none",
+      "seed": 3000014,
+      "reference": {
+        "controller": "com",
+        "scenario": "none",
+        "seed": 3000014,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.05817773710894186,
+        "push_peak_com_error_m": 0.03602794215267171,
+        "max_lateral_error_m": 0.0015595173423129495,
+        "pre_push_com_x_m": 0.05007693738086931,
+        "final_com_error_m": 0.001475814337911328,
+        "tail_com_error_m": 0.001560266956760416,
+        "tail_com_rate_m_s": 0.0007082711721824802,
+        "settled_com_offset_m": 0.05099406120394828,
+        "recovery_time_s": 0.52,
+        "min_height_m": 0.9993342581407961,
+        "max_pitch_rad": 0.07850673406662803,
+        "max_roll_rad": 0.0023295169580433957,
+        "max_abs_ankle_correction_rad": 0.6558379897227239,
+        "mean_contact_slip_m_s": 0.007556863495733786,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.049514676056631374,
+        "full_scheduled_push": true,
+        "push_steps": 0,
+        "impulse_xy_n_s": [
+          0.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.0
+      },
+      "variant": {
+        "controller": "com",
+        "scenario": "none",
+        "seed": 3000014,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.060909393849216426,
+        "push_peak_com_error_m": 0.04499370703350404,
+        "max_lateral_error_m": 0.001628046741683585,
+        "pre_push_com_x_m": 0.029933545412982484,
+        "final_com_error_m": 0.003034839588597439,
+        "tail_com_error_m": 0.0031323552984602277,
+        "tail_com_rate_m_s": 0.0005511971181384175,
+        "settled_com_offset_m": 0.05283324916314808,
+        "recovery_time_s": 0.52,
+        "min_height_m": 0.9989912308323937,
+        "max_pitch_rad": 0.08656824516653339,
+        "max_roll_rad": 0.0025552025054155878,
+        "max_abs_ankle_correction_rad": 0.41537503132654174,
+        "mean_contact_slip_m_s": 0.007528458018416517,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.052014784677809595,
+        "full_scheduled_push": true,
+        "push_steps": 0,
+        "impulse_xy_n_s": [
+          0.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.0
+      }
+    },
+    {
+      "scenario": "push_front",
+      "seed": 3000010,
+      "reference": {
+        "controller": "com",
+        "scenario": "push_front",
+        "seed": 3000010,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.05587018337852339,
+        "push_peak_com_error_m": 0.015274331264084137,
+        "max_lateral_error_m": 0.0017329079671489745,
+        "pre_push_com_x_m": 0.08089418806635161,
+        "final_com_error_m": 0.0017231181943492752,
+        "tail_com_error_m": 0.0017988801219308444,
+        "tail_com_rate_m_s": 0.0006272244063423769,
+        "settled_com_offset_m": 0.05110469015833814,
+        "recovery_time_s": 0.52,
+        "min_height_m": 1.0004664520071869,
+        "max_pitch_rad": 0.07586280833723939,
+        "max_roll_rad": 0.0022968434088287467,
+        "max_abs_ankle_correction_rad": 0.6001235745039403,
+        "mean_contact_slip_m_s": 0.007529454936509421,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.04956046555384835,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          8.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.0
+      },
+      "variant": {
+        "controller": "com",
+        "scenario": "push_front",
+        "seed": 3000010,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.056666372008038216,
+        "push_peak_com_error_m": 0.02793163556847346,
+        "max_lateral_error_m": 0.0017835104955134075,
+        "pre_push_com_x_m": 0.061972688196577204,
+        "final_com_error_m": 0.003435676638395527,
+        "tail_com_error_m": 0.003538052342899256,
+        "tail_com_rate_m_s": 0.000577007884663605,
+        "settled_com_offset_m": 0.053164189588650046,
+        "recovery_time_s": 0.52,
+        "min_height_m": 1.0003110131007849,
+        "max_pitch_rad": 0.0843661611196136,
+        "max_roll_rad": 0.0022852581949487213,
+        "max_abs_ankle_correction_rad": 0.3647289644925904,
+        "mean_contact_slip_m_s": 0.007266143254648565,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.05229977134236327,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          8.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.0
+      }
+    },
+    {
+      "scenario": "push_front",
+      "seed": 3000011,
+      "reference": {
+        "controller": "com",
+        "scenario": "push_front",
+        "seed": 3000011,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.05732889642655836,
+        "push_peak_com_error_m": 0.018616998983969575,
+        "max_lateral_error_m": 0.0016375055417404568,
+        "pre_push_com_x_m": 0.07435089593470073,
+        "final_com_error_m": 0.0015351773673733784,
+        "tail_com_error_m": 0.001638479296152159,
+        "tail_com_rate_m_s": 0.0008522983190113227,
+        "settled_com_offset_m": 0.05101036698173325,
+        "recovery_time_s": 0.52,
+        "min_height_m": 0.9999015566151366,
+        "max_pitch_rad": 0.07757206388242394,
+        "max_roll_rad": 0.0022763085677685695,
+        "max_abs_ankle_correction_rad": 0.6356219537702545,
+        "mean_contact_slip_m_s": 0.007719204660097915,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.0535049334044755,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          8.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.0
+      },
+      "variant": {
+        "controller": "com",
+        "scenario": "push_front",
+        "seed": 3000011,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.05807458450718081,
+        "push_peak_com_error_m": 0.04023722012399422,
+        "max_lateral_error_m": 0.0015790670267477628,
+        "pre_push_com_x_m": 0.05306137693057748,
+        "final_com_error_m": 0.0032318867166842976,
+        "tail_com_error_m": 0.0033342212476405,
+        "tail_com_rate_m_s": 0.0005719294056561143,
+        "settled_com_offset_m": 0.053015875162240655,
+        "recovery_time_s": 0.52,
+        "min_height_m": 0.9996783296691936,
+        "max_pitch_rad": 0.08577405552238779,
+        "max_roll_rad": 0.002374276325560628,
+        "max_abs_ankle_correction_rad": 0.3967530355057208,
+        "mean_contact_slip_m_s": 0.0073312364888260435,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.055950373362789484,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          8.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.0
+      }
+    },
+    {
+      "scenario": "push_front",
+      "seed": 3000012,
+      "reference": {
+        "controller": "com",
+        "scenario": "push_front",
+        "seed": 3000012,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.057534495758283975,
+        "push_peak_com_error_m": 0.030908513416067516,
+        "max_lateral_error_m": 0.0018559385207139126,
+        "pre_push_com_x_m": 0.06614374485743468,
+        "final_com_error_m": 0.001490010637543834,
+        "tail_com_error_m": 0.0016171402794241947,
+        "tail_com_rate_m_s": 0.0010003508872088998,
+        "settled_com_offset_m": 0.050975994667431496,
+        "recovery_time_s": 0.52,
+        "min_height_m": 0.9996963573320233,
+        "max_pitch_rad": 0.07776210685720428,
+        "max_roll_rad": 0.0019600541669796295,
+        "max_abs_ankle_correction_rad": 0.6440926006784928,
+        "mean_contact_slip_m_s": 0.007936927112578051,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.053046407590599816,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          8.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.0
+      },
+      "variant": {
+        "controller": "com",
+        "scenario": "push_front",
+        "seed": 3000012,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.05910309311577763,
+        "push_peak_com_error_m": 0.04655179113483464,
+        "max_lateral_error_m": 0.0013626955286623053,
+        "pre_push_com_x_m": 0.045191314697458795,
+        "final_com_error_m": 0.0031724255138961435,
+        "tail_com_error_m": 0.003273380418771254,
+        "tail_com_rate_m_s": 0.0005643147909448377,
+        "settled_com_offset_m": 0.052968258015346145,
+        "recovery_time_s": 0.52,
+        "min_height_m": 0.9994725355525099,
+        "max_pitch_rad": 0.08596234622129978,
+        "max_roll_rad": 0.0019055884733964448,
+        "max_abs_ankle_correction_rad": 0.4049786177413006,
+        "mean_contact_slip_m_s": 0.0073499542004205574,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.054890803627510525,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          8.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.0
+      }
+    },
+    {
+      "scenario": "push_front",
+      "seed": 3000013,
+      "reference": {
+        "controller": "com",
+        "scenario": "push_front",
+        "seed": 3000013,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.05761204619221491,
+        "push_peak_com_error_m": 0.044507001747554086,
+        "max_lateral_error_m": 0.0021851925919095976,
+        "pre_push_com_x_m": 0.05667688462268365,
+        "final_com_error_m": 0.0015159878993426805,
+        "tail_com_error_m": 0.0016728218267308434,
+        "tail_com_rate_m_s": 0.0011333918938575037,
+        "settled_com_offset_m": 0.05095643065335413,
+        "recovery_time_s": 0.52,
+        "min_height_m": 0.9994966660773494,
+        "max_pitch_rad": 0.07802901971833906,
+        "max_roll_rad": 0.0020243470543221207,
+        "max_abs_ankle_correction_rad": 0.6504952573184266,
+        "mean_contact_slip_m_s": 0.008081891512608819,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.0521040244505938,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          8.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.0
+      },
+      "variant": {
+        "controller": "com",
+        "scenario": "push_front",
+        "seed": 3000013,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.060142994585339435,
+        "push_peak_com_error_m": 0.053118172463871745,
+        "max_lateral_error_m": 0.001474383390560155,
+        "pre_push_com_x_m": 0.036308153313052115,
+        "final_com_error_m": 0.003131089911874432,
+        "tail_com_error_m": 0.003231212374940011,
+        "tail_com_rate_m_s": 0.0005619660812535696,
+        "settled_com_offset_m": 0.05290281196967102,
+        "recovery_time_s": 0.52,
+        "min_height_m": 0.9991198410481833,
+        "max_pitch_rad": 0.0861335746442753,
+        "max_roll_rad": 0.0020819686438574925,
+        "max_abs_ankle_correction_rad": 0.4113286936846744,
+        "mean_contact_slip_m_s": 0.007372530913077305,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.05332356024224927,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          8.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.0
+      }
+    },
+    {
+      "scenario": "push_front",
+      "seed": 3000014,
+      "reference": {
+        "controller": "com",
+        "scenario": "push_front",
+        "seed": 3000014,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.05817773710894186,
+        "push_peak_com_error_m": 0.055151804048064315,
+        "max_lateral_error_m": 0.00233318339500115,
+        "pre_push_com_x_m": 0.05007693738086931,
+        "final_com_error_m": 0.001472493951224692,
+        "tail_com_error_m": 0.0016604385472206232,
+        "tail_com_rate_m_s": 0.001167162882762676,
+        "settled_com_offset_m": 0.050979323171767926,
+        "recovery_time_s": 0.52,
+        "min_height_m": 0.9993342581407961,
+        "max_pitch_rad": 0.07850673406662803,
+        "max_roll_rad": 0.0023295169580433957,
+        "max_abs_ankle_correction_rad": 0.6558379897227239,
+        "mean_contact_slip_m_s": 0.008175714720337846,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.052044141469460875,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          8.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.0
+      },
+      "variant": {
+        "controller": "com",
+        "scenario": "push_front",
+        "seed": 3000014,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.060909393849216426,
+        "push_peak_com_error_m": 0.05837163164092165,
+        "max_lateral_error_m": 0.001628046741683585,
+        "pre_push_com_x_m": 0.029933545412982484,
+        "final_com_error_m": 0.003083135535536391,
+        "tail_com_error_m": 0.003184508763648925,
+        "tail_com_rate_m_s": 0.0005649540536891546,
+        "settled_com_offset_m": 0.052882707117060265,
+        "recovery_time_s": 0.52,
+        "min_height_m": 0.9989912308323937,
+        "max_pitch_rad": 0.08656824516653339,
+        "max_roll_rad": 0.0025552025054155878,
+        "max_abs_ankle_correction_rad": 0.41537503132654174,
+        "mean_contact_slip_m_s": 0.007384127266394596,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.05298326539918738,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          8.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.0
+      }
+    },
+    {
+      "scenario": "strong_front",
+      "seed": 3000010,
+      "reference": {
+        "controller": "com",
+        "scenario": "strong_front",
+        "seed": 3000010,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.05587018337852339,
+        "push_peak_com_error_m": 0.01668164966500243,
+        "max_lateral_error_m": 0.0019163264649666317,
+        "pre_push_com_x_m": 0.08089418806635161,
+        "final_com_error_m": 0.0017068916716506714,
+        "tail_com_error_m": 0.0018148122297152436,
+        "tail_com_rate_m_s": 0.0008402832591532264,
+        "settled_com_offset_m": 0.05108050284593084,
+        "recovery_time_s": 0.52,
+        "min_height_m": 1.0004664520071869,
+        "max_pitch_rad": 0.07586280833723939,
+        "max_roll_rad": 0.0022968434088287467,
+        "max_abs_ankle_correction_rad": 0.6001235745039403,
+        "mean_contact_slip_m_s": 0.007691314398192948,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.05021822872893275,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          12.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.0
+      },
+      "variant": {
+        "controller": "com",
+        "scenario": "strong_front",
+        "seed": 3000010,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.056666372008038216,
+        "push_peak_com_error_m": 0.03783506340829642,
+        "max_lateral_error_m": 0.0022768836915282816,
+        "pre_push_com_x_m": 0.061972688196577204,
+        "final_com_error_m": 0.0034019504623061794,
+        "tail_com_error_m": 0.003503497357695837,
+        "tail_com_rate_m_s": 0.0005737308901530805,
+        "settled_com_offset_m": 0.05312810113502464,
+        "recovery_time_s": 0.52,
+        "min_height_m": 1.0003110131007849,
+        "max_pitch_rad": 0.0843661611196136,
+        "max_roll_rad": 0.0022852581949487213,
+        "max_abs_ankle_correction_rad": 0.3647289644925904,
+        "mean_contact_slip_m_s": 0.007544015754147826,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.053209112256207655,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          12.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.0
+      }
+    },
+    {
+      "scenario": "strong_front",
+      "seed": 3000011,
+      "reference": {
+        "controller": "com",
+        "scenario": "strong_front",
+        "seed": 3000011,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.05732889642655836,
+        "push_peak_com_error_m": 0.03144913945685552,
+        "max_lateral_error_m": 0.0030225642430397625,
+        "pre_push_com_x_m": 0.07435089593470073,
+        "final_com_error_m": 0.0015492837181007224,
+        "tail_com_error_m": 0.0017183323490922186,
+        "tail_com_rate_m_s": 0.0011369251508610173,
+        "settled_com_offset_m": 0.05100704426408939,
+        "recovery_time_s": 0.52,
+        "min_height_m": 0.9999015566151366,
+        "max_pitch_rad": 0.07757206388242394,
+        "max_roll_rad": 0.0022763085677685695,
+        "max_abs_ankle_correction_rad": 0.6356219537702545,
+        "mean_contact_slip_m_s": 0.008138688176540947,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.05523259757510724,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          12.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.0
+      },
+      "variant": {
+        "controller": "com",
+        "scenario": "strong_front",
+        "seed": 3000011,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.05807458450718081,
+        "push_peak_com_error_m": 0.050453360598170974,
+        "max_lateral_error_m": 0.0023063400559987708,
+        "pre_push_com_x_m": 0.05306137693057748,
+        "final_com_error_m": 0.003198876719490707,
+        "tail_com_error_m": 0.003299985599732525,
+        "tail_com_rate_m_s": 0.0005675013239493927,
+        "settled_com_offset_m": 0.05297641604408708,
+        "recovery_time_s": 0.52,
+        "min_height_m": 0.9996783296691936,
+        "max_pitch_rad": 0.08577405552238779,
+        "max_roll_rad": 0.002374276325560628,
+        "max_abs_ankle_correction_rad": 0.3967530355057208,
+        "mean_contact_slip_m_s": 0.00763859495693799,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.05698598064031926,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          12.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.02
+      }
+    },
+    {
+      "scenario": "strong_front",
+      "seed": 3000012,
+      "reference": {
+        "controller": "com",
+        "scenario": "strong_front",
+        "seed": 3000012,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.057534495758283975,
+        "push_peak_com_error_m": 0.04972993264926363,
+        "max_lateral_error_m": 0.0032370639350277216,
+        "pre_push_com_x_m": 0.06614374485743468,
+        "final_com_error_m": 0.0015791516006941598,
+        "tail_com_error_m": 0.0017857030296715172,
+        "tail_com_rate_m_s": 0.0010045044348572837,
+        "settled_com_offset_m": 0.05109258696111127,
+        "recovery_time_s": 0.52,
+        "min_height_m": 0.9996963573320233,
+        "max_pitch_rad": 0.0809599146725093,
+        "max_roll_rad": 0.002389182910317027,
+        "max_abs_ankle_correction_rad": 0.6440926006784928,
+        "mean_contact_slip_m_s": 0.008308661791759393,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.05469247165393603,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          12.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.02
+      },
+      "variant": {
+        "controller": "com",
+        "scenario": "strong_front",
+        "seed": 3000012,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.05910309311577763,
+        "push_peak_com_error_m": 0.056655451002502674,
+        "max_lateral_error_m": 0.0019341896618640653,
+        "pre_push_com_x_m": 0.045191314697458795,
+        "final_com_error_m": 0.003141362455743957,
+        "tail_com_error_m": 0.0032418281070842607,
+        "tail_com_rate_m_s": 0.0005639826795172489,
+        "settled_com_offset_m": 0.05293231707487213,
+        "recovery_time_s": 0.52,
+        "min_height_m": 0.9994725355525099,
+        "max_pitch_rad": 0.08596234622129978,
+        "max_roll_rad": 0.0019055884733964448,
+        "max_abs_ankle_correction_rad": 0.4049786177413006,
+        "mean_contact_slip_m_s": 0.0076578263968509344,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.055932759808321776,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          12.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.04
+      }
+    },
+    {
+      "scenario": "strong_front",
+      "seed": 3000013,
+      "reference": {
+        "controller": "com",
+        "scenario": "strong_front",
+        "seed": 3000013,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.05761204619221491,
+        "push_peak_com_error_m": 0.07140548273259059,
+        "max_lateral_error_m": 0.003886287943649351,
+        "pre_push_com_x_m": 0.05667688462268365,
+        "final_com_error_m": 0.0018069674935235751,
+        "tail_com_error_m": 0.001852049138145445,
+        "tail_com_rate_m_s": 0.0005136824682459263,
+        "settled_com_offset_m": 0.05135978831436867,
+        "recovery_time_s": 1.06,
+        "min_height_m": 0.9985800967601937,
+        "max_pitch_rad": 0.08514829022276928,
+        "max_roll_rad": 0.0027986943270700243,
+        "max_abs_ankle_correction_rad": 0.6504952573184266,
+        "mean_contact_slip_m_s": 0.008594004012616275,
+        "saturation_fraction": 0.003,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.05383513236747596,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          12.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.88
+      },
+      "variant": {
+        "controller": "com",
+        "scenario": "strong_front",
+        "seed": 3000013,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.060142994585339435,
+        "push_peak_com_error_m": 0.06280141859149084,
+        "max_lateral_error_m": 0.0018802478709409745,
+        "pre_push_com_x_m": 0.036308153313052115,
+        "final_com_error_m": 0.0031056202330356185,
+        "tail_com_error_m": 0.0032053052992805785,
+        "tail_com_rate_m_s": 0.0005613124841982556,
+        "settled_com_offset_m": 0.05287414768923562,
+        "recovery_time_s": 0.52,
+        "min_height_m": 0.9991198410481833,
+        "max_pitch_rad": 0.0861335746442753,
+        "max_roll_rad": 0.0020819686438574925,
+        "max_abs_ankle_correction_rad": 0.4113286936846744,
+        "mean_contact_slip_m_s": 0.007657790641086706,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.05430634723380335,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          12.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.04
+      }
+    },
+    {
+      "scenario": "strong_front",
+      "seed": 3000014,
+      "reference": {
+        "controller": "com",
+        "scenario": "strong_front",
+        "seed": 3000014,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.05817773710894186,
+        "push_peak_com_error_m": 0.09154428924390325,
+        "max_lateral_error_m": 0.004631968124782924,
+        "pre_push_com_x_m": 0.05007693738086931,
+        "final_com_error_m": 0.001804373605422053,
+        "tail_com_error_m": 0.0012741095354686953,
+        "tail_com_rate_m_s": 0.003680444587767543,
+        "settled_com_offset_m": 0.05143213439949923,
+        "recovery_time_s": 1.46,
+        "min_height_m": 0.997214816931371,
+        "max_pitch_rad": 0.08571718747919634,
+        "max_roll_rad": 0.0035544175163919186,
+        "max_abs_ankle_correction_rad": 0.6558379897227239,
+        "mean_contact_slip_m_s": 0.008920396600516784,
+        "saturation_fraction": 0.006666666666666667,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.053659185357929295,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          12.0,
+          0.0
+        ],
+        "post_release_settle_s": 1.28
+      },
+      "variant": {
+        "controller": "com",
+        "scenario": "strong_front",
+        "seed": 3000014,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.060909393849216426,
+        "push_peak_com_error_m": 0.06753692837164169,
+        "max_lateral_error_m": 0.0018140275752133905,
+        "pre_push_com_x_m": 0.029933545412982484,
+        "final_com_error_m": 0.0030628232426880447,
+        "tail_com_error_m": 0.0031636836289147866,
+        "tail_com_rate_m_s": 0.0005609779750780088,
+        "settled_com_offset_m": 0.05286024700864295,
+        "recovery_time_s": 0.52,
+        "min_height_m": 0.9989912308323937,
+        "max_pitch_rad": 0.08656824516653339,
+        "max_roll_rad": 0.0025552025054155878,
+        "max_abs_ankle_correction_rad": 0.41537503132654174,
+        "mean_contact_slip_m_s": 0.007634905315732293,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.053898220056652804,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          12.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.06
+      }
+    },
+    {
+      "scenario": "push_back",
+      "seed": 3000010,
+      "reference": {
+        "controller": "com",
+        "scenario": "push_back",
+        "seed": 3000010,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.05587018337852339,
+        "push_peak_com_error_m": 0.04114061336295048,
+        "max_lateral_error_m": 0.002210521309642231,
+        "pre_push_com_x_m": 0.08089418806635161,
+        "final_com_error_m": 0.001683777971486806,
+        "tail_com_error_m": 0.0015969777541903726,
+        "tail_com_rate_m_s": 0.00044045390365623225,
+        "settled_com_offset_m": 0.05106092054835824,
+        "recovery_time_s": 0.52,
+        "min_height_m": 0.9972947880534251,
+        "max_pitch_rad": 0.07586280833723939,
+        "max_roll_rad": 0.0022968434088287467,
+        "max_abs_ankle_correction_rad": 0.6001235745039403,
+        "mean_contact_slip_m_s": 0.008362196354870774,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.04499888437312581,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          -12.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.04
+      },
+      "variant": {
+        "controller": "com",
+        "scenario": "push_back",
+        "seed": 3000010,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.056666372008038216,
+        "push_peak_com_error_m": 0.011788805321348555,
+        "max_lateral_error_m": 0.0018298149867041209,
+        "pre_push_com_x_m": 0.061972688196577204,
+        "final_com_error_m": 0.003229440836720547,
+        "tail_com_error_m": 0.003320476797437268,
+        "tail_com_rate_m_s": 0.0005351723154992333,
+        "settled_com_offset_m": 0.052955027284138825,
+        "recovery_time_s": 0.52,
+        "min_height_m": 1.000065753917313,
+        "max_pitch_rad": 0.0843661611196136,
+        "max_roll_rad": 0.0022852581949487213,
+        "max_abs_ankle_correction_rad": 0.3647289644925904,
+        "mean_contact_slip_m_s": 0.008245304946881079,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.04902772362498438,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          -12.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.0
+      }
+    },
+    {
+      "scenario": "push_back",
+      "seed": 3000011,
+      "reference": {
+        "controller": "com",
+        "scenario": "push_back",
+        "seed": 3000011,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.05732889642655836,
+        "push_peak_com_error_m": 0.022228929837782813,
+        "max_lateral_error_m": 0.0016451218622300203,
+        "pre_push_com_x_m": 0.07435089593470073,
+        "final_com_error_m": 0.0015591434431036764,
+        "tail_com_error_m": 0.0014968922016584346,
+        "tail_com_rate_m_s": 0.00022943535885128796,
+        "settled_com_offset_m": 0.05106234115735209,
+        "recovery_time_s": 0.52,
+        "min_height_m": 0.9982950186525859,
+        "max_pitch_rad": 0.07757206388242394,
+        "max_roll_rad": 0.0022763085677685695,
+        "max_abs_ankle_correction_rad": 0.6356219537702545,
+        "mean_contact_slip_m_s": 0.008126542247261748,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.05021811131580289,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          -12.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.02
+      },
+      "variant": {
+        "controller": "com",
+        "scenario": "push_back",
+        "seed": 3000011,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.05807458450718081,
+        "push_peak_com_error_m": 0.020606934941095507,
+        "max_lateral_error_m": 0.0016888551046889454,
+        "pre_push_com_x_m": 0.05306137693057748,
+        "final_com_error_m": 0.003043578303572041,
+        "tail_com_error_m": 0.003135029429483875,
+        "tail_com_rate_m_s": 0.0005320177318793689,
+        "settled_com_offset_m": 0.052826277248236186,
+        "recovery_time_s": 0.52,
+        "min_height_m": 0.9996783296691936,
+        "max_pitch_rad": 0.08577405552238779,
+        "max_roll_rad": 0.002374276325560628,
+        "max_abs_ankle_correction_rad": 0.3967530355057208,
+        "mean_contact_slip_m_s": 0.00818108251199017,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.0527693320252725,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          -12.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.0
+      }
+    },
+    {
+      "scenario": "push_back",
+      "seed": 3000012,
+      "reference": {
+        "controller": "com",
+        "scenario": "push_back",
+        "seed": 3000012,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.057534495758283975,
+        "push_peak_com_error_m": 0.021067241263782625,
+        "max_lateral_error_m": 0.0015067107149635192,
+        "pre_push_com_x_m": 0.06614374485743468,
+        "final_com_error_m": 0.0015245972815258974,
+        "tail_com_error_m": 0.0014763278729403718,
+        "tail_com_rate_m_s": 0.00012956166438992024,
+        "settled_com_offset_m": 0.05104569013337583,
+        "recovery_time_s": 0.52,
+        "min_height_m": 0.9993700507557159,
+        "max_pitch_rad": 0.07776210685720428,
+        "max_roll_rad": 0.0019600541669796295,
+        "max_abs_ankle_correction_rad": 0.6440926006784928,
+        "mean_contact_slip_m_s": 0.007993572247551713,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.049513041437433715,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          -12.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.02
+      },
+      "variant": {
+        "controller": "com",
+        "scenario": "push_back",
+        "seed": 3000012,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.05910309311577763,
+        "push_peak_com_error_m": 0.027469999720048058,
+        "max_lateral_error_m": 0.001492833371931998,
+        "pre_push_com_x_m": 0.045191314697458795,
+        "final_com_error_m": 0.002986835844090395,
+        "tail_com_error_m": 0.0030770773985628825,
+        "tail_com_rate_m_s": 0.0005262047021729545,
+        "settled_com_offset_m": 0.052779631800693366,
+        "recovery_time_s": 0.52,
+        "min_height_m": 0.9994725355525099,
+        "max_pitch_rad": 0.08596234622129978,
+        "max_roll_rad": 0.0019055884733964448,
+        "max_abs_ankle_correction_rad": 0.4049786177413006,
+        "mean_contact_slip_m_s": 0.008175356778768902,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.05172102050450761,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          -12.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.0
+      }
+    },
+    {
+      "scenario": "push_back",
+      "seed": 3000013,
+      "reference": {
+        "controller": "com",
+        "scenario": "push_back",
+        "seed": 3000013,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.05761204619221491,
+        "push_peak_com_error_m": 0.02720144866387379,
+        "max_lateral_error_m": 0.0015718644084232222,
+        "pre_push_com_x_m": 0.05667688462268365,
+        "final_com_error_m": 0.0015514659932347962,
+        "tail_com_error_m": 0.0015227086096237324,
+        "tail_com_rate_m_s": 9.347778396861107e-05,
+        "settled_com_offset_m": 0.05102179548918176,
+        "recovery_time_s": 0.52,
+        "min_height_m": 0.9994966660773494,
+        "max_pitch_rad": 0.07802901971833906,
+        "max_roll_rad": 0.0020243470543221207,
+        "max_abs_ankle_correction_rad": 0.6504952573184266,
+        "mean_contact_slip_m_s": 0.007947201221850173,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.04816487544669189,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          -12.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.0
+      },
+      "variant": {
+        "controller": "com",
+        "scenario": "push_back",
+        "seed": 3000013,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.060142994585339435,
+        "push_peak_com_error_m": 0.034853388488340194,
+        "max_lateral_error_m": 0.0015512907568057841,
+        "pre_push_com_x_m": 0.036308153313052115,
+        "final_com_error_m": 0.002943704888103325,
+        "tail_com_error_m": 0.003033029935275812,
+        "tail_com_rate_m_s": 0.000523572086561717,
+        "settled_com_offset_m": 0.0527119342095167,
+        "recovery_time_s": 0.52,
+        "min_height_m": 0.9991198410481833,
+        "max_pitch_rad": 0.0861335746442753,
+        "max_roll_rad": 0.0020819686438574925,
+        "max_abs_ankle_correction_rad": 0.4113286936846744,
+        "mean_contact_slip_m_s": 0.00819156846772464,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.05013686100241047,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          -12.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.0
+      }
+    },
+    {
+      "scenario": "push_back",
+      "seed": 3000014,
+      "reference": {
+        "controller": "com",
+        "scenario": "push_back",
+        "seed": 3000014,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.05817773710894186,
+        "push_peak_com_error_m": 0.031386340747634585,
+        "max_lateral_error_m": 0.0015752800656236034,
+        "pre_push_com_x_m": 0.05007693738086931,
+        "final_com_error_m": 0.0014875125592654084,
+        "tail_com_error_m": 0.0014696771183881382,
+        "tail_com_rate_m_s": 0.0001175036666156746,
+        "settled_com_offset_m": 0.051019312964042135,
+        "recovery_time_s": 0.52,
+        "min_height_m": 0.9993342581407961,
+        "max_pitch_rad": 0.07850673406662803,
+        "max_roll_rad": 0.0023295169580433957,
+        "max_abs_ankle_correction_rad": 0.6558379897227239,
+        "mean_contact_slip_m_s": 0.00790463226397055,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.04793860376289732,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          -12.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.0
+      },
+      "variant": {
+        "controller": "com",
+        "scenario": "push_back",
+        "seed": 3000014,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.060909393849216426,
+        "push_peak_com_error_m": 0.0409520087132746,
+        "max_lateral_error_m": 0.001628046741683585,
+        "pre_push_com_x_m": 0.029933545412982484,
+        "final_com_error_m": 0.0028848300265455454,
+        "tail_com_error_m": 0.002974835926460895,
+        "tail_com_rate_m_s": 0.0005225515560923565,
+        "settled_com_offset_m": 0.0526847660940008,
+        "recovery_time_s": 0.52,
+        "min_height_m": 0.9989912308323937,
+        "max_pitch_rad": 0.08656824516653339,
+        "max_roll_rad": 0.0025552025054155878,
+        "max_abs_ankle_correction_rad": 0.41537503132654174,
+        "mean_contact_slip_m_s": 0.008193934089801836,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.04975616833839962,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          -12.0,
+          0.0
+        ],
+        "post_release_settle_s": 0.0
+      }
+    },
+    {
+      "scenario": "push_left",
+      "seed": 3000010,
+      "reference": {
+        "controller": "com",
+        "scenario": "push_left",
+        "seed": 3000010,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.05587018337852339,
+        "push_peak_com_error_m": 0.057776538294372404,
+        "max_lateral_error_m": 0.04211301406615017,
+        "pre_push_com_x_m": 0.08089418806635161,
+        "final_com_error_m": 0.0025750107454246313,
+        "tail_com_error_m": 0.0027736082898741662,
+        "tail_com_rate_m_s": 0.0019011515085863065,
+        "settled_com_offset_m": 0.05125779509075504,
+        "recovery_time_s": 0.6800000000000002,
+        "min_height_m": 1.0004664520071869,
+        "max_pitch_rad": 0.07586280833723939,
+        "max_roll_rad": 0.0209614972562984,
+        "max_abs_ankle_correction_rad": 0.6001235745039403,
+        "mean_contact_slip_m_s": 0.008172636535124038,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.04888735851781028,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          0.0,
+          24.0
+        ],
+        "post_release_settle_s": 0.5
+      },
+      "variant": {
+        "controller": "com",
+        "scenario": "push_left",
+        "seed": 3000010,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.056666372008038216,
+        "push_peak_com_error_m": 0.060660202146643985,
+        "max_lateral_error_m": 0.044016395458916356,
+        "pre_push_com_x_m": 0.061972688196577204,
+        "final_com_error_m": 0.004390901421418716,
+        "tail_com_error_m": 0.004676137478022219,
+        "tail_com_rate_m_s": 0.0025925437377082223,
+        "settled_com_offset_m": 0.05356461994403122,
+        "recovery_time_s": 0.7000000000000002,
+        "min_height_m": 1.0003110131007849,
+        "max_pitch_rad": 0.0843661611196136,
+        "max_roll_rad": 0.026116831089336684,
+        "max_abs_ankle_correction_rad": 0.3647289644925904,
+        "mean_contact_slip_m_s": 0.007936673013799658,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.05210129744669467,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          0.0,
+          24.0
+        ],
+        "post_release_settle_s": 0.52
+      }
+    },
+    {
+      "scenario": "push_left",
+      "seed": 3000011,
+      "reference": {
+        "controller": "com",
+        "scenario": "push_left",
+        "seed": 3000011,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.05732889642655836,
+        "push_peak_com_error_m": 0.06043886596084926,
+        "max_lateral_error_m": 0.045307020563002925,
+        "pre_push_com_x_m": 0.07435089593470073,
+        "final_com_error_m": 0.002509711318770667,
+        "tail_com_error_m": 0.0027580329720431076,
+        "tail_com_rate_m_s": 0.0022174892880544865,
+        "settled_com_offset_m": 0.05122752661156002,
+        "recovery_time_s": 0.7200000000000002,
+        "min_height_m": 0.9999015566151366,
+        "max_pitch_rad": 0.07757206388242394,
+        "max_roll_rad": 0.02643739254558901,
+        "max_abs_ankle_correction_rad": 0.6356219537702545,
+        "mean_contact_slip_m_s": 0.008150799306412704,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.053321808324123844,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          0.0,
+          24.0
+        ],
+        "post_release_settle_s": 0.54
+      },
+      "variant": {
+        "controller": "com",
+        "scenario": "push_left",
+        "seed": 3000011,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.05807458450718081,
+        "push_peak_com_error_m": 0.0632956610387735,
+        "max_lateral_error_m": 0.04332060760439495,
+        "pre_push_com_x_m": 0.05306137693057748,
+        "final_com_error_m": 0.00408947208941549,
+        "tail_com_error_m": 0.0043492944126424056,
+        "tail_com_rate_m_s": 0.002474324629398625,
+        "settled_com_offset_m": 0.05341560403281487,
+        "recovery_time_s": 0.7000000000000002,
+        "min_height_m": 0.9996783296691936,
+        "max_pitch_rad": 0.08577405552238779,
+        "max_roll_rad": 0.025909200507696142,
+        "max_abs_ankle_correction_rad": 0.3967530355057208,
+        "mean_contact_slip_m_s": 0.007949651049388407,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.056008281885300826,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          0.0,
+          24.0
+        ],
+        "post_release_settle_s": 0.52
+      }
+    },
+    {
+      "scenario": "push_left",
+      "seed": 3000012,
+      "reference": {
+        "controller": "com",
+        "scenario": "push_left",
+        "seed": 3000012,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.057534495758283975,
+        "push_peak_com_error_m": 0.06620655499714652,
+        "max_lateral_error_m": 0.050250397791512386,
+        "pre_push_com_x_m": 0.06614374485743468,
+        "final_com_error_m": 0.0024670087449775156,
+        "tail_com_error_m": 0.002723609121003263,
+        "tail_com_rate_m_s": 0.0021751726948218164,
+        "settled_com_offset_m": 0.05121453779914481,
+        "recovery_time_s": 0.7800000000000002,
+        "min_height_m": 0.9996963573320233,
+        "max_pitch_rad": 0.07776210685720428,
+        "max_roll_rad": 0.03369007996996188,
+        "max_abs_ankle_correction_rad": 0.6440926006784928,
+        "mean_contact_slip_m_s": 0.008161726529032099,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.05201064116458737,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          0.0,
+          24.0
+        ],
+        "post_release_settle_s": 0.6
+      },
+      "variant": {
+        "controller": "com",
+        "scenario": "push_left",
+        "seed": 3000012,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.05910309311577763,
+        "push_peak_com_error_m": 0.06529323279820144,
+        "max_lateral_error_m": 0.04281017994699775,
+        "pre_push_com_x_m": 0.045191314697458795,
+        "final_com_error_m": 0.0039971537119407275,
+        "tail_com_error_m": 0.004247024277833809,
+        "tail_com_rate_m_s": 0.0023859350583301945,
+        "settled_com_offset_m": 0.05336306014242577,
+        "recovery_time_s": 0.6800000000000002,
+        "min_height_m": 0.9994725355525099,
+        "max_pitch_rad": 0.08596234622129978,
+        "max_roll_rad": 0.025395037784785364,
+        "max_abs_ankle_correction_rad": 0.4049786177413006,
+        "mean_contact_slip_m_s": 0.008018155232761753,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.054578447208895535,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          0.0,
+          24.0
+        ],
+        "post_release_settle_s": 0.5
+      }
+    },
+    {
+      "scenario": "push_left",
+      "seed": 3000013,
+      "reference": {
+        "controller": "com",
+        "scenario": "push_left",
+        "seed": 3000013,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.05761204619221491,
+        "push_peak_com_error_m": 0.07369294367247477,
+        "max_lateral_error_m": 0.05549939196308075,
+        "pre_push_com_x_m": 0.05667688462268365,
+        "final_com_error_m": 0.0024375187787206007,
+        "tail_com_error_m": 0.002693981492954051,
+        "tail_com_rate_m_s": 0.0020357641107267587,
+        "settled_com_offset_m": 0.05119910406400659,
+        "recovery_time_s": 0.8399999999999999,
+        "min_height_m": 0.9994966660773494,
+        "max_pitch_rad": 0.07802901971833906,
+        "max_roll_rad": 0.040886445831207964,
+        "max_abs_ankle_correction_rad": 0.6504952573184266,
+        "mean_contact_slip_m_s": 0.008146385083179664,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.05072224793606184,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          0.0,
+          24.0
+        ],
+        "post_release_settle_s": 0.66
+      },
+      "variant": {
+        "controller": "com",
+        "scenario": "push_left",
+        "seed": 3000013,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.060142994585339435,
+        "push_peak_com_error_m": 0.06744170595532874,
+        "max_lateral_error_m": 0.042307068887458436,
+        "pre_push_com_x_m": 0.036308153313052115,
+        "final_com_error_m": 0.0039396689091727366,
+        "tail_com_error_m": 0.004185986556259317,
+        "tail_com_rate_m_s": 0.002321186876914915,
+        "settled_com_offset_m": 0.053294074984916034,
+        "recovery_time_s": 0.6800000000000002,
+        "min_height_m": 0.9991198410481833,
+        "max_pitch_rad": 0.0861335746442753,
+        "max_roll_rad": 0.02468502738724006,
+        "max_abs_ankle_correction_rad": 0.4113286936846744,
+        "mean_contact_slip_m_s": 0.008055373187767336,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.053135492687123025,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          0.0,
+          24.0
+        ],
+        "post_release_settle_s": 0.5
+      }
+    },
+    {
+      "scenario": "push_left",
+      "seed": 3000014,
+      "reference": {
+        "controller": "com",
+        "scenario": "push_left",
+        "seed": 3000014,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.059884691331426806,
+        "push_peak_com_error_m": 0.07941307635765688,
+        "max_lateral_error_m": 0.05879902838458552,
+        "pre_push_com_x_m": 0.05007693738086931,
+        "final_com_error_m": 0.0023361874572989847,
+        "tail_com_error_m": 0.0025913747635447743,
+        "tail_com_rate_m_s": 0.001953409072782926,
+        "settled_com_offset_m": 0.05120645298263472,
+        "recovery_time_s": 0.8799999999999999,
+        "min_height_m": 0.9993342581407961,
+        "max_pitch_rad": 0.07850673406662803,
+        "max_roll_rad": 0.04545011779505637,
+        "max_abs_ankle_correction_rad": 0.6558379897227239,
+        "mean_contact_slip_m_s": 0.008107408762263062,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.050478546460690624,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          0.0,
+          24.0
+        ],
+        "post_release_settle_s": 0.7
+      },
+      "variant": {
+        "controller": "com",
+        "scenario": "push_left",
+        "seed": 3000014,
+        "success": true,
+        "criteria": {
+          "complete": true,
+          "upright": true,
+          "min_height": true,
+          "max_tilt": true,
+          "recovered": true,
+          "recovery_time": true,
+          "final_stability": true,
+          "pushed_by": true,
+          "slip": true,
+          "double_support": true
+        },
+        "steps": 300,
+        "peak_com_error_m": 0.060909393849216426,
+        "push_peak_com_error_m": 0.0688928795300027,
+        "max_lateral_error_m": 0.04182667887126637,
+        "pre_push_com_x_m": 0.029933545412982484,
+        "final_com_error_m": 0.003863330391868393,
+        "tail_com_error_m": 0.004106358619779063,
+        "tail_com_rate_m_s": 0.0023218577888725308,
+        "settled_com_offset_m": 0.053270557590066686,
+        "recovery_time_s": 0.6600000000000001,
+        "min_height_m": 0.9989912308323937,
+        "max_pitch_rad": 0.08656824516653339,
+        "max_roll_rad": 0.023877456322971675,
+        "max_abs_ankle_correction_rad": 0.41537503132654174,
+        "mean_contact_slip_m_s": 0.008038475408246116,
+        "saturation_fraction": 0.0,
+        "lost_double_support_samples": 0,
+        "displacement_m": 0.05282763619993567,
+        "full_scheduled_push": true,
+        "push_steps": 10,
+        "impulse_xy_n_s": [
+          0.0,
+          24.0
+        ],
+        "post_release_settle_s": 0.48
+      }
+    }
+  ]
+}

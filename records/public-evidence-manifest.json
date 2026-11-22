@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "date": "2026-10-16",
+  "date": "2026-11-22",
   "evidence_files": [
     {
       "path": "project-01-simulation-software/outputs/demo/run_config.json",
@@ -3516,6 +3516,101 @@
       "path": "project-05-reinforcement-safety/outputs/go2-verification-20261015.json",
       "bytes": 652,
       "sha256": "7b491cee1a9214740da25a38a53b945b65137ad0bc98c723404bbc0ce3cf2de9"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/h1-demo-20261122/strong-front-gain-pair.gif",
+      "bytes": 8014279,
+      "sha256": "bdb07b5f2097cbffa1379ef3f0ce61adf863989ae9c29cf9c0496c0e91f2636d"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/h1-demo-20261122/strong-front-gain-pair.png",
+      "bytes": 208736,
+      "sha256": "d1fba10f5f02715a3231775d6e9edb69824d763e712878367e9ba210146c5c88"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/h1-gain-comparison-20261122.json",
+      "bytes": 84840,
+      "sha256": "2d6b41580f3bab6395d485559fc93d8fbc0a9641d9ec65256e1b026d22ddaf7d"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/h1-gain12-20261122/cases.json",
+      "bytes": 29052,
+      "sha256": "b3d532394f3d166915541501f4840e7f55b576b36bf53692a63bd85c49efceb2"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/h1-gain12-20261122/manifest.json",
+      "bytes": 856,
+      "sha256": "bef7a7da0710c20a019594cc7da7965f81099b2775fb824de0c7cf05a3bdd839"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/h1-gain12-20261122/protocol.json",
+      "bytes": 5991,
+      "sha256": "ced17e3ef1849b1d3b8390656c1813992b9735fd3ad3efe51e3784b459137f25"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/h1-gain12-20261122/source/h1_recovery.py",
+      "bytes": 26791,
+      "sha256": "40d96bac120193a767f494a48eb12df5e4e43969d651b561319dc5f784b417bf"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/h1-gain12-20261122/source/lab.py",
+      "bytes": 21551,
+      "sha256": "7ff5bfc42eaa3c5a435ed13b34f97bf1043a84ec1e4d1ca371bfe392a3e384cd"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/h1-gain12-20261122/source/tabular_lab.py",
+      "bytes": 15620,
+      "sha256": "580fb954a88d5802a09e0b35b959a084a02a0f84b2c30f3b173e2c8db1a9fc00"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/h1-gain12-20261122/summary.json",
+      "bytes": 277,
+      "sha256": "cb36cbb0668b9f87f04ea6915a26ca89dc5ca8df62b71b024b1b900d9d39c035"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/h1-gain12-20261122/trajectories.jsonl.gz",
+      "bytes": 5892890,
+      "sha256": "79451529eb833b18eef595c85736b0b586ae560b2b7736fc6cf16c65fed51c4a"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/h1-gain6-20261122/cases.json",
+      "bytes": 29032,
+      "sha256": "b8b755ffed8548bde80872950776afaac02db9d84fc563443fef8777e461aa39"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/h1-gain6-20261122/manifest.json",
+      "bytes": 856,
+      "sha256": "39da1d7ba6617044062dc53d3b35498c3b8f2816707901bbcbb3166419dfde44"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/h1-gain6-20261122/protocol.json",
+      "bytes": 5990,
+      "sha256": "d6518e2936d154e45617cc328dd0717f7d24acdf901d9133ec069bdb93e316fd"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/h1-gain6-20261122/source/h1_recovery.py",
+      "bytes": 26791,
+      "sha256": "40d96bac120193a767f494a48eb12df5e4e43969d651b561319dc5f784b417bf"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/h1-gain6-20261122/source/lab.py",
+      "bytes": 21551,
+      "sha256": "7ff5bfc42eaa3c5a435ed13b34f97bf1043a84ec1e4d1ca371bfe392a3e384cd"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/h1-gain6-20261122/source/tabular_lab.py",
+      "bytes": 15620,
+      "sha256": "580fb954a88d5802a09e0b35b959a084a02a0f84b2c30f3b173e2c8db1a9fc00"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/h1-gain6-20261122/summary.json",
+      "bytes": 277,
+      "sha256": "cb36cbb0668b9f87f04ea6915a26ca89dc5ca8df62b71b024b1b900d9d39c035"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/h1-gain6-20261122/trajectories.jsonl.gz",
+      "bytes": 5866836,
+      "sha256": "7b6df2761401dd83d333dacd477aa9792d479c813a5e3236bcba060f735090b6"
     },
     {
       "path": "project-05-reinforcement-safety/outputs/h1-recovery-20261016-r2/cases.json",

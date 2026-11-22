@@ -21,6 +21,7 @@ os.environ.setdefault("OPENBLAS_NUM_THREADS", "1")
 os.environ.setdefault("MKL_NUM_THREADS", "1")
 import argparse
 from dataclasses import asdict, dataclass
+from datetime import date
 import gzip
 import hashlib
 import importlib.util
@@ -361,7 +362,9 @@ def episode(env, mode, scenario, seed, render=False, viewer=False):
             handle.close()
 
 
-def run(out, cfg, seeds, render=True):
+def run(out, cfg, seeds, render=True, controllers=CONTROLLERS):
+    if not controllers or len(set(controllers)) != len(controllers) or not set(controllers) <= set(CONTROLLERS):
+        raise ValueError("select unique supported controllers")
     if out.exists():
         raise FileExistsError("new output folder required")
     out.mkdir(parents=True)
@@ -373,20 +376,20 @@ def run(out, cfg, seeds, render=True):
     assets = {p.relative_to(lab.CACHE).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
               for p in (lab.CACHE / "unitree_h1").rglob("*") if p.is_file()}
     assert subprocess.check_output(["git", "-C", str(lab.CACHE), "rev-parse", "HEAD"], text=True).strip() == lab.PIN
-    protocol = {"date": "2026-10-16", "config": asdict(cfg), "seeds": seeds, "scenarios": list(SCENARIOS),
-                "controllers": list(CONTROLLERS), "model_commit": lab.PIN, "model_assets_sha256": assets,
+    protocol = {"date": date.today().isoformat(), "config": asdict(cfg), "seeds": seeds, "scenarios": list(SCENARIOS),
+                "controllers": list(controllers), "model_commit": lab.PIN, "model_assets_sha256": assets,
                 "source_sha256": {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in source.iterdir()},
                 "dependencies": {"numpy": np.__version__, "mujoco": mujoco.__version__},
                 "acceptance": {"horizon_steps": 300, "episode_s": 6.0, "push_onset_s": PUSH_ONSET_S,
                                "feedback_start_s": FEEDBACK_START_S, "min_pelvis_height_m": .62,
                                "max_tilt_rad": .55, "com_target_m": cfg.com_target_m,
-                               "recovery_window_m": .035, "recovery_rate_m_s": .12,
+                               "recovery_window_m": .035, "recovery_lateral_window_m": .03, "recovery_rate_m_s": .12,
                                "recovery_time_s": 2.5, "mean_contact_slip_m_s": .25},
                 "scenario_push": {k: {"force_x_n": v[0], "force_y_n": v[1], "duration_s": v[2]} for k, v in SCENARIO_PUSH.items()},
                 "development_seeds": [0],
                 "reset_scope": "Pelvis XY normal .001 m, height normal .0005 m around the calibrated 1.06279 m stance, "
-                               "joint noise .001 rad, world velocity .002 m/s for six axes, no pre-settle; "
-                               "flat floor, both feet in contact from the first step, push scheduled at 2.0 s",
+                               "joint noise .001 rad, free-base velocity std .002 (m/s translation, rad/s rotation), "
+                               "no pre-settle; flat floor, push scheduled at 2.0 s",
                 "calibration": {"reference_hip": cfg.reference_hip, "reference_knee": cfg.reference_knee,
                                 "reference_ankle": cfg.reference_ankle, "reference_pelvis_z": cfg.reference_pelvis_z,
                                 "measured_ankle_command_to_com_acceleration": {"value": -2.85, "unit": "1/s^2 per rad",
@@ -400,7 +403,7 @@ def run(out, cfg, seeds, render=True):
     env = H1Stand(cfg)
     try:
         with gzip.open(out / "trajectories.jsonl.gz", "wt", encoding="utf-8") as stream:
-            for mode in CONTROLLERS:
+            for mode in controllers:
                 for scenario in SCENARIOS:
                     for seed in seeds:
                         record, rows, frames = episode(env, mode, scenario, seed,
@@ -424,7 +427,7 @@ def run(out, cfg, seeds, render=True):
     aggregate = {mode: {"successes": sum(c["success"] for c in cases if c["controller"] == mode),
                         "cases": sum(c["controller"] == mode for c in cases),
                         "falls": sum(not c["criteria"]["upright"] for c in cases if c["controller"] == mode)}
-                 for mode in CONTROLLERS}
+                 for mode in controllers}
     save_json(out / "summary.json", {"aggregate": aggregate, "evaluation_cases": len(cases),
                                      "retained_failure_cases": sum(not c["success"] for c in cases),
                                      "task_status": "Per-scenario physical outcomes retained; RL residual recovery and stepping remain separate tasks"})
@@ -437,6 +440,8 @@ if __name__ == "__main__":
     parser.add_argument("--output", type=Path)
     parser.add_argument("--demo", action="store_true")
     parser.add_argument("--controller", choices=CONTROLLERS, default="com")
+    parser.add_argument("--controllers", nargs="+", choices=CONTROLLERS, default=CONTROLLERS,
+                        help="controller subset for batch output")
     parser.add_argument("--scenario", choices=SCENARIOS, default="strong_front")
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--seeds", type=int, nargs="+", default=[3000000, 3000001, 3000002, 3000003, 3000004])
@@ -454,6 +459,8 @@ if __name__ == "__main__":
     elif args.output:
         if len(args.seeds) != len(set(args.seeds)) or min(args.seeds) < 0:
             parser.error("unique nonnegative seeds")
-        run(args.output, config, args.seeds, not args.no_render)
+        if len(args.controllers) != len(set(args.controllers)):
+            parser.error("unique controllers")
+        run(args.output, config, args.seeds, not args.no_render, args.controllers)
     else:
         parser.error("--output or --demo required")

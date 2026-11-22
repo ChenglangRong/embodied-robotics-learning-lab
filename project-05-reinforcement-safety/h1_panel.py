@@ -1,6 +1,7 @@
 """Desktop H1 push-recovery lesson: physical replay, matched ablations and live runs."""
 import datetime
 import json
+from math import isfinite
 import os
 from pathlib import Path
 import subprocess
@@ -8,7 +9,7 @@ import sys
 import tkinter as tk
 from tkinter import ttk,messagebox
 from PIL import Image,ImageTk
-from h1_recovery import CONTROLLERS,SCENARIOS
+from h1_recovery import Config,CONTROLLERS,SCENARIOS
 
 ROOT=Path(__file__).resolve().parent
 BASELINE=ROOT/"outputs/h1-recovery-20261016-r2"
@@ -42,18 +43,32 @@ class H1Panel(tk.Tk):
                                  ("实时重置种子",self.seed,[str(s) for s in range(3000000,3000005)])):
             ttk.Label(right,text=label).pack(anchor="w",pady=(8,0))
             box=ttk.Combobox(right,textvariable=var,values=values,state="readonly");box.pack(fill="x",pady=6);self.selectors[label]=box
+        self.com_gain = tk.StringVar(value=str(Config().com_gain))
+        ttk.Label(right, text="位置增益 Kc（速率增益固定 2.4）").pack(anchor="w", pady=(8,0))
+        self.gain_entry = ttk.Entry(right, textvariable=self.com_gain)
+        self.gain_entry.pack(fill="x", pady=6)
         self.buttons={}
         for label,callback in (("实时3D · 当前选择",self.live),("载入保存回放与指标",self.replay),("回放播放 / 暂停",self.toggle),
                                ("运行新实验 · 五种子全对照",self.experiment),
                                ("打开知识与编程操作课（07-H1扰动恢复实操课.md）",self.lesson),
                                ("打开结果与失败轨迹",self.results),("停止当前运行 · 保留日志",self.stop)):
             button=ttk.Button(right,text=label,command=callback);button.pack(fill="x",pady=6);self.buttons[label]=button
-        self.status=ttk.Label(self,text="保存回放来自冻结实验；实时3D使用右侧控制器/场景/种子；新实验与日志写入outputs/h1-student。",wraplength=1120)
+        self.status=ttk.Label(self,text="实时3D与新实验读取当前增益。保存回放与指标读取已保存的实验。",wraplength=1120)
         self.status.pack(fill="x",padx=16,pady=12)
         self.replay();self.after(100,self.tick)
 
-    def live_args(self):return ["--demo","--controller",self.mode.get(),"--scenario",self.scenario.get(),"--seed",self.seed.get()]
-    def experiment_args(self,folder):return ["--output",str(folder)]
+    def gain_args(self):
+        gain = float(self.com_gain.get())
+        if not isfinite(gain) or gain < 0:
+            raise ValueError("invalid gain")
+        return ["--com-gain", str(gain)]
+
+    def live_args(self):
+        return ["--demo", "--controller", self.mode.get(), "--scenario", self.scenario.get(),
+                "--seed", self.seed.get(), *self.gain_args()]
+
+    def experiment_args(self, folder):
+        return ["--output", str(folder), *self.gain_args()]
     def lesson_path(self):return next((ROOT/name for name in LESSONS if (ROOT/name).exists()),None)
     def results_path(self):return self.folder if self.folder.exists() else None
 
@@ -67,6 +82,10 @@ class H1Panel(tk.Tk):
         else:
             self.picture.configure(image="",text=f"{name}.gif 未生成；保存回放覆盖fixed/com的strong_front与push_left，实时3D支持全部组合。")
         self.metrics.configure(state="normal");self.metrics.delete("1.0","end")
+        protocol_path = self.folder / "protocol.json"
+        if protocol_path.exists():
+            cfg = json.loads(protocol_path.read_text(encoding="utf-8"))["config"]
+            self.metrics.insert("end", f"{self.folder.name} · Kc={cfg['com_gain']:g} · Kr={cfg['com_rate_gain']:g}\n")
         path=self.folder/"cases.json"
         if path.exists():
             cases=json.loads(path.read_text(encoding="utf-8"))
@@ -95,14 +114,28 @@ class H1Panel(tk.Tk):
 
     def live(self):
         if self.process:return
-        self.launch(self.live_args())
+        try:
+            args = self.live_args()
+        except ValueError:
+            self.show_gain_error()
+            return
+        self.launch(args)
         self.status.configure(text=f"实时3D：{self.mode.get()} / {self.scenario.get()} 种子{self.seed.get()}；日志{self.log.name}")
 
     def experiment(self):
         if self.process:return
         folder=self.logdir/datetime.datetime.now().strftime("%Y%m%d-%H%M%S-%f")
-        self.launch(self.experiment_args(folder),folder)
+        try:
+            args = self.experiment_args(folder)
+        except ValueError:
+            self.show_gain_error()
+            return
+        self.launch(args, folder)
         self.status.configure(text=f"新实验四控制器×五场景×五种子写入{folder.name}；日志{self.log.name}")
+
+    def show_gain_error(self):
+        self.status.configure(text="位置增益 Kc 需要是有限的非负数，例如 12 或 6。")
+        self.gain_entry.focus_set()
 
     def lesson(self):
         path=self.lesson_path()
