@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_date": "2026-11-26",
+  "updated_date": "2026-11-27",
   "repository": "https://github.com/ChenglangRong/embodied-robotics-learning-lab",
   "current_stage": "world_models_and_vla",
   "learning_preferences": {"model_focus": ["用户称GPT 6.0；实际API型号待选择并记录", "pi0.5"], "official_sources_checked": "2026-10-13", "application_status": "Offline interface tests passed; GPT calls=0, pi0.5 checkpoint inference=0; local GPU six GB, upstream standard inference greater than eight GB"},
@@ -78,6 +78,16 @@
       "independent_assessment": "pending",
       "experiments_run": 0,
       "record": "records/upper-limb-exoskeleton-market-and-training-2026-11-26.md"
+    },
+    {
+      "date": "2026-11-27",
+      "topic": "普通人上肢抗阻：假肘台架设计与有符号力矩计算工具",
+      "activity": "AI-assisted comparison, quasi-static bench protocol and standard-library CSV analysis tool",
+      "learner_self_report": "none",
+      "independent_assessment": "pending",
+      "software_tests_passed": 5,
+      "experiments_run": 0,
+      "record": "records/elbow-resistance-bench-2026-11-27.md"
     }
   ],
   "publication_policy": {
