@@ -88,6 +88,15 @@
       "software_tests_passed": 5,
       "experiments_run": 0,
       "record": "records/elbow-resistance-bench-2026-11-27.md"
+    },
+    {
+      "date": "2026-11-27",
+      "topic": "贴身上肢训练衣的双手推力反馈与个体化验证",
+      "activity": "AI-assisted review and protocol design for instrumented chest press, cross-day sleeve estimation, retention after feedback removal and a separate post-stroke reaching endpoint",
+      "learner_self_report": "none",
+      "independent_assessment": "pending",
+      "experiments_run": 0,
+      "record": "records/soft-upper-limb-sleeve-2026-11-27.md"
     }
   ],
   "publication_policy": {
