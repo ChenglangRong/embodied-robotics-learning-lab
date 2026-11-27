@@ -1,0 +1,1017 @@
+{
+  "scope": "Local open-loop action sensitivity in a two-link simulation. No policy training or humanoid evaluation.",
+  "frozen_weights": "project-06-world-model-wam/outputs/action-pilot-20261127/report.json#weights.state_action",
+  "command_from_repo_root": "python project-06-world-model-wam/action_gradient_lesson.py",
+  "versions": {
+    "python": "3.12.4",
+    "numpy": "1.26.4",
+    "mujoco": "3.2.5",
+    "pillow": "12.3.0"
+  },
+  "config": {
+    "baseline_u": [
+      0.0,
+      0.0
+    ],
+    "differentiated_action": "u1 (held constant at all steps); u2=0",
+    "action_unit": "dimensionless normalized joint velocity command",
+    "velocity_limit_rad_s": 2.0,
+    "control_dt_s": 0.02,
+    "horizon": 5,
+    "cost": "terminal Euclidean tip-to-goal distance (mm)",
+    "derivative_unit": "mm / normalized u1",
+    "central_difference_epsilon": 0.001,
+    "downhill_step_magnitude": 0.05
+  },
+  "sha256": {
+    "project-06-world-model-wam/action_gradient_lesson.py": "880d5d72f3d2486133c7a9ac938da90bc69f96c8740b75580e1f5a21dbfb2b9f",
+    "project-06-world-model-wam/outputs/action-pilot-20261127/report.json": "feb35c99e0ef808738ed9b3ace5b637de386eb770f7feb6c5ecd235269052824",
+    "project-06-world-model-wam/outputs/action-pilot-20261127/training.csv": "034fd9e8f0f56d66dc32ba07d79886efaaafb3c18e7fff386e482f40f02fe708",
+    "project-06-world-model-wam/action_conditioned_pilot.py": "5a2dddb64569fb86f9bd6d1cbeb3fcdeec449c11147dc87d940206c66ec73509",
+    "project-05-reinforcement-safety/physical_env.py": "52e788c5507bffede2faa2e276bdf704096ff9234de20b32f1bb9a361c4e03f9",
+    "project-05-reinforcement-safety/model/arm2d-rl.xml": "69b6b7243d1a3cb6fca7c6118ad3a4f70dca8daa436dae36bbfd166b61589acb",
+    "project-01-simulation-software/src/robot_lab/planar_arm.py": "0bdb721cfafa9e9c986461ba428bd3780429fff0487cbc7e79a10c27bee0c351"
+  },
+  "groups": {
+    "id": {
+      "n": 20,
+      "same_sign": 20,
+      "mean_absolute_derivative_error": 3.1583107677903905,
+      "max_sim_epsilon_halving_difference": 5.233360411693866e-07,
+      "strict_distance_improvements": 20,
+      "mean_distance_saved_mm": 1.3790299218632154,
+      "cases": [
+        {
+          "seed": 4300,
+          "initial_q_dq": [
+            -0.41539875770979484,
+            1.0293195737543108,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.9643398974983272,
+            0.014346091868397373
+          ],
+          "model_baseline_mm": 92.16806507076366,
+          "sim_baseline_mm": 92.1658963635161,
+          "sim_plus_epsilon_mm": 92.15326714948596,
+          "sim_minus_epsilon_mm": 92.17853601896451,
+          "model_analytic": -12.674359768779647,
+          "model_central": -12.674358934340546,
+          "sim_central": -12.634434739275946,
+          "sim_half_epsilon_central": -12.634435262611987,
+          "downhill_u1": 0.05,
+          "sim_downhill_mm": 91.54731326625517,
+          "distance_saved_mm": 0.6185830972609239
+        },
+        {
+          "seed": 4301,
+          "initial_q_dq": [
+            1.0747327775265356,
+            1.1220201971890895,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.23976784745177449,
+            0.6558654330950819
+          ],
+          "model_baseline_mm": 271.6989204848882,
+          "sim_baseline_mm": 271.94060473916056,
+          "sim_plus_epsilon_mm": 271.9663963842631,
+          "sim_minus_epsilon_mm": 271.91481371519154,
+          "model_analytic": 26.215729601093262,
+          "model_central": 26.215729562920842,
+          "sim_central": 25.791334535767874,
+          "sim_half_epsilon_central": 25.79133456532645,
+          "downhill_u1": -0.05,
+          "sim_downhill_mm": 270.6518193778078,
+          "distance_saved_mm": 1.2887853613527795
+        },
+        {
+          "seed": 4302,
+          "initial_q_dq": [
+            -0.8674621146269086,
+            0.6692382908013075,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.8915492456089719,
+            -0.18658345217301062
+          ],
+          "model_baseline_mm": 367.0765027882617,
+          "sim_baseline_mm": 367.0888908832732,
+          "sim_plus_epsilon_mm": 367.0596163398611,
+          "sim_minus_epsilon_mm": 367.11816549911714,
+          "model_analytic": -34.02139850769406,
+          "model_central": -34.021398501977274,
+          "sim_central": -29.274579628008723,
+          "sim_half_epsilon_central": -29.274579631362485,
+          "downhill_u1": 0.05,
+          "sim_downhill_mm": 365.6252529702728,
+          "distance_saved_mm": 1.4636379130004116
+        },
+        {
+          "seed": 4303,
+          "initial_q_dq": [
+            -0.9036084568627202,
+            0.22015505258155182,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.9406927596764884,
+            -0.23373421162868438
+          ],
+          "model_baseline_mm": 554.5480822578305,
+          "sim_baseline_mm": 554.5356577527061,
+          "sim_plus_epsilon_mm": 554.5066807156528,
+          "sim_minus_epsilon_mm": 554.5646346711055,
+          "model_analytic": -35.5726483854602,
+          "model_central": -35.57264838275387,
+          "sim_central": -28.976977726358655,
+          "sim_half_epsilon_central": -28.97697772675656,
+          "downhill_u1": 0.05,
+          "sim_downhill_mm": 553.0866606371824,
+          "distance_saved_mm": 1.4489971155237527
+        },
+        {
+          "seed": 4304,
+          "initial_q_dq": [
+            -1.0198723505165272,
+            0.5490413971673176,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.9331726262933433,
+            -0.21808643463576374
+          ],
+          "model_baseline_mm": 542.3665592260568,
+          "sim_baseline_mm": 542.4015161437741,
+          "sim_plus_epsilon_mm": 542.3722996165911,
+          "sim_minus_epsilon_mm": 542.4307326073251,
+          "model_analytic": -34.678973931281476,
+          "model_central": -34.678973928578216,
+          "sim_central": -29.216495366995332,
+          "sim_half_epsilon_central": -29.216495367677453,
+          "downhill_u1": 0.05,
+          "sim_downhill_mm": 540.9406119728819,
+          "distance_saved_mm": 1.4609041708921495
+        },
+        {
+          "seed": 4305,
+          "initial_q_dq": [
+            0.29710150672783175,
+            1.7444397968050813,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.42040083008875917,
+            0.6995163923107461
+          ],
+          "model_baseline_mm": 169.75121717408183,
+          "sim_baseline_mm": 169.7178478944226,
+          "sim_plus_epsilon_mm": 169.70223042722964,
+          "sim_minus_epsilon_mm": 169.7334706933889,
+          "model_analytic": -15.71215343249972,
+          "model_central": -15.71215325404296,
+          "sim_central": -15.620133079636389,
+          "sim_half_epsilon_central": -15.620133260142666,
+          "downhill_u1": 0.05,
+          "sim_downhill_mm": 168.94353598849648,
+          "distance_saved_mm": 0.7743119059261119
+        },
+        {
+          "seed": 4306,
+          "initial_q_dq": [
+            -0.4474905875917339,
+            1.1897812324358368,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.8456150431159554,
+            -0.18593367080338682
+          ],
+          "model_baseline_mm": 196.9247801071272,
+          "sim_baseline_mm": 196.95223196923436,
+          "sim_plus_epsilon_mm": 196.98408141833056,
+          "sim_minus_epsilon_mm": 196.92038267770553,
+          "model_analytic": 32.06655978040058,
+          "model_central": 32.066559749608814,
+          "sim_central": 31.849370312514225,
+          "sim_half_epsilon_central": 31.849370333134175,
+          "downhill_u1": -0.05,
+          "sim_downhill_mm": 195.3599638667481,
+          "distance_saved_mm": 1.5922681024862584
+        },
+        {
+          "seed": 4307,
+          "initial_q_dq": [
+            -0.7946771395349874,
+            0.42226493637794393,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.896460583989612,
+            -0.142096312275061
+          ],
+          "model_baseline_mm": 443.90353015706836,
+          "sim_baseline_mm": 443.8835564831543,
+          "sim_plus_epsilon_mm": 443.8554969105745,
+          "sim_minus_epsilon_mm": 443.91161607748626,
+          "model_analytic": -33.9827424489399,
+          "model_central": -33.98274244273125,
+          "sim_central": -28.059583455871007,
+          "sim_half_epsilon_central": -28.05958345823001,
+          "downhill_u1": 0.05,
+          "sim_downhill_mm": 442.4806049034801,
+          "distance_saved_mm": 1.402951579674152
+        },
+        {
+          "seed": 4308,
+          "initial_q_dq": [
+            -0.3778513990433685,
+            1.0734975155667723,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.8801623919951173,
+            -0.13878847841683042
+          ],
+          "model_baseline_mm": 174.41961651720808,
+          "sim_baseline_mm": 174.47024993310012,
+          "sim_plus_epsilon_mm": 174.50196713404858,
+          "sim_minus_epsilon_mm": 174.4385329304532,
+          "model_analytic": 33.072043915659115,
+          "model_central": 33.07204387883189,
+          "sim_central": 31.717101797696046,
+          "sim_half_epsilon_central": 31.717101823318217,
+          "downhill_u1": -0.05,
+          "sim_downhill_mm": 172.88464699283668,
+          "distance_saved_mm": 1.585602940263442
+        },
+        {
+          "seed": 4309,
+          "initial_q_dq": [
+            1.2281123807233856,
+            0.6394251431526666,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.38869020377919705,
+            0.7428346945621856
+          ],
+          "model_baseline_mm": 366.2040663937526,
+          "sim_baseline_mm": 366.58377642081507,
+          "sim_plus_epsilon_mm": 366.6125462018153,
+          "sim_minus_epsilon_mm": 366.55500657677334,
+          "model_analytic": 32.66291239629294,
+          "model_central": 32.66291238506369,
+          "sim_central": 28.76981252097721,
+          "sim_half_epsilon_central": 28.76981252592259,
+          "downhill_u1": -0.05,
+          "sim_downhill_mm": 365.14520775263713,
+          "distance_saved_mm": 1.4385686681779362
+        },
+        {
+          "seed": 4310,
+          "initial_q_dq": [
+            -0.18435181730067246,
+            2.0683434119883475,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.6631483788593326,
+            0.237311320176669
+          ],
+          "model_baseline_mm": 199.3239606857332,
+          "sim_baseline_mm": 199.3468430055102,
+          "sim_plus_epsilon_mm": 199.36512782867925,
+          "sim_minus_epsilon_mm": 199.32856146918914,
+          "model_analytic": 10.469029833851646,
+          "model_central": 10.469029763598314,
+          "sim_central": 18.283179745054667,
+          "sim_half_epsilon_central": 18.283179866045884,
+          "downhill_u1": -0.05,
+          "sim_downhill_mm": 198.43681278968816,
+          "distance_saved_mm": 0.9100302158220472
+        },
+        {
+          "seed": 4311,
+          "initial_q_dq": [
+            0.0879928719818911,
+            0.6538239377832942,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.848988945720996,
+            -0.0258186556882469
+          ],
+          "model_baseline_mm": 351.344925663258,
+          "sim_baseline_mm": 351.51045614624934,
+          "sim_plus_epsilon_mm": 351.5396591647473,
+          "sim_minus_epsilon_mm": 351.4812530463288,
+          "model_analytic": 33.10769438282547,
+          "model_central": 33.107694372489505,
+          "sim_central": 29.203059209265803,
+          "sim_half_epsilon_central": 29.203059213443794,
+          "downhill_u1": -0.05,
+          "sim_downhill_mm": 350.0502020953905,
+          "distance_saved_mm": 1.4602540508588504
+        },
+        {
+          "seed": 4312,
+          "initial_q_dq": [
+            -0.7463940418890569,
+            1.1695265668051624,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.8465791869811955,
+            0.19519804722888012
+          ],
+          "model_baseline_mm": 440.2726499566155,
+          "sim_baseline_mm": 440.29605923717384,
+          "sim_plus_epsilon_mm": 440.26537009832566,
+          "sim_minus_epsilon_mm": 440.32674835970005,
+          "model_analytic": -31.12701736754098,
+          "model_central": -31.12701736537815,
+          "sim_central": -30.689130687193256,
+          "sim_half_epsilon_central": -30.689130688642763,
+          "downhill_u1": 0.05,
+          "sim_downhill_mm": 438.76158254317187,
+          "distance_saved_mm": 1.5344766940019667
+        },
+        {
+          "seed": 4313,
+          "initial_q_dq": [
+            0.04471271484423334,
+            0.2715303179687647,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.8233722011549985,
+            0.5075008588082095
+          ],
+          "model_baseline_mm": 389.2255701566783,
+          "sim_baseline_mm": 389.01615944836,
+          "sim_plus_epsilon_mm": 388.98652131267437,
+          "sim_minus_epsilon_mm": 389.0457975348567,
+          "model_analytic": -36.230813558641714,
+          "model_central": -36.23081355513591,
+          "sim_central": -29.63811109117387,
+          "sim_half_epsilon_central": -29.638111092310737,
+          "downhill_u1": 0.05,
+          "sim_downhill_mm": 387.53419256722924,
+          "distance_saved_mm": 1.4819668811307452
+        },
+        {
+          "seed": 4314,
+          "initial_q_dq": [
+            0.4369473775075302,
+            1.145890393398167,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.5906484236115225,
+            0.4840536514018683
+          ],
+          "model_baseline_mm": 177.39399491523804,
+          "sim_baseline_mm": 177.55775514953,
+          "sim_plus_epsilon_mm": 177.5862719905759,
+          "sim_minus_epsilon_mm": 177.52923895618096,
+          "model_analytic": 28.909856246096822,
+          "model_central": 28.90985618050479,
+          "sim_central": 28.516517197473945,
+          "sim_half_epsilon_central": 28.51651724694193,
+          "downhill_u1": -0.05,
+          "sim_downhill_mm": 176.13274721947573,
+          "distance_saved_mm": 1.425007930054278
+        },
+        {
+          "seed": 4315,
+          "initial_q_dq": [
+            0.34657522119456974,
+            0.9335245334680208,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.7913253858589393,
+            0.3522687656724073
+          ],
+          "model_baseline_mm": 260.0568389912993,
+          "sim_baseline_mm": 260.2567688444138,
+          "sim_plus_epsilon_mm": 260.28827941059336,
+          "sim_minus_epsilon_mm": 260.2252581039663,
+          "model_analytic": 33.857397944764706,
+          "model_central": 33.857397941915224,
+          "sim_central": 31.510653313517878,
+          "sim_half_epsilon_central": 31.510653314512638,
+          "downhill_u1": -0.05,
+          "sim_downhill_mm": 258.68101852015843,
+          "distance_saved_mm": 1.5757503242553526
+        },
+        {
+          "seed": 4316,
+          "initial_q_dq": [
+            -0.5251136256246292,
+            1.557533485599746,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.72842743183678,
+            0.003009032475809359
+          ],
+          "model_baseline_mm": 39.85261925413827,
+          "sim_baseline_mm": 39.83992830452848,
+          "sim_plus_epsilon_mm": 39.87150093321881,
+          "sim_minus_epsilon_mm": 39.80835614764904,
+          "model_analytic": 28.16256861428771,
+          "model_central": 28.162568283370604,
+          "sim_central": 31.57239278488433,
+          "sim_half_epsilon_central": 31.572392954537065,
+          "downhill_u1": -0.05,
+          "sim_downhill_mm": 38.261927880429724,
+          "distance_saved_mm": 1.5780004240987537
+        },
+        {
+          "seed": 4317,
+          "initial_q_dq": [
+            0.8807758355611669,
+            2.094654982123788,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.3815408134942496,
+            0.537988203183486
+          ],
+          "model_baseline_mm": 394.0713999458376,
+          "sim_baseline_mm": 394.20456110701133,
+          "sim_plus_epsilon_mm": 394.23276911874314,
+          "sim_minus_epsilon_mm": 394.17635301406887,
+          "model_analytic": 21.76701253113301,
+          "model_central": 21.76701251778468,
+          "sim_central": 28.20805233713486,
+          "sim_half_epsilon_central": 28.208052341881285,
+          "downhill_u1": -0.05,
+          "sim_downhill_mm": 392.79405774355513,
+          "distance_saved_mm": 1.4105033634562005
+        },
+        {
+          "seed": 4318,
+          "initial_q_dq": [
+            -0.618743788944897,
+            1.47090848068905,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.7868547698070096,
+            0.21292610116632582
+          ],
+          "model_baseline_mm": 262.13787178668747,
+          "sim_baseline_mm": 262.163570443668,
+          "sim_plus_epsilon_mm": 262.1315603121831,
+          "sim_minus_epsilon_mm": 262.1955806432048,
+          "model_analytic": -29.542719211377268,
+          "model_central": -29.542719206716583,
+          "sim_central": -32.01016551082603,
+          "sim_half_epsilon_central": -32.01016551440716,
+          "downhill_u1": 0.05,
+          "sim_downhill_mm": 260.56314789425187,
+          "distance_saved_mm": 1.6004225494161233
+        },
+        {
+          "seed": 4319,
+          "initial_q_dq": [
+            0.6981485596435717,
+            1.2883368893068101,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.5054235944631819,
+            0.5404099982460279
+          ],
+          "model_baseline_mm": 295.75576522197935,
+          "sim_baseline_mm": 295.9631937788608,
+          "sim_plus_epsilon_mm": 295.9937827486515,
+          "sim_minus_epsilon_mm": 295.9326047091898,
+          "model_analytic": 29.980271568541127,
+          "model_central": 29.980271564369332,
+          "sim_central": 30.58901973085426,
+          "sim_half_epsilon_central": 30.58901973463435,
+          "downhill_u1": -0.05,
+          "sim_downhill_mm": 294.4336186292487,
+          "distance_saved_mm": 1.5295751496120715
+        }
+      ]
+    },
+    "ood_negative_elbow": {
+      "n": 20,
+      "same_sign": 20,
+      "mean_absolute_derivative_error": 2.9842123867772736,
+      "max_sim_epsilon_halving_difference": 2.9108804255884024e-07,
+      "strict_distance_improvements": 20,
+      "mean_distance_saved_mm": 1.4256471771716843,
+      "cases": [
+        {
+          "seed": 4400,
+          "initial_q_dq": [
+            0.5399478677589146,
+            -0.43960937399693834,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.9529241225018354,
+            0.13127077136281284
+          ],
+          "model_baseline_mm": 220.586769220675,
+          "sim_baseline_mm": 220.95730282471592,
+          "sim_plus_epsilon_mm": 220.98758559733722,
+          "sim_minus_epsilon_mm": 220.92702012531726,
+          "model_analytic": 36.356015542153585,
+          "model_central": 36.35601553452261,
+          "sim_central": 30.28273600997977,
+          "sim_half_epsilon_central": 30.282736013674594,
+          "downhill_u1": -0.05,
+          "sim_downhill_mm": 219.44325821108512,
+          "distance_saved_mm": 1.5140446136308015
+        },
+        {
+          "seed": 4401,
+          "initial_q_dq": [
+            0.41967655212760324,
+            -1.3262461959974055,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.7443648276028656,
+            -0.4560040715140642
+          ],
+          "model_baseline_mm": 388.42735450385106,
+          "sim_baseline_mm": 388.7734793588065,
+          "sim_plus_epsilon_mm": 388.8053343513193,
+          "sim_minus_epsilon_mm": 388.7416243584587,
+          "model_analytic": 30.707936757896576,
+          "model_central": 30.70793675496475,
+          "sim_central": 31.854996430297433,
+          "sim_half_epsilon_central": 31.854996431775362,
+          "downhill_u1": -0.05,
+          "sim_downhill_mm": 387.18072001225255,
+          "distance_saved_mm": 1.5927593465539758
+        },
+        {
+          "seed": 4402,
+          "initial_q_dq": [
+            -0.1414249532584515,
+            -0.1675390333718727,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.5433207771785031,
+            -0.7662770753840289
+          ],
+          "model_baseline_mm": 706.9804686973112,
+          "sim_baseline_mm": 707.1717477461211,
+          "sim_plus_epsilon_mm": 707.1992937570426,
+          "sim_minus_epsilon_mm": 707.1442015645357,
+          "model_analytic": 33.94084131017381,
+          "model_central": 33.94084130752617,
+          "sim_central": 27.546096253445285,
+          "sim_half_epsilon_central": 27.546096253900032,
+          "downhill_u1": -0.05,
+          "sim_downhill_mm": 705.7942296853757,
+          "distance_saved_mm": 1.3775180607453876
+        },
+        {
+          "seed": 4403,
+          "initial_q_dq": [
+            -0.2497368962707051,
+            -1.6011804263055902,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.660642676770357,
+            -0.33534215626650676
+          ],
+          "model_baseline_mm": 274.0639118924683,
+          "sim_baseline_mm": 273.8439739732686,
+          "sim_plus_epsilon_mm": 273.8122727251141,
+          "sim_minus_epsilon_mm": 273.8756751365025,
+          "model_analytic": -28.112041562200965,
+          "model_central": -28.11204155005953,
+          "sim_central": -31.70120569419055,
+          "sim_half_epsilon_central": -31.70120569905066,
+          "downhill_u1": 0.05,
+          "sim_downhill_mm": 272.2588083202144,
+          "distance_saved_mm": 1.5851656530541618
+        },
+        {
+          "seed": 4404,
+          "initial_q_dq": [
+            -0.9513303095738452,
+            -0.023683435560128308,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.7405442100371699,
+            -0.631441982061677
+          ],
+          "model_baseline_mm": 252.077892090086,
+          "sim_baseline_mm": 252.05699710828938,
+          "sim_plus_epsilon_mm": 252.02689261315163,
+          "sim_minus_epsilon_mm": 252.0871015563919,
+          "model_analytic": -37.00408267691734,
+          "model_central": -37.004082670136995,
+          "sim_central": -30.104471620134632,
+          "sim_half_epsilon_central": -30.104471621712037,
+          "downhill_u1": 0.05,
+          "sim_downhill_mm": 250.55171503112555,
+          "distance_saved_mm": 1.5052820771638267
+        },
+        {
+          "seed": 4405,
+          "initial_q_dq": [
+            -0.5260979218623046,
+            -1.6330371859023063,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.33664833596664445,
+            -0.6206725574852756
+          ],
+          "model_baseline_mm": 42.13589881127015,
+          "sim_baseline_mm": 41.96350887583431,
+          "sim_plus_epsilon_mm": 41.93245829473591,
+          "sim_minus_epsilon_mm": 41.994560409112154,
+          "model_analytic": -26.857515124791476,
+          "model_central": -26.857514632474988,
+          "sim_central": -31.0510571881224,
+          "sim_half_epsilon_central": -31.051057479210442,
+          "downhill_u1": 0.05,
+          "sim_downhill_mm": 40.41219658602832,
+          "distance_saved_mm": 1.5513122898059848
+        },
+        {
+          "seed": 4406,
+          "initial_q_dq": [
+            -0.7582590290152955,
+            -0.7145817689126869,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.7054601910067149,
+            -0.5093464779748506
+          ],
+          "model_baseline_mm": 379.61924516702345,
+          "sim_baseline_mm": 379.51568654767766,
+          "sim_plus_epsilon_mm": 379.48545529571186,
+          "sim_minus_epsilon_mm": 379.54591762386207,
+          "model_analytic": -33.97366082023167,
+          "model_central": -33.97366081580344,
+          "sim_central": -30.23116407510429,
+          "sim_half_epsilon_central": -30.231164076496952,
+          "downhill_u1": 0.05,
+          "sim_downhill_mm": 378.0039088704616,
+          "distance_saved_mm": 1.5117776772160596
+        },
+        {
+          "seed": 4407,
+          "initial_q_dq": [
+            0.6818570674553176,
+            -0.8692740342084838,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.7792714967139209,
+            -0.2581420348538839
+          ],
+          "model_baseline_mm": 567.0009069785939,
+          "sim_baseline_mm": 567.3617598170695,
+          "sim_plus_epsilon_mm": 567.3883795116576,
+          "sim_minus_epsilon_mm": 567.3351401679956,
+          "model_analytic": 29.781968397655632,
+          "model_central": 29.781968393081115,
+          "sim_central": 26.61967183098568,
+          "sim_half_epsilon_central": 26.61967183394154,
+          "downhill_u1": -0.05,
+          "sim_downhill_mm": 566.0308335627572,
+          "distance_saved_mm": 1.3309262543123168
+        },
+        {
+          "seed": 4408,
+          "initial_q_dq": [
+            0.4619194199877561,
+            -1.4012320780609695,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.9059127527843704,
+            0.05604691006256837
+          ],
+          "model_baseline_mm": 173.52578749397256,
+          "sim_baseline_mm": 173.29642169436406,
+          "sim_plus_epsilon_mm": 173.27632963634053,
+          "sim_minus_epsilon_mm": 173.31651819440629,
+          "model_analytic": -18.354277689966356,
+          "model_central": -18.354277464297297,
+          "sim_central": -20.094279032875306,
+          "sim_half_epsilon_central": -20.094279236985813,
+          "downhill_u1": 0.05,
+          "sim_downhill_mm": 172.29729432126857,
+          "distance_saved_mm": 0.9991273730954902
+        },
+        {
+          "seed": 4409,
+          "initial_q_dq": [
+            -0.09357828447182748,
+            -1.1473233480758767,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.6505388623171828,
+            -0.33474055908687944
+          ],
+          "model_baseline_mm": 125.7613621772877,
+          "sim_baseline_mm": 125.65857266978836,
+          "sim_plus_epsilon_mm": 125.64362528387757,
+          "sim_minus_epsilon_mm": 125.67352549378127,
+          "model_analytic": -15.00481174249437,
+          "model_central": -15.004811415217034,
+          "sim_central": -14.950104951850562,
+          "sim_half_epsilon_central": -14.950105205358,
+          "downhill_u1": 0.05,
+          "sim_downhill_mm": 124.9179073330184,
+          "distance_saved_mm": 0.7406653367699505
+        },
+        {
+          "seed": 4410,
+          "initial_q_dq": [
+            0.18263598562031158,
+            -1.7047270501286793,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.7408977048552576,
+            -0.16428613602468486
+          ],
+          "model_baseline_mm": 182.491227339703,
+          "sim_baseline_mm": 182.23526474915153,
+          "sim_plus_epsilon_mm": 182.20672342564671,
+          "sim_minus_epsilon_mm": 182.26380740020682,
+          "model_analytic": -23.44060668766896,
+          "model_central": -23.440606586120794,
+          "sim_central": -28.541987280050307,
+          "sim_half_epsilon_central": -28.541987367958654,
+          "downhill_u1": 0.05,
+          "sim_downhill_mm": 180.8098395767168,
+          "distance_saved_mm": 1.4254251724347284
+        },
+        {
+          "seed": 4411,
+          "initial_q_dq": [
+            0.37562857343449474,
+            -1.3668130346702259,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.649371391532975,
+            -0.3966683178751771
+          ],
+          "model_baseline_mm": 309.42204246656377,
+          "sim_baseline_mm": 309.74093220856656,
+          "sim_plus_epsilon_mm": 309.7708305476231,
+          "sim_minus_epsilon_mm": 309.7110339955467,
+          "model_analytic": 28.27884873782828,
+          "model_central": 28.278848730650452,
+          "sim_central": 29.89827603821027,
+          "sim_half_epsilon_central": 29.898276043979877,
+          "downhill_u1": -0.05,
+          "sim_downhill_mm": 308.2461769319994,
+          "distance_saved_mm": 1.4947552765671617
+        },
+        {
+          "seed": 4412,
+          "initial_q_dq": [
+            0.6637992904836203,
+            -1.0950000349568132,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.6860957822912612,
+            -0.19160323289287975
+          ],
+          "model_baseline_mm": 421.304061687468,
+          "sim_baseline_mm": 421.627415218449,
+          "sim_plus_epsilon_mm": 421.6518386753973,
+          "sim_minus_epsilon_mm": 421.60299217264003,
+          "model_analytic": 25.566203600160193,
+          "model_central": 25.566203585611902,
+          "sim_central": 24.42325137863577,
+          "sim_half_epsilon_central": 24.42325138844126,
+          "downhill_u1": -0.05,
+          "sim_downhill_mm": 420.40676826251257,
+          "distance_saved_mm": 1.220646955936445
+        },
+        {
+          "seed": 4413,
+          "initial_q_dq": [
+            0.17143773633753595,
+            -1.0395562137068328,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.8109237854241808,
+            0.04657342545611404
+          ],
+          "model_baseline_mm": 252.74718374902739,
+          "sim_baseline_mm": 252.45685354392035,
+          "sim_plus_epsilon_mm": 252.4260683233548,
+          "sim_minus_epsilon_mm": 252.48763868023232,
+          "model_analytic": -32.12911870720938,
+          "model_central": -32.12911869879065,
+          "sim_central": -30.785178438762273,
+          "sim_half_epsilon_central": -30.785178443579753,
+          "downhill_u1": 0.05,
+          "sim_downhill_mm": 250.9174901623246,
+          "distance_saved_mm": 1.5393633815957344
+        },
+        {
+          "seed": 4414,
+          "initial_q_dq": [
+            0.12081400722998348,
+            -1.2628739976356897,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.792045396771129,
+            -0.1844210800122411
+          ],
+          "model_baseline_mm": 111.51794352403721,
+          "sim_baseline_mm": 111.22233598186445,
+          "sim_plus_epsilon_mm": 111.19015187368655,
+          "sim_minus_epsilon_mm": 111.25452000340664,
+          "model_analytic": -31.689366206529925,
+          "model_central": -31.689366194754598,
+          "sim_central": -32.1840648600471,
+          "sim_half_epsilon_central": -32.18406486612935,
+          "downhill_u1": 0.05,
+          "sim_downhill_mm": 109.61302547101361,
+          "distance_saved_mm": 1.6093105108508325
+        },
+        {
+          "seed": 4415,
+          "initial_q_dq": [
+            -0.7382983555522488,
+            -0.740839171589804,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.5904117449282332,
+            -0.6888957977044206
+          ],
+          "model_baseline_mm": 158.00880209481988,
+          "sim_baseline_mm": 157.8948420951477,
+          "sim_plus_epsilon_mm": 157.86363138387867,
+          "sim_minus_epsilon_mm": 157.92605270911588,
+          "model_analytic": -35.04706315210629,
+          "model_central": -35.04706313829331,
+          "sim_central": -31.210662618605056,
+          "sim_half_epsilon_central": -31.210662622982,
+          "downhill_u1": 0.05,
+          "sim_downhill_mm": 156.33418804477571,
+          "distance_saved_mm": 1.5606540503719941
+        },
+        {
+          "seed": 4416,
+          "initial_q_dq": [
+            0.023189526763727875,
+            -0.9974741366755219,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.9277922856528411,
+            0.2614317735783506
+          ],
+          "model_baseline_mm": 587.8590918478131,
+          "sim_baseline_mm": 587.5820023477838,
+          "sim_plus_epsilon_mm": 587.5501034533036,
+          "sim_minus_epsilon_mm": 587.6139010571483,
+          "model_analytic": -33.79564277104513,
+          "model_central": -33.79564276559677,
+          "sim_central": -31.898801922352504,
+          "sim_half_epsilon_central": -31.89880192508099,
+          "downhill_u1": 0.05,
+          "sim_downhill_mm": 585.9868313015791,
+          "distance_saved_mm": 1.5951710462047686
+        },
+        {
+          "seed": 4417,
+          "initial_q_dq": [
+            0.18605310231933403,
+            -0.4492996061746665,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.9223861061322423,
+            -0.3067182916919772
+          ],
+          "model_baseline_mm": 317.8515248602583,
+          "sim_baseline_mm": 318.1476135279899,
+          "sim_plus_epsilon_mm": 318.1779401064632,
+          "sim_minus_epsilon_mm": 318.1172869435039,
+          "model_analytic": 36.3586224407386,
+          "model_central": 36.358622437802524,
+          "sim_central": 30.326581479641845,
+          "sim_half_epsilon_central": 30.32658148072187,
+          "downhill_u1": -0.05,
+          "sim_downhill_mm": 316.63127711505945,
+          "distance_saved_mm": 1.5163364129304568
+        },
+        {
+          "seed": 4418,
+          "initial_q_dq": [
+            -0.17985185466005327,
+            -1.1972934367945212,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.3598864197365404,
+            -0.6670953084622443
+          ],
+          "model_baseline_mm": 349.7444674530455,
+          "sim_baseline_mm": 349.96069327694113,
+          "sim_plus_epsilon_mm": 349.9883914558848,
+          "sim_minus_epsilon_mm": 349.9329953964768,
+          "model_analytic": 27.863086569487407,
+          "model_central": 27.863086556919825,
+          "sim_central": 27.698029703998372,
+          "sim_half_epsilon_central": 27.69802971391755,
+          "downhill_u1": -0.05,
+          "sim_downhill_mm": 348.57616655364825,
+          "distance_saved_mm": 1.384526723292879
+        },
+        {
+          "seed": 4419,
+          "initial_q_dq": [
+            -0.46847488297651796,
+            -1.0563888147215734,
+            0.0,
+            0.0
+          ],
+          "goal_xy_m": [
+            0.638780024742596,
+            -0.43424515571183786
+          ],
+          "model_baseline_mm": 251.25461670788823,
+          "sim_baseline_mm": 251.09432511389068,
+          "sim_plus_epsilon_mm": 251.06515748636878,
+          "sim_minus_epsilon_mm": 251.123492907446,
+          "model_analytic": -30.222317070372945,
+          "model_central": -30.222317047247316,
+          "sim_central": -29.167710538615665,
+          "sim_half_epsilon_central": -29.16771055467393,
+          "downhill_u1": 0.05,
+          "sim_downhill_mm": 249.63614978298995,
+          "distance_saved_mm": 1.4581753309007297
+        }
+      ]
+    }
+  }
+}

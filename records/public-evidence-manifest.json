@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "evidence_files": [
     {
       "path": "project-01-simulation-software/outputs/demo/run_config.json",
@@ -4221,6 +4221,11 @@
       "path": "project-05-reinforcement-safety/outputs/verification-20261013.json",
       "bytes": 277,
       "sha256": "9c2c63b9a88cc820c1e47570c0df3dad39c57896bd89da3b56503a9424a59ba2"
+    },
+    {
+      "path": "project-06-world-model-wam/outputs/action-gradient-lesson-20261128.json",
+      "bytes": 35237,
+      "sha256": "717637adf25ed13c1714448a8b073fd97683a232d17e1f5b7de01680fa3e4c03"
     },
     {
       "path": "project-06-world-model-wam/outputs/action-pilot-20261127/branches.csv",
