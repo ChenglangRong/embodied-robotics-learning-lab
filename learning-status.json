@@ -97,6 +97,15 @@
       "independent_assessment": "pending",
       "experiments_run": 0,
       "record": "records/soft-upper-limb-sleeve-2026-11-27.md"
+    },
+    {
+      "date": "2026-11-27",
+      "topic": "重复穿戴的人机传力与仿生双足机器人任务能耗",
+      "activity": "AI-assisted primary-literature reading and design of two paired comparisons covering wearable interface calibration and multimodal locomotion",
+      "learner_self_report": "none",
+      "independent_assessment": "pending",
+      "experiments_run": 0,
+      "record": "records/robot-human-interface-and-locomotion-2026-11-27.md"
     }
   ],
   "publication_policy": {
