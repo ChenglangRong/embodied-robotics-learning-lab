@@ -115,6 +115,19 @@
       "independent_assessment": "pending",
       "experiments_run": 0,
       "record": "project-06-world-model-wam/CHANGELOG.md"
+    },
+    {
+      "date": "2026-11-27",
+      "topic": "MuJoCo 方块与平面的静态接触摩擦参数检查",
+      "activity": "AI-assisted implementation and execution of a deterministic contact-parameter check in MuJoCo 3.2.5",
+      "learner_self_report": "none",
+      "independent_assessment": "pending",
+      "simulation_configurations_checked": 4,
+      "asserted_cases_passed": 4,
+      "physical_experiments_run": 0,
+      "source": "project-06-world-model-wam/contact_friction_check.py",
+      "output": "project-06-world-model-wam/outputs/contact-friction-check-20261127.json",
+      "record": "project-06-world-model-wam/CHANGELOG.md"
     }
   ],
   "publication_policy": {

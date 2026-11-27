@@ -1,0 +1,54 @@
+{
+  "mujoco_version": "3.2.5",
+  "measurement": "dimensionless solver contact parameters",
+  "box_mass_kg": 0.06,
+  "box_mu": 1.0,
+  "timestep_s": 0.002,
+  "steps": 100,
+  "cases": [
+    {
+      "surface_mu": 0.2,
+      "explicit_pair": false,
+      "contacts": 4,
+      "tangential_mu_pairs": [
+        [
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "surface_mu": 0.7,
+      "explicit_pair": false,
+      "contacts": 4,
+      "tangential_mu_pairs": [
+        [
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "surface_mu": 0.2,
+      "explicit_pair": true,
+      "contacts": 4,
+      "tangential_mu_pairs": [
+        [
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "surface_mu": 0.7,
+      "explicit_pair": true,
+      "contacts": 4,
+      "tangential_mu_pairs": [
+        [
+          0.7,
+          0.7
+        ]
+      ]
+    }
+  ]
+}
