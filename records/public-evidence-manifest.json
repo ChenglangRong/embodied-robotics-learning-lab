@@ -4223,6 +4223,31 @@
       "sha256": "9c2c63b9a88cc820c1e47570c0df3dad39c57896bd89da3b56503a9424a59ba2"
     },
     {
+      "path": "project-06-world-model-wam/outputs/action-pilot-20261127/branches.csv",
+      "bytes": 726269,
+      "sha256": "14b2f4af320c6b60b323376985752fb21fc82d9000da606f84b9905d4ccf3871"
+    },
+    {
+      "path": "project-06-world-model-wam/outputs/action-pilot-20261127/ranking.csv",
+      "bytes": 7454,
+      "sha256": "e7ea92ceed579d975fadccb2ffe814cc904b9802cdd0f8aae34848fc6a0f3468"
+    },
+    {
+      "path": "project-06-world-model-wam/outputs/action-pilot-20261127/report.json",
+      "bytes": 8264,
+      "sha256": "feb35c99e0ef808738ed9b3ace5b637de386eb770f7feb6c5ecd235269052824"
+    },
+    {
+      "path": "project-06-world-model-wam/outputs/action-pilot-20261127/training.csv",
+      "bytes": 300975,
+      "sha256": "034fd9e8f0f56d66dc32ba07d79886efaaafb3c18e7fff386e482f40f02fe708"
+    },
+    {
+      "path": "project-06-world-model-wam/outputs/action-pilot-20261127/worst-ranking.png",
+      "bytes": 13637,
+      "sha256": "dabeded1601dbcfe41f47ff8ebe6332f8b3460dc2b13b598616235e0b6db28de"
+    },
+    {
       "path": "project-06-world-model-wam/outputs/contact-friction-check-20261127.json",
       "bytes": 894,
       "sha256": "97621ee935fded63081cb3d69d91797b72a5a217f6a7313ad409f6aee1edd66b"
