@@ -106,6 +106,15 @@
       "independent_assessment": "pending",
       "experiments_run": 0,
       "record": "records/robot-human-interface-and-locomotion-2026-11-27.md"
+    },
+    {
+      "date": "2026-11-27",
+      "topic": "机器人接触动力学、主动辨识与桌面推物对照",
+      "activity": "AI-assisted reading on adaptive contact models and task-driven exploration, with a proposed offline prediction and closed-loop pushing comparison",
+      "learner_self_report": "none",
+      "independent_assessment": "pending",
+      "experiments_run": 0,
+      "record": "project-06-world-model-wam/CHANGELOG.md"
     }
   ],
   "publication_policy": {
