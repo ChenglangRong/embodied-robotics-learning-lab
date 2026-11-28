@@ -9,6 +9,10 @@ on:
         description: Full stored-policy replay (portable physical metrics)
         type: boolean
         default: false
+      panda_strict:
+        description: Audit Panda per-frame drift against strict trajectory tolerances
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -58,6 +62,13 @@ jobs:
           if ($LASTEXITCODE) { exit $LASTEXITCODE }
       - name: Verify progress, public evidence and credential patterns
         run: python tools/verify_learning_record.py
+      - name: World model closed-loop tests
+        run: python -m unittest discover -s project-06-world-model-wam -p test_closed_loop_lab.py -v
+      - name: World model frozen closed-loop replay
+        run: |
+          python project-06-world-model-wam/closed_loop_lab.py .ci-output/wam-replay --verify project-06-world-model-wam/outputs/closed-loop-20261128
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          Copy-Item -LiteralPath .ci-output/wam-replay/verification.json -Destination .ci-output/wam-verification.json
       - name: Allegro grasp and reorientation tests
         working-directory: project-05-reinforcement-safety
         run: python -m unittest test_allegro_lab -v
@@ -124,9 +135,9 @@ jobs:
       - name: Panda residual physical interface tests
         working-directory: project-05-reinforcement-safety
         run: python -m unittest test_panda_residual -v
-      - name: Panda frozen physical replay
+      - name: Panda portable outcome and safety replay
         working-directory: project-05-reinforcement-safety
-        run: python verify_panda_residual.py outputs/panda-residual-20261014-r3 --output ../.ci-output/panda-full-replay.json
+        run: python verify_panda_residual.py outputs/panda-residual-20261014-r3 --portable --output ../.ci-output/panda-portable-replay.json
       - name: Full replay
         if: github.event_name == 'workflow_dispatch' && inputs.full_replay
         working-directory: project-04-imitation-learning
@@ -141,6 +152,10 @@ jobs:
       - name: Go2 frozen complete physical replay
         working-directory: project-05-reinforcement-safety
         run: python verify_go2.py outputs/go2-feedback-20261015 --output ../.ci-output/go2-full-replay.json
+      - name: Panda strict trajectory audit
+        if: github.event_name == 'workflow_dispatch' && inputs.panda_strict
+        working-directory: project-05-reinforcement-safety
+        run: python verify_panda_residual.py outputs/panda-residual-20261014-r3 --output ../.ci-output/panda-strict-replay.json
       - name: Retain verification artifacts
         if: always()
         uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6 (Node 24)

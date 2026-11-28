@@ -1,0 +1,401 @@
+{
+  "dependencies": {
+    "mujoco": "3.2.5",
+    "numpy": "1.26.4",
+    "python": "3.12.4"
+  },
+  "sources": {
+    "project-06-world-model-wam/closed_loop_lab.py": "6baf87ed7b114fbe3276c0a06e2f5c1179282dda23e2eca08fcde9a4004c9f41",
+    "project-06-world-model-wam/action_conditioned_pilot.py": "5a2dddb64569fb86f9bd6d1cbeb3fcdeec449c11147dc87d940206c66ec73509",
+    "project-05-reinforcement-safety/physical_env.py": "52e788c5507bffede2faa2e276bdf704096ff9234de20b32f1bb9a361c4e03f9",
+    "project-05-reinforcement-safety/model/arm2d-rl.xml": "69b6b7243d1a3cb6fca7c6118ad3a4f70dca8daa436dae36bbfd166b61589acb",
+    "project-05-reinforcement-safety/ppo.py": "904385fab0675b845f6d93a04653213c960ae9b06d9cd7d7b424d2ea03807a34",
+    "project-06-world-model-wam/outputs/action-pilot-20261127/report.json": "feb35c99e0ef808738ed9b3ace5b637de386eb770f7feb6c5ecd235269052824"
+  },
+  "environment": {
+    "dt": 0.02,
+    "substeps": 5,
+    "horizon": 150,
+    "tolerance": 0.045,
+    "velocity_limit": 2.0,
+    "torque_limit": 6.0,
+    "guard": true,
+    "mass_scale": 1.0
+  },
+  "train_seeds": [
+    4100,
+    4101,
+    4102,
+    4103,
+    4104,
+    4105,
+    4106,
+    4107,
+    4108,
+    4109,
+    4110,
+    4111,
+    4112,
+    4113,
+    4114,
+    4115,
+    4116,
+    4117,
+    4118,
+    4119,
+    4120,
+    4121,
+    4122,
+    4123,
+    4124,
+    4125,
+    4126,
+    4127,
+    4128,
+    4129,
+    4130,
+    4131,
+    4132,
+    4133,
+    4134,
+    4135,
+    4136,
+    4137,
+    4138,
+    4139
+  ],
+  "validation_seeds": [
+    4200,
+    4201,
+    4202,
+    4203,
+    4204,
+    4205,
+    4206,
+    4207,
+    4208,
+    4209
+  ],
+  "evaluation_seeds": {
+    "test": [
+      4500,
+      4501,
+      4502,
+      4503,
+      4504,
+      4505,
+      4506,
+      4507,
+      4508,
+      4509,
+      4510,
+      4511,
+      4512,
+      4513,
+      4514,
+      4515,
+      4516,
+      4517,
+      4518,
+      4519
+    ],
+    "ood": [
+      4600,
+      4601,
+      4602,
+      4603,
+      4604,
+      4605,
+      4606,
+      4607,
+      4608,
+      4609,
+      4610,
+      4611,
+      4612,
+      4613,
+      4614,
+      4615,
+      4616,
+      4617,
+      4618,
+      4619
+    ]
+  },
+  "training_seeds": [
+    0,
+    1,
+    2
+  ],
+  "updates": 800,
+  "aux_weight": 0.25,
+  "train_windows": 1116,
+  "validation_windows": 260,
+  "action_chunk": 5,
+  "executed_per_plan": 1,
+  "candidate_actions": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.8,
+      0.0
+    ],
+    [
+      -0.8,
+      0.0
+    ],
+    [
+      0.0,
+      0.8
+    ],
+    [
+      0.0,
+      -0.8
+    ],
+    [
+      0.8,
+      0.8
+    ],
+    [
+      0.8,
+      -0.8
+    ],
+    [
+      -0.8,
+      0.8
+    ],
+    [
+      -0.8,
+      -0.8
+    ]
+  ],
+  "validation": {
+    "bc_0": {
+      "validation_action_mae": 0.12267540997771471,
+      "validation_scaled_future_rmse": 0.5757968815828673
+    },
+    "aux_0": {
+      "validation_action_mae": 0.12071465049084103,
+      "validation_scaled_future_rmse": 0.19251201249091734
+    },
+    "bc_1": {
+      "validation_action_mae": 0.12289537245463689,
+      "validation_scaled_future_rmse": 0.5503483175961585
+    },
+    "aux_1": {
+      "validation_action_mae": 0.12267716923755127,
+      "validation_scaled_future_rmse": 0.18919551599714124
+    },
+    "bc_2": {
+      "validation_action_mae": 0.11523026379691874,
+      "validation_scaled_future_rmse": 0.637216510063503
+    },
+    "aux_2": {
+      "validation_action_mae": 0.1160524469270274,
+      "validation_scaled_future_rmse": 0.18590836334402902
+    }
+  },
+  "metrics": {
+    "test": {
+      "dls": {
+        "successes": 20,
+        "cases": 20,
+        "mean_final_error_mm": 24.502874841524864,
+        "violations": 0,
+        "guard_steps": 0
+      },
+      "mpc_masked": {
+        "successes": 0,
+        "cases": 20,
+        "mean_final_error_mm": 295.07652796439345,
+        "violations": 0,
+        "guard_steps": 0
+      },
+      "mpc_action": {
+        "successes": 12,
+        "cases": 20,
+        "mean_final_error_mm": 50.201372712434534,
+        "violations": 0,
+        "guard_steps": 0
+      },
+      "bc_0": {
+        "successes": 5,
+        "cases": 20,
+        "mean_final_error_mm": 50.71541396341072,
+        "violations": 0,
+        "guard_steps": 0
+      },
+      "aux_0": {
+        "successes": 9,
+        "cases": 20,
+        "mean_final_error_mm": 46.665331727386445,
+        "violations": 0,
+        "guard_steps": 0
+      },
+      "bc_1": {
+        "successes": 14,
+        "cases": 20,
+        "mean_final_error_mm": 38.18900034125313,
+        "violations": 0,
+        "guard_steps": 0
+      },
+      "aux_1": {
+        "successes": 20,
+        "cases": 20,
+        "mean_final_error_mm": 32.077403644047806,
+        "violations": 0,
+        "guard_steps": 0
+      },
+      "bc_2": {
+        "successes": 13,
+        "cases": 20,
+        "mean_final_error_mm": 35.80463506266048,
+        "violations": 0,
+        "guard_steps": 0
+      },
+      "aux_2": {
+        "successes": 8,
+        "cases": 20,
+        "mean_final_error_mm": 61.73432500976158,
+        "violations": 0,
+        "guard_steps": 39
+      },
+      "aux_pairs": {
+        "0": {
+          "wins": 5,
+          "losses": 1
+        },
+        "1": {
+          "wins": 6,
+          "losses": 0
+        },
+        "2": {
+          "wins": 0,
+          "losses": 5
+        }
+      },
+      "prediction": {
+        "masked": {
+          "branches": 180,
+          "step1_mm": 2.191692554509774,
+          "step5_mm": 4.8538311985465405
+        },
+        "action": {
+          "branches": 180,
+          "step1_mm": 0.19979255436435023,
+          "step5_mm": 0.8995036108963783
+        },
+        "shifted": {
+          "branches": 180,
+          "step1_mm": 4.428656076827927,
+          "step5_mm": 5.653070823906201
+        }
+      }
+    },
+    "ood": {
+      "dls": {
+        "successes": 20,
+        "cases": 20,
+        "mean_final_error_mm": 25.450138603474468,
+        "violations": 0,
+        "guard_steps": 0
+      },
+      "mpc_masked": {
+        "successes": 0,
+        "cases": 20,
+        "mean_final_error_mm": 343.92187251171003,
+        "violations": 0,
+        "guard_steps": 0
+      },
+      "mpc_action": {
+        "successes": 10,
+        "cases": 20,
+        "mean_final_error_mm": 50.4597293028036,
+        "violations": 0,
+        "guard_steps": 0
+      },
+      "bc_0": {
+        "successes": 3,
+        "cases": 20,
+        "mean_final_error_mm": 96.58342947013037,
+        "violations": 0,
+        "guard_steps": 80
+      },
+      "aux_0": {
+        "successes": 3,
+        "cases": 20,
+        "mean_final_error_mm": 107.0777834495652,
+        "violations": 0,
+        "guard_steps": 45
+      },
+      "bc_1": {
+        "successes": 12,
+        "cases": 20,
+        "mean_final_error_mm": 66.14599808471537,
+        "violations": 0,
+        "guard_steps": 22
+      },
+      "aux_1": {
+        "successes": 8,
+        "cases": 20,
+        "mean_final_error_mm": 196.21766540586714,
+        "violations": 0,
+        "guard_steps": 72
+      },
+      "bc_2": {
+        "successes": 5,
+        "cases": 20,
+        "mean_final_error_mm": 412.94344679579774,
+        "violations": 0,
+        "guard_steps": 526
+      },
+      "aux_2": {
+        "successes": 4,
+        "cases": 20,
+        "mean_final_error_mm": 469.1407207231599,
+        "violations": 0,
+        "guard_steps": 551
+      },
+      "aux_pairs": {
+        "0": {
+          "wins": 1,
+          "losses": 1
+        },
+        "1": {
+          "wins": 0,
+          "losses": 4
+        },
+        "2": {
+          "wins": 0,
+          "losses": 1
+        }
+      },
+      "prediction": {
+        "masked": {
+          "branches": 180,
+          "step1_mm": 2.316470501034539,
+          "step5_mm": 4.9577789198045314
+        },
+        "action": {
+          "branches": 180,
+          "step1_mm": 0.24078954228008775,
+          "step5_mm": 1.0628057205323307
+        },
+        "shifted": {
+          "branches": 180,
+          "step1_mm": 4.622610167826085,
+          "step5_mm": 5.626963125995851
+        }
+      }
+    }
+  },
+  "outputs_sha256": {
+    "cases.json": "a0d1a49e57f01aaa48129deed8a27a290695098090a49fcc50fb88848923d7a9",
+    "expert_windows.npz": "a3da07c5bfbea4b2f3e3fd0ce42cb9613fa14c4b948d7e32e7d5278e761412ba",
+    "predictions.json": "0009be8de1e3beb5f74cfa4ad13362acffb9e0198f4e46ae7d4fb4cb8261f576",
+    "trajectories.jsonl.gz": "777e8599694a26da1952e13567fc4eead7056b8cd122c0436e39d5126695ebb9",
+    "weights.json": "2d95f7f493c111906c6435735456428b65ac763ee59a4c7597d638d884a2acfe"
+  }
+}

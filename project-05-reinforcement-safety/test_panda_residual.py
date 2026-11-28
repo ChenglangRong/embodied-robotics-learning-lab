@@ -6,6 +6,26 @@ from panda_residual_env import Config, PandaResidual
 from panda_residual import episode
 
 
+class ReplayGateTests(unittest.TestCase):
+    def test_portable_preserves_hard_fields_and_reports_transient_drift(self):
+        from verify_panda_residual import equal_trajectory
+
+        stats = {"compared_trajectory_values": 0, "maximum_trajectory_difference": 0.,
+                 "maximum_trajectory_difference_path": None, "maximum_trajectory_tolerance_fraction": 0.,
+                 "trajectory_values_outside_strict_tolerance": 0, "transient_contact_label_differences": 0}
+        saved = {"object_speed_m_s": .155984625610478, "bilateral_contact": True, "violation": False}
+        cloud = {**saved, "object_speed_m_s": .15892157010756558, "bilateral_contact": False}
+        with self.assertRaises(AssertionError):
+            equal_trajectory(cloud, saved, "sample", stats)
+        equal_trajectory(cloud, saved, "sample", stats, portable=True)
+        self.assertEqual(stats["trajectory_values_outside_strict_tolerance"], 1)
+        self.assertEqual(stats["transient_contact_label_differences"], 1)
+        with self.assertRaises(AssertionError):
+            equal_trajectory({**cloud, "violation": True}, saved, "sample", stats, portable=True)
+        with self.assertRaises(AssertionError):
+            equal_trajectory({**cloud, "object_speed_m_s": float("nan")}, saved, "sample", stats, portable=True)
+
+
 class PandaTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):

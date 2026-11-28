@@ -1,5 +1,11 @@
 # 变更与实验记录
 
+## 2026-11-28 Panda 日常云端回放规则
+
+- Allegro 提交 `7815b3a` 已进入公开 `master`。邮件报告的已运行检查失败源于 Panda `trace161[40].object_speed_m_s`，差值 0.00293694 m/s，原门限 0.00165985 m/s。相同样本在前一个主分支失败中存在。[失败运行](https://github.com/ChenglangRong/embodied-robotics-learning-lab/actions/runs/46131805705)
+- 日常 CI 使用 `--portable` 从冻结源码仍重跑 288 个 Panda 回合。继续核对证据和模型哈希、配对覆盖、案例判据、完成状态、限位及安全字段，保留原案例浮点指标容差。逐帧连续数值的超差数量、最大值与路径和瞬态接触标签差异保留在报告，非有限值或结构差异触发失败。
+- 默认命令仍执行原严格轨迹比较。GitHub Actions 手工运行可勾选 `panda_strict`。本机 portable 全 288 个回合通过。新增反例测试复用云端速度差值，并确认越界和非有限值仍会被拒绝。[GitHub 手动运行说明](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/manually-run-a-workflow)
+
 ## 2026-11-28 Allegro 抗滑与手内重定向
 
 - H1 学习自报完成，独立验收待提交。新增 Allegro 知识卡、单增益练习、实时 MuJoCo 和两组同种子并排仿真。

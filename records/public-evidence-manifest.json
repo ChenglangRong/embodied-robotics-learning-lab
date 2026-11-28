@@ -4318,6 +4318,46 @@
       "sha256": "dabeded1601dbcfe41f47ff8ebe6332f8b3460dc2b13b598616235e0b6db28de"
     },
     {
+      "path": "project-06-world-model-wam/outputs/closed-loop-20261128/cases.json",
+      "bytes": 134579,
+      "sha256": "a0d1a49e57f01aaa48129deed8a27a290695098090a49fcc50fb88848923d7a9"
+    },
+    {
+      "path": "project-06-world-model-wam/outputs/closed-loop-20261128/expert_windows.npz",
+      "bytes": 391860,
+      "sha256": "a3da07c5bfbea4b2f3e3fd0ce42cb9613fa14c4b948d7e32e7d5278e761412ba"
+    },
+    {
+      "path": "project-06-world-model-wam/outputs/closed-loop-20261128/predictions.json",
+      "bytes": 2088756,
+      "sha256": "0009be8de1e3beb5f74cfa4ad13362acffb9e0198f4e46ae7d4fb4cb8261f576"
+    },
+    {
+      "path": "project-06-world-model-wam/outputs/closed-loop-20261128/report.json",
+      "bytes": 8539,
+      "sha256": "d913be03e28daf29fca323fd024730f45e6776a1550bf59e84ca0bb359b05190"
+    },
+    {
+      "path": "project-06-world-model-wam/outputs/closed-loop-20261128/trajectories.jsonl.gz",
+      "bytes": 3509147,
+      "sha256": "777e8599694a26da1952e13567fc4eead7056b8cd122c0436e39d5126695ebb9"
+    },
+    {
+      "path": "project-06-world-model-wam/outputs/closed-loop-20261128/weights.json",
+      "bytes": 469408,
+      "sha256": "2d95f7f493c111906c6435735456428b65ac763ee59a4c7597d638d884a2acfe"
+    },
+    {
+      "path": "project-06-world-model-wam/outputs/closed-loop-demos-20261128/seed-4500.gif",
+      "bytes": 167562,
+      "sha256": "3d3b21ae70f1355d6c5298ae47dfd4aae0348f9ed89d90964b6cf2f7f6cff6e0"
+    },
+    {
+      "path": "project-06-world-model-wam/outputs/closed-loop-demos-20261128/seed-4501.gif",
+      "bytes": 178218,
+      "sha256": "30c26113d6431493735bdaf2eb9b5646e7769ef53ed85da0a030d02f11342564"
+    },
+    {
       "path": "project-06-world-model-wam/outputs/contact-friction-check-20261127.json",
       "bytes": 894,
       "sha256": "97621ee935fded63081cb3d69d91797b72a5a217f6a7313ad409f6aee1edd66b"
