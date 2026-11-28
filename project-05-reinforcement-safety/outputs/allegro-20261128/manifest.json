@@ -1,0 +1,9 @@
+{
+  "cases.json": "a45aecb8e6c98b10e1a65687136460a96c1314627d2610f1ab057d439b8326f8",
+  "protocol.json": "aae77680fa0f7a2774d240a66c2fad0efc6b42a0f3a749efede348189b56a9e3",
+  "source/allegro_lab.py": "6c22115cc86488d31f05b095e8a473d00e578a9d0864f24013acf4fdaa12f1a9",
+  "source/lab.py": "7ff5bfc42eaa3c5a435ed13b34f97bf1043a84ec1e4d1ca371bfe392a3e384cd",
+  "source/run_allegro.py": "415db9bd67df9331c4b107230888ff7b80007ff0dd8aa9d75739a9298b3c8732",
+  "summary.json": "5547ef66bfc19778fbd7106b139ca0ece0fd85a0db1f23ef846a2a9e7bd0d164",
+  "trajectories.jsonl.gz": "4784772e62ba008e0c85ab1947e445e2628ffd02aad78c10ce942b28b9e8d468"
+}

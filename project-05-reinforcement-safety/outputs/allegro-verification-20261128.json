@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "replayed_cases": 55,
+  "retained_failures": 25,
+  "atol": 3e-06,
+  "rtol": 1e-06,
+  "float_values": 1110671,
+  "max_difference": 0.0
+}

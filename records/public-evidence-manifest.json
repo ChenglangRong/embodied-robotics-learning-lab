@@ -2823,6 +2823,71 @@
       "sha256": "55dc5ef78620973ca9311a9f5d014d2c4d20f2210282f63cfd330d6bf485a6c7"
     },
     {
+      "path": "project-05-reinforcement-safety/outputs/allegro-20261128/cases.json",
+      "bytes": 42238,
+      "sha256": "a45aecb8e6c98b10e1a65687136460a96c1314627d2610f1ab057d439b8326f8"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/allegro-20261128/manifest.json",
+      "bytes": 632,
+      "sha256": "f3e9a435522fc790e53373cff5c5398a7b9e5bf159be6001021ba5cadb2be64d"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/allegro-20261128/protocol.json",
+      "bytes": 3272,
+      "sha256": "aae77680fa0f7a2774d240a66c2fad0efc6b42a0f3a749efede348189b56a9e3"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/allegro-20261128/source/allegro_lab.py",
+      "bytes": 10885,
+      "sha256": "6c22115cc86488d31f05b095e8a473d00e578a9d0864f24013acf4fdaa12f1a9"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/allegro-20261128/source/lab.py",
+      "bytes": 21551,
+      "sha256": "7ff5bfc42eaa3c5a435ed13b34f97bf1043a84ec1e4d1ca371bfe392a3e384cd"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/allegro-20261128/source/run_allegro.py",
+      "bytes": 12147,
+      "sha256": "415db9bd67df9331c4b107230888ff7b80007ff0dd8aa9d75739a9298b3c8732"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/allegro-20261128/summary.json",
+      "bytes": 775,
+      "sha256": "5547ef66bfc19778fbd7106b139ca0ece0fd85a0db1f23ef846a2a9e7bd0d164"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/allegro-20261128/trajectories.jsonl.gz",
+      "bytes": 5601718,
+      "sha256": "4784772e62ba008e0c85ab1947e445e2628ffd02aad78c10ce942b28b9e8d468"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/allegro-demos-20261128/pull13.gif",
+      "bytes": 2395231,
+      "sha256": "39877faa5d60cfd95dcfd499312cbea9ca828b44d30a1e1bd7503080462fdc10"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/allegro-demos-20261128/pull13.png",
+      "bytes": 80759,
+      "sha256": "2b76422a248b9871861c3828457e122ef4234df83bdb770f0104a72a5ab923cd"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/allegro-demos-20261128/reorient.gif",
+      "bytes": 2163164,
+      "sha256": "1a448e24555af869ec524ccb0530ea6117d98bcd041baf5f37732f3723551ebd"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/allegro-demos-20261128/reorient.png",
+      "bytes": 82728,
+      "sha256": "e3d394193378f36266ec789914fb646045bbc06ee6b5afe22da5d24f1f2c943e"
+    },
+    {
+      "path": "project-05-reinforcement-safety/outputs/allegro-verification-20261128.json",
+      "bytes": 160,
+      "sha256": "42d9ac09881c7776d6f0cb7e234c7d8b7f6522ad36f0e715e21bcd08e08da3b7"
+    },
+    {
       "path": "project-05-reinforcement-safety/outputs/baseline-20261013/changed-goal.json",
       "bytes": 10216,
       "sha256": "46782ab553085f569dba78711afb5697b890b6c49580fc41129d8c236cb915c2"

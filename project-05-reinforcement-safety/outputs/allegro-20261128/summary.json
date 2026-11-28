@@ -1,0 +1,50 @@
+{
+  "runs": 55,
+  "failures": 25,
+  "groups": {
+    "no_load/hold": {
+      "runs": 5,
+      "passed": 5
+    },
+    "no_load/feedback": {
+      "runs": 5,
+      "passed": 5
+    },
+    "pull9/hold": {
+      "runs": 5,
+      "passed": 5
+    },
+    "pull9/feedback": {
+      "runs": 5,
+      "passed": 5
+    },
+    "pull13/hold": {
+      "runs": 5,
+      "passed": 0
+    },
+    "pull13/feedback": {
+      "runs": 5,
+      "passed": 5
+    },
+    "stress17/hold": {
+      "runs": 5,
+      "passed": 0
+    },
+    "stress17/feedback": {
+      "runs": 5,
+      "passed": 0
+    },
+    "reorient/hold": {
+      "runs": 5,
+      "passed": 0
+    },
+    "reorient/roll": {
+      "runs": 5,
+      "passed": 5
+    },
+    "reorient/reverse": {
+      "runs": 5,
+      "passed": 0
+    }
+  }
+}

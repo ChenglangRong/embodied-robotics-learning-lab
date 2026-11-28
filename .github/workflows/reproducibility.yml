@@ -58,6 +58,12 @@ jobs:
           if ($LASTEXITCODE) { exit $LASTEXITCODE }
       - name: Verify progress, public evidence and credential patterns
         run: python tools/verify_learning_record.py
+      - name: Allegro grasp and reorientation tests
+        working-directory: project-05-reinforcement-safety
+        run: python -m unittest test_allegro_lab -v
+      - name: Allegro frozen physical replay
+        working-directory: project-05-reinforcement-safety
+        run: python run_allegro.py verify outputs/allegro-20261128 --report ../.ci-output/allegro-replay.json
       # Retain H1 reports even if a later legacy replay fails.
       - name: H1 push-recovery physical tests
         working-directory: project-05-reinforcement-safety

@@ -1,0 +1,73 @@
+{
+  "model_commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+  "model_assets_sha256": {
+    "allegro_hand.png": "c23b303879ca9db0a1e4291d7e5b41dac2a0cb4140f679cb0f7ed03f66c91906",
+    "assets/base_link.stl": "4060e1ae52bca21367e15a1dfab16bc7c2e81849566631b7f55e2cf376b7bc85",
+    "assets/base_link_left.stl": "9f66c1cb8d27b9f07e49101a7997a49c60d3cc3ccbc8de96065322df68f47a0b",
+    "assets/link_0.0.stl": "32b90a6744d472a6ffaee02cbf32eb8a5600b1da0944e86aeb9f53503a9f8ac9",
+    "assets/link_1.0.stl": "e3dfb35b6682f62f18ca6ed0b39cb94ff627b68e0e3373cf7212390574604680",
+    "assets/link_12.0_left.stl": "1749ba567bf36729a81eaecf384bc4f5483be8c496af54d230500b96f1d81dcc",
+    "assets/link_12.0_right.stl": "c5418fc127311eefee1d8ee69dfcfde2157d038286900bee91608d2701b00f13",
+    "assets/link_13.0.stl": "e906896afc078a12c9c377e3a2b07f375583d3b869581f9962030cabc888be29",
+    "assets/link_14.0.stl": "a9e4983e4bff7fc7d868b4965c9865edb2669b946434095703766202b5de01ff",
+    "assets/link_15.0.stl": "bf963adb775b79b27649f4f5dff4ced58ef676ce86cc677de49d3810382d11e0",
+    "assets/link_15.0_tip.stl": "a7147c765d4b6d2eb16fa14bba2e8eceec4a750bc346260893ca02aca1fd7a63",
+    "assets/link_2.0.stl": "9c98477c65b45f5a3de1df0e1b54281da2385f4eafd057d103ab40893771c2d0",
+    "assets/link_3.0.stl": "fe333088176395aa7d8a913aa953d3cd649c4c77753224239b78b2c99e3e314c",
+    "assets/link_3.0_tip.stl": "9c3fa04fea0dfa1257c8a1b02d2b7d982b0d985c1ddda1edf148827944835f39",
+    "assets/link_4.0.stl": "f80ac4d443169c56507afaa0b3c72ec3679312bc80cbaebd03e73e96dd18c408",
+    "CHANGELOG.md": "bfacf2c9eb6b6a32f12bcb9b10f756b0f7bc160c3dd6130f32a635b0f1308fb9",
+    "left_hand.xml": "28a22726afc89002f1f2d30a16c5f28733e334a2c62e031a800dec217c7507b9",
+    "LICENSE": "5fdaed81dbb72ff0e1aa15e660d51008ea0472d00201b6cda3f991cf86121563",
+    "README.md": "4d381b525fe33bee96e9c7656bf9f35288e128a068471bcc95bb7827bf6ea019",
+    "right_hand.xml": "79368e78e8112dc01dc1b266eda3ac204cdbb8c6f17c203fb233593ebab9f3f0",
+    "scene_left.xml": "04bb326f2625909d9d2ac89a4895df4a91afad33ef75cd25e3c23408568e3601",
+    "scene_right.xml": "aaace7c54e536a8228dc199b07129a95c5f65a7e19fa94fe24eeb4793ede2b63"
+  },
+  "source_sha256": {
+    "allegro_lab.py": "6c22115cc86488d31f05b095e8a473d00e578a9d0864f24013acf4fdaa12f1a9",
+    "lab.py": "7ff5bfc42eaa3c5a435ed13b34f97bf1043a84ec1e4d1ca371bfe392a3e384cd",
+    "run_allegro.py": "415db9bd67df9331c4b107230888ff7b80007ff0dd8aa9d75739a9298b3c8732"
+  },
+  "dependencies": {
+    "mujoco": "3.2.5",
+    "numpy": "1.26.4",
+    "python": "3.12.4"
+  },
+  "seeds": [
+    5000000,
+    5000001,
+    5000002,
+    5000003,
+    5000004
+  ],
+  "development_seeds": [
+    0,
+    11,
+    12
+  ],
+  "gain_rad_per_m": 28.0,
+  "load_n": {
+    "no_load": 0.0,
+    "pull9": 9.0,
+    "pull13": 13.0,
+    "stress17": 17.0,
+    "reorient": 0.0
+  },
+  "target_axis_palm": [
+    -0.25,
+    -0.49,
+    0.86
+  ],
+  "target_angle_deg": 20.0,
+  "physics_dt_s": 0.002,
+  "control_dt_s": 0.02,
+  "episode_steps": 200,
+  "preparation_duration_s": 9.0,
+  "pull_interval_s": [
+    1.0,
+    1.3
+  ],
+  "reset": "object XY uniform +/-1 mm, finger joints uniform +/-4 mrad, common 9 s preparation",
+  "scope": "palm-assisted caging, one shaped target, no learning updates; stress17 is a harder matched load"
+}
